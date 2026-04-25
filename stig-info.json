@@ -101,25 +101,6 @@
   ],
   "Downloads": [
     {
-      "DownloadId": "STIG-Viewer-3",
-      "Name": "STIG Viewer 3",
-      "Version": "3-7-0",
-      "FileName": "U_STIGViewer-win32_x64-{version}_msi.zip",
-      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIGViewer-win32_x64-3-7-0_msi.zip",
-      "ZipHash": "4772885E92CD318606FDA715226FB571E6ABEA3E1F6414E69DBE99D7D5A64C03",
-      "ChecksumsUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/txt/U_STIGViewer_{version}_Hashes.txt"
-    },
-    {
-      "DownloadId": "SCAP-Compliance-Checker",
-      "Name": "SCAP Compliance Checker",
-      "Version": "5.14",
-      "FileName": "scc-{version}_Windows_bundle.zip",
-      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/scc-5.14_Windows_bundle.zip",
-      "InstallerArguments": "/SP- /VERYSILENT /TYPE=Custom /COMPONENTS=\"Content\\DISA_STIG_SCAP_Content,Other\\SCC_Service\"",
-      "ZipHash": "3F6491CBE3975BD4432AB01B694599E26E068F13DE3A21757371791572CA1EBB",
-      "ChecksumsUrl": "https://www.niwcatlantic.navy.mil/Portals/94/Page-Content/SCAP/Checksums/SCC_5.12.1_Checksums.txt"
-    },
-    {
       "DownloadId": "STIG-GPO-Package",
       "Name": "STIG GPO Package",
       "Version": "January_2026",
