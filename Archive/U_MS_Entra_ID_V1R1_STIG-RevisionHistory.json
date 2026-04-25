@@ -1,0 +1,10 @@
+{
+  "ScanType": "Manual",
+  "StigId": "MS_Entra_ID_STIG",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "StigDisplayName": "MS Entra ID STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "CurrentPackage": "U_MS_Entra_ID_V1R1_STIG.zip",
+  "CurrentVersion": "V1R1"
+}

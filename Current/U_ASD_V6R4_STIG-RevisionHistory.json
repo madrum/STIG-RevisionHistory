@@ -1,0 +1,173 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-222393",
+      "RuleVersion": "APSC-DV-000110",
+      "PreviousRuleId": "SV-222393r961269",
+      "CurrentRuleId": "SV-222393r1136904",
+      "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in storage."
+    },
+    {
+      "GroupId": "V-222394",
+      "RuleVersion": "APSC-DV-000120",
+      "PreviousRuleId": "SV-222394r961272",
+      "CurrentRuleId": "SV-222394r1136906",
+      "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in process."
+    },
+    {
+      "GroupId": "V-222395",
+      "RuleVersion": "APSC-DV-000130",
+      "PreviousRuleId": "SV-222395r961275",
+      "CurrentRuleId": "SV-222395r1136908",
+      "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in transmission."
+    },
+    {
+      "GroupId": "V-222425",
+      "RuleVersion": "APSC-DV-000460",
+      "PreviousRuleId": "SV-222425r960792",
+      "CurrentRuleId": "SV-222425r1117167",
+      "RuleTitle": "The application must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies."
+    },
+    {
+      "GroupId": "V-222427",
+      "RuleVersion": "APSC-DV-000480",
+      "PreviousRuleId": "SV-222427r960801",
+      "CurrentRuleId": "SV-222427r1117168",
+      "RuleTitle": "The application must enforce approved authorizations for controlling the flow of information within the system based on organization-defined information flow control policies."
+    },
+    {
+      "GroupId": "V-222428",
+      "RuleVersion": "APSC-DV-000490",
+      "PreviousRuleId": "SV-222428r960804",
+      "CurrentRuleId": "SV-222428r1117169",
+      "RuleTitle": "The application must enforce approved authorizations for controlling the flow of information between interconnected systems based on organization-defined information flow control policies."
+    },
+    {
+      "GroupId": "V-222570",
+      "RuleVersion": "APSC-DV-002020",
+      "PreviousRuleId": "SV-222570r961857",
+      "CurrentRuleId": "SV-222570r1117181",
+      "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when signing application components."
+    },
+    {
+      "GroupId": "V-222571",
+      "RuleVersion": "APSC-DV-002030",
+      "PreviousRuleId": "SV-222571r961857",
+      "CurrentRuleId": "SV-222571r1117181",
+      "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when generating cryptographic hashes."
+    },
+    {
+      "GroupId": "V-222572",
+      "RuleVersion": "APSC-DV-002040",
+      "PreviousRuleId": "SV-222572r961857",
+      "CurrentRuleId": "SV-222572r1117181",
+      "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when protecting unclassified information that requires cryptographic protection."
+    },
+    {
+      "GroupId": "V-222573",
+      "RuleVersion": "APSC-DV-002050",
+      "PreviousRuleId": "SV-222573r961857",
+      "CurrentRuleId": "SV-222573r1117181",
+      "RuleTitle": "Applications making SAML assertions must use FIPS-approved random numbers in the generation of SessionIndex in the SAML element AuthnStatement."
+    },
+    {
+      "GroupId": "V-222574",
+      "RuleVersion": "APSC-DV-002150",
+      "PreviousRuleId": "SV-222574r961095",
+      "CurrentRuleId": "SV-222574r1117171",
+      "RuleTitle": "The application user interface must be either physically or logically separated from data storage and management interfaces."
+    },
+    {
+      "GroupId": "V-222587",
+      "RuleVersion": "APSC-DV-002330",
+      "PreviousRuleId": "SV-222587r961128",
+      "CurrentRuleId": "SV-222587r1136910",
+      "RuleTitle": "The application must protect the confidentiality and integrity of stored information when required by DOD policy or the information owner."
+    },
+    {
+      "GroupId": "V-222591",
+      "RuleVersion": "APSC-DV-002370",
+      "PreviousRuleId": "SV-222591r961608",
+      "CurrentRuleId": "SV-222591r1117179",
+      "RuleTitle": "The application must maintain a separate execution domain for each executing process."
+    },
+    {
+      "GroupId": "V-222592",
+      "RuleVersion": "APSC-DV-002380",
+      "PreviousRuleId": "SV-222592r961149",
+      "CurrentRuleId": "SV-222592r1117173",
+      "RuleTitle": "Applications must prevent unauthorized and unintended information transfer via shared system resources."
+    },
+    {
+      "GroupId": "V-222597",
+      "RuleVersion": "APSC-DV-002450",
+      "PreviousRuleId": "SV-222597r961635",
+      "CurrentRuleId": "SV-222597r1117180",
+      "RuleTitle": "The application must implement cryptographic mechanisms to prevent unauthorized disclosure of information and/or detect changes to information during transmission unless otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected Distribution System (PDS)."
+    },
+    {
+      "GroupId": "V-222614",
+      "RuleVersion": "APSC-DV-002630",
+      "PreviousRuleId": "SV-222614r961683",
+      "CurrentRuleId": "SV-222614r1117151",
+      "RuleTitle": "Security-relevant software updates and patches must be kept up to date."
+    },
+    {
+      "GroupId": "V-222621",
+      "RuleVersion": "APSC-DV-002900",
+      "PreviousRuleId": "SV-222621r961863",
+      "CurrentRuleId": "SV-222621r1136913",
+      "RuleTitle": "The ISSO must ensure application audit trails are retained for at least 30 months (12 months active + 18 months cold storage) for applications without SAMI data and five years for applications including SAMI data."
+    },
+    {
+      "GroupId": "V-222643",
+      "RuleVersion": "APSC-DV-003120",
+      "PreviousRuleId": "SV-222643r961863",
+      "CurrentRuleId": "SV-222643r1136915",
+      "RuleTitle": "The application must have the capability to mark sensitive/classified output when required."
+    },
+    {
+      "GroupId": "V-265634",
+      "RuleVersion": "APSC-DV-002010",
+      "PreviousRuleId": "SV-265634r997307",
+      "CurrentRuleId": "SV-265634r1117183",
+      "RuleTitle": "The application must implement NSA-approved cryptography to protect classified information in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+    }
+  ],
+  "PreviousVersion": "V6R3",
+  "CurrentVersion": "V6R4",
+  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+      "BenchmarkId": "Application_Security_Development_STIG",
+      "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-09-09",
+      "BenchmarkDate": "2025-10-01",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+      "BenchmarkId": "Application_Security_Development_STIG",
+      "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-02-12",
+      "BenchmarkDate": "2025-04-02",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "ASD STIG",
+  "ScanType": "Manual",
+  "CurrentPackage": "U_ASD_V6R4_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
+  "StigId": "ASD_STIG",
+  "RemovedGroups": []
+}

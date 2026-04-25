@@ -1,0 +1,174 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-206864",
+      "RuleVersion": "SRG-NET-000018-IDPS-00018",
+      "PreviousRuleId": "SV-206864r382732",
+      "CurrentRuleId": "SV-206864r1137714",
+      "RuleTitle": "The IPS must enforce approved authorizations by restricting or blocking the flow of harmful or suspicious communications traffic within the network."
+    },
+    {
+      "GroupId": "V-206865",
+      "RuleVersion": "SRG-NET-000019-IDPS-00019",
+      "PreviousRuleId": "SV-206865r382735",
+      "CurrentRuleId": "SV-206865r1137717",
+      "RuleTitle": "The IPS must restrict or block harmful or suspicious communications traffic between interconnected networks based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic."
+    },
+    {
+      "GroupId": "V-206866",
+      "RuleVersion": "SRG-NET-000019-IDPS-00187",
+      "PreviousRuleId": "SV-206866r382735",
+      "CurrentRuleId": "SV-206866r1137718",
+      "RuleTitle": "The IDPS must immediately use updates made to policy filters, rules, signatures, and anomaly analysis algorithms for traffic detection and prevention functions."
+    },
+    {
+      "GroupId": "V-206881",
+      "RuleVersion": "SRG-NET-000192-IDPS-00140",
+      "PreviousRuleId": "SV-206881r385531",
+      "CurrentRuleId": "SV-206881r1140706",
+      "RuleTitle": "The IPS must block outbound traffic containing known and unknown denial-of-service (DoS) attacks by ensuring that security policies, signatures, rules, and anomaly detection techniques are applied to outbound communications traffic."
+    },
+    {
+      "GroupId": "V-206883",
+      "RuleVersion": "SRG-NET-000229-IDPS-00163",
+      "PreviousRuleId": "SV-206883r383104",
+      "CurrentRuleId": "SV-206883r1137731",
+      "RuleTitle": "The IPS must block any prohibited mobile code at the enclave boundary when it is detected."
+    },
+    {
+      "GroupId": "V-206889",
+      "RuleVersion": "SRG-NET-000249-IDPS-00176",
+      "PreviousRuleId": "SV-206889r383131",
+      "CurrentRuleId": "SV-206889r1137734",
+      "RuleTitle": "The IPS must block malicious code."
+    },
+    {
+      "GroupId": "V-206890",
+      "RuleVersion": "SRG-NET-000249-IDPS-00221",
+      "PreviousRuleId": "SV-206890r383131",
+      "CurrentRuleId": "SV-206890r1137737",
+      "RuleTitle": "The IPS must quarantine or block malicious code."
+    },
+    {
+      "GroupId": "V-206893",
+      "RuleVersion": "SRG-NET-000273-IDPS-00198",
+      "PreviousRuleId": "SV-206893r383206",
+      "CurrentRuleId": "SV-206893r1137740",
+      "RuleTitle": "The IPS must block outbound Internet Control Message Protocol (ICMP) Destination Unreachable, Redirect, and Address Mask reply messages."
+    },
+    {
+      "GroupId": "V-206894",
+      "RuleVersion": "SRG-NET-000273-IDPS-00204",
+      "PreviousRuleId": "SV-206894r383206",
+      "CurrentRuleId": "SV-206894r1137743",
+      "RuleTitle": "The IPS must block malicious Internet Control Message Protocol (ICMP) packets by properly configuring ICMP signatures and rules."
+    },
+    {
+      "GroupId": "V-206895",
+      "RuleVersion": "SRG-NET-000318-IDPS-00068",
+      "PreviousRuleId": "SV-206895r856533",
+      "CurrentRuleId": "SV-206895r1137746",
+      "RuleTitle": "To protect against unauthorized data mining, the IPS must prevent code injection attacks launched against data storage objects, including, at a minimum, databases, database records, queries, and fields."
+    },
+    {
+      "GroupId": "V-206896",
+      "RuleVersion": "SRG-NET-000318-IDPS-00182",
+      "PreviousRuleId": "SV-206896r856534",
+      "CurrentRuleId": "SV-206896r1137749",
+      "RuleTitle": "To protect against unauthorized data mining, the IPS must prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code."
+    },
+    {
+      "GroupId": "V-206897",
+      "RuleVersion": "SRG-NET-000318-IDPS-00183",
+      "PreviousRuleId": "SV-206897r856535",
+      "CurrentRuleId": "SV-206897r1137752",
+      "RuleTitle": "To protect against unauthorized data mining, the IPS must prevent SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields."
+    },
+    {
+      "GroupId": "V-206905",
+      "RuleVersion": "SRG-NET-000362-IDPS-00196",
+      "PreviousRuleId": "SV-206905r856543",
+      "CurrentRuleId": "SV-206905r1137755",
+      "RuleTitle": "The IPS must protect against or limit the effects of known and unknown types of denial-of-service (DoS) attacks by employing rate-based attack prevention behavior analysis."
+    },
+    {
+      "GroupId": "V-206906",
+      "RuleVersion": "SRG-NET-000362-IDPS-00197",
+      "PreviousRuleId": "SV-206906r856544",
+      "CurrentRuleId": "SV-206906r1137758",
+      "RuleTitle": "The IPS must protect against or limit the effects of known and unknown types of denial-of-service (DoS) attacks by employing anomaly-based attack detection."
+    },
+    {
+      "GroupId": "V-206907",
+      "RuleVersion": "SRG-NET-000362-IDPS-00198",
+      "PreviousRuleId": "SV-206907r856545",
+      "CurrentRuleId": "SV-206907r1137761",
+      "RuleTitle": "The IPS must protect against or limit the effects of known types of denial-of-service (DoS) attacks by employing signatures."
+    },
+    {
+      "GroupId": "V-206915",
+      "RuleVersion": "SRG-NET-000392-IDPS-00214",
+      "PreviousRuleId": "SV-206915r1107172",
+      "CurrentRuleId": "SV-206915r1107640",
+      "RuleTitle": "The IDPS must send an alert to, at a minimum, the information system security manager (ISSM) and information system security officer (ISSO) when intrusion detection events are detected which indicate a compromise or potential for compromise."
+    },
+    {
+      "GroupId": "V-263664",
+      "RuleVersion": "SRG-NET-000715-IDPS-00120",
+      "PreviousRuleId": "SV-263664r991598",
+      "CurrentRuleId": "SV-263664r1137722",
+      "RuleTitle": "The IDPS must implement physically or logically separate subnetworks to isolate organization-defined critical system components and functions."
+    }
+  ],
+  "PreviousVersion": "V3R3",
+  "CurrentVersion": "V3R4",
+  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+      "BenchmarkId": "IDPS_SRG",
+      "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-09-22",
+      "BenchmarkDate": "2025-10-28",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+      "BenchmarkId": "IDPS_SRG",
+      "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-05-19",
+      "BenchmarkDate": "2025-07-02",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "IDPS SRG",
+  "ScanType": "Manual",
+  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [
+    {
+      "GroupId": "V-278978",
+      "RuleVersion": "SRG-NET-000323-IDPS-00188",
+      "RuleId": "SV-278978r1137721",
+      "RuleTitle": "The IDPS must use organization-defined security attributes associated with organization-defined information, source, and destination objects to enforce organization-defined information flow control policies as a basis for flow control decisions.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278979",
+      "RuleVersion": "SRG-NET-000775-IDPS-00170",
+      "RuleId": "SV-278979r1137725",
+      "RuleTitle": "The IDPS must provide visibility into network traffic at external and key internal system interfaces to optimize the effectiveness of monitoring devices.",
+      "Severity": "medium"
+    }
+  ],
+  "StigId": "IDPS_SRG",
+  "RemovedGroups": []
+}

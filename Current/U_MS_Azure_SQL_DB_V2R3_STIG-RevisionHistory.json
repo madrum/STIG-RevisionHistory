@@ -1,0 +1,22 @@
+{
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-06-11",
+      "BenchmarkDate": "2025-07-02",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "MS Azure SQL DB STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "StigId": "MS_Azure_SQL_DB_STIG",
+  "CurrentVersion": "V2R3",
+  "PreviousVersion": null,
+  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+  "ScanType": "Manual",
+  "PreviousPackage": null
+}

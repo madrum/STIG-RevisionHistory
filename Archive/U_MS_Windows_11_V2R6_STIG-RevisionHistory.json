@@ -1,0 +1,263 @@
+{
+  "StigId": "Microsoft_Windows_11_STIG",
+  "ScanType": "SemiAutomated",
+  "PreviousPackage": "U_MS_Windows_11_V2R4_STIG.zip",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-253255",
+      "RuleVersion": "WN11-00-000010",
+      "PreviousRuleId": "SV-253255r971547",
+      "CurrentRuleId": "SV-253255r1117271",
+      "RuleTitle": "Windows 11 domain-joined systems must have a Trusted Platform Module (TPM) enabled."
+    },
+    {
+      "GroupId": "V-253256",
+      "RuleVersion": "WN11-00-000015",
+      "PreviousRuleId": "SV-253256r971547",
+      "CurrentRuleId": "SV-253256r1117271",
+      "RuleTitle": "Windows 11 systems must have Unified Extensible Firmware Interface (UEFI) firmware and be configured to run in UEFI mode, not Legacy BIOS."
+    },
+    {
+      "GroupId": "V-253257",
+      "RuleVersion": "WN11-00-000020",
+      "PreviousRuleId": "SV-253257r971547",
+      "CurrentRuleId": "SV-253257r1117271",
+      "RuleTitle": "Secure Boot must be enabled on Windows 11 systems."
+    },
+    {
+      "GroupId": "V-253265",
+      "RuleVersion": "WN11-00-000050",
+      "PreviousRuleId": "SV-253265r958472",
+      "CurrentRuleId": "SV-253265r1137691",
+      "RuleTitle": "Local volumes must be formatted using NTFS."
+    },
+    {
+      "GroupId": "V-253267",
+      "RuleVersion": "WN11-00-000060",
+      "PreviousRuleId": "SV-253267r958524",
+      "CurrentRuleId": "SV-253267r1137695",
+      "RuleTitle": "Non-system-created file shares on a system must limit access to groups that require it."
+    },
+    {
+      "GroupId": "V-253285",
+      "RuleVersion": "WN11-00-000155",
+      "PreviousRuleId": "SV-253285r958478",
+      "CurrentRuleId": "SV-253285r1153425",
+      "RuleTitle": "The Windows PowerShell 2.0 feature must be disabled on the system."
+    },
+    {
+      "GroupId": "V-253291",
+      "RuleVersion": "WN11-00-000210",
+      "PreviousRuleId": "SV-253291r958478",
+      "CurrentRuleId": "SV-253291r1153422",
+      "RuleTitle": "Bluetooth must be turned off unless approved by the organization."
+    },
+    {
+      "GroupId": "V-253382",
+      "RuleVersion": "WN11-CC-000155",
+      "PreviousRuleId": "SV-253382r958524",
+      "CurrentRuleId": "SV-253382r1137695",
+      "RuleTitle": "Solicited Remote Assistance must not be allowed."
+    },
+    {
+      "GroupId": "V-253403",
+      "RuleVersion": "WN11-CC-000275",
+      "PreviousRuleId": "SV-253403r958524",
+      "CurrentRuleId": "SV-253403r1137695",
+      "RuleTitle": "Local drives must be prevented from sharing with Remote Desktop Session Hosts."
+    },
+    {
+      "GroupId": "V-253454",
+      "RuleVersion": "WN11-SO-000150",
+      "PreviousRuleId": "SV-253454r958524",
+      "CurrentRuleId": "SV-253454r1137695",
+      "RuleTitle": "Anonymous enumeration of shares must be restricted."
+    },
+    {
+      "GroupId": "V-253456",
+      "RuleVersion": "WN11-SO-000165",
+      "PreviousRuleId": "SV-253456r958524",
+      "CurrentRuleId": "SV-253456r1137695",
+      "RuleTitle": "Anonymous access to Named Pipes and Shares must be restricted."
+    },
+    {
+      "GroupId": "V-253466",
+      "RuleVersion": "WN11-SO-000230",
+      "PreviousRuleId": "SV-253466r959006",
+      "CurrentRuleId": "SV-253466r1137699",
+      "RuleTitle": "The system must be configured to use FIPS-compliant algorithms for encryption, hashing, and signing."
+    },
+    {
+      "GroupId": "V-253480",
+      "RuleVersion": "WN11-UR-000010",
+      "PreviousRuleId": "SV-253480r958472",
+      "CurrentRuleId": "SV-253480r1137691",
+      "RuleTitle": "The \"Access this computer from the network\" user right must only be assigned to the Administrators and Remote Desktop Users groups."
+    },
+    {
+      "GroupId": "V-253482",
+      "RuleVersion": "WN11-UR-000025",
+      "PreviousRuleId": "SV-253482r958472",
+      "CurrentRuleId": "SV-253482r1137691",
+      "RuleTitle": "The \"Allow log on locally\" user right must only be assigned to the Administrators and Users groups."
+    },
+    {
+      "GroupId": "V-253491",
+      "RuleVersion": "WN11-UR-000070",
+      "PreviousRuleId": "SV-253491r958472",
+      "CurrentRuleId": "SV-253491r1137691",
+      "RuleTitle": "The \"Deny access to this computer from the network\" user right on workstations must be configured to prevent access from highly privileged domain accounts and local accounts on domain systems and unauthenticated access on all systems."
+    },
+    {
+      "GroupId": "V-253492",
+      "RuleVersion": "WN11-UR-000075",
+      "PreviousRuleId": "SV-253492r958472",
+      "CurrentRuleId": "SV-253492r1137691",
+      "RuleTitle": "The \"Deny log on as a batch job\" user right on domain-joined workstations must be configured to prevent access from highly privileged domain accounts."
+    },
+    {
+      "GroupId": "V-253493",
+      "RuleVersion": "WN11-UR-000080",
+      "PreviousRuleId": "SV-253493r958472",
+      "CurrentRuleId": "SV-253493r1137691",
+      "RuleTitle": "The \"Deny log on as a service\" user right on Windows 11 domain-joined workstations must be configured to prevent access from highly privileged domain accounts."
+    },
+    {
+      "GroupId": "V-253494",
+      "RuleVersion": "WN11-UR-000085",
+      "PreviousRuleId": "SV-253494r958472",
+      "CurrentRuleId": "SV-253494r1137691",
+      "RuleTitle": "The \"Deny log on locally\" user right on workstations must be configured to prevent access from highly privileged domain accounts on domain systems and unauthenticated access on all systems."
+    },
+    {
+      "GroupId": "V-253495",
+      "RuleVersion": "WN11-UR-000090",
+      "PreviousRuleId": "SV-253495r958472",
+      "CurrentRuleId": "SV-253495r1137691",
+      "RuleTitle": "The \"Deny log on through Remote Desktop Services\" user right on Windows 11 workstations must be configured to prevent access from highly privileged domain accounts and local accounts on domain systems and unauthenticated access on all systems."
+    },
+    {
+      "GroupId": "V-253498",
+      "RuleVersion": "WN11-UR-000110",
+      "PreviousRuleId": "SV-253498r958726",
+      "CurrentRuleId": "SV-253498r1138526",
+      "RuleTitle": "The \"Impersonate a client after authentication\" user right must only be assigned to Administrators, Service, Local Service, and Network Service."
+    },
+    {
+      "GroupId": "V-268317",
+      "RuleVersion": "WN11-00-000125",
+      "PreviousRuleId": "SV-268317r1016371",
+      "CurrentRuleId": "SV-268317r1135320",
+      "RuleTitle": "Copilot must be disabled for Windows 11."
+    },
+    {
+      "GroupId": "V-268318",
+      "RuleVersion": "WN11-CC-000063",
+      "PreviousRuleId": "SV-268318r1081062",
+      "CurrentRuleId": "SV-268318r1135322",
+      "RuleTitle": "Windows 11 systems must use either Group Policy or an approved Mobile Device Management (MDM) product to enforce STIG compliance."
+    }
+  ],
+  "StigDisplayName": "Microsoft Windows 11 STIG",
+  "Status": "Compared successfully.",
+  "CurrentPackage": "U_MS_Windows_11_V2R6_STIG.zip",
+  "PreviousVersion": "V2R4",
+  "CurrentVersion": "V2R6",
+  "RemovedGroups": [
+    {
+      "GroupId": "V-253283",
+      "RuleVersion": "WN11-00-000145",
+      "RuleId": "SV-253283r958928",
+      "RuleTitle": "Data Execution Prevention (DEP) must be configured to at least OptOut.",
+      "Severity": "high"
+    },
+    {
+      "GroupId": "V-253292",
+      "RuleVersion": "WN11-00-000220",
+      "RuleId": "SV-253292r958478",
+      "RuleTitle": "Bluetooth must be turned off when not in use.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-253343",
+      "RuleVersion": "WN11-AU-000550",
+      "RuleId": "SV-253343r958412",
+      "RuleTitle": "Windows 11 must be configured to audit Other Policy Change Events Successes.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-253432",
+      "RuleVersion": "WN11-SO-000005",
+      "RuleId": "SV-253432r958482",
+      "RuleTitle": "The built-in administrator account must be disabled.",
+      "Severity": "medium"
+    }
+  ],
+  "AddedGroups": [
+    {
+      "GroupId": "V-278926",
+      "RuleVersion": "WN11-AU-000581",
+      "RuleId": "SV-278926r1135296",
+      "RuleTitle": "Windows 11 must be configured to audit file system failures.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278927",
+      "RuleVersion": "WN11-AU-000582",
+      "RuleId": "SV-278927r1135299",
+      "RuleTitle": "Windows 11 must be configured to audit file system successes.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278928",
+      "RuleVersion": "WN11-AU-000583",
+      "RuleId": "SV-278928r1135302",
+      "RuleTitle": "Windows 11 must be configured to audit handle manipulation failures.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278929",
+      "RuleVersion": "WN11-AU-000584",
+      "RuleId": "SV-278929r1135305",
+      "RuleTitle": "Windows 11 must be configured to audit handle manipulation successes.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278930",
+      "RuleVersion": "WN11-AU-000589",
+      "RuleId": "SV-278930r1135308",
+      "RuleTitle": "Windows 11 must be configured to audit registry failures.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278931",
+      "RuleVersion": "WN11-AU-000586",
+      "RuleId": "SV-278931r1135311",
+      "RuleTitle": "Windows 11 must be configured to audit registry successes.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278932",
+      "RuleVersion": "WN11-AU-000587",
+      "RuleId": "SV-278932r1141916",
+      "RuleTitle": "Windows 11 must be configured to audit sensitive privilege use successes.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278933",
+      "RuleVersion": "WN11-AU-000588",
+      "RuleId": "SV-278933r1141919",
+      "RuleTitle": "Windows 11 must be configured to audit sensitive privilege use failures.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-279688",
+      "RuleVersion": "WN11-00-000126",
+      "RuleId": "SV-279688r1153564",
+      "RuleTitle": "Windows 11 systems must block consumer account user authentication.",
+      "Severity": "medium"
+    }
+  ]
+}

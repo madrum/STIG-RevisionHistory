@@ -1,0 +1,10 @@
+{
+  "ScanType": "Manual",
+  "StigId": "MS_Azure_SQL_DB_STIG",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "StigDisplayName": "MS Azure SQL DB STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+  "CurrentVersion": "V2R3"
+}

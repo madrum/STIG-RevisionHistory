@@ -1,0 +1,22 @@
+{
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows Defender Firewall with Advanced Security Security Technical Implementation Guide",
+      "BenchmarkId": "Windows_Firewall_with_Advanced_Security",
+      "FileName": "U_MS_Windows_Defender_Firewall_STIG_V2R2_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2023-08-23",
+      "BenchmarkDate": "2023-11-09",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "Windows Firewall with Advanced Security STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "StigId": "Windows_Firewall_with_Advanced_Security",
+  "CurrentVersion": "V2R2",
+  "PreviousVersion": null,
+  "CurrentPackage": "U_MS_Windows_Defender_Firewall_V2R2_STIG.zip",
+  "ScanType": "SemiAutomated",
+  "PreviousPackage": null
+}

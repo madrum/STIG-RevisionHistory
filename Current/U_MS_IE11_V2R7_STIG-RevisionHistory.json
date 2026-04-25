@@ -1,0 +1,47 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-252910",
+      "RuleVersion": "DTBI999-IE11",
+      "PreviousRuleId": "SV-252910r1156566",
+      "CurrentRuleId": "SV-252910r1192839",
+      "RuleTitle": "The version of Internet Explorer running on the system must be a supported version."
+    }
+  ],
+  "PreviousVersion": "V2R6",
+  "CurrentVersion": "V2R7",
+  "PreviousPackage": "U_MS_IE11_V2R6_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
+      "BenchmarkId": "IE_11_STIG",
+      "FileName": "U_MS_IE11_STIG_V2R7_Manual-xccdf.xml",
+      "Status": "deprecated",
+      "StatusDate": "2026-02-24",
+      "BenchmarkDate": "2026-04-01",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
+      "BenchmarkId": "IE_11_STIG",
+      "FileName": "U_MS_IE11_STIG_V2R6_Manual-xccdf.xml",
+      "Status": "deprecated",
+      "StatusDate": "2025-11-25",
+      "BenchmarkDate": "2026-01-05",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "MS IE11 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentPackage": "U_MS_IE11_V2R7_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
+  "StigId": "IE_11_STIG",
+  "RemovedGroups": []
+}

@@ -1,0 +1,10 @@
+{
+  "ScanType": "SemiAutomated",
+  "StigId": "MS_Dot_Net_Framework",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "CurrentPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
+  "CurrentVersion": "V2R7"
+}

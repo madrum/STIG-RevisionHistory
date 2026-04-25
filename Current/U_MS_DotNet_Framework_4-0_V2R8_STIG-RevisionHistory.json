@@ -1,0 +1,75 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-225229",
+      "RuleVersion": "APPNET0061",
+      "PreviousRuleId": "SV-225229r1107247",
+      "CurrentRuleId": "SV-225229r1188309",
+      "RuleTitle": ".Net Framework versions installed on the system must be supported."
+    },
+    {
+      "GroupId": "V-225230",
+      "RuleVersion": "APPNET0062",
+      "PreviousRuleId": "SV-225230r961908",
+      "CurrentRuleId": "SV-225230r1117185",
+      "RuleTitle": "The .NET CLR must be configured to use FIPS approved encryption modules."
+    },
+    {
+      "GroupId": "V-225233",
+      "RuleVersion": "APPNET0065",
+      "PreviousRuleId": "SV-225233r961608",
+      "CurrentRuleId": "SV-225233r1117179",
+      "RuleTitle": "Trust must be established prior to enabling the loading of remote code in .Net 4."
+    },
+    {
+      "GroupId": "V-225234",
+      "RuleVersion": "APPNET0066",
+      "PreviousRuleId": "SV-225234r961863",
+      "CurrentRuleId": "SV-225234r1188289",
+      "RuleTitle": ".NET default proxy settings must be reviewed and approved."
+    },
+    {
+      "GroupId": "V-225236",
+      "RuleVersion": "APPNET0070",
+      "PreviousRuleId": "SV-225236r1069477",
+      "CurrentRuleId": "SV-225236r1117179",
+      "RuleTitle": "Software utilizing .Net 4.0 must be identified and relevant access controls configured."
+    }
+  ],
+  "PreviousVersion": "V2R7",
+  "CurrentVersion": "V2R8",
+  "PreviousPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Dot_Net_Framework",
+      "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R8_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2026-02-12",
+      "BenchmarkDate": "2026-04-01",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Dot_Net_Framework",
+      "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R7_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-05-16",
+      "BenchmarkDate": "2025-07-02",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentPackage": "U_MS_DotNet_Framework_4-0_V2R8_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
+  "StigId": "MS_Dot_Net_Framework",
+  "RemovedGroups": []
+}

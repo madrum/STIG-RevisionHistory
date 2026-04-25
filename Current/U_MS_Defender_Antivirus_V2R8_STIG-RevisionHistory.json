@@ -1,0 +1,320 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-213428",
+      "RuleVersion": "WNDF-AV-000004",
+      "PreviousRuleId": "SV-213428r961194",
+      "CurrentRuleId": "SV-213428r1190706",
+      "RuleTitle": "Microsoft Defender AV must be configured to run and scan for malware and other potentially unwanted software."
+    },
+    {
+      "GroupId": "V-213429",
+      "RuleVersion": "WNDF-AV-000005",
+      "PreviousRuleId": "SV-213429r961194",
+      "CurrentRuleId": "SV-213429r1190707",
+      "RuleTitle": "Microsoft Defender AV must be configured to not exclude files for scanning."
+    },
+    {
+      "GroupId": "V-213430",
+      "RuleVersion": "WNDF-AV-000006",
+      "PreviousRuleId": "SV-213430r961194",
+      "CurrentRuleId": "SV-213430r1190710",
+      "RuleTitle": "Microsoft Defender AV must be configured to not exclude files opened by specified processes."
+    },
+    {
+      "GroupId": "V-213431",
+      "RuleVersion": "WNDF-AV-000007",
+      "PreviousRuleId": "SV-213431r961194",
+      "CurrentRuleId": "SV-213431r1190712",
+      "RuleTitle": "Microsoft Defender AV must be configured to enable the Automatic Exclusions feature."
+    },
+    {
+      "GroupId": "V-213433",
+      "RuleVersion": "WNDF-AV-000009",
+      "PreviousRuleId": "SV-213433r961194",
+      "CurrentRuleId": "SV-213433r1190715",
+      "RuleTitle": "Microsoft Defender AV must be configured to check in real time with MAPS before content is run or accessed."
+    },
+    {
+      "GroupId": "V-213436",
+      "RuleVersion": "WNDF-AV-000012",
+      "PreviousRuleId": "SV-213436r961194",
+      "CurrentRuleId": "SV-213436r1190716",
+      "RuleTitle": "Microsoft Defender AV must be configured for protocol recognition for network protection."
+    },
+    {
+      "GroupId": "V-213441",
+      "RuleVersion": "WNDF-AV-000017",
+      "PreviousRuleId": "SV-213441r961194",
+      "CurrentRuleId": "SV-213441r1190717",
+      "RuleTitle": "Microsoft Defender AV Group Policy settings must take priority over the local preference settings."
+    },
+    {
+      "GroupId": "V-213442",
+      "RuleVersion": "WNDF-AV-000018",
+      "PreviousRuleId": "SV-213442r1144028",
+      "CurrentRuleId": "SV-213442r1190718",
+      "RuleTitle": "Microsoft Defender AV must monitor for incoming and outgoing files."
+    },
+    {
+      "GroupId": "V-213443",
+      "RuleVersion": "WNDF-AV-000019",
+      "PreviousRuleId": "SV-213443r961194",
+      "CurrentRuleId": "SV-213443r1190719",
+      "RuleTitle": "Microsoft Defender AV must be configured to monitor for file and program activity."
+    },
+    {
+      "GroupId": "V-213445",
+      "RuleVersion": "WNDF-AV-000021",
+      "PreviousRuleId": "SV-213445r961194",
+      "CurrentRuleId": "SV-213445r1190720",
+      "RuleTitle": "Microsoft Defender AV must be configured to always enable real-time protection."
+    },
+    {
+      "GroupId": "V-213447",
+      "RuleVersion": "WNDF-AV-000023",
+      "PreviousRuleId": "SV-213447r961194",
+      "CurrentRuleId": "SV-213447r1190721",
+      "RuleTitle": "Microsoft Defender AV must be configured to process scanning when real-time protection is enabled."
+    },
+    {
+      "GroupId": "V-213448",
+      "RuleVersion": "WNDF-AV-000024",
+      "PreviousRuleId": "SV-213448r961194",
+      "CurrentRuleId": "SV-213448r1190722",
+      "RuleTitle": "Microsoft Defender AV must be configured to scan archive files."
+    },
+    {
+      "GroupId": "V-213452",
+      "RuleVersion": "WNDF-AV-000028",
+      "PreviousRuleId": "SV-213452r961188",
+      "CurrentRuleId": "SV-213452r1190723",
+      "RuleTitle": "Microsoft Defender AV spyware definition age must not exceed 7 days."
+    },
+    {
+      "GroupId": "V-213453",
+      "RuleVersion": "WNDF-AV-000029",
+      "PreviousRuleId": "SV-213453r961188",
+      "CurrentRuleId": "SV-213453r1190724",
+      "RuleTitle": "Microsoft Defender AV virus definition age must not exceed 7 days."
+    },
+    {
+      "GroupId": "V-278647",
+      "RuleVersion": "WNDF-AV-000043",
+      "PreviousRuleId": "SV-278647r1144030",
+      "CurrentRuleId": "SV-278647r1190726",
+      "RuleTitle": "Microsoft Defender AV must block Adobe Reader from creating child processes."
+    },
+    {
+      "GroupId": "V-278648",
+      "RuleVersion": "WNDF-AV-000044",
+      "PreviousRuleId": "SV-278648r1144032",
+      "CurrentRuleId": "SV-278648r1190728",
+      "RuleTitle": "Microsoft Defender AV must block credential stealing from the Windows local security authority subsystem."
+    },
+    {
+      "GroupId": "V-278649",
+      "RuleVersion": "WNDF-AV-000045",
+      "PreviousRuleId": "SV-278649r1144034",
+      "CurrentRuleId": "SV-278649r1190730",
+      "RuleTitle": "Microsoft Defender AV must block untrusted and unsigned processes that run from USB."
+    },
+    {
+      "GroupId": "V-278650",
+      "RuleVersion": "WNDF-AV-000046",
+      "PreviousRuleId": "SV-278650r1144036",
+      "CurrentRuleId": "SV-278650r1190732",
+      "RuleTitle": "Microsoft Defender AV must use advanced protection against ransomware."
+    },
+    {
+      "GroupId": "V-278651",
+      "RuleVersion": "WNDF-AV-000047",
+      "PreviousRuleId": "SV-278651r1144039",
+      "CurrentRuleId": "SV-278651r1190734",
+      "RuleTitle": "Microsoft Defender AV must audit process creations originating from PSExec and WMI commands."
+    },
+    {
+      "GroupId": "V-278652",
+      "RuleVersion": "WNDF-AV-000048",
+      "PreviousRuleId": "SV-278652r1144042",
+      "CurrentRuleId": "SV-278652r1190736",
+      "RuleTitle": "Microsoft Defender AV must audit persistence through WMI event subscription."
+    },
+    {
+      "GroupId": "V-278653",
+      "RuleVersion": "WNDF-AV-000049",
+      "PreviousRuleId": "SV-278653r1144045",
+      "CurrentRuleId": "SV-278653r1190738",
+      "RuleTitle": "Microsoft Defender AV must audit executable files from running unless they meet a prevalence, age, or trusted list criterion."
+    },
+    {
+      "GroupId": "V-278654",
+      "RuleVersion": "WNDF-AV-000050",
+      "PreviousRuleId": "SV-278654r1144047",
+      "CurrentRuleId": "SV-278654r1190740",
+      "RuleTitle": "Microsoft Defender AV must block Office communication application from creating child processes."
+    },
+    {
+      "GroupId": "V-278655",
+      "RuleVersion": "WNDF-AV-000051",
+      "PreviousRuleId": "SV-278655r1144049",
+      "CurrentRuleId": "SV-278655r1190742",
+      "RuleTitle": "Microsoft Defender AV must block abuse of exploited vulnerable signed drivers."
+    },
+    {
+      "GroupId": "V-278656",
+      "RuleVersion": "WNDF-AV-000052",
+      "PreviousRuleId": "SV-278656r1144051",
+      "CurrentRuleId": "SV-278656r1190744",
+      "RuleTitle": "Microsoft Defender AV must configure local administrator merge behavior for lists."
+    },
+    {
+      "GroupId": "V-278658",
+      "RuleVersion": "WNDF-AV-000054",
+      "PreviousRuleId": "SV-278658r1156519",
+      "CurrentRuleId": "SV-278658r1190746",
+      "RuleTitle": "Microsoft Defender AV must control whether exclusions are visible to Local Admins."
+    },
+    {
+      "GroupId": "V-278659",
+      "RuleVersion": "WNDF-AV-000055",
+      "PreviousRuleId": "SV-278659r1144055",
+      "CurrentRuleId": "SV-278659r1190748",
+      "RuleTitle": "Microsoft Defender AV must randomize scheduled task times."
+    },
+    {
+      "GroupId": "V-278660",
+      "RuleVersion": "WNDF-AV-000056",
+      "PreviousRuleId": "SV-278660r1144057",
+      "CurrentRuleId": "SV-278660r1190750",
+      "RuleTitle": "Microsoft Defender AV must hide the Family options area."
+    },
+    {
+      "GroupId": "V-278661",
+      "RuleVersion": "WNDF-AV-000057",
+      "PreviousRuleId": "SV-278661r1144059",
+      "CurrentRuleId": "SV-278661r1190752",
+      "RuleTitle": "Microsoft Defender AV must enable the file hash computation feature."
+    },
+    {
+      "GroupId": "V-278662",
+      "RuleVersion": "WNDF-AV-000058",
+      "PreviousRuleId": "SV-278662r1144061",
+      "CurrentRuleId": "SV-278662r1190754",
+      "RuleTitle": "Microsoft Defender AV must enable extended cloud check."
+    },
+    {
+      "GroupId": "V-278668",
+      "RuleVersion": "WNDF-AV-000064",
+      "PreviousRuleId": "SV-278668r1144063",
+      "CurrentRuleId": "SV-278668r1190756",
+      "RuleTitle": "Microsoft Defender AV must enable script scanning."
+    },
+    {
+      "GroupId": "V-278669",
+      "RuleVersion": "WNDF-AV-000065",
+      "PreviousRuleId": "SV-278669r1144065",
+      "CurrentRuleId": "SV-278669r1190758",
+      "RuleTitle": "Microsoft Defender AV must enable real-time protection and Security Intelligence Updates during OOBE."
+    },
+    {
+      "GroupId": "V-278672",
+      "RuleVersion": "WNDF-AV-000068",
+      "PreviousRuleId": "SV-278672r1144067",
+      "CurrentRuleId": "SV-278672r1190761",
+      "RuleTitle": "Microsoft Defender AV must enable network protection to be configured into block or audit mode on Windows Server."
+    },
+    {
+      "GroupId": "V-278674",
+      "RuleVersion": "WNDF-AV-000070",
+      "PreviousRuleId": "SV-278674r1144071",
+      "CurrentRuleId": "SV-278674r1190763",
+      "RuleTitle": "Microsoft Defender AV must enable EDR in block mode."
+    },
+    {
+      "GroupId": "V-278675",
+      "RuleVersion": "WNDF-AV-000071",
+      "PreviousRuleId": "SV-278675r1144073",
+      "CurrentRuleId": "SV-278675r1190765",
+      "RuleTitle": "Microsoft Defender AV must report Dynamic Signature dropped events."
+    },
+    {
+      "GroupId": "V-278676",
+      "RuleVersion": "WNDF-AV-000072",
+      "PreviousRuleId": "SV-278676r1144075",
+      "CurrentRuleId": "SV-278676r1190767",
+      "RuleTitle": "Microsoft Defender AV must scan excluded files and directories during quick scans."
+    },
+    {
+      "GroupId": "V-278677",
+      "RuleVersion": "WNDF-AV-000074",
+      "PreviousRuleId": "SV-278677r1144077",
+      "CurrentRuleId": "SV-278677r1190769",
+      "RuleTitle": "Microsoft Defender AV must convert warn verdict to block."
+    },
+    {
+      "GroupId": "V-278678",
+      "RuleVersion": "WNDF-AV-000075",
+      "PreviousRuleId": "SV-278678r1144079",
+      "CurrentRuleId": "SV-278678r1190771",
+      "RuleTitle": "Microsoft Defender AV must enable asynchronous inspection."
+    },
+    {
+      "GroupId": "V-278679",
+      "RuleVersion": "WNDF-AV-000076",
+      "PreviousRuleId": "SV-278679r1144081",
+      "CurrentRuleId": "SV-278679r1190773",
+      "RuleTitle": "Microsoft Defender AV must scan packed executables."
+    },
+    {
+      "GroupId": "V-278680",
+      "RuleVersion": "WNDF-AV-000077",
+      "PreviousRuleId": "SV-278680r1144083",
+      "CurrentRuleId": "SV-278680r1190775",
+      "RuleTitle": "Microsoft Defender AV must enable heuristics."
+    },
+    {
+      "GroupId": "V-278863",
+      "RuleVersion": "WNDF-AV-000073",
+      "PreviousRuleId": "SV-278863r1144086",
+      "CurrentRuleId": "SV-278863r1190777",
+      "RuleTitle": "Microsoft Defender AV must set cloud protection level to High."
+    }
+  ],
+  "PreviousVersion": "V2R7",
+  "CurrentVersion": "V2R8",
+  "PreviousPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R8_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2026-02-17",
+      "BenchmarkDate": "2026-04-01",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-11-25",
+      "BenchmarkDate": "2026-01-05",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "MS Defender Antivirus STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
+  "StigId": "MS_Defender_Antivirus",
+  "RemovedGroups": []
+}

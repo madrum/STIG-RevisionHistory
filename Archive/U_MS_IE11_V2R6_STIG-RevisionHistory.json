@@ -1,0 +1,975 @@
+{
+  "StigId": "IE_11_STIG",
+  "ScanType": "SemiAutomated",
+  "PreviousPackage": "U_MS_IE11_V2R5_STIG.zip",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-223015",
+      "RuleVersion": "DTBI015-IE11",
+      "PreviousRuleId": "SV-223015r879887",
+      "CurrentRuleId": "SV-223015r961863",
+      "RuleTitle": "The Internet Explorer warning about certificate address mismatch must be enforced."
+    },
+    {
+      "GroupId": "V-223016",
+      "RuleVersion": "DTBI018-IE11",
+      "PreviousRuleId": "SV-223016r879612",
+      "CurrentRuleId": "SV-223016r961038",
+      "RuleTitle": "Check for publishers certificate revocation must be enforced."
+    },
+    {
+      "GroupId": "V-223017",
+      "RuleVersion": "DTBI022-IE11",
+      "PreviousRuleId": "SV-223017r879629",
+      "CurrentRuleId": "SV-223017r961089",
+      "RuleTitle": "The Download signed ActiveX controls property must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223018",
+      "RuleVersion": "DTBI023-IE11",
+      "PreviousRuleId": "SV-223018r879629",
+      "CurrentRuleId": "SV-223018r961089",
+      "RuleTitle": "The Download unsigned ActiveX controls property must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223019",
+      "RuleVersion": "DTBI024-IE11",
+      "PreviousRuleId": "SV-223019r879630",
+      "CurrentRuleId": "SV-223019r961092",
+      "RuleTitle": "The Initialize and script ActiveX controls not marked as safe property must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223020",
+      "RuleVersion": "DTBI031-IE11",
+      "PreviousRuleId": "SV-223020r879587",
+      "CurrentRuleId": "SV-223020r960963",
+      "RuleTitle": "The Java permissions must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223021",
+      "RuleVersion": "DTBI032-IE11",
+      "PreviousRuleId": "SV-223021r879534",
+      "CurrentRuleId": "SV-223021r1117169",
+      "RuleTitle": "Accessing data sources across domains must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223022",
+      "RuleVersion": "DTBI036-IE11",
+      "PreviousRuleId": "SV-223022r879587",
+      "CurrentRuleId": "SV-223022r960963",
+      "RuleTitle": "Functionality to drag and drop or copy and paste files must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223023",
+      "RuleVersion": "DTBI038-IE11",
+      "PreviousRuleId": "SV-223023r879587",
+      "CurrentRuleId": "SV-223023r960963",
+      "RuleTitle": "Launching programs and files in IFRAME must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223024",
+      "RuleVersion": "DTBI039-IE11",
+      "PreviousRuleId": "SV-223024r879534",
+      "CurrentRuleId": "SV-223024r1117169",
+      "RuleTitle": "Navigating windows and frames across different domains must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223025",
+      "RuleVersion": "DTBI042-IE11",
+      "PreviousRuleId": "SV-223025r879642",
+      "CurrentRuleId": "SV-223025r961128",
+      "RuleTitle": "Userdata persistence must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223026",
+      "RuleVersion": "DTBI044-IE11",
+      "PreviousRuleId": "SV-223026r879587",
+      "CurrentRuleId": "SV-223026r960963",
+      "RuleTitle": "Clipboard operations via script must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223027",
+      "RuleVersion": "DTBI046-IE11",
+      "PreviousRuleId": "SV-223027r879636",
+      "CurrentRuleId": "SV-223027r1043178",
+      "RuleTitle": "Logon options must be configured to prompt (Internet zone)."
+    },
+    {
+      "GroupId": "V-223028",
+      "RuleVersion": "DTBI061-IE11",
+      "PreviousRuleId": "SV-223028r879587",
+      "CurrentRuleId": "SV-223028r960963",
+      "RuleTitle": "Java permissions must be configured with High Safety (Intranet zone)."
+    },
+    {
+      "GroupId": "V-223029",
+      "RuleVersion": "DTBI062-IE11",
+      "PreviousRuleId": "SV-223029r879628",
+      "CurrentRuleId": "SV-223029r961086",
+      "RuleTitle": "Anti-Malware programs against ActiveX controls must be run for the Intranet zone."
+    },
+    {
+      "GroupId": "V-223030",
+      "RuleVersion": "DTBI091-IE11",
+      "PreviousRuleId": "SV-223030r879587",
+      "CurrentRuleId": "SV-223030r960963",
+      "RuleTitle": "Java permissions must be configured with High Safety (Trusted Sites zone)."
+    },
+    {
+      "GroupId": "V-223031",
+      "RuleVersion": "DTBI092-IE11",
+      "PreviousRuleId": "SV-223031r879628",
+      "CurrentRuleId": "SV-223031r961086",
+      "RuleTitle": "Anti-Malware programs against ActiveX controls must be run for the Trusted Sites zone."
+    },
+    {
+      "GroupId": "V-223032",
+      "RuleVersion": "DTBI1000-IE11",
+      "PreviousRuleId": "SV-223032r879534",
+      "CurrentRuleId": "SV-223032r1117169",
+      "RuleTitle": "Dragging of content from different domains within a window must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223033",
+      "RuleVersion": "DTBI1005-IE11",
+      "PreviousRuleId": "SV-223033r879534",
+      "CurrentRuleId": "SV-223033r1117169",
+      "RuleTitle": "Dragging of content from different domains across windows must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223034",
+      "RuleVersion": "DTBI1010-IE11",
+      "PreviousRuleId": "SV-223034r879573",
+      "CurrentRuleId": "SV-223034r960921",
+      "RuleTitle": "Internet Explorer Processes Restrict ActiveX Install must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223035",
+      "RuleVersion": "DTBI1020-IE11",
+      "PreviousRuleId": "SV-223035r879573",
+      "CurrentRuleId": "SV-223035r960921",
+      "RuleTitle": "Internet Explorer Processes Restrict ActiveX Install must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223036",
+      "RuleVersion": "DTBI1025-IE11",
+      "PreviousRuleId": "SV-223036r879534",
+      "CurrentRuleId": "SV-223036r1117169",
+      "RuleTitle": "Dragging of content from different domains within a window must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223037",
+      "RuleVersion": "DTBI1046-IE11",
+      "PreviousRuleId": "SV-223037r879628",
+      "CurrentRuleId": "SV-223037r961086",
+      "RuleTitle": "Anti-Malware programs against ActiveX controls must be run for the Internet zone."
+    },
+    {
+      "GroupId": "V-223038",
+      "RuleVersion": "DTBI1051-IE11",
+      "PreviousRuleId": "SV-223038r879628",
+      "CurrentRuleId": "SV-223038r961086",
+      "RuleTitle": "Anti-Malware programs against ActiveX controls must be run for the Restricted Sites zone."
+    },
+    {
+      "GroupId": "V-223039",
+      "RuleVersion": "DTBI1060-IE11",
+      "PreviousRuleId": "SV-223039r879664",
+      "CurrentRuleId": "SV-223039r961194",
+      "RuleTitle": "Prevent bypassing SmartScreen Filter warnings must be enabled."
+    },
+    {
+      "GroupId": "V-223040",
+      "RuleVersion": "DTBI1065-IE11",
+      "PreviousRuleId": "SV-223040r879629",
+      "CurrentRuleId": "SV-223040r961089",
+      "RuleTitle": "Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the internet must be enabled."
+    },
+    {
+      "GroupId": "V-223041",
+      "RuleVersion": "DTBI1070-IE11",
+      "PreviousRuleId": "SV-223041r879630",
+      "CurrentRuleId": "SV-223041r961092",
+      "RuleTitle": "Prevent per-user installation of ActiveX controls must be enabled."
+    },
+    {
+      "GroupId": "V-223042",
+      "RuleVersion": "DTBI1075-IE11",
+      "PreviousRuleId": "SV-223042r942482",
+      "CurrentRuleId": "SV-223042r961596",
+      "RuleTitle": "Prevent ignoring certificate errors option must be enabled."
+    },
+    {
+      "GroupId": "V-223043",
+      "RuleVersion": "DTBI1080-IE11",
+      "PreviousRuleId": "SV-223043r879664",
+      "CurrentRuleId": "SV-223043r961194",
+      "RuleTitle": "Turn on SmartScreen Filter scan option for the Internet Zone must be enabled."
+    },
+    {
+      "GroupId": "V-223044",
+      "RuleVersion": "DTBI1085-IE11",
+      "PreviousRuleId": "SV-223044r879664",
+      "CurrentRuleId": "SV-223044r961194",
+      "RuleTitle": "Turn on SmartScreen Filter scan option for the Restricted Sites Zone must be enabled."
+    },
+    {
+      "GroupId": "V-223045",
+      "RuleVersion": "DTBI1090-IE11",
+      "PreviousRuleId": "SV-223045r879630",
+      "CurrentRuleId": "SV-223045r961092",
+      "RuleTitle": "The Initialize and script ActiveX controls not marked as safe must be disallowed (Intranet Zone)."
+    },
+    {
+      "GroupId": "V-223046",
+      "RuleVersion": "DTBI1095-IE11",
+      "PreviousRuleId": "SV-223046r879630",
+      "CurrentRuleId": "SV-223046r961092",
+      "RuleTitle": "The Initialize and script ActiveX controls not marked as safe must be disallowed (Trusted Sites Zone)."
+    },
+    {
+      "GroupId": "V-223048",
+      "RuleVersion": "DTBI1105-IE11",
+      "PreviousRuleId": "SV-223048r879587",
+      "CurrentRuleId": "SV-223048r960963",
+      "RuleTitle": "Run once selection for running outdated ActiveX controls must be disabled."
+    },
+    {
+      "GroupId": "V-223049",
+      "RuleVersion": "DTBI1110-IE11",
+      "PreviousRuleId": "SV-223049r879587",
+      "CurrentRuleId": "SV-223049r960963",
+      "RuleTitle": "Enabling outdated ActiveX controls for Internet Explorer must be blocked."
+    },
+    {
+      "GroupId": "V-223050",
+      "RuleVersion": "DTBI1115-IE11",
+      "PreviousRuleId": "SV-223050r879587",
+      "CurrentRuleId": "SV-223050r960963",
+      "RuleTitle": "Use of the Tabular Data Control (TDC) ActiveX control must be disabled for the Internet Zone."
+    },
+    {
+      "GroupId": "V-223051",
+      "RuleVersion": "DTBI112-IE11",
+      "PreviousRuleId": "SV-223051r879629",
+      "CurrentRuleId": "SV-223051r961089",
+      "RuleTitle": "The Download signed ActiveX controls property must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223052",
+      "RuleVersion": "DTBI1120-IE11",
+      "PreviousRuleId": "SV-223052r879587",
+      "CurrentRuleId": "SV-223052r960963",
+      "RuleTitle": "Use of the Tabular Data Control (TDC) ActiveX control must be disabled for the Restricted Sites Zone."
+    },
+    {
+      "GroupId": "V-223053",
+      "RuleVersion": "DTBI1125-IE11",
+      "PreviousRuleId": "SV-223053r879629",
+      "CurrentRuleId": "SV-223053r961089",
+      "RuleTitle": "VBScript must not be allowed to run in Internet Explorer (Internet zone)."
+    },
+    {
+      "GroupId": "V-223054",
+      "RuleVersion": "DTBI113-IE11",
+      "PreviousRuleId": "SV-223054r879629",
+      "CurrentRuleId": "SV-223054r961089",
+      "RuleTitle": "The Download unsigned ActiveX controls property must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223055",
+      "RuleVersion": "DTBI1130-IE11",
+      "PreviousRuleId": "SV-223055r879629",
+      "CurrentRuleId": "SV-223055r961089",
+      "RuleTitle": "VBScript must not be allowed to run in Internet Explorer (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223056",
+      "RuleVersion": "DTBI1135-IE11",
+      "PreviousRuleId": "SV-223056r879655",
+      "CurrentRuleId": "SV-223056r961167",
+      "RuleTitle": "Internet Explorer Development Tools Must Be Disabled."
+    },
+    {
+      "GroupId": "V-223057",
+      "RuleVersion": "DTBI114-IE11",
+      "PreviousRuleId": "SV-223057r879630",
+      "CurrentRuleId": "SV-223057r961092",
+      "RuleTitle": "The Initialize and script ActiveX controls not marked as safe property must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223058",
+      "RuleVersion": "DTBI115-IE11",
+      "PreviousRuleId": "SV-223058r879887",
+      "CurrentRuleId": "SV-223058r961863",
+      "RuleTitle": "ActiveX controls and plug-ins must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223059",
+      "RuleVersion": "DTBI116-IE11",
+      "PreviousRuleId": "SV-223059r879630",
+      "CurrentRuleId": "SV-223059r961092",
+      "RuleTitle": "ActiveX controls marked safe for scripting must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223060",
+      "RuleVersion": "DTBI119-IE11",
+      "PreviousRuleId": "SV-223060r879587",
+      "CurrentRuleId": "SV-223060r960963",
+      "RuleTitle": "File downloads must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223061",
+      "RuleVersion": "DTBI121-IE11",
+      "PreviousRuleId": "SV-223061r879587",
+      "CurrentRuleId": "SV-223061r960963",
+      "RuleTitle": "Java permissions must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223062",
+      "RuleVersion": "DTBI122-IE11",
+      "PreviousRuleId": "SV-223062r879534",
+      "CurrentRuleId": "SV-223062r1117169",
+      "RuleTitle": "Accessing data sources across domains must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223063",
+      "RuleVersion": "DTBI123-IE11",
+      "PreviousRuleId": "SV-223063r879887",
+      "CurrentRuleId": "SV-223063r961863",
+      "RuleTitle": "The Allow META REFRESH property must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223064",
+      "RuleVersion": "DTBI126-IE11",
+      "PreviousRuleId": "SV-223064r879587",
+      "CurrentRuleId": "SV-223064r960963",
+      "RuleTitle": "Functionality to drag and drop or copy and paste files must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223065",
+      "RuleVersion": "DTBI128-IE11",
+      "PreviousRuleId": "SV-223065r879587",
+      "CurrentRuleId": "SV-223065r960963",
+      "RuleTitle": "Launching programs and files in IFRAME must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223066",
+      "RuleVersion": "DTBI129-IE11",
+      "PreviousRuleId": "SV-223066r879534",
+      "CurrentRuleId": "SV-223066r1117169",
+      "RuleTitle": "Navigating windows and frames across different domains must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223067",
+      "RuleVersion": "DTBI132-IE11",
+      "PreviousRuleId": "SV-223067r879642",
+      "CurrentRuleId": "SV-223067r961128",
+      "RuleTitle": "Userdata persistence must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223068",
+      "RuleVersion": "DTBI133-IE11",
+      "PreviousRuleId": "SV-223068r879587",
+      "CurrentRuleId": "SV-223068r960963",
+      "RuleTitle": "Active scripting must be disallowed (Restricted Sites Zone)."
+    },
+    {
+      "GroupId": "V-223069",
+      "RuleVersion": "DTBI134-IE11",
+      "PreviousRuleId": "SV-223069r879587",
+      "CurrentRuleId": "SV-223069r960963",
+      "RuleTitle": "Clipboard operations via script must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223070",
+      "RuleVersion": "DTBI136-IE11",
+      "PreviousRuleId": "SV-223070r879636",
+      "CurrentRuleId": "SV-223070r1043178",
+      "RuleTitle": "Logon options must be configured and enforced (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223071",
+      "RuleVersion": "DTBI300-IE11",
+      "PreviousRuleId": "SV-223071r879559",
+      "CurrentRuleId": "SV-223071r960879",
+      "RuleTitle": "Configuring History setting must be set to 40 days."
+    },
+    {
+      "GroupId": "V-223072",
+      "RuleVersion": "DTBI318-IE11",
+      "PreviousRuleId": "SV-223072r879587",
+      "CurrentRuleId": "SV-223072r960963",
+      "RuleTitle": "Internet Explorer must be set to disallow users to add/delete sites."
+    },
+    {
+      "GroupId": "V-223073",
+      "RuleVersion": "DTBI319-IE11",
+      "PreviousRuleId": "SV-223073r879887",
+      "CurrentRuleId": "SV-223073r961863",
+      "RuleTitle": "Internet Explorer must be configured to disallow users to change policies."
+    },
+    {
+      "GroupId": "V-223074",
+      "RuleVersion": "DTBI320-IE11",
+      "PreviousRuleId": "SV-223074r879887",
+      "CurrentRuleId": "SV-223074r961863",
+      "RuleTitle": "Internet Explorer must be configured to use machine settings."
+    },
+    {
+      "GroupId": "V-223075",
+      "RuleVersion": "DTBI325-IE11",
+      "PreviousRuleId": "SV-223075r879887",
+      "CurrentRuleId": "SV-223075r961863",
+      "RuleTitle": "Security checking features must be enforced."
+    },
+    {
+      "GroupId": "V-223076",
+      "RuleVersion": "DTBI350-IE11",
+      "PreviousRuleId": "SV-223076r879630",
+      "CurrentRuleId": "SV-223076r961092",
+      "RuleTitle": "Software must be disallowed to run or install with invalid signatures."
+    },
+    {
+      "GroupId": "V-223077",
+      "RuleVersion": "DTBI356-IE11",
+      "PreviousRuleId": "SV-223077r879643",
+      "CurrentRuleId": "SV-223077r961131",
+      "RuleTitle": "The 64-bit tab processes, when running in Enhanced Protected Mode on 64-bit versions of Windows, must be turned on."
+    },
+    {
+      "GroupId": "V-223078",
+      "RuleVersion": "DTBI365-IE11",
+      "PreviousRuleId": "SV-223078r879612",
+      "CurrentRuleId": "SV-223078r961038",
+      "RuleTitle": "Checking for server certificate revocation must be enforced."
+    },
+    {
+      "GroupId": "V-223079",
+      "RuleVersion": "DTBI370-IE11",
+      "PreviousRuleId": "SV-223079r942483",
+      "CurrentRuleId": "SV-223079r960954",
+      "RuleTitle": "Checking for signatures on downloaded programs must be enforced."
+    },
+    {
+      "GroupId": "V-223080",
+      "RuleVersion": "DTBI375-IE11",
+      "PreviousRuleId": "SV-223080r879887",
+      "CurrentRuleId": "SV-223080r961863",
+      "RuleTitle": "All network paths (UNCs) for Intranet sites must be disallowed."
+    },
+    {
+      "GroupId": "V-223081",
+      "RuleVersion": "DTBI385-IE11",
+      "PreviousRuleId": "SV-223081r879587",
+      "CurrentRuleId": "SV-223081r960963",
+      "RuleTitle": "Script-initiated windows without size or position constraints must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223082",
+      "RuleVersion": "DTBI390-IE11",
+      "PreviousRuleId": "SV-223082r879587",
+      "CurrentRuleId": "SV-223082r960963",
+      "RuleTitle": "Script-initiated windows without size or position constraints must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223083",
+      "RuleVersion": "DTBI395-IE11",
+      "PreviousRuleId": "SV-223083r879587",
+      "CurrentRuleId": "SV-223083r960963",
+      "RuleTitle": "Scriptlets must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223084",
+      "RuleVersion": "DTBI415-IE11",
+      "PreviousRuleId": "SV-223084r879587",
+      "CurrentRuleId": "SV-223084r960963",
+      "RuleTitle": "Automatic prompting for file downloads must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223085",
+      "RuleVersion": "DTBI425-IE11",
+      "PreviousRuleId": "SV-223085r879587",
+      "CurrentRuleId": "SV-223085r960963",
+      "RuleTitle": "Java permissions must be disallowed (Local Machine zone)."
+    },
+    {
+      "GroupId": "V-223086",
+      "RuleVersion": "DTBI426-IE11",
+      "PreviousRuleId": "SV-223086r879628",
+      "CurrentRuleId": "SV-223086r961086",
+      "RuleTitle": "Anti-Malware programs against ActiveX controls must be run for the Local Machine zone."
+    },
+    {
+      "GroupId": "V-223087",
+      "RuleVersion": "DTBI430-IE11",
+      "PreviousRuleId": "SV-223087r879587",
+      "CurrentRuleId": "SV-223087r960963",
+      "RuleTitle": "Java permissions must be disallowed (Locked Down Local Machine zone)."
+    },
+    {
+      "GroupId": "V-223088",
+      "RuleVersion": "DTBI435-IE11",
+      "PreviousRuleId": "SV-223088r879587",
+      "CurrentRuleId": "SV-223088r960963",
+      "RuleTitle": "Java permissions must be disallowed (Locked Down Intranet zone)."
+    },
+    {
+      "GroupId": "V-223089",
+      "RuleVersion": "DTBI440-IE11",
+      "PreviousRuleId": "SV-223089r879587",
+      "CurrentRuleId": "SV-223089r960963",
+      "RuleTitle": "Java permissions must be disallowed (Locked Down Trusted Sites zone)."
+    },
+    {
+      "GroupId": "V-223090",
+      "RuleVersion": "DTBI450-IE11",
+      "PreviousRuleId": "SV-223090r879587",
+      "CurrentRuleId": "SV-223090r960963",
+      "RuleTitle": "Java permissions must be disallowed (Locked Down Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223091",
+      "RuleVersion": "DTBI455-IE11",
+      "PreviousRuleId": "SV-223091r879887",
+      "CurrentRuleId": "SV-223091r961863",
+      "RuleTitle": "XAML files must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223092",
+      "RuleVersion": "DTBI460-IE11",
+      "PreviousRuleId": "SV-223092r879887",
+      "CurrentRuleId": "SV-223092r961863",
+      "RuleTitle": "XAML files must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223093",
+      "RuleVersion": "DTBI485-IE11",
+      "PreviousRuleId": "SV-223093r879643",
+      "CurrentRuleId": "SV-223093r961131",
+      "RuleTitle": "Protected Mode must be enforced (Internet zone)."
+    },
+    {
+      "GroupId": "V-223094",
+      "RuleVersion": "DTBI490-IE11",
+      "PreviousRuleId": "SV-223094r879643",
+      "CurrentRuleId": "SV-223094r961131",
+      "RuleTitle": "Protected Mode must be enforced (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223095",
+      "RuleVersion": "DTBI495-IE11",
+      "PreviousRuleId": "SV-223095r879587",
+      "CurrentRuleId": "SV-223095r960963",
+      "RuleTitle": "Pop-up Blocker must be enforced (Internet zone)."
+    },
+    {
+      "GroupId": "V-223096",
+      "RuleVersion": "DTBI500-IE11",
+      "PreviousRuleId": "SV-223096r879587",
+      "CurrentRuleId": "SV-223096r960963",
+      "RuleTitle": "Pop-up Blocker must be enforced (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223097",
+      "RuleVersion": "DTBI515-IE11",
+      "PreviousRuleId": "SV-223097r879534",
+      "CurrentRuleId": "SV-223097r1117169",
+      "RuleTitle": "Websites in less privileged web content zones must be prevented from navigating into the Internet zone."
+    },
+    {
+      "GroupId": "V-223098",
+      "RuleVersion": "DTBI520-IE11",
+      "PreviousRuleId": "SV-223098r879534",
+      "CurrentRuleId": "SV-223098r1117169",
+      "RuleTitle": "Websites in less privileged web content zones must be prevented from navigating into the Restricted Sites zone."
+    },
+    {
+      "GroupId": "V-223099",
+      "RuleVersion": "DTBI575-IE11",
+      "PreviousRuleId": "SV-223099r879587",
+      "CurrentRuleId": "SV-223099r960963",
+      "RuleTitle": "Allow binary and script behaviors must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223100",
+      "RuleVersion": "DTBI580-IE11",
+      "PreviousRuleId": "SV-223100r879587",
+      "CurrentRuleId": "SV-223100r960963",
+      "RuleTitle": "Automatic prompting for file downloads must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223101",
+      "RuleVersion": "DTBI590-IE11",
+      "PreviousRuleId": "SV-223101r879627",
+      "CurrentRuleId": "SV-223101r961083",
+      "RuleTitle": "Internet Explorer Processes for MIME handling must be enforced. (Reserved)"
+    },
+    {
+      "GroupId": "V-223102",
+      "RuleVersion": "DTBI592-IE11",
+      "PreviousRuleId": "SV-223102r879627",
+      "CurrentRuleId": "SV-223102r961083",
+      "RuleTitle": "Internet Explorer Processes for MIME handling must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223103",
+      "RuleVersion": "DTBI594-IE11",
+      "PreviousRuleId": "SV-223103r879627",
+      "CurrentRuleId": "SV-223103r961083",
+      "RuleTitle": "Internet Explorer Processes for MIME handling must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223104",
+      "RuleVersion": "DTBI595-IE11",
+      "PreviousRuleId": "SV-223104r879627",
+      "CurrentRuleId": "SV-223104r961083",
+      "RuleTitle": "Internet Explorer Processes for MIME sniffing must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223105",
+      "RuleVersion": "DTBI596-IE11",
+      "PreviousRuleId": "SV-223105r879627",
+      "CurrentRuleId": "SV-223105r961083",
+      "RuleTitle": "Internet Explorer Processes for MIME sniffing must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223106",
+      "RuleVersion": "DTBI597-IE11",
+      "PreviousRuleId": "SV-223106r879627",
+      "CurrentRuleId": "SV-223106r961083",
+      "RuleTitle": "Internet Explorer Processes for MIME sniffing must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223107",
+      "RuleVersion": "DTBI599-IE11",
+      "PreviousRuleId": "SV-223107r879587",
+      "CurrentRuleId": "SV-223107r960963",
+      "RuleTitle": "Internet Explorer Processes for MK protocol must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223108",
+      "RuleVersion": "DTBI600-IE11",
+      "PreviousRuleId": "SV-223108r879587",
+      "CurrentRuleId": "SV-223108r960963",
+      "RuleTitle": "Internet Explorer Processes for MK protocol must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223109",
+      "RuleVersion": "DTBI605-IE11",
+      "PreviousRuleId": "SV-223109r879587",
+      "CurrentRuleId": "SV-223109r960963",
+      "RuleTitle": "Internet Explorer Processes for MK protocol must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223110",
+      "RuleVersion": "DTBI610-IE11",
+      "PreviousRuleId": "SV-223110r879643",
+      "CurrentRuleId": "SV-223110r961131",
+      "RuleTitle": "Internet Explorer Processes for Zone Elevation must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223111",
+      "RuleVersion": "DTBI612-IE11",
+      "PreviousRuleId": "SV-223111r879643",
+      "CurrentRuleId": "SV-223111r961131",
+      "RuleTitle": "Internet Explorer Processes for Zone Elevation must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223112",
+      "RuleVersion": "DTBI614-IE11",
+      "PreviousRuleId": "SV-223112r879643",
+      "CurrentRuleId": "SV-223112r961131",
+      "RuleTitle": "Internet Explorer Processes for Zone Elevation must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223113",
+      "RuleVersion": "DTBI630-IE11",
+      "PreviousRuleId": "SV-223113r879587",
+      "CurrentRuleId": "SV-223113r960963",
+      "RuleTitle": "Internet Explorer Processes for Restrict File Download must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223114",
+      "RuleVersion": "DTBI635-IE11",
+      "PreviousRuleId": "SV-223114r879587",
+      "CurrentRuleId": "SV-223114r960963",
+      "RuleTitle": "Internet Explorer Processes for Restrict File Download must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223115",
+      "RuleVersion": "DTBI640-IE11",
+      "PreviousRuleId": "SV-223115r879587",
+      "CurrentRuleId": "SV-223115r960963",
+      "RuleTitle": "Internet Explorer Processes for Restrict File Download must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223116",
+      "RuleVersion": "DTBI645-IE11",
+      "PreviousRuleId": "SV-223116r879587",
+      "CurrentRuleId": "SV-223116r960963",
+      "RuleTitle": "Internet Explorer Processes for restricting pop-up windows must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223117",
+      "RuleVersion": "DTBI647-IE11",
+      "PreviousRuleId": "SV-223117r879587",
+      "CurrentRuleId": "SV-223117r960963",
+      "RuleTitle": "Internet Explorer Processes for restricting pop-up windows must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223118",
+      "RuleVersion": "DTBI649-IE11",
+      "PreviousRuleId": "SV-223118r879587",
+      "CurrentRuleId": "SV-223118r960963",
+      "RuleTitle": "Internet Explorer Processes for restricting pop-up windows must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223119",
+      "RuleVersion": "DTBI650-IE11",
+      "PreviousRuleId": "SV-223119r879887",
+      "CurrentRuleId": "SV-223119r961863",
+      "RuleTitle": ".NET Framework-reliant components not signed with Authenticode must be disallowed to run (Restricted Sites Zone)."
+    },
+    {
+      "GroupId": "V-223120",
+      "RuleVersion": "DTBI655-IE11",
+      "PreviousRuleId": "SV-223120r879887",
+      "CurrentRuleId": "SV-223120r961863",
+      "RuleTitle": ".NET Framework-reliant components signed with Authenticode must be disallowed to run (Restricted Sites Zone)."
+    },
+    {
+      "GroupId": "V-223121",
+      "RuleVersion": "DTBI670-IE11",
+      "PreviousRuleId": "SV-223121r879587",
+      "CurrentRuleId": "SV-223121r960963",
+      "RuleTitle": "Scripting of Java applets must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223122",
+      "RuleVersion": "DTBI690-IE11",
+      "PreviousRuleId": "SV-223122r879587",
+      "CurrentRuleId": "SV-223122r960963",
+      "RuleTitle": "AutoComplete feature for forms must be disallowed."
+    },
+    {
+      "GroupId": "V-223123",
+      "RuleVersion": "DTBI715-IE11",
+      "PreviousRuleId": "SV-223123r879587",
+      "CurrentRuleId": "SV-223123r960963",
+      "RuleTitle": "Crash Detection management must be enforced."
+    },
+    {
+      "GroupId": "V-223124",
+      "RuleVersion": "DTBI725-IE11",
+      "PreviousRuleId": "SV-223124r879587",
+      "CurrentRuleId": "SV-223124r960963",
+      "RuleTitle": "Turn on the auto-complete feature for user names and passwords on forms must be disabled."
+    },
+    {
+      "GroupId": "V-223125",
+      "RuleVersion": "DTBI740-IE11",
+      "PreviousRuleId": "SV-223125r879627",
+      "CurrentRuleId": "SV-223125r961083",
+      "RuleTitle": "Managing SmartScreen Filter use must be enforced."
+    },
+    {
+      "GroupId": "V-223126",
+      "RuleVersion": "DTBI760-IE11",
+      "PreviousRuleId": "SV-223126r879559",
+      "CurrentRuleId": "SV-223126r960879",
+      "RuleTitle": "Browser must retain history on exit."
+    },
+    {
+      "GroupId": "V-223127",
+      "RuleVersion": "DTBI770-IE11",
+      "PreviousRuleId": "SV-223127r879559",
+      "CurrentRuleId": "SV-223127r960879",
+      "RuleTitle": "Deleting websites that the user has visited must be disallowed."
+    },
+    {
+      "GroupId": "V-223128",
+      "RuleVersion": "DTBI780-IE11",
+      "PreviousRuleId": "SV-223128r879554",
+      "CurrentRuleId": "SV-223128r960864",
+      "RuleTitle": "InPrivate Browsing must be disallowed."
+    },
+    {
+      "GroupId": "V-223129",
+      "RuleVersion": "DTBI800-IE11",
+      "PreviousRuleId": "SV-223129r879587",
+      "CurrentRuleId": "SV-223129r960963",
+      "RuleTitle": "Scripting of Internet Explorer WebBrowser control property must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223130",
+      "RuleVersion": "DTBI810-IE11",
+      "PreviousRuleId": "SV-223130r879587",
+      "CurrentRuleId": "SV-223130r960963",
+      "RuleTitle": "When uploading files to a server, the local directory path must be excluded (Internet zone)."
+    },
+    {
+      "GroupId": "V-223131",
+      "RuleVersion": "DTBI815-IE11",
+      "PreviousRuleId": "SV-223131r879587",
+      "CurrentRuleId": "SV-223131r960963",
+      "RuleTitle": "Internet Explorer Processes for Notification Bars must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223132",
+      "RuleVersion": "DTBI820-IE11",
+      "PreviousRuleId": "SV-223132r879887",
+      "CurrentRuleId": "SV-223132r961863",
+      "RuleTitle": "Security Warning for unsafe files must be set to prompt (Internet zone)."
+    },
+    {
+      "GroupId": "V-223133",
+      "RuleVersion": "DTBI825-IE11",
+      "PreviousRuleId": "SV-223133r879587",
+      "CurrentRuleId": "SV-223133r960963",
+      "RuleTitle": "Internet Explorer Processes for Notification Bars must be enforced (Explorer)."
+    },
+    {
+      "GroupId": "V-223134",
+      "RuleVersion": "DTBI830-IE11",
+      "PreviousRuleId": "SV-223134r879630",
+      "CurrentRuleId": "SV-223134r961092",
+      "RuleTitle": "ActiveX controls without prompt property must be used in approved domains only (Internet zone)."
+    },
+    {
+      "GroupId": "V-223135",
+      "RuleVersion": "DTBI835-IE11",
+      "PreviousRuleId": "SV-223135r879587",
+      "CurrentRuleId": "SV-223135r960963",
+      "RuleTitle": "Internet Explorer Processes for Notification Bars must be enforced (iexplore)."
+    },
+    {
+      "GroupId": "V-223136",
+      "RuleVersion": "DTBI840-IE11",
+      "PreviousRuleId": "SV-223136r879587",
+      "CurrentRuleId": "SV-223136r960963",
+      "RuleTitle": "Cross-Site Scripting Filter must be enforced (Internet zone)."
+    },
+    {
+      "GroupId": "V-223137",
+      "RuleVersion": "DTBI850-IE11",
+      "PreviousRuleId": "SV-223137r879587",
+      "CurrentRuleId": "SV-223137r960963",
+      "RuleTitle": "Scripting of Internet Explorer WebBrowser Control must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223138",
+      "RuleVersion": "DTBI860-IE11",
+      "PreviousRuleId": "SV-223138r879587",
+      "CurrentRuleId": "SV-223138r960963",
+      "RuleTitle": "When uploading files to a server, the local directory path must be excluded (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223139",
+      "RuleVersion": "DTBI870-IE11",
+      "PreviousRuleId": "SV-223139r879887",
+      "CurrentRuleId": "SV-223139r961863",
+      "RuleTitle": "Security Warning for unsafe files must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223140",
+      "RuleVersion": "DTBI880-IE11",
+      "PreviousRuleId": "SV-223140r879630",
+      "CurrentRuleId": "SV-223140r961092",
+      "RuleTitle": "ActiveX controls without prompt property must be used in approved domains only (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223141",
+      "RuleVersion": "DTBI890-IE11",
+      "PreviousRuleId": "SV-223141r879587",
+      "CurrentRuleId": "SV-223141r960963",
+      "RuleTitle": "Cross-Site Scripting Filter property must be enforced (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223142",
+      "RuleVersion": "DTBI900-IE11",
+      "PreviousRuleId": "SV-223142r879573",
+      "CurrentRuleId": "SV-223142r960921",
+      "RuleTitle": "Internet Explorer Processes Restrict ActiveX Install must be enforced (Reserved)."
+    },
+    {
+      "GroupId": "V-223143",
+      "RuleVersion": "DTBI910-IE11",
+      "PreviousRuleId": "SV-223143r879587",
+      "CurrentRuleId": "SV-223143r960963",
+      "RuleTitle": "Status bar updates via script must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-223144",
+      "RuleVersion": "DTBI920-IE11",
+      "PreviousRuleId": "SV-223144r879887",
+      "CurrentRuleId": "SV-223144r961863",
+      "RuleTitle": ".NET Framework-reliant components not signed with Authenticode must be disallowed to run (Internet zone)."
+    },
+    {
+      "GroupId": "V-223145",
+      "RuleVersion": "DTBI930-IE11",
+      "PreviousRuleId": "SV-223145r879887",
+      "CurrentRuleId": "SV-223145r961863",
+      "RuleTitle": ".NET Framework-reliant components signed with Authenticode must be disallowed to run (Internet zone)."
+    },
+    {
+      "GroupId": "V-223146",
+      "RuleVersion": "DTBI940-IE11",
+      "PreviousRuleId": "SV-223146r879587",
+      "CurrentRuleId": "SV-223146r960963",
+      "RuleTitle": "Scriptlets must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223147",
+      "RuleVersion": "DTBI950-IE11",
+      "PreviousRuleId": "SV-223147r879587",
+      "CurrentRuleId": "SV-223147r960963",
+      "RuleTitle": "Status bar updates via script must be disallowed (Restricted Sites zone)."
+    },
+    {
+      "GroupId": "V-223148",
+      "RuleVersion": "DTBI985-IE11",
+      "PreviousRuleId": "SV-223148r879887",
+      "CurrentRuleId": "SV-223148r961863",
+      "RuleTitle": "When Enhanced Protected Mode is enabled, ActiveX controls must be disallowed to run in Protected Mode."
+    },
+    {
+      "GroupId": "V-223149",
+      "RuleVersion": "DTBI990-IE11",
+      "PreviousRuleId": "SV-223149r879534",
+      "CurrentRuleId": "SV-223149r1117169",
+      "RuleTitle": "Dragging of content from different domains across windows must be disallowed (Internet zone)."
+    },
+    {
+      "GroupId": "V-250540",
+      "RuleVersion": "DTBI014-IE11",
+      "PreviousRuleId": "SV-250540r942484",
+      "CurrentRuleId": "SV-250540r1117186",
+      "RuleTitle": "Turn off Encryption Support must be enabled."
+    },
+    {
+      "GroupId": "V-250541",
+      "RuleVersion": "DTBI1100-IE11",
+      "PreviousRuleId": "SV-250541r942485",
+      "CurrentRuleId": "SV-250541r1117186",
+      "RuleTitle": "Allow Fallback to SSL 3.0 (Internet Explorer) must be disabled."
+    },
+    {
+      "GroupId": "V-252910",
+      "RuleVersion": "DTBI999-IE11",
+      "PreviousRuleId": "SV-252910r942486",
+      "CurrentRuleId": "SV-252910r1156566",
+      "RuleTitle": "The version of Internet Explorer running on the system must be a supported version."
+    }
+  ],
+  "StigDisplayName": "MS IE11 STIG",
+  "Status": "Compared successfully.",
+  "CurrentPackage": "U_MS_IE11_V2R6_STIG.zip",
+  "PreviousVersion": "V2R5",
+  "CurrentVersion": "V2R6",
+  "RemovedGroups": [],
+  "AddedGroups": []
+}

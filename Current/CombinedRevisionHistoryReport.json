@@ -1,0 +1,1237 @@
+[
+  {
+    "StigId": "ASD_STIG",
+    "StigDisplayName": "ASD STIG",
+    "ScanType": "Manual",
+    "CurrentVersion": "V6R4",
+    "CurrentPackage": "U_ASD_V6R4_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+        "BenchmarkId": "Application_Security_Development_STIG",
+        "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-09-09",
+        "BenchmarkDate": "2025-10-01",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V6R3",
+    "PreviousPackage": "U_ASD_V6R3_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+        "BenchmarkId": "Application_Security_Development_STIG",
+        "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-02-12",
+        "BenchmarkDate": "2025-04-02",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-222393",
+        "RuleVersion": "APSC-DV-000110",
+        "PreviousRuleId": "SV-222393r961269",
+        "CurrentRuleId": "SV-222393r1136904",
+        "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in storage."
+      },
+      {
+        "GroupId": "V-222394",
+        "RuleVersion": "APSC-DV-000120",
+        "PreviousRuleId": "SV-222394r961272",
+        "CurrentRuleId": "SV-222394r1136906",
+        "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in process."
+      },
+      {
+        "GroupId": "V-222395",
+        "RuleVersion": "APSC-DV-000130",
+        "PreviousRuleId": "SV-222395r961275",
+        "CurrentRuleId": "SV-222395r1136908",
+        "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in transmission."
+      },
+      {
+        "GroupId": "V-222425",
+        "RuleVersion": "APSC-DV-000460",
+        "PreviousRuleId": "SV-222425r960792",
+        "CurrentRuleId": "SV-222425r1117167",
+        "RuleTitle": "The application must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies."
+      },
+      {
+        "GroupId": "V-222427",
+        "RuleVersion": "APSC-DV-000480",
+        "PreviousRuleId": "SV-222427r960801",
+        "CurrentRuleId": "SV-222427r1117168",
+        "RuleTitle": "The application must enforce approved authorizations for controlling the flow of information within the system based on organization-defined information flow control policies."
+      },
+      {
+        "GroupId": "V-222428",
+        "RuleVersion": "APSC-DV-000490",
+        "PreviousRuleId": "SV-222428r960804",
+        "CurrentRuleId": "SV-222428r1117169",
+        "RuleTitle": "The application must enforce approved authorizations for controlling the flow of information between interconnected systems based on organization-defined information flow control policies."
+      },
+      {
+        "GroupId": "V-222570",
+        "RuleVersion": "APSC-DV-002020",
+        "PreviousRuleId": "SV-222570r961857",
+        "CurrentRuleId": "SV-222570r1117181",
+        "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when signing application components."
+      },
+      {
+        "GroupId": "V-222571",
+        "RuleVersion": "APSC-DV-002030",
+        "PreviousRuleId": "SV-222571r961857",
+        "CurrentRuleId": "SV-222571r1117181",
+        "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when generating cryptographic hashes."
+      },
+      {
+        "GroupId": "V-222572",
+        "RuleVersion": "APSC-DV-002040",
+        "PreviousRuleId": "SV-222572r961857",
+        "CurrentRuleId": "SV-222572r1117181",
+        "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when protecting unclassified information that requires cryptographic protection."
+      },
+      {
+        "GroupId": "V-222573",
+        "RuleVersion": "APSC-DV-002050",
+        "PreviousRuleId": "SV-222573r961857",
+        "CurrentRuleId": "SV-222573r1117181",
+        "RuleTitle": "Applications making SAML assertions must use FIPS-approved random numbers in the generation of SessionIndex in the SAML element AuthnStatement."
+      },
+      {
+        "GroupId": "V-222574",
+        "RuleVersion": "APSC-DV-002150",
+        "PreviousRuleId": "SV-222574r961095",
+        "CurrentRuleId": "SV-222574r1117171",
+        "RuleTitle": "The application user interface must be either physically or logically separated from data storage and management interfaces."
+      },
+      {
+        "GroupId": "V-222587",
+        "RuleVersion": "APSC-DV-002330",
+        "PreviousRuleId": "SV-222587r961128",
+        "CurrentRuleId": "SV-222587r1136910",
+        "RuleTitle": "The application must protect the confidentiality and integrity of stored information when required by DOD policy or the information owner."
+      },
+      {
+        "GroupId": "V-222591",
+        "RuleVersion": "APSC-DV-002370",
+        "PreviousRuleId": "SV-222591r961608",
+        "CurrentRuleId": "SV-222591r1117179",
+        "RuleTitle": "The application must maintain a separate execution domain for each executing process."
+      },
+      {
+        "GroupId": "V-222592",
+        "RuleVersion": "APSC-DV-002380",
+        "PreviousRuleId": "SV-222592r961149",
+        "CurrentRuleId": "SV-222592r1117173",
+        "RuleTitle": "Applications must prevent unauthorized and unintended information transfer via shared system resources."
+      },
+      {
+        "GroupId": "V-222597",
+        "RuleVersion": "APSC-DV-002450",
+        "PreviousRuleId": "SV-222597r961635",
+        "CurrentRuleId": "SV-222597r1117180",
+        "RuleTitle": "The application must implement cryptographic mechanisms to prevent unauthorized disclosure of information and/or detect changes to information during transmission unless otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected Distribution System (PDS)."
+      },
+      {
+        "GroupId": "V-222614",
+        "RuleVersion": "APSC-DV-002630",
+        "PreviousRuleId": "SV-222614r961683",
+        "CurrentRuleId": "SV-222614r1117151",
+        "RuleTitle": "Security-relevant software updates and patches must be kept up to date."
+      },
+      {
+        "GroupId": "V-222621",
+        "RuleVersion": "APSC-DV-002900",
+        "PreviousRuleId": "SV-222621r961863",
+        "CurrentRuleId": "SV-222621r1136913",
+        "RuleTitle": "The ISSO must ensure application audit trails are retained for at least 30 months (12 months active + 18 months cold storage) for applications without SAMI data and five years for applications including SAMI data."
+      },
+      {
+        "GroupId": "V-222643",
+        "RuleVersion": "APSC-DV-003120",
+        "PreviousRuleId": "SV-222643r961863",
+        "CurrentRuleId": "SV-222643r1136915",
+        "RuleTitle": "The application must have the capability to mark sensitive/classified output when required."
+      },
+      {
+        "GroupId": "V-265634",
+        "RuleVersion": "APSC-DV-002010",
+        "PreviousRuleId": "SV-265634r997307",
+        "CurrentRuleId": "SV-265634r1117183",
+        "RuleTitle": "The application must implement NSA-approved cryptography to protect classified information in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "Cloud_Computing_SRG",
+    "StigDisplayName": "Cloud Computing SRG",
+    "ScanType": "Manual",
+    "CurrentVersion": "Y25M12",
+    "CurrentPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
+        "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
+        "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2024-12-20",
+        "BenchmarkDate": "2025-01-30",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      },
+      {
+        "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
+        "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
+        "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-08-13",
+        "BenchmarkDate": "2025-08-13",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "Y25M09",
+    "PreviousPackage": "U_Cloud_Computing_Y25M09_SRG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
+        "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
+        "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2024-12-20",
+        "BenchmarkDate": "2025-01-30",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      },
+      {
+        "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
+        "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
+        "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-08-13",
+        "BenchmarkDate": "2025-08-13",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [],
+    "AddedGroups": [],
+    "RemovedGroups": [],
+    "ChildBenchmarks": [
+      {
+        "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
+        "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
+        "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2024-12-20",
+        "BenchmarkDate": "2025-01-30",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      },
+      {
+        "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
+        "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
+        "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-08-13",
+        "BenchmarkDate": "2025-08-13",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ]
+  },
+  {
+    "StigId": "Container_Platform_SRG",
+    "StigDisplayName": "Container Platform SRG",
+    "ScanType": "Manual",
+    "CurrentVersion": "V2R4",
+    "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Container Platform Security Requirements Guide",
+        "BenchmarkId": "Container_Platform_SRG",
+        "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-09-10",
+        "BenchmarkDate": "2025-10-28",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V2R3",
+    "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Container Platform Security Requirements Guide",
+        "BenchmarkId": "Container_Platform_SRG",
+        "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-05-15",
+        "BenchmarkDate": "2025-07-02",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-233026",
+        "RuleVersion": "SRG-APP-000033-CTR-000090",
+        "PreviousRuleId": "SV-233026r960792",
+        "CurrentRuleId": "SV-233026r1137638",
+        "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform registry."
+      },
+      {
+        "GroupId": "V-233027",
+        "RuleVersion": "SRG-APP-000033-CTR-000095",
+        "PreviousRuleId": "SV-233027r960792",
+        "CurrentRuleId": "SV-233027r1137639",
+        "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform runtime."
+      },
+      {
+        "GroupId": "V-233028",
+        "RuleVersion": "SRG-APP-000033-CTR-000100",
+        "PreviousRuleId": "SV-233028r960792",
+        "CurrentRuleId": "SV-233028r1137640",
+        "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform keystore."
+      },
+      {
+        "GroupId": "V-233029",
+        "RuleVersion": "SRG-APP-000038-CTR-000105",
+        "PreviousRuleId": "SV-233029r960801",
+        "CurrentRuleId": "SV-233029r1137641",
+        "RuleTitle": "The container platform must enforce approved authorizations for controlling the flow of information within the container platform based on organization-defined information flow control policies."
+      },
+      {
+        "GroupId": "V-233030",
+        "RuleVersion": "SRG-APP-000039-CTR-000110",
+        "PreviousRuleId": "SV-233030r960804",
+        "CurrentRuleId": "SV-233030r1137642",
+        "RuleTitle": "The container platform must enforce approved authorizations for controlling the flow of information between interconnected systems and services based on organization-defined information flow control policies."
+      },
+      {
+        "GroupId": "V-233114",
+        "RuleVersion": "SRG-APP-000211-CTR-000530",
+        "PreviousRuleId": "SV-233114r961095",
+        "CurrentRuleId": "SV-233114r1137643",
+        "RuleTitle": "The container platform must separate user functionality (including user interface services) from information system management functionality."
+      },
+      {
+        "GroupId": "V-233127",
+        "RuleVersion": "SRG-APP-000243-CTR-000595",
+        "PreviousRuleId": "SV-233127r961149",
+        "CurrentRuleId": "SV-233127r1137644",
+        "RuleTitle": "The container platform must prohibit containers from accessing privileged resources."
+      },
+      {
+        "GroupId": "V-233128",
+        "RuleVersion": "SRG-APP-000243-CTR-000600",
+        "PreviousRuleId": "SV-233128r961149",
+        "CurrentRuleId": "SV-233128r1137645",
+        "RuleTitle": "The container platform must prevent unauthorized and unintended information transfer via shared system resources."
+      },
+      {
+        "GroupId": "V-233221",
+        "RuleVersion": "SRG-APP-000431-CTR-001065",
+        "PreviousRuleId": "SV-233221r961608",
+        "CurrentRuleId": "SV-233221r1137646",
+        "RuleTitle": "The container platform runtime must maintain separate execution domains for each container by assigning each container a separate address space."
+      },
+      {
+        "GroupId": "V-233233",
+        "RuleVersion": "SRG-APP-000456-CTR-001125",
+        "PreviousRuleId": "SV-233233r961683",
+        "CurrentRuleId": "SV-233233r1137649",
+        "RuleTitle": "The container platform registry must contain the latest images with most recent security-relevant software updates within 30 days unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, STIGs)."
+      },
+      {
+        "GroupId": "V-233234",
+        "RuleVersion": "SRG-APP-000456-CTR-001130",
+        "PreviousRuleId": "SV-233234r961683",
+        "CurrentRuleId": "SV-233234r1137650",
+        "RuleTitle": "The container platform runtime must have security-relevant software updates installed within 30 days unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs)."
+      },
+      {
+        "GroupId": "V-233271",
+        "RuleVersion": "SRG-APP-000514-CTR-001315",
+        "PreviousRuleId": "SV-233271r961857",
+        "CurrentRuleId": "SV-233271r1137647",
+        "RuleTitle": "The container platform must use a valid FIPS 140-2 or FIPS 140-3 approved cryptographic module to generate hashes."
+      },
+      {
+        "GroupId": "V-233289",
+        "RuleVersion": "SRG-APP-000635-CTR-001405",
+        "PreviousRuleId": "SV-233289r961908",
+        "CurrentRuleId": "SV-233289r1137648",
+        "RuleTitle": "The container platform must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality."
+      }
+    ],
+    "AddedGroups": [
+      {
+        "GroupId": "V-278968",
+        "RuleVersion": "SRG-APP-001035-CTR-000323",
+        "RuleId": "SV-278968r1137653",
+        "RuleTitle": "The container platform must be a version supported by the vendor.",
+        "Severity": "high"
+      }
+    ],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "IDPS_SRG",
+    "StigDisplayName": "IDPS SRG",
+    "ScanType": "Manual",
+    "CurrentVersion": "V3R4",
+    "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+        "BenchmarkId": "IDPS_SRG",
+        "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-09-22",
+        "BenchmarkDate": "2025-10-28",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V3R3",
+    "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+        "BenchmarkId": "IDPS_SRG",
+        "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-05-19",
+        "BenchmarkDate": "2025-07-02",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-206864",
+        "RuleVersion": "SRG-NET-000018-IDPS-00018",
+        "PreviousRuleId": "SV-206864r382732",
+        "CurrentRuleId": "SV-206864r1137714",
+        "RuleTitle": "The IPS must enforce approved authorizations by restricting or blocking the flow of harmful or suspicious communications traffic within the network."
+      },
+      {
+        "GroupId": "V-206865",
+        "RuleVersion": "SRG-NET-000019-IDPS-00019",
+        "PreviousRuleId": "SV-206865r382735",
+        "CurrentRuleId": "SV-206865r1137717",
+        "RuleTitle": "The IPS must restrict or block harmful or suspicious communications traffic between interconnected networks based on attribute- and content-based inspection of the source, destination, headers, and/or content of the communications traffic."
+      },
+      {
+        "GroupId": "V-206866",
+        "RuleVersion": "SRG-NET-000019-IDPS-00187",
+        "PreviousRuleId": "SV-206866r382735",
+        "CurrentRuleId": "SV-206866r1137718",
+        "RuleTitle": "The IDPS must immediately use updates made to policy filters, rules, signatures, and anomaly analysis algorithms for traffic detection and prevention functions."
+      },
+      {
+        "GroupId": "V-206881",
+        "RuleVersion": "SRG-NET-000192-IDPS-00140",
+        "PreviousRuleId": "SV-206881r385531",
+        "CurrentRuleId": "SV-206881r1140706",
+        "RuleTitle": "The IPS must block outbound traffic containing known and unknown denial-of-service (DoS) attacks by ensuring that security policies, signatures, rules, and anomaly detection techniques are applied to outbound communications traffic."
+      },
+      {
+        "GroupId": "V-206883",
+        "RuleVersion": "SRG-NET-000229-IDPS-00163",
+        "PreviousRuleId": "SV-206883r383104",
+        "CurrentRuleId": "SV-206883r1137731",
+        "RuleTitle": "The IPS must block any prohibited mobile code at the enclave boundary when it is detected."
+      },
+      {
+        "GroupId": "V-206889",
+        "RuleVersion": "SRG-NET-000249-IDPS-00176",
+        "PreviousRuleId": "SV-206889r383131",
+        "CurrentRuleId": "SV-206889r1137734",
+        "RuleTitle": "The IPS must block malicious code."
+      },
+      {
+        "GroupId": "V-206890",
+        "RuleVersion": "SRG-NET-000249-IDPS-00221",
+        "PreviousRuleId": "SV-206890r383131",
+        "CurrentRuleId": "SV-206890r1137737",
+        "RuleTitle": "The IPS must quarantine or block malicious code."
+      },
+      {
+        "GroupId": "V-206893",
+        "RuleVersion": "SRG-NET-000273-IDPS-00198",
+        "PreviousRuleId": "SV-206893r383206",
+        "CurrentRuleId": "SV-206893r1137740",
+        "RuleTitle": "The IPS must block outbound Internet Control Message Protocol (ICMP) Destination Unreachable, Redirect, and Address Mask reply messages."
+      },
+      {
+        "GroupId": "V-206894",
+        "RuleVersion": "SRG-NET-000273-IDPS-00204",
+        "PreviousRuleId": "SV-206894r383206",
+        "CurrentRuleId": "SV-206894r1137743",
+        "RuleTitle": "The IPS must block malicious Internet Control Message Protocol (ICMP) packets by properly configuring ICMP signatures and rules."
+      },
+      {
+        "GroupId": "V-206895",
+        "RuleVersion": "SRG-NET-000318-IDPS-00068",
+        "PreviousRuleId": "SV-206895r856533",
+        "CurrentRuleId": "SV-206895r1137746",
+        "RuleTitle": "To protect against unauthorized data mining, the IPS must prevent code injection attacks launched against data storage objects, including, at a minimum, databases, database records, queries, and fields."
+      },
+      {
+        "GroupId": "V-206896",
+        "RuleVersion": "SRG-NET-000318-IDPS-00182",
+        "PreviousRuleId": "SV-206896r856534",
+        "CurrentRuleId": "SV-206896r1137749",
+        "RuleTitle": "To protect against unauthorized data mining, the IPS must prevent code injection attacks launched against application objects including, at a minimum, application URLs and application code."
+      },
+      {
+        "GroupId": "V-206897",
+        "RuleVersion": "SRG-NET-000318-IDPS-00183",
+        "PreviousRuleId": "SV-206897r856535",
+        "CurrentRuleId": "SV-206897r1137752",
+        "RuleTitle": "To protect against unauthorized data mining, the IPS must prevent SQL injection attacks launched against data storage objects, including, at a minimum, databases, database records, and database fields."
+      },
+      {
+        "GroupId": "V-206905",
+        "RuleVersion": "SRG-NET-000362-IDPS-00196",
+        "PreviousRuleId": "SV-206905r856543",
+        "CurrentRuleId": "SV-206905r1137755",
+        "RuleTitle": "The IPS must protect against or limit the effects of known and unknown types of denial-of-service (DoS) attacks by employing rate-based attack prevention behavior analysis."
+      },
+      {
+        "GroupId": "V-206906",
+        "RuleVersion": "SRG-NET-000362-IDPS-00197",
+        "PreviousRuleId": "SV-206906r856544",
+        "CurrentRuleId": "SV-206906r1137758",
+        "RuleTitle": "The IPS must protect against or limit the effects of known and unknown types of denial-of-service (DoS) attacks by employing anomaly-based attack detection."
+      },
+      {
+        "GroupId": "V-206907",
+        "RuleVersion": "SRG-NET-000362-IDPS-00198",
+        "PreviousRuleId": "SV-206907r856545",
+        "CurrentRuleId": "SV-206907r1137761",
+        "RuleTitle": "The IPS must protect against or limit the effects of known types of denial-of-service (DoS) attacks by employing signatures."
+      },
+      {
+        "GroupId": "V-206915",
+        "RuleVersion": "SRG-NET-000392-IDPS-00214",
+        "PreviousRuleId": "SV-206915r1107172",
+        "CurrentRuleId": "SV-206915r1107640",
+        "RuleTitle": "The IDPS must send an alert to, at a minimum, the information system security manager (ISSM) and information system security officer (ISSO) when intrusion detection events are detected which indicate a compromise or potential for compromise."
+      },
+      {
+        "GroupId": "V-263664",
+        "RuleVersion": "SRG-NET-000715-IDPS-00120",
+        "PreviousRuleId": "SV-263664r991598",
+        "CurrentRuleId": "SV-263664r1137722",
+        "RuleTitle": "The IDPS must implement physically or logically separate subnetworks to isolate organization-defined critical system components and functions."
+      }
+    ],
+    "AddedGroups": [
+      {
+        "GroupId": "V-278978",
+        "RuleVersion": "SRG-NET-000323-IDPS-00188",
+        "RuleId": "SV-278978r1137721",
+        "RuleTitle": "The IDPS must use organization-defined security attributes associated with organization-defined information, source, and destination objects to enforce organization-defined information flow control policies as a basis for flow control decisions.",
+        "Severity": "medium"
+      },
+      {
+        "GroupId": "V-278979",
+        "RuleVersion": "SRG-NET-000775-IDPS-00170",
+        "RuleId": "SV-278979r1137725",
+        "RuleTitle": "The IDPS must provide visibility into network traffic at external and key internal system interfaces to optimize the effectiveness of monitoring devices.",
+        "Severity": "medium"
+      }
+    ],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "MS_Azure_SQL_DB_STIG",
+    "StigDisplayName": "MS Azure SQL DB STIG",
+    "ScanType": "Manual",
+    "CurrentVersion": "V2R3",
+    "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+        "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-06-11",
+        "BenchmarkDate": "2025-07-02",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": null,
+    "PreviousPackage": null,
+    "Status": "No previous benchmark version found in Archive."
+  },
+  {
+    "StigId": "MS_Defender_Antivirus",
+    "StigDisplayName": "MS Defender Antivirus STIG",
+    "ScanType": "SemiAutomated",
+    "CurrentVersion": "V2R8",
+    "CurrentPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Defender_Antivirus",
+        "FileName": "U_MS_Defender_Antivirus_STIG_V2R8_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2026-02-17",
+        "BenchmarkDate": "2026-04-01",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V2R7",
+    "PreviousPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Defender_Antivirus",
+        "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-11-25",
+        "BenchmarkDate": "2026-01-05",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-213428",
+        "RuleVersion": "WNDF-AV-000004",
+        "PreviousRuleId": "SV-213428r961194",
+        "CurrentRuleId": "SV-213428r1190706",
+        "RuleTitle": "Microsoft Defender AV must be configured to run and scan for malware and other potentially unwanted software."
+      },
+      {
+        "GroupId": "V-213429",
+        "RuleVersion": "WNDF-AV-000005",
+        "PreviousRuleId": "SV-213429r961194",
+        "CurrentRuleId": "SV-213429r1190707",
+        "RuleTitle": "Microsoft Defender AV must be configured to not exclude files for scanning."
+      },
+      {
+        "GroupId": "V-213430",
+        "RuleVersion": "WNDF-AV-000006",
+        "PreviousRuleId": "SV-213430r961194",
+        "CurrentRuleId": "SV-213430r1190710",
+        "RuleTitle": "Microsoft Defender AV must be configured to not exclude files opened by specified processes."
+      },
+      {
+        "GroupId": "V-213431",
+        "RuleVersion": "WNDF-AV-000007",
+        "PreviousRuleId": "SV-213431r961194",
+        "CurrentRuleId": "SV-213431r1190712",
+        "RuleTitle": "Microsoft Defender AV must be configured to enable the Automatic Exclusions feature."
+      },
+      {
+        "GroupId": "V-213433",
+        "RuleVersion": "WNDF-AV-000009",
+        "PreviousRuleId": "SV-213433r961194",
+        "CurrentRuleId": "SV-213433r1190715",
+        "RuleTitle": "Microsoft Defender AV must be configured to check in real time with MAPS before content is run or accessed."
+      },
+      {
+        "GroupId": "V-213436",
+        "RuleVersion": "WNDF-AV-000012",
+        "PreviousRuleId": "SV-213436r961194",
+        "CurrentRuleId": "SV-213436r1190716",
+        "RuleTitle": "Microsoft Defender AV must be configured for protocol recognition for network protection."
+      },
+      {
+        "GroupId": "V-213441",
+        "RuleVersion": "WNDF-AV-000017",
+        "PreviousRuleId": "SV-213441r961194",
+        "CurrentRuleId": "SV-213441r1190717",
+        "RuleTitle": "Microsoft Defender AV Group Policy settings must take priority over the local preference settings."
+      },
+      {
+        "GroupId": "V-213442",
+        "RuleVersion": "WNDF-AV-000018",
+        "PreviousRuleId": "SV-213442r1144028",
+        "CurrentRuleId": "SV-213442r1190718",
+        "RuleTitle": "Microsoft Defender AV must monitor for incoming and outgoing files."
+      },
+      {
+        "GroupId": "V-213443",
+        "RuleVersion": "WNDF-AV-000019",
+        "PreviousRuleId": "SV-213443r961194",
+        "CurrentRuleId": "SV-213443r1190719",
+        "RuleTitle": "Microsoft Defender AV must be configured to monitor for file and program activity."
+      },
+      {
+        "GroupId": "V-213445",
+        "RuleVersion": "WNDF-AV-000021",
+        "PreviousRuleId": "SV-213445r961194",
+        "CurrentRuleId": "SV-213445r1190720",
+        "RuleTitle": "Microsoft Defender AV must be configured to always enable real-time protection."
+      },
+      {
+        "GroupId": "V-213447",
+        "RuleVersion": "WNDF-AV-000023",
+        "PreviousRuleId": "SV-213447r961194",
+        "CurrentRuleId": "SV-213447r1190721",
+        "RuleTitle": "Microsoft Defender AV must be configured to process scanning when real-time protection is enabled."
+      },
+      {
+        "GroupId": "V-213448",
+        "RuleVersion": "WNDF-AV-000024",
+        "PreviousRuleId": "SV-213448r961194",
+        "CurrentRuleId": "SV-213448r1190722",
+        "RuleTitle": "Microsoft Defender AV must be configured to scan archive files."
+      },
+      {
+        "GroupId": "V-213452",
+        "RuleVersion": "WNDF-AV-000028",
+        "PreviousRuleId": "SV-213452r961188",
+        "CurrentRuleId": "SV-213452r1190723",
+        "RuleTitle": "Microsoft Defender AV spyware definition age must not exceed 7 days."
+      },
+      {
+        "GroupId": "V-213453",
+        "RuleVersion": "WNDF-AV-000029",
+        "PreviousRuleId": "SV-213453r961188",
+        "CurrentRuleId": "SV-213453r1190724",
+        "RuleTitle": "Microsoft Defender AV virus definition age must not exceed 7 days."
+      },
+      {
+        "GroupId": "V-278647",
+        "RuleVersion": "WNDF-AV-000043",
+        "PreviousRuleId": "SV-278647r1144030",
+        "CurrentRuleId": "SV-278647r1190726",
+        "RuleTitle": "Microsoft Defender AV must block Adobe Reader from creating child processes."
+      },
+      {
+        "GroupId": "V-278648",
+        "RuleVersion": "WNDF-AV-000044",
+        "PreviousRuleId": "SV-278648r1144032",
+        "CurrentRuleId": "SV-278648r1190728",
+        "RuleTitle": "Microsoft Defender AV must block credential stealing from the Windows local security authority subsystem."
+      },
+      {
+        "GroupId": "V-278649",
+        "RuleVersion": "WNDF-AV-000045",
+        "PreviousRuleId": "SV-278649r1144034",
+        "CurrentRuleId": "SV-278649r1190730",
+        "RuleTitle": "Microsoft Defender AV must block untrusted and unsigned processes that run from USB."
+      },
+      {
+        "GroupId": "V-278650",
+        "RuleVersion": "WNDF-AV-000046",
+        "PreviousRuleId": "SV-278650r1144036",
+        "CurrentRuleId": "SV-278650r1190732",
+        "RuleTitle": "Microsoft Defender AV must use advanced protection against ransomware."
+      },
+      {
+        "GroupId": "V-278651",
+        "RuleVersion": "WNDF-AV-000047",
+        "PreviousRuleId": "SV-278651r1144039",
+        "CurrentRuleId": "SV-278651r1190734",
+        "RuleTitle": "Microsoft Defender AV must audit process creations originating from PSExec and WMI commands."
+      },
+      {
+        "GroupId": "V-278652",
+        "RuleVersion": "WNDF-AV-000048",
+        "PreviousRuleId": "SV-278652r1144042",
+        "CurrentRuleId": "SV-278652r1190736",
+        "RuleTitle": "Microsoft Defender AV must audit persistence through WMI event subscription."
+      },
+      {
+        "GroupId": "V-278653",
+        "RuleVersion": "WNDF-AV-000049",
+        "PreviousRuleId": "SV-278653r1144045",
+        "CurrentRuleId": "SV-278653r1190738",
+        "RuleTitle": "Microsoft Defender AV must audit executable files from running unless they meet a prevalence, age, or trusted list criterion."
+      },
+      {
+        "GroupId": "V-278654",
+        "RuleVersion": "WNDF-AV-000050",
+        "PreviousRuleId": "SV-278654r1144047",
+        "CurrentRuleId": "SV-278654r1190740",
+        "RuleTitle": "Microsoft Defender AV must block Office communication application from creating child processes."
+      },
+      {
+        "GroupId": "V-278655",
+        "RuleVersion": "WNDF-AV-000051",
+        "PreviousRuleId": "SV-278655r1144049",
+        "CurrentRuleId": "SV-278655r1190742",
+        "RuleTitle": "Microsoft Defender AV must block abuse of exploited vulnerable signed drivers."
+      },
+      {
+        "GroupId": "V-278656",
+        "RuleVersion": "WNDF-AV-000052",
+        "PreviousRuleId": "SV-278656r1144051",
+        "CurrentRuleId": "SV-278656r1190744",
+        "RuleTitle": "Microsoft Defender AV must configure local administrator merge behavior for lists."
+      },
+      {
+        "GroupId": "V-278658",
+        "RuleVersion": "WNDF-AV-000054",
+        "PreviousRuleId": "SV-278658r1156519",
+        "CurrentRuleId": "SV-278658r1190746",
+        "RuleTitle": "Microsoft Defender AV must control whether exclusions are visible to Local Admins."
+      },
+      {
+        "GroupId": "V-278659",
+        "RuleVersion": "WNDF-AV-000055",
+        "PreviousRuleId": "SV-278659r1144055",
+        "CurrentRuleId": "SV-278659r1190748",
+        "RuleTitle": "Microsoft Defender AV must randomize scheduled task times."
+      },
+      {
+        "GroupId": "V-278660",
+        "RuleVersion": "WNDF-AV-000056",
+        "PreviousRuleId": "SV-278660r1144057",
+        "CurrentRuleId": "SV-278660r1190750",
+        "RuleTitle": "Microsoft Defender AV must hide the Family options area."
+      },
+      {
+        "GroupId": "V-278661",
+        "RuleVersion": "WNDF-AV-000057",
+        "PreviousRuleId": "SV-278661r1144059",
+        "CurrentRuleId": "SV-278661r1190752",
+        "RuleTitle": "Microsoft Defender AV must enable the file hash computation feature."
+      },
+      {
+        "GroupId": "V-278662",
+        "RuleVersion": "WNDF-AV-000058",
+        "PreviousRuleId": "SV-278662r1144061",
+        "CurrentRuleId": "SV-278662r1190754",
+        "RuleTitle": "Microsoft Defender AV must enable extended cloud check."
+      },
+      {
+        "GroupId": "V-278668",
+        "RuleVersion": "WNDF-AV-000064",
+        "PreviousRuleId": "SV-278668r1144063",
+        "CurrentRuleId": "SV-278668r1190756",
+        "RuleTitle": "Microsoft Defender AV must enable script scanning."
+      },
+      {
+        "GroupId": "V-278669",
+        "RuleVersion": "WNDF-AV-000065",
+        "PreviousRuleId": "SV-278669r1144065",
+        "CurrentRuleId": "SV-278669r1190758",
+        "RuleTitle": "Microsoft Defender AV must enable real-time protection and Security Intelligence Updates during OOBE."
+      },
+      {
+        "GroupId": "V-278672",
+        "RuleVersion": "WNDF-AV-000068",
+        "PreviousRuleId": "SV-278672r1144067",
+        "CurrentRuleId": "SV-278672r1190761",
+        "RuleTitle": "Microsoft Defender AV must enable network protection to be configured into block or audit mode on Windows Server."
+      },
+      {
+        "GroupId": "V-278674",
+        "RuleVersion": "WNDF-AV-000070",
+        "PreviousRuleId": "SV-278674r1144071",
+        "CurrentRuleId": "SV-278674r1190763",
+        "RuleTitle": "Microsoft Defender AV must enable EDR in block mode."
+      },
+      {
+        "GroupId": "V-278675",
+        "RuleVersion": "WNDF-AV-000071",
+        "PreviousRuleId": "SV-278675r1144073",
+        "CurrentRuleId": "SV-278675r1190765",
+        "RuleTitle": "Microsoft Defender AV must report Dynamic Signature dropped events."
+      },
+      {
+        "GroupId": "V-278676",
+        "RuleVersion": "WNDF-AV-000072",
+        "PreviousRuleId": "SV-278676r1144075",
+        "CurrentRuleId": "SV-278676r1190767",
+        "RuleTitle": "Microsoft Defender AV must scan excluded files and directories during quick scans."
+      },
+      {
+        "GroupId": "V-278677",
+        "RuleVersion": "WNDF-AV-000074",
+        "PreviousRuleId": "SV-278677r1144077",
+        "CurrentRuleId": "SV-278677r1190769",
+        "RuleTitle": "Microsoft Defender AV must convert warn verdict to block."
+      },
+      {
+        "GroupId": "V-278678",
+        "RuleVersion": "WNDF-AV-000075",
+        "PreviousRuleId": "SV-278678r1144079",
+        "CurrentRuleId": "SV-278678r1190771",
+        "RuleTitle": "Microsoft Defender AV must enable asynchronous inspection."
+      },
+      {
+        "GroupId": "V-278679",
+        "RuleVersion": "WNDF-AV-000076",
+        "PreviousRuleId": "SV-278679r1144081",
+        "CurrentRuleId": "SV-278679r1190773",
+        "RuleTitle": "Microsoft Defender AV must scan packed executables."
+      },
+      {
+        "GroupId": "V-278680",
+        "RuleVersion": "WNDF-AV-000077",
+        "PreviousRuleId": "SV-278680r1144083",
+        "CurrentRuleId": "SV-278680r1190775",
+        "RuleTitle": "Microsoft Defender AV must enable heuristics."
+      },
+      {
+        "GroupId": "V-278863",
+        "RuleVersion": "WNDF-AV-000073",
+        "PreviousRuleId": "SV-278863r1144086",
+        "CurrentRuleId": "SV-278863r1190777",
+        "RuleTitle": "Microsoft Defender AV must set cloud protection level to High."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "MS_Dot_Net_Framework",
+    "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+    "ScanType": "SemiAutomated",
+    "CurrentVersion": "V2R8",
+    "CurrentPackage": "U_MS_DotNet_Framework_4-0_V2R8_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Dot_Net_Framework",
+        "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R8_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2026-02-12",
+        "BenchmarkDate": "2026-04-01",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V2R7",
+    "PreviousPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Dot_Net_Framework",
+        "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R7_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-05-16",
+        "BenchmarkDate": "2025-07-02",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-225229",
+        "RuleVersion": "APPNET0061",
+        "PreviousRuleId": "SV-225229r1107247",
+        "CurrentRuleId": "SV-225229r1188309",
+        "RuleTitle": ".Net Framework versions installed on the system must be supported."
+      },
+      {
+        "GroupId": "V-225230",
+        "RuleVersion": "APPNET0062",
+        "PreviousRuleId": "SV-225230r961908",
+        "CurrentRuleId": "SV-225230r1117185",
+        "RuleTitle": "The .NET CLR must be configured to use FIPS approved encryption modules."
+      },
+      {
+        "GroupId": "V-225233",
+        "RuleVersion": "APPNET0065",
+        "PreviousRuleId": "SV-225233r961608",
+        "CurrentRuleId": "SV-225233r1117179",
+        "RuleTitle": "Trust must be established prior to enabling the loading of remote code in .Net 4."
+      },
+      {
+        "GroupId": "V-225234",
+        "RuleVersion": "APPNET0066",
+        "PreviousRuleId": "SV-225234r961863",
+        "CurrentRuleId": "SV-225234r1188289",
+        "RuleTitle": ".NET default proxy settings must be reviewed and approved."
+      },
+      {
+        "GroupId": "V-225236",
+        "RuleVersion": "APPNET0070",
+        "PreviousRuleId": "SV-225236r1069477",
+        "CurrentRuleId": "SV-225236r1117179",
+        "RuleTitle": "Software utilizing .Net 4.0 must be identified and relevant access controls configured."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "MS_Edge_STIG",
+    "StigDisplayName": "MS Edge STIG",
+    "ScanType": "SemiAutomated",
+    "CurrentVersion": "V2R5",
+    "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Edge_STIG",
+        "FileName": "U_MS_Edge_V2R5_STIG_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2026-02-25",
+        "BenchmarkDate": "2026-04-01",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V2R4",
+    "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Edge_STIG",
+        "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-12-11",
+        "BenchmarkDate": "2026-01-05",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [],
+    "AddedGroups": [
+      {
+        "GroupId": "V-283439",
+        "RuleVersion": "EDGE-00-000070",
+        "RuleId": "SV-283439r1192850",
+        "RuleTitle": "Spell checking provided by Microsoft Editor must be disabled.",
+        "Severity": "medium"
+      }
+    ],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "MS_Entra_ID_STIG",
+    "StigDisplayName": "MS Entra ID STIG",
+    "ScanType": "Manual",
+    "CurrentVersion": "V1R1",
+    "CurrentPackage": "U_MS_Entra_ID_V1R1_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Entra_ID_STIG",
+        "FileName": "U_MS_Entra_ID_STIG_V1R1_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-03-17",
+        "BenchmarkDate": "2025-02-28",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": null,
+    "PreviousPackage": null,
+    "Status": "No previous benchmark version found in Archive."
+  },
+  {
+    "StigId": "IE_11_STIG",
+    "StigDisplayName": "MS IE11 STIG",
+    "ScanType": "SemiAutomated",
+    "CurrentVersion": "V2R7",
+    "CurrentPackage": "U_MS_IE11_V2R7_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
+        "BenchmarkId": "IE_11_STIG",
+        "FileName": "U_MS_IE11_STIG_V2R7_Manual-xccdf.xml",
+        "Status": "deprecated",
+        "StatusDate": "2026-02-24",
+        "BenchmarkDate": "2026-04-01",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V2R6",
+    "PreviousPackage": "U_MS_IE11_V2R6_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
+        "BenchmarkId": "IE_11_STIG",
+        "FileName": "U_MS_IE11_STIG_V2R6_Manual-xccdf.xml",
+        "Status": "deprecated",
+        "StatusDate": "2025-11-25",
+        "BenchmarkDate": "2026-01-05",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-252910",
+        "RuleVersion": "DTBI999-IE11",
+        "PreviousRuleId": "SV-252910r1156566",
+        "CurrentRuleId": "SV-252910r1192839",
+        "RuleTitle": "The version of Internet Explorer running on the system must be a supported version."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": []
+  },
+  {
+    "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+    "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
+    "ScanType": "Manual",
+    "CurrentVersion": "Y25M04",
+    "CurrentPackage": "U_MS_Intune_Desktop_Mobile_Y25M04_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Intune MDM Service Desktop & Mobile Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+        "FileName": "U_MS_Intune_MDM_Service_Desktop_Mobile_V1R1_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-05-08",
+        "BenchmarkDate": "2025-04-22",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": null,
+    "PreviousPackage": null,
+    "Status": "No previous benchmark version found in Archive."
+  },
+  {
+    "StigId": "Microsoft_Windows_11_STIG",
+    "StigDisplayName": "Microsoft Windows 11 STIG",
+    "ScanType": "SemiAutomated",
+    "CurrentVersion": "V2R7",
+    "CurrentPackage": "U_MS_Windows_11_V2R7_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+        "BenchmarkId": "Microsoft_Windows_11_STIG",
+        "FileName": "U_MS_Windows_11_STIG_V2R7_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2026-02-12",
+        "BenchmarkDate": "2026-04-01",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": "V2R6",
+    "PreviousPackage": "U_MS_Windows_11_V2R6_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+        "BenchmarkId": "Microsoft_Windows_11_STIG",
+        "FileName": "U_MS_Windows_11_STIG_V2R6_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2025-11-24",
+        "BenchmarkDate": "2026-01-05",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-253260",
+        "RuleVersion": "WN11-00-000031",
+        "PreviousRuleId": "SV-253260r958872",
+        "CurrentRuleId": "SV-253260r1186370",
+        "RuleTitle": "Windows 11 systems must use a BitLocker PIN for pre-boot authentication."
+      },
+      {
+        "GroupId": "V-253264",
+        "RuleVersion": "WN11-00-000045",
+        "PreviousRuleId": "SV-253264r991589",
+        "CurrentRuleId": "SV-253264r1186372",
+        "RuleTitle": "The Windows 11 system must use an antivirus program."
+      },
+      {
+        "GroupId": "V-253338",
+        "RuleVersion": "WN11-AU-000505",
+        "PreviousRuleId": "SV-253338r958752",
+        "CurrentRuleId": "SV-253338r1186375",
+        "RuleTitle": "The security event log size must be configured to a value that holds at least one week's worth of audit records."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": [
+      {
+        "GroupId": "V-253258",
+        "RuleVersion": "WN11-00-000025",
+        "RuleId": "SV-253258r1000099",
+        "RuleTitle": "Windows 11 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: Continuously, where ESS is used; 30 days, for any additional internal network scans not covered by ESS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
+        "Severity": "medium"
+      }
+    ]
+  },
+  {
+    "StigId": "Network_Infrastructure_Policy_STIG",
+    "StigDisplayName": "Network Infrastructure Policy STIG",
+    "ScanType": "Manual",
+    "CurrentVersion": "V10R7",
+    "CurrentPackage": "U_Network_Infrastructure_Policy_V10R7_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Network Infrastructure Policy Security Technical Implementation Guide",
+        "BenchmarkId": "Network_Infrastructure_Policy_STIG",
+        "FileName": "U_Network_Infrastructure_Policy_STIG_V10R7_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2024-08-02",
+        "BenchmarkDate": "2024-10-24",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": null,
+    "PreviousPackage": null,
+    "Status": "No previous benchmark version found in Archive."
+  },
+  {
+    "StigId": "Windows_Firewall_with_Advanced_Security",
+    "StigDisplayName": "Windows Firewall with Advanced Security STIG",
+    "ScanType": "SemiAutomated",
+    "CurrentVersion": "V2R2",
+    "CurrentPackage": "U_MS_Windows_Defender_Firewall_V2R2_STIG.zip",
+    "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Windows Defender Firewall with Advanced Security Security Technical Implementation Guide",
+        "BenchmarkId": "Windows_Firewall_with_Advanced_Security",
+        "FileName": "U_MS_Windows_Defender_Firewall_STIG_V2R2_Manual-xccdf.xml",
+        "Status": "accepted",
+        "StatusDate": "2023-08-23",
+        "BenchmarkDate": "2023-11-09",
+        "Reference": "DISASTIG.DOD.MIL",
+        "ReferenceHref": "https://cyber.mil"
+      }
+    ],
+    "PreviousVersion": null,
+    "PreviousPackage": null,
+    "Status": "No previous benchmark version found in Archive."
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "ScanType": "Manual",
+  "StigId": "Network_Infrastructure_Policy_STIG",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "StigDisplayName": "Network Infrastructure Policy STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "CurrentPackage": "U_Network_Infrastructure_Policy_V10R7_STIG.zip",
+  "CurrentVersion": "V10R7"
+}

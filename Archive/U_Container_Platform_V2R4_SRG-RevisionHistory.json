@@ -1,0 +1,115 @@
+{
+  "StigId": "Container_Platform_SRG",
+  "ScanType": "Manual",
+  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-233026",
+      "RuleVersion": "SRG-APP-000033-CTR-000090",
+      "PreviousRuleId": "SV-233026r960792",
+      "CurrentRuleId": "SV-233026r1137638",
+      "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform registry."
+    },
+    {
+      "GroupId": "V-233027",
+      "RuleVersion": "SRG-APP-000033-CTR-000095",
+      "PreviousRuleId": "SV-233027r960792",
+      "CurrentRuleId": "SV-233027r1137639",
+      "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform runtime."
+    },
+    {
+      "GroupId": "V-233028",
+      "RuleVersion": "SRG-APP-000033-CTR-000100",
+      "PreviousRuleId": "SV-233028r960792",
+      "CurrentRuleId": "SV-233028r1137640",
+      "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform keystore."
+    },
+    {
+      "GroupId": "V-233029",
+      "RuleVersion": "SRG-APP-000038-CTR-000105",
+      "PreviousRuleId": "SV-233029r960801",
+      "CurrentRuleId": "SV-233029r1137641",
+      "RuleTitle": "The container platform must enforce approved authorizations for controlling the flow of information within the container platform based on organization-defined information flow control policies."
+    },
+    {
+      "GroupId": "V-233030",
+      "RuleVersion": "SRG-APP-000039-CTR-000110",
+      "PreviousRuleId": "SV-233030r960804",
+      "CurrentRuleId": "SV-233030r1137642",
+      "RuleTitle": "The container platform must enforce approved authorizations for controlling the flow of information between interconnected systems and services based on organization-defined information flow control policies."
+    },
+    {
+      "GroupId": "V-233114",
+      "RuleVersion": "SRG-APP-000211-CTR-000530",
+      "PreviousRuleId": "SV-233114r961095",
+      "CurrentRuleId": "SV-233114r1137643",
+      "RuleTitle": "The container platform must separate user functionality (including user interface services) from information system management functionality."
+    },
+    {
+      "GroupId": "V-233127",
+      "RuleVersion": "SRG-APP-000243-CTR-000595",
+      "PreviousRuleId": "SV-233127r961149",
+      "CurrentRuleId": "SV-233127r1137644",
+      "RuleTitle": "The container platform must prohibit containers from accessing privileged resources."
+    },
+    {
+      "GroupId": "V-233128",
+      "RuleVersion": "SRG-APP-000243-CTR-000600",
+      "PreviousRuleId": "SV-233128r961149",
+      "CurrentRuleId": "SV-233128r1137645",
+      "RuleTitle": "The container platform must prevent unauthorized and unintended information transfer via shared system resources."
+    },
+    {
+      "GroupId": "V-233221",
+      "RuleVersion": "SRG-APP-000431-CTR-001065",
+      "PreviousRuleId": "SV-233221r961608",
+      "CurrentRuleId": "SV-233221r1137646",
+      "RuleTitle": "The container platform runtime must maintain separate execution domains for each container by assigning each container a separate address space."
+    },
+    {
+      "GroupId": "V-233233",
+      "RuleVersion": "SRG-APP-000456-CTR-001125",
+      "PreviousRuleId": "SV-233233r961683",
+      "CurrentRuleId": "SV-233233r1137649",
+      "RuleTitle": "The container platform registry must contain the latest images with most recent security-relevant software updates within 30 days unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, STIGs)."
+    },
+    {
+      "GroupId": "V-233234",
+      "RuleVersion": "SRG-APP-000456-CTR-001130",
+      "PreviousRuleId": "SV-233234r961683",
+      "CurrentRuleId": "SV-233234r1137650",
+      "RuleTitle": "The container platform runtime must have security-relevant software updates installed within 30 days unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs)."
+    },
+    {
+      "GroupId": "V-233271",
+      "RuleVersion": "SRG-APP-000514-CTR-001315",
+      "PreviousRuleId": "SV-233271r961857",
+      "CurrentRuleId": "SV-233271r1137647",
+      "RuleTitle": "The container platform must use a valid FIPS 140-2 or FIPS 140-3 approved cryptographic module to generate hashes."
+    },
+    {
+      "GroupId": "V-233289",
+      "RuleVersion": "SRG-APP-000635-CTR-001405",
+      "PreviousRuleId": "SV-233289r961908",
+      "CurrentRuleId": "SV-233289r1137648",
+      "RuleTitle": "The container platform must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality."
+    }
+  ],
+  "StigDisplayName": "Container Platform SRG",
+  "Status": "Compared successfully.",
+  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+  "PreviousVersion": "V2R3",
+  "CurrentVersion": "V2R4",
+  "RemovedGroups": [],
+  "AddedGroups": [
+    {
+      "GroupId": "V-278968",
+      "RuleVersion": "SRG-APP-001035-CTR-000323",
+      "RuleId": "SV-278968r1137653",
+      "RuleTitle": "The container platform must be a version supported by the vendor.",
+      "Severity": "high"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-253260",
+      "RuleVersion": "WN11-00-000031",
+      "PreviousRuleId": "SV-253260r958872",
+      "CurrentRuleId": "SV-253260r1186370",
+      "RuleTitle": "Windows 11 systems must use a BitLocker PIN for pre-boot authentication."
+    },
+    {
+      "GroupId": "V-253264",
+      "RuleVersion": "WN11-00-000045",
+      "PreviousRuleId": "SV-253264r991589",
+      "CurrentRuleId": "SV-253264r1186372",
+      "RuleTitle": "The Windows 11 system must use an antivirus program."
+    },
+    {
+      "GroupId": "V-253338",
+      "RuleVersion": "WN11-AU-000505",
+      "PreviousRuleId": "SV-253338r958752",
+      "CurrentRuleId": "SV-253338r1186375",
+      "RuleTitle": "The security event log size must be configured to a value that holds at least one week's worth of audit records."
+    }
+  ],
+  "PreviousVersion": "V2R6",
+  "CurrentVersion": "V2R7",
+  "PreviousPackage": "U_MS_Windows_11_V2R6_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+      "BenchmarkId": "Microsoft_Windows_11_STIG",
+      "FileName": "U_MS_Windows_11_STIG_V2R7_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2026-02-12",
+      "BenchmarkDate": "2026-04-01",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+      "BenchmarkId": "Microsoft_Windows_11_STIG",
+      "FileName": "U_MS_Windows_11_STIG_V2R6_Manual-xccdf.xml",
+      "Status": "accepted",
+      "StatusDate": "2025-11-24",
+      "BenchmarkDate": "2026-01-05",
+      "Reference": "DISASTIG.DOD.MIL",
+      "ReferenceHref": "https://cyber.mil"
+    }
+  ],
+  "StigDisplayName": "Microsoft Windows 11 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentPackage": "U_MS_Windows_11_V2R7_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
+  "StigId": "Microsoft_Windows_11_STIG",
+  "RemovedGroups": [
+    {
+      "GroupId": "V-253258",
+      "RuleVersion": "WN11-00-000025",
+      "RuleId": "SV-253258r1000099",
+      "RuleTitle": "Windows 11 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: Continuously, where ESS is used; 30 days, for any additional internal network scans not covered by ESS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
+      "Severity": "medium"
+    }
+  ]
+}

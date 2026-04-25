@@ -1,0 +1,10 @@
+{
+  "ScanType": "SemiAutomated",
+  "StigId": "Windows_Firewall_with_Advanced_Security",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "StigDisplayName": "Windows Firewall with Advanced Security STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "CurrentPackage": "U_MS_Windows_Defender_Firewall_V2R2_STIG.zip",
+  "CurrentVersion": "V2R2"
+}

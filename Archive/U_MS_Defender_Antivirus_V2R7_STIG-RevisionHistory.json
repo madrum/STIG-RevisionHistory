@@ -1,0 +1,31 @@
+{
+  "StigId": "MS_Defender_Antivirus",
+  "ScanType": "SemiAutomated",
+  "PreviousPackage": "U_MS_Defender_Antivirus_V2R6_STIG.zip",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-278658",
+      "RuleVersion": "WNDF-AV-000054",
+      "PreviousRuleId": "SV-278658r1144053",
+      "CurrentRuleId": "SV-278658r1156519",
+      "RuleTitle": "Microsoft Defender AV must control whether exclusions are visible to Local Admins."
+    }
+  ],
+  "StigDisplayName": "MS Defender Antivirus STIG",
+  "Status": "Compared successfully.",
+  "CurrentPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
+  "PreviousVersion": "V2R6",
+  "CurrentVersion": "V2R7",
+  "RemovedGroups": [
+    {
+      "GroupId": "V-278673",
+      "RuleVersion": "WNDF-AV-000069",
+      "RuleId": "SV-278673r1144069",
+      "RuleTitle": "Microsoft Defender AV must disable auto exclusions.",
+      "Severity": "medium"
+    }
+  ],
+  "AddedGroups": []
+}

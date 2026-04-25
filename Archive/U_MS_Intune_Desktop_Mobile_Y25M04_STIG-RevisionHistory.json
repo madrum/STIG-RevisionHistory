@@ -1,0 +1,10 @@
+{
+  "ScanType": "Manual",
+  "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
+  "Status": "No previous benchmark version found in Archive.",
+  "CurrentPackage": "U_MS_Intune_Desktop_Mobile_Y25M04_STIG.zip",
+  "CurrentVersion": "Y25M04"
+}
