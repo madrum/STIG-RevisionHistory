@@ -1,0 +1,139 @@
+{
+  "StigBenchmarks": [
+    {
+      "StigId": "ASD_STIG",
+      "StigDisplayName": "ASD STIG",
+      "ScanType": "Manual",
+      "CurrentVersion": "V6R4",
+      "ZipFile": "U_ASD_{version}_STIG.zip"
+    },
+    {
+      "StigId": "Cloud_Computing_SRG",
+      "StigDisplayName": "Cloud Computing SRG",
+      "ScanType": "Manual",
+      "CurrentVersion": "Y25M12",
+      "ZipFile": "U_Cloud_Computing_{version}_SRG.zip"
+    },
+    {
+      "StigId": "Container_Platform_SRG",
+      "StigDisplayName": "Container Platform SRG",
+      "ScanType": "Manual",
+      "CurrentVersion": "V2R4",
+      "ZipFile": "U_Container_Platform_{version}_SRG.zip"
+    },
+    {
+      "StigId": "IDPS_SRG",
+      "StigDisplayName": "IDPS SRG",
+      "ScanType": "Manual",
+      "CurrentVersion": "V3R4",
+      "ZipFile": "U_IDPS_{version}_SRG.zip"
+    },
+    {
+      "StigId": "MS_Azure_SQL_DB_STIG",
+      "StigDisplayName": "MS Azure SQL DB STIG",
+      "ScanType": "Manual",
+      "CurrentVersion": "V2R3",
+      "ZipFile": "U_MS_Azure_SQL_DB_{version}_STIG.zip"
+    },
+    {
+      "StigId": "MS_Defender_Antivirus",
+      "StigDisplayName": "MS Defender Antivirus STIG",
+      "ScanType": "SemiAutomated",
+      "CurrentVersion": "V2R8",
+      "ZipFile": "U_MS_Defender_Antivirus_{version}_STIG.zip"
+    },
+    {
+      "StigId": "MS_Dot_Net_Framework",
+      "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+      "ScanType": "SemiAutomated",
+      "CurrentVersion": "V2R8",
+      "ZipFile": "U_MS_DotNet_Framework_4-0_{version}_STIG.zip"
+    },
+    {
+      "StigId": "MS_Edge_STIG",
+      "StigDisplayName": "MS Edge STIG",
+      "ScanType": "SemiAutomated",
+      "CurrentVersion": "V2R5",
+      "ZipFile": "U_MS_Edge_{version}_STIG.zip"
+    },
+    {
+      "StigId": "MS_Entra_ID_STIG",
+      "StigDisplayName": "MS Entra ID STIG",
+      "ScanType": "Manual",
+      "CurrentVersion": "V1R1",
+      "ZipFile": "U_MS_Entra_ID_{version}_STIG.zip"
+    },
+    {
+      "StigId": "IE_11_STIG",
+      "StigDisplayName": "MS IE11 STIG",
+      "ScanType": "SemiAutomated",
+      "CurrentVersion": "V2R7",
+      "ZipFile": "U_MS_IE11_{version}_STIG.zip"
+    },
+    {
+      "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+      "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
+      "ScanType": "Manual",
+      "CurrentVersion": "Y25M04",
+      "ZipFile": "U_MS_Intune_Desktop_Mobile_{version}_STIG.zip"
+    },
+    {
+      "StigId": "Microsoft_Windows_11_STIG",
+      "StigDisplayName": "Microsoft Windows 11 STIG",
+      "ScanType": "SemiAutomated",
+      "CurrentVersion": "V2R7",
+      "ZipFile": "U_MS_Windows_11_{version}_STIG.zip"
+    },
+    {
+      "StigId": "Network_Infrastructure_Policy_STIG",
+      "StigDisplayName": "Network Infrastructure Policy STIG",
+      "ScanType": "Manual",
+      "CurrentVersion": "V10R7",
+      "ZipFile": "U_Network_Infrastructure_Policy_{version}_STIG.zip"
+    },
+    {
+      "StigId": "Windows_Firewall_with_Advanced_Security",
+      "StigDisplayName": "Windows Firewall with Advanced Security STIG",
+      "ScanType": "SemiAutomated",
+      "CurrentVersion": "V2R2",
+      "ZipFile": "U_MS_Windows_Defender_Firewall_{version}_STIG.zip"
+    }
+  ],
+  "Downloads": [
+    {
+      "DownloadId": "STIG-Viewer-3",
+      "Name": "STIG Viewer 3",
+      "Version": "3-7-0",
+      "FileName": "U_STIGViewer-win32_x64-{version}_msi.zip",
+      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIGViewer-win32_x64-3-7-0_msi.zip",
+      "ZipHash": "4772885E92CD318606FDA715226FB571E6ABEA3E1F6414E69DBE99D7D5A64C03",
+      "ChecksumsUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/txt/U_STIGViewer_{version}_Hashes.txt"
+    },
+    {
+      "DownloadId": "SCAP-Compliance-Checker",
+      "Name": "SCAP Compliance Checker",
+      "Version": "5.14",
+      "FileName": "scc-{version}_Windows_bundle.zip",
+      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/scc-5.14_Windows_bundle.zip",
+      "InstallerArguments": "/SP- /VERYSILENT /TYPE=Custom /COMPONENTS=\"Content\\DISA_STIG_SCAP_Content,Other\\SCC_Service\"",
+      "ZipHash": "3F6491CBE3975BD4432AB01B694599E26E068F13DE3A21757371791572CA1EBB",
+      "ChecksumsUrl": "https://www.niwcatlantic.navy.mil/Portals/94/Page-Content/SCAP/Checksums/SCC_5.12.1_Checksums.txt"
+    },
+    {
+      "DownloadId": "STIG-GPO-Package",
+      "Name": "STIG GPO Package",
+      "Version": "January_2026",
+      "FileName": "U_STIG_GPO_Package_{version}.zip",
+      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIG_GPO_Package_January_2026.zip",
+      "ZipHash": "A698A0C90B8A9CC10CC0ABA8FEB43D9EF5D2A1C81B9EB33AA73E79D03EE526B7"
+    },
+    {
+      "DownloadId": "Intune-Policy-Package",
+      "Name": "Intune Policy Package",
+      "Version": "January_2026",
+      "FileName": "U_Intune_Policy_Package_{version}.zip",
+      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Intune_Policy_Package_January_2026.zip",
+      "ZipHash": "B6E27280A700BACA361D8683D2B07358E0FB5AA9FB2AFA22FDA59FF596BB64F2"
+    }
+  ]
+}
