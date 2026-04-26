@@ -2,28 +2,26 @@
 
 # Combined Revision History
 
-Generated: 2026-04-26 18:22:35+00:00
-
-Scan Type: All
+Generated: 2026-04-26 14:35:07-04:00
 
 ## Summary
 
-| StigId | CurrentVersion | PreviousVersion | ChangedCount | AddedCount | RemovedCount | Status |
+| StigDisplayName | CurrentVersion | PreviousVersion | ChangedCount | AddedCount | RemovedCount | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [ASD_STIG](#asd_stig) | V6R4 | V6R3 | 19 | 0 | 0 | Compared successfully. |
-| [Cloud_Computing_SRG](#cloud_computing_srg) | Y25M12 | Y25M09 | 0 | 0 | 0 | Compared successfully. |
-| [Container_Platform_SRG](#container_platform_srg) | V2R4 | V2R3 | 13 | 1 | 0 | Compared successfully. |
-| [IDPS_SRG](#idps_srg) | V3R4 | V3R3 | 17 | 2 | 0 | Compared successfully. |
-| [MS_Azure_SQL_DB_STIG](#ms_azure_sql_db_stig) | V2R3 | V2R2 | 8 | 0 | 0 | Compared successfully. |
-| [MS_Defender_Antivirus](#ms_defender_antivirus) | V2R8 | V2R7 | 40 | 0 | 0 | Compared successfully. |
-| [MS_Dot_Net_Framework](#ms_dot_net_framework) | V2R8 | V2R7 | 5 | 0 | 0 | Compared successfully. |
-| [MS_Edge_STIG](#ms_edge_stig) | V2R5 | V2R4 | 0 | 1 | 0 | Compared successfully. |
-| [MS_Entra_ID_STIG](#ms_entra_id_stig) | V1R1 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [IE_11_STIG](#ie_11_stig) | V2R7 | V2R6 | 1 | 0 | 0 | Compared successfully. |
-| [MS_Intune_MDM_Service_Desktop_Mobile_STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Microsoft_Windows_11_STIG](#microsoft_windows_11_stig) | V2R7 | V2R6 | 3 | 0 | 1 | Compared successfully. |
-| [Network_Infrastructure_Policy_STIG](#network_infrastructure_policy_stig) | V10R7 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Windows_Firewall_with_Advanced_Security](#windows_firewall_with_advanced_security) | V2R2 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [ASD STIG](#asd_stig) | V6R4 | V6R3 | 19 | 0 | 0 | Compared successfully. |
+| [Cloud Computing SRG](#cloud_computing_srg) | Y25M12 | Y25M09 | 0 | 0 | 0 | Compared successfully. |
+| [Container Platform SRG](#container_platform_srg) | V2R4 | V2R3 | 13 | 1 | 0 | Compared successfully. |
+| [IDPS SRG](#idps_srg) | V3R4 | V3R3 | 17 | 2 | 0 | Compared successfully. |
+| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3 | V2R2 | 8 | 0 | 0 | Compared successfully. |
+| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8 | V2R7 | 40 | 0 | 0 | Compared successfully. |
+| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8 | V2R7 | 5 | 0 | 0 | Compared successfully. |
+| [MS Edge STIG](#ms_edge_stig) | V2R5 | V2R4 | 0 | 1 | 0 | Compared successfully. |
+| [MS Entra ID STIG](#ms_entra_id_stig) | V1R1 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [MS IE11 STIG](#ie_11_stig) | V2R7 | V2R6 | 1 | 0 | 0 | Compared successfully. |
+| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7 | V2R6 | 3 | 0 | 1 | Compared successfully. |
+| [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 
 ---
 

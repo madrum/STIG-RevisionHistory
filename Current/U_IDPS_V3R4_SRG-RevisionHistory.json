@@ -1,4 +1,9 @@
 {
+  "CurrentVersion": "V3R4",
+  "Status": "Compared successfully.",
+  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
+  "StigDisplayName": "IDPS SRG",
+  "ChangedGroupIds": [],
   "AddedGroups": [
     {
       "GroupId": "V-278978",
@@ -15,22 +20,6 @@
       "Severity": "medium"
     }
   ],
-  "Status": "Compared successfully.",
-  "ScanType": "Manual",
-  "PreviousVersion": "V3R3",
-  "ChangedRuleVersions": [],
-  "ChangedGroupIds": [],
-  "CurrentVersion": "V3R4",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
-      "BenchmarkId": "IDPS_SRG",
-      "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
-      "StatusDate": "2025-09-22",
-      "BenchmarkDate": "2025-10-28"
-    }
-  ],
-  "RemovedGroups": [],
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
@@ -40,10 +29,21 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "StigId": "IDPS_SRG",
-  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
-  "StigDisplayName": "IDPS SRG",
+  "ChangedRuleVersions": [],
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+      "BenchmarkId": "IDPS_SRG",
+      "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-22",
+      "BenchmarkDate": "2025-10-28"
+    }
+  ],
   "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
+  "ScanType": "Manual",
+  "RemovedGroups": [],
+  "PreviousVersion": "V3R3",
+  "StigId": "IDPS_SRG",
   "ChangedRuleIds": [
     {
       "GroupId": "V-206864",

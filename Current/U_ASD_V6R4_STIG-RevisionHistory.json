@@ -1,21 +1,10 @@
 {
-  "AddedGroups": [],
-  "Status": "Compared successfully.",
-  "ScanType": "Manual",
-  "PreviousVersion": "V6R3",
-  "ChangedRuleVersions": [],
-  "ChangedGroupIds": [],
   "CurrentVersion": "V6R4",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
-      "BenchmarkId": "Application_Security_Development_STIG",
-      "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
-      "StatusDate": "2025-09-09",
-      "BenchmarkDate": "2025-10-01"
-    }
-  ],
-  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
+  "StigDisplayName": "ASD STIG",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
@@ -25,10 +14,21 @@
       "BenchmarkDate": "2025-04-02"
     }
   ],
-  "StigId": "ASD_STIG",
-  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
-  "StigDisplayName": "ASD STIG",
+  "ChangedRuleVersions": [],
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+      "BenchmarkId": "Application_Security_Development_STIG",
+      "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-09",
+      "BenchmarkDate": "2025-10-01"
+    }
+  ],
   "CurrentPackage": "U_ASD_V6R4_STIG.zip",
+  "ScanType": "Manual",
+  "RemovedGroups": [],
+  "PreviousVersion": "V6R3",
+  "StigId": "ASD_STIG",
   "ChangedRuleIds": [
     {
       "GroupId": "V-222393",

@@ -1,21 +1,10 @@
 {
-  "AddedGroups": [],
-  "Status": "Compared successfully.",
-  "ScanType": "SemiAutomated",
-  "PreviousVersion": "V2R7",
-  "ChangedRuleVersions": [],
-  "ChangedGroupIds": [],
   "CurrentVersion": "V2R8",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Dot_Net_Framework",
-      "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R8_Manual-xccdf.xml",
-      "StatusDate": "2026-02-12",
-      "BenchmarkDate": "2026-04-01"
-    }
-  ],
-  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "PreviousPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
+  "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
@@ -25,10 +14,21 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "StigId": "MS_Dot_Net_Framework",
-  "PreviousPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
-  "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+  "ChangedRuleVersions": [],
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Dot_Net_Framework",
+      "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R8_Manual-xccdf.xml",
+      "StatusDate": "2026-02-12",
+      "BenchmarkDate": "2026-04-01"
+    }
+  ],
   "CurrentPackage": "U_MS_DotNet_Framework_4-0_V2R8_STIG.zip",
+  "ScanType": "SemiAutomated",
+  "RemovedGroups": [],
+  "PreviousVersion": "V2R7",
+  "StigId": "MS_Dot_Net_Framework",
   "ChangedRuleIds": [
     {
       "GroupId": "V-225229",

@@ -1,11 +1,10 @@
 {
-  "PreviousPackage": null,
-  "CurrentPackage": "U_MS_Windows_Defender_Firewall_V2R2_STIG.zip",
-  "ScanType": "SemiAutomated",
-  "StigDisplayName": "Windows Firewall with Advanced Security STIG",
   "PreviousVersion": null,
-  "StigId": "Windows_Firewall_with_Advanced_Security",
+  "CurrentVersion": "V2R2",
+  "StigDisplayName": "Windows Firewall with Advanced Security STIG",
   "Status": "No previous benchmark version found in Archive.",
+  "PreviousPackage": null,
+  "StigId": "Windows_Firewall_with_Advanced_Security",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Windows Defender Firewall with Advanced Security Security Technical Implementation Guide",
@@ -15,5 +14,6 @@
       "BenchmarkDate": "2023-11-09"
     }
   ],
-  "CurrentVersion": "V2R2"
+  "ScanType": "SemiAutomated",
+  "CurrentPackage": "U_MS_Windows_Defender_Firewall_V2R2_STIG.zip"
 }

@@ -1,21 +1,10 @@
 {
-  "AddedGroups": [],
-  "Status": "Compared successfully.",
-  "ScanType": "Manual",
-  "PreviousVersion": "V2R2",
-  "ChangedRuleVersions": [],
-  "ChangedGroupIds": [],
   "CurrentVersion": "V2R3",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
-      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
-      "StatusDate": "2025-06-11",
-      "BenchmarkDate": "2025-07-02"
-    }
-  ],
-  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
+  "StigDisplayName": "MS Azure SQL DB STIG",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
@@ -25,10 +14,21 @@
       "BenchmarkDate": "2024-10-24"
     }
   ],
-  "StigId": "MS_Azure_SQL_DB_STIG",
-  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
-  "StigDisplayName": "MS Azure SQL DB STIG",
+  "ChangedRuleVersions": [],
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
+      "StatusDate": "2025-06-11",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
   "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+  "ScanType": "Manual",
+  "RemovedGroups": [],
+  "PreviousVersion": "V2R2",
+  "StigId": "MS_Azure_SQL_DB_STIG",
   "ChangedRuleIds": [
     {
       "GroupId": "V-255301",

@@ -1,21 +1,10 @@
 {
-  "AddedGroups": [],
-  "Status": "Compared successfully.",
-  "ScanType": "SemiAutomated",
-  "PreviousVersion": "V2R6",
-  "ChangedRuleVersions": [],
-  "ChangedGroupIds": [],
   "CurrentVersion": "V2R7",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
-      "BenchmarkId": "IE_11_STIG",
-      "FileName": "U_MS_IE11_STIG_V2R7_Manual-xccdf.xml",
-      "StatusDate": "2026-02-24",
-      "BenchmarkDate": "2026-04-01"
-    }
-  ],
-  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "PreviousPackage": "U_MS_IE11_V2R6_STIG.zip",
+  "StigDisplayName": "MS IE11 STIG",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
@@ -25,10 +14,21 @@
       "BenchmarkDate": "2026-01-05"
     }
   ],
-  "StigId": "IE_11_STIG",
-  "PreviousPackage": "U_MS_IE11_V2R6_STIG.zip",
-  "StigDisplayName": "MS IE11 STIG",
+  "ChangedRuleVersions": [],
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
+      "BenchmarkId": "IE_11_STIG",
+      "FileName": "U_MS_IE11_STIG_V2R7_Manual-xccdf.xml",
+      "StatusDate": "2026-02-24",
+      "BenchmarkDate": "2026-04-01"
+    }
+  ],
   "CurrentPackage": "U_MS_IE11_V2R7_STIG.zip",
+  "ScanType": "SemiAutomated",
+  "RemovedGroups": [],
+  "PreviousVersion": "V2R6",
+  "StigId": "IE_11_STIG",
   "ChangedRuleIds": [
     {
       "GroupId": "V-252910",

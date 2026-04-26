@@ -1,4 +1,9 @@
 {
+  "CurrentVersion": "V2R4",
+  "Status": "Compared successfully.",
+  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
+  "StigDisplayName": "Container Platform SRG",
+  "ChangedGroupIds": [],
   "AddedGroups": [
     {
       "GroupId": "V-278968",
@@ -8,22 +13,6 @@
       "Severity": "high"
     }
   ],
-  "Status": "Compared successfully.",
-  "ScanType": "Manual",
-  "PreviousVersion": "V2R3",
-  "ChangedRuleVersions": [],
-  "ChangedGroupIds": [],
-  "CurrentVersion": "V2R4",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Container Platform Security Requirements Guide",
-      "BenchmarkId": "Container_Platform_SRG",
-      "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
-      "StatusDate": "2025-09-10",
-      "BenchmarkDate": "2025-10-28"
-    }
-  ],
-  "RemovedGroups": [],
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Container Platform Security Requirements Guide",
@@ -33,10 +22,21 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "StigId": "Container_Platform_SRG",
-  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
-  "StigDisplayName": "Container Platform SRG",
+  "ChangedRuleVersions": [],
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Container Platform Security Requirements Guide",
+      "BenchmarkId": "Container_Platform_SRG",
+      "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-10",
+      "BenchmarkDate": "2025-10-28"
+    }
+  ],
   "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+  "ScanType": "Manual",
+  "RemovedGroups": [],
+  "PreviousVersion": "V2R3",
+  "StigId": "Container_Platform_SRG",
   "ChangedRuleIds": [
     {
       "GroupId": "V-233026",

@@ -228,8 +228,6 @@ begin {
         $lines += '# Combined Revision History'
         $lines += ''
         $lines += "Generated: $GeneratedAt"
-        $lines += ''
-        $lines += "Scan Type: $ScanType"
         if ($SelectedStigIds -and $SelectedStigIds.Count -gt 0) {
             $lines += ''
             $lines += 'Selected STIG IDs: ' + ($SelectedStigIds -join ', ')
@@ -280,7 +278,7 @@ begin {
                 }
 
                 [ordered]@{
-                    StigId          = "[$($_.StigId)](#$anchorId)"
+                    StigDisplayName = "[$($_.StigDisplayName)](#$anchorId)"
                     CurrentVersion  = $_.CurrentVersion
                     PreviousVersion = if ($null -ne $_.PreviousVersion) { [string]$_.PreviousVersion } else { '' }
                     ChangedCount    = $changedCount
@@ -294,7 +292,7 @@ begin {
         $lines += ''
         $lines += '## Summary'
         $lines += ''
-        $lines += Convert-ItemsToMarkdownTable -Items $summaryItems -Properties @('StigId', 'CurrentVersion', 'PreviousVersion', 'ChangedCount', 'AddedCount', 'RemovedCount', 'Status')
+        $lines += Convert-ItemsToMarkdownTable -Items $summaryItems -Properties @('StigDisplayName', 'CurrentVersion', 'PreviousVersion', 'ChangedCount', 'AddedCount', 'RemovedCount', 'Status')
 
         foreach ($result in $Results) {
             $anchorId = $result.StigId.ToLowerInvariant()

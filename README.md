@@ -1,31 +1,18 @@
 # STIG-RevisionHistory
 
-## Objective
-- Store current STIG/SRG benchmark files from cyber.mil.
-- Store previous versions in archive.
+- View the latest [Combined Revision History](./Current/CombinedRevisionHistory.md) report.
+
+## Summary of repo purpose
+- Store current STIG/SRG benchmark files from cyber.mil in `\Current` directory.
+- Store previous versions in `\Archive` directory.
 - Produce a revision history file for each benchmark file using diff between current and previous version.
+- Produce a combined revision history file that combines all individual revision history files into one document.
 
 ## STIG Content Library Structure
-- Current
-  - U_Container_Platform_V2R4_SRG.zip
-  - U_Container_Platform_V2R4_SRG-RevisionHistory.json
-  - U_MS_Edge_V2R4_STIG.zip
-  - U_MS_Edge_V2R4_STIG-RevisionHistory.json
-  - U_MS_Windows_11_V2R6_STIG.zip
-  - U_MS_Windows_11_V2R6_STIG-RevisionHistory.json
-  - ...
-- Archive
-  - U_Container_Platform_V2R3_SRG.zip
-  - U_Container_Platform_V2R3_SRG-RevisionHistory.json
-  - U_MS_Edge_V2R3_STIG.zip
-  - U_MS_Edge_V2R3_STIG-RevisionHistory.json
-  - U_MS_Windows_11_V2R4_STIG.zip
-  - U_MS_Windows_11_V2R4_STIG-RevisionHistory.json
-  - ...
-
-> The current Windows 11 STIG is V2R6 and the archive version is V2R4, meaning V2R5 is missing.
-> This is not a major concern because we just want to see the differences between the current and previous version.
-> Ideally, we'll have each version, but missing a version is not a problem.
+- `Current` directory contains the latest benchmark files downloaded from cyber.mil.
+  - It also contains the generated revision history files for each benchmark file, which are created by comparing the current version with the previous version in the archive.
+- `Archive` directory contains previous versions of the benchmark files.
+  - It also contains the generated revision history files for each benchmark file, which compare the specified version with the previous version.
 
 ## Reference
 - [DoD Cyber Exchange Document Library](https://www.cyber.mil/stigs/downloads) to download current STIG/SRG benchmark files.
