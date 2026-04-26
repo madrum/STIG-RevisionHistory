@@ -1,44 +1,9 @@
 {
-  "ChangedRuleIds": [],
-  "PreviousVersion": "Y25M09",
-  "CurrentVersion": "Y25M12",
-  "PreviousPackage": "U_Cloud_Computing_Y25M09_SRG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
-      "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
-      "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
-      "StatusDate": "2024-12-20",
-      "BenchmarkDate": "2025-01-30"
-    },
-    {
-      "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
-      "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
-      "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
-      "StatusDate": "2025-08-13",
-      "BenchmarkDate": "2025-08-13"
-    }
-  ],
-  "ChangedRuleVersions": [],
+  "AddedGroups": [],
   "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
-      "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
-      "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
-      "StatusDate": "2024-12-20",
-      "BenchmarkDate": "2025-01-30"
-    },
-    {
-      "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
-      "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
-      "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
-      "StatusDate": "2025-08-13",
-      "BenchmarkDate": "2025-08-13"
-    }
-  ],
-  "StigDisplayName": "Cloud Computing SRG",
   "ScanType": "Manual",
+  "PreviousVersion": "Y25M09",
+  "ChangedRuleVersions": [],
   "ChildBenchmarks": [
     {
       "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
@@ -61,9 +26,44 @@
       "ReferenceHref": "https://cyber.mil"
     }
   ],
-  "CurrentPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
   "ChangedGroupIds": [],
-  "AddedGroups": [],
+  "CurrentVersion": "Y25M12",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
+      "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
+      "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
+      "StatusDate": "2024-12-20",
+      "BenchmarkDate": "2025-01-30"
+    },
+    {
+      "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
+      "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
+      "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
+      "StatusDate": "2025-08-13",
+      "BenchmarkDate": "2025-08-13"
+    }
+  ],
+  "RemovedGroups": [],
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
+      "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
+      "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
+      "StatusDate": "2024-12-20",
+      "BenchmarkDate": "2025-01-30"
+    },
+    {
+      "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
+      "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
+      "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
+      "StatusDate": "2025-08-13",
+      "BenchmarkDate": "2025-08-13"
+    }
+  ],
   "StigId": "Cloud_Computing_SRG",
-  "RemovedGroups": []
+  "PreviousPackage": "U_Cloud_Computing_Y25M09_SRG.zip",
+  "StigDisplayName": "Cloud Computing SRG",
+  "CurrentPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
+  "ChangedRuleIds": []
 }

@@ -1,4 +1,34 @@
 {
+  "AddedGroups": [],
+  "Status": "Compared successfully.",
+  "ScanType": "SemiAutomated",
+  "PreviousVersion": "V2R7",
+  "ChangedRuleVersions": [],
+  "ChangedGroupIds": [],
+  "CurrentVersion": "V2R8",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R8_Manual-xccdf.xml",
+      "StatusDate": "2026-02-17",
+      "BenchmarkDate": "2026-04-01"
+    }
+  ],
+  "RemovedGroups": [],
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
+      "StatusDate": "2025-11-25",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
+  "StigId": "MS_Defender_Antivirus",
+  "PreviousPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
+  "StigDisplayName": "MS Defender Antivirus STIG",
+  "CurrentPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-213428",
@@ -280,35 +310,5 @@
       "CurrentRuleId": "SV-278863r1190777",
       "RuleTitle": "Microsoft Defender AV must set cloud protection level to High."
     }
-  ],
-  "PreviousVersion": "V2R7",
-  "CurrentVersion": "V2R8",
-  "PreviousPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Defender_Antivirus",
-      "FileName": "U_MS_Defender_Antivirus_STIG_V2R8_Manual-xccdf.xml",
-      "StatusDate": "2026-02-17",
-      "BenchmarkDate": "2026-04-01"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Defender_Antivirus",
-      "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
-      "StatusDate": "2025-11-25",
-      "BenchmarkDate": "2026-01-05"
-    }
-  ],
-  "StigDisplayName": "MS Defender Antivirus STIG",
-  "ScanType": "SemiAutomated",
-  "CurrentPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
-  "ChangedGroupIds": [],
-  "AddedGroups": [],
-  "StigId": "MS_Defender_Antivirus",
-  "RemovedGroups": []
+  ]
 }

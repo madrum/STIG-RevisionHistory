@@ -1,32 +1,4 @@
 {
-  "ChangedRuleIds": [],
-  "PreviousVersion": "V2R4",
-  "CurrentVersion": "V2R5",
-  "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Edge_STIG",
-      "FileName": "U_MS_Edge_V2R5_STIG_Manual-xccdf.xml",
-      "StatusDate": "2026-02-25",
-      "BenchmarkDate": "2026-04-01"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Edge_STIG",
-      "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
-      "StatusDate": "2025-12-11",
-      "BenchmarkDate": "2026-01-05"
-    }
-  ],
-  "StigDisplayName": "MS Edge STIG",
-  "ScanType": "SemiAutomated",
-  "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
-  "ChangedGroupIds": [],
   "AddedGroups": [
     {
       "GroupId": "V-283439",
@@ -36,6 +8,34 @@
       "Severity": "medium"
     }
   ],
+  "Status": "Compared successfully.",
+  "ScanType": "SemiAutomated",
+  "PreviousVersion": "V2R4",
+  "ChangedRuleVersions": [],
+  "ChangedGroupIds": [],
+  "CurrentVersion": "V2R5",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Edge_STIG",
+      "FileName": "U_MS_Edge_V2R5_STIG_Manual-xccdf.xml",
+      "StatusDate": "2026-02-25",
+      "BenchmarkDate": "2026-04-01"
+    }
+  ],
+  "RemovedGroups": [],
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Edge_STIG",
+      "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
+      "StatusDate": "2025-12-11",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
   "StigId": "MS_Edge_STIG",
-  "RemovedGroups": []
+  "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
+  "StigDisplayName": "MS Edge STIG",
+  "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
+  "ChangedRuleIds": []
 }

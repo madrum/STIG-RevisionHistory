@@ -1,4 +1,34 @@
 {
+  "AddedGroups": [],
+  "Status": "Compared successfully.",
+  "ScanType": "Manual",
+  "PreviousVersion": "V2R2",
+  "ChangedRuleVersions": [],
+  "ChangedGroupIds": [],
+  "CurrentVersion": "V2R3",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
+      "StatusDate": "2025-06-11",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
+  "RemovedGroups": [],
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R2_Manual-xccdf.xml",
+      "StatusDate": "2024-09-04",
+      "BenchmarkDate": "2024-10-24"
+    }
+  ],
+  "StigId": "MS_Azure_SQL_DB_STIG",
+  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
+  "StigDisplayName": "MS Azure SQL DB STIG",
+  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-255301",
@@ -56,35 +86,5 @@
       "CurrentRuleId": "SV-255340r1043182",
       "RuleTitle": "Azure SQL Database must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect."
     }
-  ],
-  "PreviousVersion": "V2R2",
-  "CurrentVersion": "V2R3",
-  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
-      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
-      "StatusDate": "2025-06-11",
-      "BenchmarkDate": "2025-07-02"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
-      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R2_Manual-xccdf.xml",
-      "StatusDate": "2024-09-04",
-      "BenchmarkDate": "2024-10-24"
-    }
-  ],
-  "StigDisplayName": "MS Azure SQL DB STIG",
-  "ScanType": "Manual",
-  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
-  "ChangedGroupIds": [],
-  "AddedGroups": [],
-  "StigId": "MS_Azure_SQL_DB_STIG",
-  "RemovedGroups": []
+  ]
 }
