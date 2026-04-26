@@ -316,8 +316,8 @@ process {
     New-Item -Path $archiveContentPath -ItemType Directory -Force | Out-Null
 
     $stigsInfo = Get-Content -LiteralPath $stigsInfoPath | ConvertFrom-Json
-    $manualBenchmarks = $stigsInfo.StigBenchmarks | Where-Object { $_.ScanType -eq 'Manual' }
-    $semiAutomatedBenchmarks = $stigsInfo.StigBenchmarks | Where-Object { $_.ScanType -eq 'SemiAutomated' }
+    $manualBenchmarks = @($stigsInfo.StigBenchmarks | Where-Object { $_.ScanType -eq 'Manual' })
+    $semiAutomatedBenchmarks = @($stigsInfo.StigBenchmarks | Where-Object { $_.ScanType -eq 'SemiAutomated' })
     $contentResults = @()
 
     foreach ($benchmark in $manualBenchmarks) {
@@ -412,10 +412,10 @@ process {
 }
 
 end {
-    $availableUpdates = $contentResults | Where-Object { $_.UpdateAvailable }
-    $downloadableManualBenchmarks = $contentResults | Where-Object { $_.Category -eq 'ManualBenchmark' -and $_.DownloadUri }
-    $downloadableSemiAutomatedBenchmarks = $contentResults | Where-Object { $_.Category -eq 'SemiAutomatedBenchmark' -and $_.DownloadUri }
-    $downloadableTools = $contentResults | Where-Object { $_.Category -eq 'Download' -and $_.DownloadUri }
+    $availableUpdates = @($contentResults | Where-Object { $_.UpdateAvailable })
+    $downloadableManualBenchmarks = @($contentResults | Where-Object { $_.Category -eq 'ManualBenchmark' -and $_.DownloadUri })
+    $downloadableSemiAutomatedBenchmarks = @($contentResults | Where-Object { $_.Category -eq 'SemiAutomatedBenchmark' -and $_.DownloadUri })
+    $downloadableTools = @($contentResults | Where-Object { $_.Category -eq 'Download' -and $_.DownloadUri })
     $downloadedBenchmarks = @()
     $downloadedTools = @()
     $benchmarkLookup = @{}
