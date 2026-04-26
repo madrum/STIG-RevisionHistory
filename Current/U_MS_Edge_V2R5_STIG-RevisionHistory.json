@@ -1,4 +1,9 @@
 {
+  "StigId": "MS_Edge_STIG",
+  "StigDisplayName": "MS Edge STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentVersion": "V2R5",
+  "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
@@ -8,8 +13,8 @@
       "BenchmarkDate": "2026-04-01"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "SemiAutomated",
+  "PreviousVersion": "V2R4",
+  "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
@@ -19,15 +24,10 @@
       "BenchmarkDate": "2026-01-05"
     }
   ],
-  "StigId": "MS_Edge_STIG",
-  "CurrentVersion": "V2R5",
-  "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
-  "ChangedRuleIds": [],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "V2R4",
-  "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
-  "RemovedGroups": [],
   "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [],
   "AddedGroups": [
     {
       "GroupId": "V-283439",
@@ -37,5 +37,5 @@
       "Severity": "medium"
     }
   ],
-  "StigDisplayName": "MS Edge STIG"
+  "RemovedGroups": []
 }

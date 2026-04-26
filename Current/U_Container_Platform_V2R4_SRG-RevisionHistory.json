@@ -1,4 +1,9 @@
 {
+  "StigId": "Container_Platform_SRG",
+  "StigDisplayName": "Container Platform SRG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V2R4",
+  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Container Platform Security Requirements Guide",
@@ -8,8 +13,8 @@
       "BenchmarkDate": "2025-10-28"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "Manual",
+  "PreviousVersion": "V2R3",
+  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Container Platform Security Requirements Guide",
@@ -19,9 +24,9 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "StigId": "Container_Platform_SRG",
-  "CurrentVersion": "V2R4",
-  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-233026",
@@ -115,11 +120,6 @@
       "RuleTitle": "The container platform must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality."
     }
   ],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "V2R3",
-  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
-  "RemovedGroups": [],
-  "Status": "Compared successfully.",
   "AddedGroups": [
     {
       "GroupId": "V-278968",
@@ -129,5 +129,5 @@
       "Severity": "high"
     }
   ],
-  "StigDisplayName": "Container Platform SRG"
+  "RemovedGroups": []
 }

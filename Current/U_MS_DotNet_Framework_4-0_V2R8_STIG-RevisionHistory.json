@@ -1,4 +1,9 @@
 {
+  "StigId": "MS_Dot_Net_Framework",
+  "StigDisplayName": "MS DotNet Framework 4-0 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentVersion": "V2R8",
+  "CurrentPackage": "U_MS_DotNet_Framework_4-0_V2R8_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
@@ -8,8 +13,8 @@
       "BenchmarkDate": "2026-04-01"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "SemiAutomated",
+  "PreviousVersion": "V2R7",
+  "PreviousPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
@@ -19,9 +24,9 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "StigId": "MS_Dot_Net_Framework",
-  "CurrentVersion": "V2R8",
-  "CurrentPackage": "U_MS_DotNet_Framework_4-0_V2R8_STIG.zip",
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-225229",
@@ -59,11 +64,6 @@
       "RuleTitle": "Software utilizing .Net 4.0 must be identified and relevant access controls configured."
     }
   ],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "V2R7",
-  "PreviousPackage": "U_MS_DotNet_Framework_4-0_V2R7_STIG.zip",
-  "RemovedGroups": [],
-  "Status": "Compared successfully.",
   "AddedGroups": [],
-  "StigDisplayName": "MS DotNet Framework 4-0 STIG"
+  "RemovedGroups": []
 }

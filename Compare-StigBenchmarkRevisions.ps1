@@ -158,7 +158,7 @@ begin {
     function Save-RevisionHistoryReport {
         param(
             [Parameter(Mandatory = $true)]
-            [hashtable]$Result,
+            [object]$Result,
 
             [Parameter(Mandatory = $true)]
             [string]$CurrentPackagePath
@@ -311,12 +311,9 @@ begin {
             $lines += ''
             $lines += "## $($result.StigDisplayName)"
             $lines += ''
-            $lines += "- Display Name: $($result.StigDisplayName)"
             $lines += "- Scan Type: $($result.ScanType)"
             $lines += "- Current Version: $($result.CurrentVersion)"
             $lines += "- Previous Version: $(if ($null -ne $result.PreviousVersion) { $result.PreviousVersion } else { 'None' })"
-            $lines += "- Current Package: $(if ($null -ne $result.CurrentPackage) { $result.CurrentPackage } else { 'None' })"
-            $lines += "- Previous Package: $(if ($null -ne $result.PreviousPackage) { $result.PreviousPackage } else { 'None' })"
             $lines += "- Status: $($result.Status)"
 
             if ($result.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $result.CurrentBenchmarks.Count -gt 0) {

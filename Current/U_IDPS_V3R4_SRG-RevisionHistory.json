@@ -1,4 +1,9 @@
 {
+  "StigId": "IDPS_SRG",
+  "StigDisplayName": "IDPS SRG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V3R4",
+  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
@@ -8,8 +13,8 @@
       "BenchmarkDate": "2025-10-28"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "Manual",
+  "PreviousVersion": "V3R3",
+  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
@@ -19,9 +24,9 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "StigId": "IDPS_SRG",
-  "CurrentVersion": "V3R4",
-  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-206864",
@@ -143,11 +148,6 @@
       "RuleTitle": "The IDPS must implement physically or logically separate subnetworks to isolate organization-defined critical system components and functions."
     }
   ],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "V3R3",
-  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
-  "RemovedGroups": [],
-  "Status": "Compared successfully.",
   "AddedGroups": [
     {
       "GroupId": "V-278978",
@@ -164,5 +164,5 @@
       "Severity": "medium"
     }
   ],
-  "StigDisplayName": "IDPS SRG"
+  "RemovedGroups": []
 }

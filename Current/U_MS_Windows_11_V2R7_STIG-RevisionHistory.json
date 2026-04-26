@@ -1,4 +1,9 @@
 {
+  "StigId": "Microsoft_Windows_11_STIG",
+  "StigDisplayName": "Microsoft Windows 11 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentVersion": "V2R7",
+  "CurrentPackage": "U_MS_Windows_11_V2R7_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
@@ -8,8 +13,8 @@
       "BenchmarkDate": "2026-04-01"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "SemiAutomated",
+  "PreviousVersion": "V2R6",
+  "PreviousPackage": "U_MS_Windows_11_V2R6_STIG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
@@ -19,9 +24,9 @@
       "BenchmarkDate": "2026-01-05"
     }
   ],
-  "StigId": "Microsoft_Windows_11_STIG",
-  "CurrentVersion": "V2R7",
-  "CurrentPackage": "U_MS_Windows_11_V2R7_STIG.zip",
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-253260",
@@ -45,9 +50,7 @@
       "RuleTitle": "The security event log size must be configured to a value that holds at least one week's worth of audit records."
     }
   ],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "V2R6",
-  "PreviousPackage": "U_MS_Windows_11_V2R6_STIG.zip",
+  "AddedGroups": [],
   "RemovedGroups": [
     {
       "GroupId": "V-253258",
@@ -56,8 +59,5 @@
       "RuleTitle": "Windows 11 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: Continuously, where ESS is used; 30 days, for any additional internal network scans not covered by ESS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP).",
       "Severity": "medium"
     }
-  ],
-  "Status": "Compared successfully.",
-  "AddedGroups": [],
-  "StigDisplayName": "Microsoft Windows 11 STIG"
+  ]
 }

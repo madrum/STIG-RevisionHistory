@@ -1,4 +1,9 @@
 {
+  "StigId": "MS_Azure_SQL_DB_STIG",
+  "StigDisplayName": "MS Azure SQL DB STIG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V2R3",
+  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
@@ -8,8 +13,8 @@
       "BenchmarkDate": "2025-07-02"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "Manual",
+  "PreviousVersion": "V2R2",
+  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
@@ -19,9 +24,9 @@
       "BenchmarkDate": "2024-10-24"
     }
   ],
-  "StigId": "MS_Azure_SQL_DB_STIG",
-  "CurrentVersion": "V2R3",
-  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-255301",
@@ -80,11 +85,6 @@
       "RuleTitle": "Azure SQL Database must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect."
     }
   ],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "V2R2",
-  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
-  "RemovedGroups": [],
-  "Status": "Compared successfully.",
   "AddedGroups": [],
-  "StigDisplayName": "MS Azure SQL DB STIG"
+  "RemovedGroups": []
 }

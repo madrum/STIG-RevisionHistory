@@ -1,4 +1,9 @@
 {
+  "StigId": "Cloud_Computing_SRG",
+  "StigDisplayName": "Cloud Computing SRG",
+  "ScanType": "Manual",
+  "CurrentVersion": "Y25M12",
+  "CurrentPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
@@ -15,8 +20,8 @@
       "BenchmarkDate": "2025-08-13"
     }
   ],
-  "ChangedRuleVersions": [],
-  "ScanType": "Manual",
+  "PreviousVersion": "Y25M09",
+  "PreviousPackage": "U_Cloud_Computing_Y25M09_SRG.zip",
   "PreviousBenchmarks": [
     {
       "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
@@ -33,6 +38,12 @@
       "BenchmarkDate": "2025-08-13"
     }
   ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [],
+  "AddedGroups": [],
+  "RemovedGroups": [],
   "ChildBenchmarks": [
     {
       "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
@@ -54,16 +65,5 @@
       "Reference": "DISASTIG.DOD.MIL",
       "ReferenceHref": "https://cyber.mil"
     }
-  ],
-  "StigId": "Cloud_Computing_SRG",
-  "CurrentVersion": "Y25M12",
-  "CurrentPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
-  "ChangedRuleIds": [],
-  "ChangedGroupIds": [],
-  "PreviousVersion": "Y25M09",
-  "PreviousPackage": "U_Cloud_Computing_Y25M09_SRG.zip",
-  "RemovedGroups": [],
-  "Status": "Compared successfully.",
-  "AddedGroups": [],
-  "StigDisplayName": "Cloud Computing SRG"
+  ]
 }

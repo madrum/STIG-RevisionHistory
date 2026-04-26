@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-04-26 14:50:12-04:00
+Generated: 2026-04-26 14:57:22-04:00
 
 ## Summary
 
@@ -31,12 +31,9 @@ Generated: 2026-04-26 14:50:12-04:00
 
 ## ASD STIG
 
-- Display Name: ASD STIG
 - Scan Type: Manual
 - Current Version: V6R4
 - Previous Version: V6R3
-- Current Package: U_ASD_V6R4_STIG.zip
-- Previous Package: U_ASD_V6R3_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -87,12 +84,9 @@ None
 
 ## Cloud Computing SRG
 
-- Display Name: Cloud Computing SRG
 - Scan Type: Manual
 - Current Version: Y25M12
 - Previous Version: Y25M09
-- Current Package: U_Cloud_Computing_Y25M12_SRG.zip
-- Previous Package: U_Cloud_Computing_Y25M09_SRG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -123,12 +117,9 @@ None
 
 ## Container Platform SRG
 
-- Display Name: Container Platform SRG
 - Scan Type: Manual
 - Current Version: V2R4
 - Previous Version: V2R3
-- Current Package: U_Container_Platform_V2R4_SRG.zip
-- Previous Package: U_Container_Platform_V2R3_SRG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -175,12 +166,9 @@ None
 
 ## IDPS SRG
 
-- Display Name: IDPS SRG
 - Scan Type: Manual
 - Current Version: V3R4
 - Previous Version: V3R3
-- Current Package: U_IDPS_V3R4_SRG.zip
-- Previous Package: U_IDPS_V3R3_SRG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -232,12 +220,9 @@ None
 
 ## MS Azure SQL DB STIG
 
-- Display Name: MS Azure SQL DB STIG
 - Scan Type: Manual
 - Current Version: V2R3
 - Previous Version: V2R2
-- Current Package: U_MS_Azure_SQL_DB_V2R3_STIG.zip
-- Previous Package: U_MS_Azure_SQL_DB_V2R2_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -277,12 +262,9 @@ None
 
 ## MS Defender Antivirus STIG
 
-- Display Name: MS Defender Antivirus STIG
 - Scan Type: SemiAutomated
 - Current Version: V2R8
 - Previous Version: V2R7
-- Current Package: U_MS_Defender_Antivirus_V2R8_STIG.zip
-- Previous Package: U_MS_Defender_Antivirus_V2R7_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -354,12 +336,9 @@ None
 
 ## MS DotNet Framework 4-0 STIG
 
-- Display Name: MS DotNet Framework 4-0 STIG
 - Scan Type: SemiAutomated
 - Current Version: V2R8
 - Previous Version: V2R7
-- Current Package: U_MS_DotNet_Framework_4-0_V2R8_STIG.zip
-- Previous Package: U_MS_DotNet_Framework_4-0_V2R7_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -396,12 +375,9 @@ None
 
 ## MS Edge STIG
 
-- Display Name: MS Edge STIG
 - Scan Type: SemiAutomated
 - Current Version: V2R5
 - Previous Version: V2R4
-- Current Package: U_MS_Edge_V2R5_STIG.zip
-- Previous Package: U_MS_Edge_V2R4_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -434,12 +410,9 @@ None
 
 ## MS Entra ID STIG
 
-- Display Name: MS Entra ID STIG
 - Scan Type: Manual
 - Current Version: V1R1
 - Previous Version: None
-- Current Package: U_MS_Entra_ID_V1R1_STIG.zip
-- Previous Package: None
 - Status: No previous benchmark version found in Archive.
 
 ### Changed Group IDs
@@ -470,12 +443,9 @@ None
 
 ## MS IE11 STIG
 
-- Display Name: MS IE11 STIG
 - Scan Type: SemiAutomated
 - Current Version: V2R7
 - Previous Version: V2R6
-- Current Package: U_MS_IE11_V2R7_STIG.zip
-- Previous Package: U_MS_IE11_V2R6_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -508,12 +478,9 @@ None
 
 ## MS Intune MDM Service Desktop Mobile STIG
 
-- Display Name: MS Intune MDM Service Desktop Mobile STIG
 - Scan Type: Manual
 - Current Version: Y25M04
 - Previous Version: None
-- Current Package: U_MS_Intune_Desktop_Mobile_Y25M04_STIG.zip
-- Previous Package: None
 - Status: No previous benchmark version found in Archive.
 
 ### Changed Group IDs
@@ -544,12 +511,9 @@ None
 
 ## Microsoft Windows 11 STIG
 
-- Display Name: Microsoft Windows 11 STIG
 - Scan Type: SemiAutomated
 - Current Version: V2R7
 - Previous Version: V2R6
-- Current Package: U_MS_Windows_11_V2R7_STIG.zip
-- Previous Package: U_MS_Windows_11_V2R6_STIG.zip
 - Status: Compared successfully.
 
 ### Changed Group IDs
@@ -586,12 +550,9 @@ None
 
 ## Network Infrastructure Policy STIG
 
-- Display Name: Network Infrastructure Policy STIG
 - Scan Type: Manual
 - Current Version: V10R7
 - Previous Version: None
-- Current Package: U_Network_Infrastructure_Policy_V10R7_STIG.zip
-- Previous Package: None
 - Status: No previous benchmark version found in Archive.
 
 ### Changed Group IDs
@@ -622,12 +583,9 @@ None
 
 ## Windows Firewall with Advanced Security STIG
 
-- Display Name: Windows Firewall with Advanced Security STIG
 - Scan Type: SemiAutomated
 - Current Version: V2R2
 - Previous Version: None
-- Current Package: U_MS_Windows_Defender_Firewall_V2R2_STIG.zip
-- Previous Package: None
 - Status: No previous benchmark version found in Archive.
 
 ### Changed Group IDs

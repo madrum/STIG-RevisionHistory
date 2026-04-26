@@ -1,10 +1,8 @@
 {
+  "StigId": "Network_Infrastructure_Policy_STIG",
+  "StigDisplayName": "Network Infrastructure Policy STIG",
   "ScanType": "Manual",
   "CurrentVersion": "V10R7",
-  "Status": "No previous benchmark version found in Archive.",
-  "StigId": "Network_Infrastructure_Policy_STIG",
-  "PreviousVersion": null,
-  "PreviousPackage": null,
   "CurrentPackage": "U_Network_Infrastructure_Policy_V10R7_STIG.zip",
   "CurrentBenchmarks": [
     {
@@ -15,5 +13,7 @@
       "BenchmarkDate": "2024-10-24"
     }
   ],
-  "StigDisplayName": "Network Infrastructure Policy STIG"
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "Status": "No previous benchmark version found in Archive."
 }
