@@ -128,11 +128,8 @@
       "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
       "BenchmarkId": "IDPS_SRG",
       "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-09-22",
-      "BenchmarkDate": "2025-10-28",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-10-28"
     }
   ],
   "ChangedRuleVersions": [],
@@ -142,11 +139,8 @@
       "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
       "BenchmarkId": "IDPS_SRG",
       "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-05-19",
-      "BenchmarkDate": "2025-07-02",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-07-02"
     }
   ],
   "StigDisplayName": "IDPS SRG",

@@ -1,0 +1,70 @@
+{
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-235719",
+      "RuleVersion": "EDGE-00-000001",
+      "PreviousRuleId": "SV-235719r1007484",
+      "CurrentRuleId": "SV-235719r1156558",
+      "RuleTitle": "User control of proxy settings must be disabled."
+    },
+    {
+      "GroupId": "V-235752",
+      "RuleVersion": "EDGE-00-000036",
+      "PreviousRuleId": "SV-235752r1106675",
+      "CurrentRuleId": "SV-235752r1156563",
+      "RuleTitle": "Download restrictions must be configured."
+    },
+    {
+      "GroupId": "V-235758",
+      "RuleVersion": "EDGE-00-000045",
+      "PreviousRuleId": "SV-235758r961683",
+      "CurrentRuleId": "SV-235758r1117151",
+      "RuleTitle": "The version of Microsoft Edge running on the system must be a supported version."
+    },
+    {
+      "GroupId": "V-266981",
+      "RuleVersion": "EDGE-00-000068",
+      "PreviousRuleId": "SV-266981r1007489",
+      "CurrentRuleId": "SV-266981r1169858",
+      "RuleTitle": "FriendlyURLs must be disabled."
+    }
+  ],
+  "PreviousVersion": "V2R3",
+  "CurrentVersion": "V2R4",
+  "PreviousPackage": "U_MS_Edge_V2R3_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Edge_STIG",
+      "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
+      "StatusDate": "2025-12-11",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Edge_STIG",
+      "FileName": "U_MS_Edge_V2R3_STIG_Manual-xccdf.xml",
+      "StatusDate": "2025-05-15",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
+  "StigDisplayName": "MS Edge STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentPackage": "U_MS_Edge_V2R4_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [
+    {
+      "GroupId": "V-279940",
+      "RuleVersion": "EDGE-00-000069",
+      "RuleId": "SV-279940r1156561",
+      "RuleTitle": "Access to Microsoft 365 Copilot writing assistance must be disabled.",
+      "Severity": "medium"
+    }
+  ],
+  "StigId": "MS_Edge_STIG",
+  "RemovedGroups": []
+}

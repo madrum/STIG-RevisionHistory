@@ -4,11 +4,8 @@
       "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
       "BenchmarkId": "MS_Entra_ID_STIG",
       "FileName": "U_MS_Entra_ID_STIG_V1R1_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-03-17",
-      "BenchmarkDate": "2025-02-28",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-02-28"
     }
   ],
   "StigDisplayName": "MS Entra ID STIG",

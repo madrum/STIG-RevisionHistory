@@ -8,21 +8,15 @@
       "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
       "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
       "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2024-12-20",
-      "BenchmarkDate": "2025-01-30",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-01-30"
     },
     {
       "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
       "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
       "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-08-13",
-      "BenchmarkDate": "2025-08-13",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-08-13"
     }
   ],
   "ChangedRuleVersions": [],
@@ -32,21 +26,15 @@
       "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
       "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
       "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2024-12-20",
-      "BenchmarkDate": "2025-01-30",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-01-30"
     },
     {
       "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
       "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
       "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-08-13",
-      "BenchmarkDate": "2025-08-13",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-08-13"
     }
   ],
   "StigDisplayName": "Cloud Computing SRG",

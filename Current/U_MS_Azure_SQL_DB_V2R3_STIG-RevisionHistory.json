@@ -1,22 +1,90 @@
 {
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-255301",
+      "RuleVersion": "ASQL-00-000100",
+      "PreviousRuleId": "SV-255301r960768",
+      "CurrentRuleId": "SV-255301r1043176",
+      "RuleTitle": "Azure SQL Databases must integrate with Azure Active Directory for providing account management and automation for all users, groups, roles, and any other principals."
+    },
+    {
+      "GroupId": "V-255302",
+      "RuleVersion": "ASQL-00-000200",
+      "PreviousRuleId": "SV-255302r960792",
+      "CurrentRuleId": "SV-255302r1112451",
+      "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to server information and system resources in accordance with applicable access control policies."
+    },
+    {
+      "GroupId": "V-255303",
+      "RuleVersion": "ASQL-00-000300",
+      "PreviousRuleId": "SV-255303r960792",
+      "CurrentRuleId": "SV-255303r1112454",
+      "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to database information and system resources in accordance with applicable access control policies."
+    },
+    {
+      "GroupId": "V-255311",
+      "RuleVersion": "ASQL-00-002200",
+      "PreviousRuleId": "SV-255311r961158",
+      "CurrentRuleId": "SV-255311r1112455",
+      "RuleTitle": "The Azure SQL Database and associated applications must reserve the use of dynamic code execution for situations that require it."
+    },
+    {
+      "GroupId": "V-255312",
+      "RuleVersion": "ASQL-00-002300",
+      "PreviousRuleId": "SV-255312r961158",
+      "CurrentRuleId": "SV-255312r1112456",
+      "RuleTitle": "The Azure SQL Database and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack."
+    },
+    {
+      "GroupId": "V-255334",
+      "RuleVersion": "ASQL-00-007700",
+      "PreviousRuleId": "SV-255334r960966",
+      "CurrentRuleId": "SV-255334r1043177",
+      "RuleTitle": "The Azure SQL Database must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments."
+    },
+    {
+      "GroupId": "V-255335",
+      "RuleVersion": "ASQL-00-007800",
+      "PreviousRuleId": "SV-255335r960969",
+      "CurrentRuleId": "SV-255335r1051115",
+      "RuleTitle": "Azure SQL Database must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users)."
+    },
+    {
+      "GroupId": "V-255340",
+      "RuleVersion": "ASQL-00-010200",
+      "PreviousRuleId": "SV-255340r961221",
+      "CurrentRuleId": "SV-255340r1043182",
+      "RuleTitle": "Azure SQL Database must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect."
+    }
+  ],
+  "PreviousVersion": "V2R2",
+  "CurrentVersion": "V2R3",
+  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
       "BenchmarkId": "MS_Azure_SQL_DB_STIG",
       "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-06-11",
-      "BenchmarkDate": "2025-07-02",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
+  "ChangedRuleVersions": [],
+  "Status": "Compared successfully.",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R2_Manual-xccdf.xml",
+      "StatusDate": "2024-09-04",
+      "BenchmarkDate": "2024-10-24"
     }
   ],
   "StigDisplayName": "MS Azure SQL DB STIG",
-  "Status": "No previous benchmark version found in Archive.",
-  "StigId": "MS_Azure_SQL_DB_STIG",
-  "CurrentVersion": "V2R3",
-  "PreviousVersion": null,
-  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
   "ScanType": "Manual",
-  "PreviousPackage": null
+  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+  "ChangedGroupIds": [],
+  "AddedGroups": [],
+  "StigId": "MS_Azure_SQL_DB_STIG",
+  "RemovedGroups": []
 }

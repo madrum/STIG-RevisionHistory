@@ -4,11 +4,8 @@
       "BenchmarkTitle": "Network Infrastructure Policy Security Technical Implementation Guide",
       "BenchmarkId": "Network_Infrastructure_Policy_STIG",
       "FileName": "U_Network_Infrastructure_Policy_STIG_V10R7_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2024-08-02",
-      "BenchmarkDate": "2024-10-24",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2024-10-24"
     }
   ],
   "StigDisplayName": "Network Infrastructure Policy STIG",

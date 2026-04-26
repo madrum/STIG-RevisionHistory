@@ -4,11 +4,8 @@
       "BenchmarkTitle": "Microsoft Windows Defender Firewall with Advanced Security Security Technical Implementation Guide",
       "BenchmarkId": "Windows_Firewall_with_Advanced_Security",
       "FileName": "U_MS_Windows_Defender_Firewall_STIG_V2R2_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2023-08-23",
-      "BenchmarkDate": "2023-11-09",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2023-11-09"
     }
   ],
   "StigDisplayName": "Windows Firewall with Advanced Security STIG",

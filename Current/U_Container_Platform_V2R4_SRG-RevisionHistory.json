@@ -100,11 +100,8 @@
       "BenchmarkTitle": "Container Platform Security Requirements Guide",
       "BenchmarkId": "Container_Platform_SRG",
       "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-09-10",
-      "BenchmarkDate": "2025-10-28",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-10-28"
     }
   ],
   "ChangedRuleVersions": [],
@@ -114,11 +111,8 @@
       "BenchmarkTitle": "Container Platform Security Requirements Guide",
       "BenchmarkId": "Container_Platform_SRG",
       "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
-      "Status": "accepted",
       "StatusDate": "2025-05-15",
-      "BenchmarkDate": "2025-07-02",
-      "Reference": "DISASTIG.DOD.MIL",
-      "ReferenceHref": "https://cyber.mil"
+      "BenchmarkDate": "2025-07-02"
     }
   ],
   "StigDisplayName": "Container Platform SRG",

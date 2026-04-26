@@ -10,11 +10,8 @@
         "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
         "BenchmarkId": "Application_Security_Development_STIG",
         "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-09-09",
-        "BenchmarkDate": "2025-10-01",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-10-01"
       }
     ],
     "PreviousVersion": "V6R3",
@@ -24,11 +21,8 @@
         "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
         "BenchmarkId": "Application_Security_Development_STIG",
         "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-02-12",
-        "BenchmarkDate": "2025-04-02",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-04-02"
       }
     ],
     "Status": "Compared successfully.",
@@ -183,21 +177,15 @@
         "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
         "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
         "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2024-12-20",
-        "BenchmarkDate": "2025-01-30",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-01-30"
       },
       {
         "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
         "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
         "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-08-13",
-        "BenchmarkDate": "2025-08-13",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-08-13"
       }
     ],
     "PreviousVersion": "Y25M09",
@@ -207,21 +195,15 @@
         "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
         "BenchmarkId": "Cloud_Computing_Mission_Owner_SRG",
         "FileName": "U_Cloud_Computing_Mission_Owner_NET_SRG_V1R2_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2024-12-20",
-        "BenchmarkDate": "2025-01-30",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-01-30"
       },
       {
         "BenchmarkTitle": "Cloud Computing Mission Owner Operating System Security Requirements Guide",
         "BenchmarkId": "Cloud_Computing_Mission_Owner_OS_SRG",
         "FileName": "U_Cloud_Computing_Mission_Owner_OS_SRG_V1R3_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-08-13",
-        "BenchmarkDate": "2025-08-13",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-08-13"
       }
     ],
     "Status": "Compared successfully.",
@@ -264,11 +246,8 @@
         "BenchmarkTitle": "Container Platform Security Requirements Guide",
         "BenchmarkId": "Container_Platform_SRG",
         "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-09-10",
-        "BenchmarkDate": "2025-10-28",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-10-28"
       }
     ],
     "PreviousVersion": "V2R3",
@@ -278,11 +257,8 @@
         "BenchmarkTitle": "Container Platform Security Requirements Guide",
         "BenchmarkId": "Container_Platform_SRG",
         "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-05-15",
-        "BenchmarkDate": "2025-07-02",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-07-02"
       }
     ],
     "Status": "Compared successfully.",
@@ -403,11 +379,8 @@
         "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
         "BenchmarkId": "IDPS_SRG",
         "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-09-22",
-        "BenchmarkDate": "2025-10-28",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-10-28"
       }
     ],
     "PreviousVersion": "V3R3",
@@ -417,11 +390,8 @@
         "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
         "BenchmarkId": "IDPS_SRG",
         "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-05-19",
-        "BenchmarkDate": "2025-07-02",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-07-02"
       }
     ],
     "Status": "Compared successfully.",
@@ -577,16 +547,84 @@
         "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
         "BenchmarkId": "MS_Azure_SQL_DB_STIG",
         "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-06-11",
-        "BenchmarkDate": "2025-07-02",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-07-02"
       }
     ],
-    "PreviousVersion": null,
-    "PreviousPackage": null,
-    "Status": "No previous benchmark version found in Archive."
+    "PreviousVersion": "V2R2",
+    "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
+    "PreviousBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+        "FileName": "U_MS_Azure_SQL_DB_STIG_V2R2_Manual-xccdf.xml",
+        "StatusDate": "2024-09-04",
+        "BenchmarkDate": "2024-10-24"
+      }
+    ],
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-255301",
+        "RuleVersion": "ASQL-00-000100",
+        "PreviousRuleId": "SV-255301r960768",
+        "CurrentRuleId": "SV-255301r1043176",
+        "RuleTitle": "Azure SQL Databases must integrate with Azure Active Directory for providing account management and automation for all users, groups, roles, and any other principals."
+      },
+      {
+        "GroupId": "V-255302",
+        "RuleVersion": "ASQL-00-000200",
+        "PreviousRuleId": "SV-255302r960792",
+        "CurrentRuleId": "SV-255302r1112451",
+        "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to server information and system resources in accordance with applicable access control policies."
+      },
+      {
+        "GroupId": "V-255303",
+        "RuleVersion": "ASQL-00-000300",
+        "PreviousRuleId": "SV-255303r960792",
+        "CurrentRuleId": "SV-255303r1112454",
+        "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to database information and system resources in accordance with applicable access control policies."
+      },
+      {
+        "GroupId": "V-255311",
+        "RuleVersion": "ASQL-00-002200",
+        "PreviousRuleId": "SV-255311r961158",
+        "CurrentRuleId": "SV-255311r1112455",
+        "RuleTitle": "The Azure SQL Database and associated applications must reserve the use of dynamic code execution for situations that require it."
+      },
+      {
+        "GroupId": "V-255312",
+        "RuleVersion": "ASQL-00-002300",
+        "PreviousRuleId": "SV-255312r961158",
+        "CurrentRuleId": "SV-255312r1112456",
+        "RuleTitle": "The Azure SQL Database and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack."
+      },
+      {
+        "GroupId": "V-255334",
+        "RuleVersion": "ASQL-00-007700",
+        "PreviousRuleId": "SV-255334r960966",
+        "CurrentRuleId": "SV-255334r1043177",
+        "RuleTitle": "The Azure SQL Database must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments."
+      },
+      {
+        "GroupId": "V-255335",
+        "RuleVersion": "ASQL-00-007800",
+        "PreviousRuleId": "SV-255335r960969",
+        "CurrentRuleId": "SV-255335r1051115",
+        "RuleTitle": "Azure SQL Database must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users)."
+      },
+      {
+        "GroupId": "V-255340",
+        "RuleVersion": "ASQL-00-010200",
+        "PreviousRuleId": "SV-255340r961221",
+        "CurrentRuleId": "SV-255340r1043182",
+        "RuleTitle": "Azure SQL Database must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": []
   },
   {
     "StigId": "MS_Defender_Antivirus",
@@ -599,11 +637,8 @@
         "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
         "BenchmarkId": "MS_Defender_Antivirus",
         "FileName": "U_MS_Defender_Antivirus_STIG_V2R8_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2026-02-17",
-        "BenchmarkDate": "2026-04-01",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-04-01"
       }
     ],
     "PreviousVersion": "V2R7",
@@ -613,11 +648,8 @@
         "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
         "BenchmarkId": "MS_Defender_Antivirus",
         "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-11-25",
-        "BenchmarkDate": "2026-01-05",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-01-05"
       }
     ],
     "Status": "Compared successfully.",
@@ -919,11 +951,8 @@
         "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
         "BenchmarkId": "MS_Dot_Net_Framework",
         "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R8_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2026-02-12",
-        "BenchmarkDate": "2026-04-01",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-04-01"
       }
     ],
     "PreviousVersion": "V2R7",
@@ -933,11 +962,8 @@
         "BenchmarkTitle": "Microsoft DotNet Framework 4.0 Security Technical Implementation Guide",
         "BenchmarkId": "MS_Dot_Net_Framework",
         "FileName": "U_MS_DotNet_Framework_4-0_STIG_V2R7_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-05-16",
-        "BenchmarkDate": "2025-07-02",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-07-02"
       }
     ],
     "Status": "Compared successfully.",
@@ -994,11 +1020,8 @@
         "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
         "BenchmarkId": "MS_Edge_STIG",
         "FileName": "U_MS_Edge_V2R5_STIG_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2026-02-25",
-        "BenchmarkDate": "2026-04-01",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-04-01"
       }
     ],
     "PreviousVersion": "V2R4",
@@ -1008,11 +1031,8 @@
         "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
         "BenchmarkId": "MS_Edge_STIG",
         "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-12-11",
-        "BenchmarkDate": "2026-01-05",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-01-05"
       }
     ],
     "Status": "Compared successfully.",
@@ -1041,11 +1061,8 @@
         "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
         "BenchmarkId": "MS_Entra_ID_STIG",
         "FileName": "U_MS_Entra_ID_STIG_V1R1_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-03-17",
-        "BenchmarkDate": "2025-02-28",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-02-28"
       }
     ],
     "PreviousVersion": null,
@@ -1063,11 +1080,8 @@
         "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
         "BenchmarkId": "IE_11_STIG",
         "FileName": "U_MS_IE11_STIG_V2R7_Manual-xccdf.xml",
-        "Status": "deprecated",
         "StatusDate": "2026-02-24",
-        "BenchmarkDate": "2026-04-01",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-04-01"
       }
     ],
     "PreviousVersion": "V2R6",
@@ -1077,11 +1091,8 @@
         "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
         "BenchmarkId": "IE_11_STIG",
         "FileName": "U_MS_IE11_STIG_V2R6_Manual-xccdf.xml",
-        "Status": "deprecated",
         "StatusDate": "2025-11-25",
-        "BenchmarkDate": "2026-01-05",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-01-05"
       }
     ],
     "Status": "Compared successfully.",
@@ -1110,11 +1121,8 @@
         "BenchmarkTitle": "Microsoft Intune MDM Service Desktop & Mobile Security Technical Implementation Guide",
         "BenchmarkId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
         "FileName": "U_MS_Intune_MDM_Service_Desktop_Mobile_V1R1_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-05-08",
-        "BenchmarkDate": "2025-04-22",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2025-04-22"
       }
     ],
     "PreviousVersion": null,
@@ -1132,11 +1140,8 @@
         "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
         "BenchmarkId": "Microsoft_Windows_11_STIG",
         "FileName": "U_MS_Windows_11_STIG_V2R7_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2026-02-12",
-        "BenchmarkDate": "2026-04-01",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-04-01"
       }
     ],
     "PreviousVersion": "V2R6",
@@ -1146,11 +1151,8 @@
         "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
         "BenchmarkId": "Microsoft_Windows_11_STIG",
         "FileName": "U_MS_Windows_11_STIG_V2R6_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2025-11-24",
-        "BenchmarkDate": "2026-01-05",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2026-01-05"
       }
     ],
     "Status": "Compared successfully.",
@@ -1201,11 +1203,8 @@
         "BenchmarkTitle": "Network Infrastructure Policy Security Technical Implementation Guide",
         "BenchmarkId": "Network_Infrastructure_Policy_STIG",
         "FileName": "U_Network_Infrastructure_Policy_STIG_V10R7_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2024-08-02",
-        "BenchmarkDate": "2024-10-24",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2024-10-24"
       }
     ],
     "PreviousVersion": null,
@@ -1223,11 +1222,8 @@
         "BenchmarkTitle": "Microsoft Windows Defender Firewall with Advanced Security Security Technical Implementation Guide",
         "BenchmarkId": "Windows_Firewall_with_Advanced_Security",
         "FileName": "U_MS_Windows_Defender_Firewall_STIG_V2R2_Manual-xccdf.xml",
-        "Status": "accepted",
         "StatusDate": "2023-08-23",
-        "BenchmarkDate": "2023-11-09",
-        "Reference": "DISASTIG.DOD.MIL",
-        "ReferenceHref": "https://cyber.mil"
+        "BenchmarkDate": "2023-11-09"
       }
     ],
     "PreviousVersion": null,

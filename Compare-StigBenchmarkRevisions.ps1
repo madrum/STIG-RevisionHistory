@@ -27,7 +27,7 @@ param(
 
     [Parameter()]
     [AllowEmptyString()]
-    [string]$OutputPath = (Join-Path -Path $PSScriptRoot -ChildPath "Current\CombinedRevisionHistoryReport.json"),
+    [string]$CombinedReportDir = (Join-Path -Path $PSScriptRoot -ChildPath 'Current'),
 
     [Parameter()]
     [ValidateSet('All', 'Manual', 'SemiAutomated')]
@@ -39,6 +39,8 @@ param(
 
 begin {
     $ErrorActionPreference = 'Stop'
+    $script:CombinedReportJsonFileName = 'CombinedRevisionHistory.json'
+    $script:CombinedReportMarkdownFileName = 'CombinedRevisionHistory.md'
 
     function Get-VersionSortKey {
         param(
@@ -167,6 +169,217 @@ begin {
         Write-Host "Saved revision history to $revisionHistoryPath" -ForegroundColor Green
     }
 
+    function Convert-ItemsToMarkdownTable {
+        param(
+            [Parameter()]
+            [AllowEmptyCollection()]
+            [object[]]$Items,
+
+            [Parameter(Mandatory = $true)]
+            [string[]]$Properties
+        )
+
+        if ($null -eq $Items -or $Items.Count -eq 0) {
+            return @('None')
+        }
+
+        $lines = @()
+        $lines += '| ' + ($Properties -join ' | ') + ' |'
+        $lines += '| ' + (($Properties | ForEach-Object { '---' }) -join ' | ') + ' |'
+
+        foreach ($item in $Items) {
+            $values = foreach ($propertyName in $Properties) {
+                $value = ''
+                if ($item -is [System.Collections.IDictionary]) {
+                    if ($item.Contains($propertyName)) {
+                        $value = [string]$item[$propertyName]
+                    }
+                } elseif ($item.PSObject.Properties.Name -contains $propertyName) {
+                    $value = [string]$item.$propertyName
+                }
+
+                (($value -replace '\r?\n', ' ') -replace '\|', '\|').Trim()
+            }
+
+            $lines += '| ' + ($values -join ' | ') + ' |'
+        }
+
+        return $lines
+    }
+
+    function New-CombinedReportMarkdown {
+        param(
+            [Parameter(Mandatory = $true)]
+            [object[]]$Results,
+
+            [Parameter(Mandatory = $true)]
+            [string]$GeneratedAt,
+
+            [Parameter(Mandatory = $true)]
+            [string]$ScanType,
+
+            [Parameter()]
+            [string[]]$SelectedStigIds
+        )
+
+        $lines = @()
+        $lines += '<a id="top"></a>'
+        $lines += ''
+        $lines += '# Combined Revision History'
+        $lines += ''
+        $lines += "Generated: $GeneratedAt"
+        $lines += ''
+        $lines += "Scan Type: $ScanType"
+        if ($SelectedStigIds -and $SelectedStigIds.Count -gt 0) {
+            $lines += ''
+            $lines += 'Selected STIG IDs: ' + ($SelectedStigIds -join ', ')
+        }
+
+        $summaryItems = @(
+            $Results |
+            ForEach-Object {
+                $anchorId = $_.StigId.ToLowerInvariant()
+                $anchorId = [System.Text.RegularExpressions.Regex]::Replace($anchorId, '[^a-z0-9_-]+', '-')
+                $anchorId = $anchorId.Trim('-')
+                $changedCount = 0
+                $addedCount = 0
+                $removedCount = 0
+
+                if ($_ -is [System.Collections.IDictionary]) {
+                    if ($_.Contains('ChangedGroupIds') -and $null -ne $_['ChangedGroupIds']) {
+                        $changedCount += @($_['ChangedGroupIds']).Count
+                    }
+                    if ($_.Contains('ChangedRuleVersions') -and $null -ne $_['ChangedRuleVersions']) {
+                        $changedCount += @($_['ChangedRuleVersions']).Count
+                    }
+                    if ($_.Contains('ChangedRuleIds') -and $null -ne $_['ChangedRuleIds']) {
+                        $changedCount += @($_['ChangedRuleIds']).Count
+                    }
+                    if ($_.Contains('AddedGroups') -and $null -ne $_['AddedGroups']) {
+                        $addedCount = @($_['AddedGroups']).Count
+                    }
+                    if ($_.Contains('RemovedGroups') -and $null -ne $_['RemovedGroups']) {
+                        $removedCount = @($_['RemovedGroups']).Count
+                    }
+                } else {
+                    if ($_.PSObject.Properties.Name -contains 'ChangedGroupIds' -and $null -ne $_.ChangedGroupIds) {
+                        $changedCount += @($_.ChangedGroupIds).Count
+                    }
+                    if ($_.PSObject.Properties.Name -contains 'ChangedRuleVersions' -and $null -ne $_.ChangedRuleVersions) {
+                        $changedCount += @($_.ChangedRuleVersions).Count
+                    }
+                    if ($_.PSObject.Properties.Name -contains 'ChangedRuleIds' -and $null -ne $_.ChangedRuleIds) {
+                        $changedCount += @($_.ChangedRuleIds).Count
+                    }
+                    if ($_.PSObject.Properties.Name -contains 'AddedGroups' -and $null -ne $_.AddedGroups) {
+                        $addedCount = @($_.AddedGroups).Count
+                    }
+                    if ($_.PSObject.Properties.Name -contains 'RemovedGroups' -and $null -ne $_.RemovedGroups) {
+                        $removedCount = @($_.RemovedGroups).Count
+                    }
+                }
+
+                [ordered]@{
+                    StigId          = "[$($_.StigId)](#$anchorId)"
+                    CurrentVersion  = $_.CurrentVersion
+                    PreviousVersion = if ($null -ne $_.PreviousVersion) { [string]$_.PreviousVersion } else { '' }
+                    ChangedCount    = $changedCount
+                    AddedCount      = $addedCount
+                    RemovedCount    = $removedCount
+                    Status          = $_.Status
+                }
+            }
+        )
+
+        $lines += ''
+        $lines += '## Summary'
+        $lines += ''
+        $lines += Convert-ItemsToMarkdownTable -Items $summaryItems -Properties @('StigId', 'CurrentVersion', 'PreviousVersion', 'ChangedCount', 'AddedCount', 'RemovedCount', 'Status')
+
+        foreach ($result in $Results) {
+            $anchorId = $result.StigId.ToLowerInvariant()
+            $anchorId = [System.Text.RegularExpressions.Regex]::Replace($anchorId, '[^a-z0-9_-]+', '-')
+            $anchorId = $anchorId.Trim('-')
+            $lines += ''
+            $lines += '---'
+            $lines += ''
+            $lines += '[Back to top](#top)'
+            $lines += ''
+            $lines += "<a id=""$anchorId""></a>"
+            $lines += ''
+            $lines += "## $($result.StigDisplayName)"
+            $lines += ''
+            $lines += "- Display Name: $($result.StigDisplayName)"
+            $lines += "- Scan Type: $($result.ScanType)"
+            $lines += "- Current Version: $($result.CurrentVersion)"
+            $lines += "- Previous Version: $(if ($null -ne $result.PreviousVersion) { $result.PreviousVersion } else { 'None' })"
+            $lines += "- Current Package: $(if ($null -ne $result.CurrentPackage) { $result.CurrentPackage } else { 'None' })"
+            $lines += "- Previous Package: $(if ($null -ne $result.PreviousPackage) { $result.PreviousPackage } else { 'None' })"
+            $lines += "- Status: $($result.Status)"
+
+            if ($result.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $result.CurrentBenchmarks.Count -gt 0) {
+                $lines += ''
+                $lines += '### Current Benchmarks'
+                $lines += ''
+                $lines += Convert-ItemsToMarkdownTable -Items $result.CurrentBenchmarks -Properties @('BenchmarkTitle', 'BenchmarkId', 'FileName', 'StatusDate', 'BenchmarkDate')
+            }
+
+            if ($result.PSObject.Properties.Name -contains 'PreviousBenchmarks' -and $result.PreviousBenchmarks.Count -gt 0) {
+                $lines += ''
+                $lines += '### Previous Benchmarks'
+                $lines += ''
+                $lines += Convert-ItemsToMarkdownTable -Items $result.PreviousBenchmarks -Properties @('BenchmarkTitle', 'BenchmarkId', 'FileName', 'StatusDate', 'BenchmarkDate')
+            }
+
+            $sectionDefinitions = @(
+                [ordered]@{ Header = 'Changed Group IDs'; Property = 'ChangedGroupIds'; Columns = @('GroupId', 'RuleTitle') }
+                [ordered]@{ Header = 'Changed Rule Versions'; Property = 'ChangedRuleVersions'; Columns = @('GroupId', 'RuleTitle') }
+                [ordered]@{ Header = 'Changed Rule IDs'; Property = 'ChangedRuleIds'; Columns = @('GroupId', 'RuleTitle') }
+                [ordered]@{ Header = 'Added Groups'; Property = 'AddedGroups'; Columns = @('GroupId', 'RuleTitle') }
+                [ordered]@{ Header = 'Removed Groups'; Property = 'RemovedGroups'; Columns = @('GroupId', 'RuleTitle') }
+            )
+
+            foreach ($sectionDefinition in $sectionDefinitions) {
+                $lines += ''
+                $lines += "### $($sectionDefinition.Header)"
+                $lines += ''
+                $lines += Convert-ItemsToMarkdownTable -Items $result.($sectionDefinition.Property) -Properties $sectionDefinition.Columns
+            }
+        }
+
+        return ($lines -join [Environment]::NewLine)
+    }
+
+    function Save-CombinedReports {
+        param(
+            [Parameter(Mandatory = $true)]
+            [object[]]$Results,
+
+            [Parameter(Mandatory = $true)]
+            [string]$DirectoryPath,
+
+            [Parameter(Mandatory = $true)]
+            [string]$GeneratedAt,
+
+            [Parameter(Mandatory = $true)]
+            [string]$ScanType,
+
+            [Parameter()]
+            [string[]]$SelectedStigIds
+        )
+
+        New-Item -Path $DirectoryPath -ItemType Directory -Force | Out-Null
+        $combinedReportJsonPath = Join-Path -Path $DirectoryPath -ChildPath $script:CombinedReportJsonFileName
+        $combinedReportMarkdownPath = Join-Path -Path $DirectoryPath -ChildPath $script:CombinedReportMarkdownFileName
+
+        $Results | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $combinedReportJsonPath -Encoding utf8
+        $markdown = New-CombinedReportMarkdown -Results $Results -GeneratedAt $GeneratedAt -ScanType $ScanType -SelectedStigIds $SelectedStigIds
+        $markdown | Set-Content -LiteralPath $combinedReportMarkdownPath -Encoding utf8
+
+        Write-Host "Saved aggregate comparison report to $combinedReportJsonPath" -ForegroundColor Green
+        Write-Host "Saved aggregate markdown report to $combinedReportMarkdownPath" -ForegroundColor Green
+    }
+
     function Get-BenchmarkMatchKey {
         param(
             [Parameter(Mandatory = $true)]
@@ -235,17 +448,17 @@ begin {
         }
 
         return [ordered]@{
-            StigId             = $Benchmark.StigId
-            FileName           = $File.Name
-            FullName           = $File.FullName
-            Version            = $version
-            VersionSortKey     = Get-VersionSortKey -Version $version
-            ScapSortKey        = Get-ScapSortKey -FileName $File.Name
-            EnhancedSortKey    = Get-EnhancedVersionSortKey -FileName $File.Name
-            Signed             = [bool]($File.Name -match '-signed\.zip$')
-            Location           = $location
-            LocationSortKey    = if ($location -eq 'Current') { 1 } else { 0 }
-            ParentDirectory    = $File.Directory.Name
+            StigId          = $Benchmark.StigId
+            FileName        = $File.Name
+            FullName        = $File.FullName
+            Version         = $version
+            VersionSortKey  = Get-VersionSortKey -Version $version
+            ScapSortKey     = Get-ScapSortKey -FileName $File.Name
+            EnhancedSortKey = Get-EnhancedVersionSortKey -FileName $File.Name
+            Signed          = [bool]($File.Name -match '-signed\.zip$')
+            Location        = $location
+            LocationSortKey = if ($location -eq 'Current') { 1 } else { 0 }
+            ParentDirectory = $File.Directory.Name
         }
     }
 
@@ -276,13 +489,13 @@ begin {
         )
 
         return $Candidates |
-            Sort-Object `
-                @{ Expression = { $_.LocationSortKey }; Descending = $true }, `
-                @{ Expression = { $_.ScapSortKey }; Descending = $true }, `
-                @{ Expression = { $_.EnhancedSortKey }; Descending = $true }, `
-                @{ Expression = { $_.Signed }; Descending = $true }, `
-                @{ Expression = { $_.FileName }; Descending = $true } |
-            Select-Object -First 1
+        Sort-Object `
+        @{ Expression = { $_.LocationSortKey }; Descending = $true }, `
+        @{ Expression = { $_.ScapSortKey }; Descending = $true }, `
+        @{ Expression = { $_.EnhancedSortKey }; Descending = $true }, `
+        @{ Expression = { $_.Signed }; Descending = $true }, `
+        @{ Expression = { $_.FileName }; Descending = $true } |
+        Select-Object -First 1
     }
 
     function Get-PackageBenchmarkData {
@@ -341,29 +554,29 @@ begin {
                             $ruleIdFull = [string]$ruleNode.Attributes['id'].Value
 
                             $entries += [ordered]@{
-                                GroupId        = Get-ShortId -Value $groupIdFull -Pattern 'V-\d+'
-                                GroupIdFull    = $groupIdFull
-                                GroupTitle     = if ($null -ne $groupTitleNode) { $groupTitleNode.InnerText.Trim() } else { '' }
-                                RuleVersion    = if ($null -ne $ruleVersionNode) { $ruleVersionNode.InnerText.Trim() } else { '' }
-                                RuleId         = Get-ShortId -Value $ruleIdFull -Pattern 'SV-\d+r\d+'
-                                RuleIdFull     = $ruleIdFull
-                                RuleTitle      = if ($null -ne $ruleTitleNode) { $ruleTitleNode.InnerText.Trim() } else { '' }
-                                Severity       = [string]$ruleNode.Attributes['severity'].Value
+                                GroupId     = Get-ShortId -Value $groupIdFull -Pattern 'V-\d+'
+                                GroupIdFull = $groupIdFull
+                                GroupTitle  = if ($null -ne $groupTitleNode) { $groupTitleNode.InnerText.Trim() } else { '' }
+                                RuleVersion = if ($null -ne $ruleVersionNode) { $ruleVersionNode.InnerText.Trim() } else { '' }
+                                RuleId      = Get-ShortId -Value $ruleIdFull -Pattern 'SV-\d+r\d+'
+                                RuleIdFull  = $ruleIdFull
+                                RuleTitle   = if ($null -ne $ruleTitleNode) { $ruleTitleNode.InnerText.Trim() } else { '' }
+                                Severity    = [string]$ruleNode.Attributes['severity'].Value
                             }
                         }
 
                         $benchmarkItem = [ordered]@{
-                            BenchmarkId        = [string]$candidateXml.DocumentElement.GetAttribute('id')
-                            BenchmarkTitle     = if ($null -ne $benchmarkTitleNode) { $benchmarkTitleNode.InnerText.Trim() } else { '' }
-                            RelativePath       = $xmlFile.FullName.Substring($extractRoot.Length + 1)
-                            FileName           = $xmlFile.Name
-                            Status             = if ($null -ne $statusNode) { $statusNode.InnerText.Trim() } else { '' }
-                            StatusDate         = if ($null -ne $statusNode) { [string]$statusNode.GetAttribute('date') } else { '' }
-                            BenchmarkDate      = if ($null -ne $benchmarkDate) { $benchmarkDate } else { '' }
-                            ReleaseInfo        = if ($null -ne $releaseInfoNode) { $releaseInfoNode.InnerText.Trim() } else { '' }
-                            Reference          = if ($null -ne $referenceNode) { $referenceNode.InnerText.Trim() } else { '' }
-                            ReferenceHref      = if ($null -ne $referenceNode) { [string]$referenceNode.GetAttribute('href') } else { '' }
-                            Entries            = $entries
+                            BenchmarkId    = [string]$candidateXml.DocumentElement.GetAttribute('id')
+                            BenchmarkTitle = if ($null -ne $benchmarkTitleNode) { $benchmarkTitleNode.InnerText.Trim() } else { '' }
+                            RelativePath   = $xmlFile.FullName.Substring($extractRoot.Length + 1)
+                            FileName       = $xmlFile.Name
+                            Status         = if ($null -ne $statusNode) { $statusNode.InnerText.Trim() } else { '' }
+                            StatusDate     = if ($null -ne $statusNode) { [string]$statusNode.GetAttribute('date') } else { '' }
+                            BenchmarkDate  = if ($null -ne $benchmarkDate) { $benchmarkDate } else { '' }
+                            ReleaseInfo    = if ($null -ne $releaseInfoNode) { $releaseInfoNode.InnerText.Trim() } else { '' }
+                            Reference      = if ($null -ne $referenceNode) { $referenceNode.InnerText.Trim() } else { '' }
+                            ReferenceHref  = if ($null -ne $referenceNode) { [string]$referenceNode.GetAttribute('href') } else { '' }
+                            Entries        = $entries
                         }
                         $benchmarkItem['MatchKey'] = Get-BenchmarkMatchKey -BenchmarkData $benchmarkItem
                         $benchmarkData += $benchmarkItem
@@ -445,11 +658,11 @@ begin {
 
                 if ($currentEntry.RuleId -ne $previousEntry.RuleId) {
                     $changedRuleIds += [ordered]@{
-                        GroupId         = $currentEntry.GroupId
-                        RuleVersion     = $currentEntry.RuleVersion
-                        PreviousRuleId  = $previousEntry.RuleId
-                        CurrentRuleId   = $currentEntry.RuleId
-                        RuleTitle       = $currentEntry.RuleTitle
+                        GroupId        = $currentEntry.GroupId
+                        RuleVersion    = $currentEntry.RuleVersion
+                        PreviousRuleId = $previousEntry.RuleId
+                        CurrentRuleId  = $currentEntry.RuleId
+                        RuleTitle      = $currentEntry.RuleTitle
                     }
                 }
 
@@ -462,23 +675,23 @@ begin {
                 $matchedPreviousGroupIds[$previousEntry.GroupId] = $true
 
                 $changedRuleVersions += [ordered]@{
-                    GroupId              = $currentEntry.GroupId
-                    PreviousRuleVersion  = $previousEntry.RuleVersion
-                    CurrentRuleVersion   = $currentEntry.RuleVersion
-                    PreviousRuleId       = $previousEntry.RuleId
-                    CurrentRuleId        = $currentEntry.RuleId
-                    RuleTitle            = $currentEntry.RuleTitle
+                    GroupId             = $currentEntry.GroupId
+                    PreviousRuleVersion = $previousEntry.RuleVersion
+                    CurrentRuleVersion  = $currentEntry.RuleVersion
+                    PreviousRuleId      = $previousEntry.RuleId
+                    CurrentRuleId       = $currentEntry.RuleId
+                    RuleTitle           = $currentEntry.RuleTitle
                 }
 
                 continue
             }
 
             $addedGroups += [ordered]@{
-                GroupId      = $currentEntry.GroupId
-                RuleVersion  = $currentEntry.RuleVersion
-                RuleId       = $currentEntry.RuleId
-                RuleTitle    = $currentEntry.RuleTitle
-                Severity     = $currentEntry.Severity
+                GroupId     = $currentEntry.GroupId
+                RuleVersion = $currentEntry.RuleVersion
+                RuleId      = $currentEntry.RuleId
+                RuleTitle   = $currentEntry.RuleTitle
+                Severity    = $currentEntry.Severity
             }
         }
 
@@ -496,11 +709,11 @@ begin {
             }
 
             $removedGroups += [ordered]@{
-                GroupId      = $previousEntry.GroupId
-                RuleVersion  = $previousEntry.RuleVersion
-                RuleId       = $previousEntry.RuleId
-                RuleTitle    = $previousEntry.RuleTitle
-                Severity     = $previousEntry.Severity
+                GroupId     = $previousEntry.GroupId
+                RuleVersion = $previousEntry.RuleVersion
+                RuleId      = $previousEntry.RuleId
+                RuleTitle   = $previousEntry.RuleTitle
+                Severity    = $previousEntry.Severity
             }
         }
 
@@ -620,6 +833,8 @@ begin {
 }
 
 process {
+    $generatedAt = (Get-Date).ToString('yyyy-MM-dd HH:mm:ssK')
+
     if (-not (Test-Path -LiteralPath $StigContentLibraryPath)) {
         throw "STIG content path not found: $StigContentLibraryPath"
     }
@@ -666,12 +881,12 @@ process {
         $candidates = @(Get-BenchmarkPackageCandidates -Benchmark $benchmark -PackageFiles $packageFiles)
         if ($candidates.Count -eq 0) {
             $results += [ordered]@{
-                StigId         = $benchmark.StigId
+                StigId          = $benchmark.StigId
                 StigDisplayName = $benchmark.StigDisplayName
-                ScanType       = $benchmark.ScanType
-                CurrentVersion = $benchmark.CurrentVersion
+                ScanType        = $benchmark.ScanType
+                CurrentVersion  = $benchmark.CurrentVersion
                 PreviousVersion = $null
-                Status         = 'No matching benchmark packages found in Current or Archive.'
+                Status          = 'No matching benchmark packages found in Current or Archive.'
             }
             Write-Warning "No benchmark packages found for $($benchmark.StigId)."
             continue
@@ -680,11 +895,11 @@ process {
         $currentCandidates = @($candidates | Where-Object { $_.Version -eq $benchmark.CurrentVersion })
         if ($currentCandidates.Count -eq 0) {
             $latestDetected = $candidates |
-                Sort-Object `
-                    @{ Expression = { $_.VersionSortKey }; Descending = $true }, `
-                    @{ Expression = { $_.ScapSortKey }; Descending = $true }, `
-                    @{ Expression = { $_.EnhancedSortKey }; Descending = $true } |
-                Select-Object -First 1
+            Sort-Object `
+            @{ Expression = { $_.VersionSortKey }; Descending = $true }, `
+            @{ Expression = { $_.ScapSortKey }; Descending = $true }, `
+            @{ Expression = { $_.EnhancedSortKey }; Descending = $true } |
+            Select-Object -First 1
 
             $results += [ordered]@{
                 StigId           = $benchmark.StigId
@@ -706,18 +921,15 @@ process {
             $currentBenchmarks = @(Get-PackageBenchmarkData -PackagePath $currentPackage.FullName)
             $currentBenchmarkMetadata = @(
                 $currentBenchmarks |
-                    ForEach-Object {
-                        [ordered]@{
-                            BenchmarkTitle = $_.BenchmarkTitle
-                            BenchmarkId    = $_.BenchmarkId
-                            FileName       = $_.FileName
-                            Status         = $_.Status
-                            StatusDate     = $_.StatusDate
-                            BenchmarkDate  = $_.BenchmarkDate
-                            Reference      = $_.Reference
-                            ReferenceHref  = $_.ReferenceHref
-                        }
+                ForEach-Object {
+                    [ordered]@{
+                        BenchmarkTitle = $_.BenchmarkTitle
+                        BenchmarkId    = $_.BenchmarkId
+                        FileName       = $_.FileName
+                        StatusDate     = $_.StatusDate
+                        BenchmarkDate  = $_.BenchmarkDate
                     }
+                }
             )
             $result = [ordered]@{
                 StigId            = $benchmark.StigId
@@ -738,11 +950,11 @@ process {
 
         $previousCandidates = @(
             $previousCandidates |
-                Sort-Object `
-                    @{ Expression = { $_.VersionSortKey }; Descending = $true }, `
-                    @{ Expression = { $_.ScapSortKey }; Descending = $true }, `
-                    @{ Expression = { $_.EnhancedSortKey }; Descending = $true }, `
-                    @{ Expression = { $_.Signed }; Descending = $true }
+            Sort-Object `
+            @{ Expression = { $_.VersionSortKey }; Descending = $true }, `
+            @{ Expression = { $_.ScapSortKey }; Descending = $true }, `
+            @{ Expression = { $_.EnhancedSortKey }; Descending = $true }, `
+            @{ Expression = { $_.Signed }; Descending = $true }
         )
 
         $highestPreviousVersionKey = $previousCandidates[0].VersionSortKey
@@ -754,66 +966,60 @@ process {
         $comparison = Compare-PackageBenchmarks -CurrentBenchmarks $currentBenchmarks -PreviousBenchmarks $previousBenchmarks
         $currentBenchmarkMetadata = @(
             $currentBenchmarks |
-                ForEach-Object {
-                    [ordered]@{
-                        BenchmarkTitle = $_.BenchmarkTitle
-                        BenchmarkId    = $_.BenchmarkId
-                        FileName       = $_.FileName
-                        Status         = $_.Status
-                        StatusDate     = $_.StatusDate
-                        BenchmarkDate  = $_.BenchmarkDate
-                        Reference      = $_.Reference
-                        ReferenceHref  = $_.ReferenceHref
-                    }
+            ForEach-Object {
+                [ordered]@{
+                    BenchmarkTitle = $_.BenchmarkTitle
+                    BenchmarkId    = $_.BenchmarkId
+                    FileName       = $_.FileName
+                    StatusDate     = $_.StatusDate
+                    BenchmarkDate  = $_.BenchmarkDate
                 }
+            }
         )
         $previousBenchmarkMetadata = @(
             $previousBenchmarks |
-                ForEach-Object {
-                    [ordered]@{
-                        BenchmarkTitle = $_.BenchmarkTitle
-                        BenchmarkId    = $_.BenchmarkId
-                        FileName       = $_.FileName
-                        Status         = $_.Status
-                        StatusDate     = $_.StatusDate
-                        BenchmarkDate  = $_.BenchmarkDate
-                        Reference      = $_.Reference
-                        ReferenceHref  = $_.ReferenceHref
-                    }
+            ForEach-Object {
+                [ordered]@{
+                    BenchmarkTitle = $_.BenchmarkTitle
+                    BenchmarkId    = $_.BenchmarkId
+                    FileName       = $_.FileName
+                    StatusDate     = $_.StatusDate
+                    BenchmarkDate  = $_.BenchmarkDate
                 }
+            }
         )
         $childBenchmarks = @(
             $currentBenchmarks |
-                ForEach-Object {
-                    [ordered]@{
-                        BenchmarkTitle = $_.BenchmarkTitle
-                        BenchmarkId    = $_.BenchmarkId
-                        FileName       = $_.FileName
-                        Status         = $_.Status
-                        StatusDate     = $_.StatusDate
-                        BenchmarkDate  = $_.BenchmarkDate
-                        Reference      = $_.Reference
-                        ReferenceHref  = $_.ReferenceHref
-                    }
+            ForEach-Object {
+                [ordered]@{
+                    BenchmarkTitle = $_.BenchmarkTitle
+                    BenchmarkId    = $_.BenchmarkId
+                    FileName       = $_.FileName
+                    Status         = $_.Status
+                    StatusDate     = $_.StatusDate
+                    BenchmarkDate  = $_.BenchmarkDate
+                    Reference      = $_.Reference
+                    ReferenceHref  = $_.ReferenceHref
                 }
+            }
         )
 
         $result = [ordered]@{
-            StigId               = $benchmark.StigId
-            StigDisplayName      = $benchmark.StigDisplayName
-            ScanType             = $benchmark.ScanType
-            CurrentVersion       = $currentPackage.Version
-            CurrentPackage       = $currentPackage.FileName
-            CurrentBenchmarks    = $currentBenchmarkMetadata
-            PreviousVersion      = $previousPackage.Version
-            PreviousPackage      = $previousPackage.FileName
-            PreviousBenchmarks   = $previousBenchmarkMetadata
-            Status               = 'Compared successfully.'
-            ChangedGroupIds      = $comparison.ChangedGroupIds
-            ChangedRuleVersions  = $comparison.ChangedRuleVersions
-            ChangedRuleIds       = $comparison.ChangedRuleIds
-            AddedGroups          = $comparison.AddedGroups
-            RemovedGroups        = $comparison.RemovedGroups
+            StigId              = $benchmark.StigId
+            StigDisplayName     = $benchmark.StigDisplayName
+            ScanType            = $benchmark.ScanType
+            CurrentVersion      = $currentPackage.Version
+            CurrentPackage      = $currentPackage.FileName
+            CurrentBenchmarks   = $currentBenchmarkMetadata
+            PreviousVersion     = $previousPackage.Version
+            PreviousPackage     = $previousPackage.FileName
+            PreviousBenchmarks  = $previousBenchmarkMetadata
+            Status              = 'Compared successfully.'
+            ChangedGroupIds     = $comparison.ChangedGroupIds
+            ChangedRuleVersions = $comparison.ChangedRuleVersions
+            ChangedRuleIds      = $comparison.ChangedRuleIds
+            AddedGroups         = $comparison.AddedGroups
+            RemovedGroups       = $comparison.RemovedGroups
         }
 
         if ($childBenchmarks.Count -gt 1) {
@@ -844,9 +1050,14 @@ process {
         Write-ChangeSection -Header 'Removed groups' -Items $comparison.RemovedGroups -Properties @('BenchmarkTitle', 'GroupId', 'RuleVersion', 'RuleId', 'Severity')
     }
 
-    if ($OutputPath) {
-        $results | ConvertTo-Json -Depth 10 | Set-Content -LiteralPath $OutputPath -Encoding utf8
-        Write-Host "Saved aggregate comparison report to $OutputPath" -ForegroundColor Green
+    if ($CombinedReportDir) {
+        $resolvedCombinedReportDir = if ([System.IO.Path]::IsPathRooted($CombinedReportDir)) {
+            $CombinedReportDir
+        } else {
+            Join-Path -Path $PSScriptRoot -ChildPath $CombinedReportDir
+        }
+
+        Save-CombinedReports -Results $results -DirectoryPath $resolvedCombinedReportDir -GeneratedAt $generatedAt -ScanType $ScanType -SelectedStigIds $StigId
     }
 
     if ($PassThru) {
