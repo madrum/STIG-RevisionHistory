@@ -340,10 +340,19 @@ begin {
             )
 
             foreach ($sectionDefinition in $sectionDefinitions) {
+                $sectionItems = @()
+                if ($result -is [System.Collections.IDictionary]) {
+                    if ($result.Contains($sectionDefinition.Property) -and $null -ne $result[$sectionDefinition.Property]) {
+                        $sectionItems = @($result[$sectionDefinition.Property])
+                    }
+                } elseif ($result.PSObject.Properties.Name -contains $sectionDefinition.Property -and $null -ne $result.($sectionDefinition.Property)) {
+                    $sectionItems = @($result.($sectionDefinition.Property))
+                }
+
                 $lines += ''
                 $lines += "### $($sectionDefinition.Header)"
                 $lines += ''
-                $lines += Convert-ItemsToMarkdownTable -Items $result.($sectionDefinition.Property) -Properties $sectionDefinition.Columns
+                $lines += Convert-ItemsToMarkdownTable -Items $sectionItems -Properties $sectionDefinition.Columns
             }
         }
 
