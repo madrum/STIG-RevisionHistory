@@ -198,6 +198,10 @@ begin {
                     $value = [string]$item.$propertyName
                 }
 
+                if ($propertyName -eq 'GroupId' -and -not [string]::IsNullOrWhiteSpace($value)) {
+                    $value = $value -replace '-', '&#8209;'
+                }
+
                 (($value -replace '\r?\n', ' ') -replace '\|', '\|').Trim()
             }
 
