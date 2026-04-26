@@ -1,20 +1,4 @@
 {
-  "CurrentVersion": "V6R4",
-  "Status": "Compared successfully.",
-  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
-  "StigDisplayName": "ASD STIG",
-  "ChangedGroupIds": [],
-  "AddedGroups": [],
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
-      "BenchmarkId": "Application_Security_Development_STIG",
-      "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
-      "StatusDate": "2025-02-12",
-      "BenchmarkDate": "2025-04-02"
-    }
-  ],
-  "ChangedRuleVersions": [],
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
@@ -24,11 +8,20 @@
       "BenchmarkDate": "2025-10-01"
     }
   ],
-  "CurrentPackage": "U_ASD_V6R4_STIG.zip",
+  "ChangedRuleVersions": [],
   "ScanType": "Manual",
-  "RemovedGroups": [],
-  "PreviousVersion": "V6R3",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+      "BenchmarkId": "Application_Security_Development_STIG",
+      "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
+      "StatusDate": "2025-02-12",
+      "BenchmarkDate": "2025-04-02"
+    }
+  ],
   "StigId": "ASD_STIG",
+  "CurrentVersion": "V6R4",
+  "CurrentPackage": "U_ASD_V6R4_STIG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-222393",
@@ -163,5 +156,12 @@
       "CurrentRuleId": "SV-265634r1117183",
       "RuleTitle": "The application must implement NSA-approved cryptography to protect classified information in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
     }
-  ]
+  ],
+  "ChangedGroupIds": [],
+  "PreviousVersion": "V6R3",
+  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
+  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "AddedGroups": [],
+  "StigDisplayName": "ASD STIG"
 }

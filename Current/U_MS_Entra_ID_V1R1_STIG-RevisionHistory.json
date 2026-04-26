@@ -1,10 +1,11 @@
 {
-  "PreviousVersion": null,
+  "ScanType": "Manual",
   "CurrentVersion": "V1R1",
-  "StigDisplayName": "MS Entra ID STIG",
   "Status": "No previous benchmark version found in Archive.",
-  "PreviousPackage": null,
   "StigId": "MS_Entra_ID_STIG",
+  "PreviousVersion": null,
+  "PreviousPackage": null,
+  "CurrentPackage": "U_MS_Entra_ID_V1R1_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
@@ -14,6 +15,5 @@
       "BenchmarkDate": "2025-02-28"
     }
   ],
-  "ScanType": "Manual",
-  "CurrentPackage": "U_MS_Entra_ID_V1R1_STIG.zip"
+  "StigDisplayName": "MS Entra ID STIG"
 }

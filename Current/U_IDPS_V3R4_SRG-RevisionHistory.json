@@ -1,35 +1,4 @@
 {
-  "CurrentVersion": "V3R4",
-  "Status": "Compared successfully.",
-  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
-  "StigDisplayName": "IDPS SRG",
-  "ChangedGroupIds": [],
-  "AddedGroups": [
-    {
-      "GroupId": "V-278978",
-      "RuleVersion": "SRG-NET-000323-IDPS-00188",
-      "RuleId": "SV-278978r1137721",
-      "RuleTitle": "The IDPS must use organization-defined security attributes associated with organization-defined information, source, and destination objects to enforce organization-defined information flow control policies as a basis for flow control decisions.",
-      "Severity": "medium"
-    },
-    {
-      "GroupId": "V-278979",
-      "RuleVersion": "SRG-NET-000775-IDPS-00170",
-      "RuleId": "SV-278979r1137725",
-      "RuleTitle": "The IDPS must provide visibility into network traffic at external and key internal system interfaces to optimize the effectiveness of monitoring devices.",
-      "Severity": "medium"
-    }
-  ],
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
-      "BenchmarkId": "IDPS_SRG",
-      "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
-      "StatusDate": "2025-05-19",
-      "BenchmarkDate": "2025-07-02"
-    }
-  ],
-  "ChangedRuleVersions": [],
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
@@ -39,11 +8,20 @@
       "BenchmarkDate": "2025-10-28"
     }
   ],
-  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
+  "ChangedRuleVersions": [],
   "ScanType": "Manual",
-  "RemovedGroups": [],
-  "PreviousVersion": "V3R3",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+      "BenchmarkId": "IDPS_SRG",
+      "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
+      "StatusDate": "2025-05-19",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
   "StigId": "IDPS_SRG",
+  "CurrentVersion": "V3R4",
+  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-206864",
@@ -164,5 +142,27 @@
       "CurrentRuleId": "SV-263664r1137722",
       "RuleTitle": "The IDPS must implement physically or logically separate subnetworks to isolate organization-defined critical system components and functions."
     }
-  ]
+  ],
+  "ChangedGroupIds": [],
+  "PreviousVersion": "V3R3",
+  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
+  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "AddedGroups": [
+    {
+      "GroupId": "V-278978",
+      "RuleVersion": "SRG-NET-000323-IDPS-00188",
+      "RuleId": "SV-278978r1137721",
+      "RuleTitle": "The IDPS must use organization-defined security attributes associated with organization-defined information, source, and destination objects to enforce organization-defined information flow control policies as a basis for flow control decisions.",
+      "Severity": "medium"
+    },
+    {
+      "GroupId": "V-278979",
+      "RuleVersion": "SRG-NET-000775-IDPS-00170",
+      "RuleId": "SV-278979r1137725",
+      "RuleTitle": "The IDPS must provide visibility into network traffic at external and key internal system interfaces to optimize the effectiveness of monitoring devices.",
+      "Severity": "medium"
+    }
+  ],
+  "StigDisplayName": "IDPS SRG"
 }

@@ -1,20 +1,4 @@
 {
-  "CurrentVersion": "V2R7",
-  "Status": "Compared successfully.",
-  "PreviousPackage": "U_MS_IE11_V2R6_STIG.zip",
-  "StigDisplayName": "MS IE11 STIG",
-  "ChangedGroupIds": [],
-  "AddedGroups": [],
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
-      "BenchmarkId": "IE_11_STIG",
-      "FileName": "U_MS_IE11_STIG_V2R6_Manual-xccdf.xml",
-      "StatusDate": "2025-11-25",
-      "BenchmarkDate": "2026-01-05"
-    }
-  ],
-  "ChangedRuleVersions": [],
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
@@ -24,11 +8,20 @@
       "BenchmarkDate": "2026-04-01"
     }
   ],
-  "CurrentPackage": "U_MS_IE11_V2R7_STIG.zip",
+  "ChangedRuleVersions": [],
   "ScanType": "SemiAutomated",
-  "RemovedGroups": [],
-  "PreviousVersion": "V2R6",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Internet Explorer 11 Security Technical Implementation Guide",
+      "BenchmarkId": "IE_11_STIG",
+      "FileName": "U_MS_IE11_STIG_V2R6_Manual-xccdf.xml",
+      "StatusDate": "2025-11-25",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
   "StigId": "IE_11_STIG",
+  "CurrentVersion": "V2R7",
+  "CurrentPackage": "U_MS_IE11_V2R7_STIG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-252910",
@@ -37,5 +30,12 @@
       "CurrentRuleId": "SV-252910r1192839",
       "RuleTitle": "The version of Internet Explorer running on the system must be a supported version."
     }
-  ]
+  ],
+  "ChangedGroupIds": [],
+  "PreviousVersion": "V2R6",
+  "PreviousPackage": "U_MS_IE11_V2R6_STIG.zip",
+  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "AddedGroups": [],
+  "StigDisplayName": "MS IE11 STIG"
 }

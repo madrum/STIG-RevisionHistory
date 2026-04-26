@@ -1,20 +1,4 @@
 {
-  "CurrentVersion": "V2R8",
-  "Status": "Compared successfully.",
-  "PreviousPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
-  "StigDisplayName": "MS Defender Antivirus STIG",
-  "ChangedGroupIds": [],
-  "AddedGroups": [],
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Defender_Antivirus",
-      "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
-      "StatusDate": "2025-11-25",
-      "BenchmarkDate": "2026-01-05"
-    }
-  ],
-  "ChangedRuleVersions": [],
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
@@ -24,11 +8,20 @@
       "BenchmarkDate": "2026-04-01"
     }
   ],
-  "CurrentPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
+  "ChangedRuleVersions": [],
   "ScanType": "SemiAutomated",
-  "RemovedGroups": [],
-  "PreviousVersion": "V2R7",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R7_Manual-xccdf.xml",
+      "StatusDate": "2025-11-25",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
   "StigId": "MS_Defender_Antivirus",
+  "CurrentVersion": "V2R8",
+  "CurrentPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-213428",
@@ -310,5 +303,12 @@
       "CurrentRuleId": "SV-278863r1190777",
       "RuleTitle": "Microsoft Defender AV must set cloud protection level to High."
     }
-  ]
+  ],
+  "ChangedGroupIds": [],
+  "PreviousVersion": "V2R7",
+  "PreviousPackage": "U_MS_Defender_Antivirus_V2R7_STIG.zip",
+  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "AddedGroups": [],
+  "StigDisplayName": "MS Defender Antivirus STIG"
 }

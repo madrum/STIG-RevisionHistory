@@ -1,28 +1,4 @@
 {
-  "CurrentVersion": "V2R4",
-  "Status": "Compared successfully.",
-  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
-  "StigDisplayName": "Container Platform SRG",
-  "ChangedGroupIds": [],
-  "AddedGroups": [
-    {
-      "GroupId": "V-278968",
-      "RuleVersion": "SRG-APP-001035-CTR-000323",
-      "RuleId": "SV-278968r1137653",
-      "RuleTitle": "The container platform must be a version supported by the vendor.",
-      "Severity": "high"
-    }
-  ],
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Container Platform Security Requirements Guide",
-      "BenchmarkId": "Container_Platform_SRG",
-      "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
-      "StatusDate": "2025-05-15",
-      "BenchmarkDate": "2025-07-02"
-    }
-  ],
-  "ChangedRuleVersions": [],
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Container Platform Security Requirements Guide",
@@ -32,11 +8,20 @@
       "BenchmarkDate": "2025-10-28"
     }
   ],
-  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+  "ChangedRuleVersions": [],
   "ScanType": "Manual",
-  "RemovedGroups": [],
-  "PreviousVersion": "V2R3",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Container Platform Security Requirements Guide",
+      "BenchmarkId": "Container_Platform_SRG",
+      "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
+      "StatusDate": "2025-05-15",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
   "StigId": "Container_Platform_SRG",
+  "CurrentVersion": "V2R4",
+  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
   "ChangedRuleIds": [
     {
       "GroupId": "V-233026",
@@ -129,5 +114,20 @@
       "CurrentRuleId": "SV-233289r1137648",
       "RuleTitle": "The container platform must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality."
     }
-  ]
+  ],
+  "ChangedGroupIds": [],
+  "PreviousVersion": "V2R3",
+  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
+  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "AddedGroups": [
+    {
+      "GroupId": "V-278968",
+      "RuleVersion": "SRG-APP-001035-CTR-000323",
+      "RuleId": "SV-278968r1137653",
+      "RuleTitle": "The container platform must be a version supported by the vendor.",
+      "Severity": "high"
+    }
+  ],
+  "StigDisplayName": "Container Platform SRG"
 }

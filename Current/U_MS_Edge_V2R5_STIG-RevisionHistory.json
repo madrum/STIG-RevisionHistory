@@ -1,28 +1,4 @@
 {
-  "CurrentVersion": "V2R5",
-  "Status": "Compared successfully.",
-  "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
-  "StigDisplayName": "MS Edge STIG",
-  "ChangedGroupIds": [],
-  "AddedGroups": [
-    {
-      "GroupId": "V-283439",
-      "RuleVersion": "EDGE-00-000070",
-      "RuleId": "SV-283439r1192850",
-      "RuleTitle": "Spell checking provided by Microsoft Editor must be disabled.",
-      "Severity": "medium"
-    }
-  ],
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
-      "BenchmarkId": "MS_Edge_STIG",
-      "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
-      "StatusDate": "2025-12-11",
-      "BenchmarkDate": "2026-01-05"
-    }
-  ],
-  "ChangedRuleVersions": [],
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
@@ -32,10 +8,34 @@
       "BenchmarkDate": "2026-04-01"
     }
   ],
-  "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
+  "ChangedRuleVersions": [],
   "ScanType": "SemiAutomated",
-  "RemovedGroups": [],
-  "PreviousVersion": "V2R4",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Edge Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Edge_STIG",
+      "FileName": "U_MS_Edge_V2R4_STIG_Manual-xccdf.xml",
+      "StatusDate": "2025-12-11",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
   "StigId": "MS_Edge_STIG",
-  "ChangedRuleIds": []
+  "CurrentVersion": "V2R5",
+  "CurrentPackage": "U_MS_Edge_V2R5_STIG.zip",
+  "ChangedRuleIds": [],
+  "ChangedGroupIds": [],
+  "PreviousVersion": "V2R4",
+  "PreviousPackage": "U_MS_Edge_V2R4_STIG.zip",
+  "RemovedGroups": [],
+  "Status": "Compared successfully.",
+  "AddedGroups": [
+    {
+      "GroupId": "V-283439",
+      "RuleVersion": "EDGE-00-000070",
+      "RuleId": "SV-283439r1192850",
+      "RuleTitle": "Spell checking provided by Microsoft Editor must be disabled.",
+      "Severity": "medium"
+    }
+  ],
+  "StigDisplayName": "MS Edge STIG"
 }
