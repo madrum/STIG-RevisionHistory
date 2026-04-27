@@ -1,4 +1,32 @@
 {
+  "StigId": "Container_Platform_SRG",
+  "StigDisplayName": "Container Platform SRG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V2R4",
+  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Container Platform Security Requirements Guide",
+      "BenchmarkId": "Container_Platform_SRG",
+      "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-10",
+      "BenchmarkDate": "2025-10-28"
+    }
+  ],
+  "PreviousVersion": "V2R3",
+  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Container Platform Security Requirements Guide",
+      "BenchmarkId": "Container_Platform_SRG",
+      "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
+      "StatusDate": "2025-05-15",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-233026",
@@ -92,33 +120,6 @@
       "RuleTitle": "The container platform must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality."
     }
   ],
-  "PreviousVersion": "V2R3",
-  "CurrentVersion": "V2R4",
-  "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Container Platform Security Requirements Guide",
-      "BenchmarkId": "Container_Platform_SRG",
-      "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
-      "StatusDate": "2025-09-10",
-      "BenchmarkDate": "2025-10-28"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Container Platform Security Requirements Guide",
-      "BenchmarkId": "Container_Platform_SRG",
-      "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
-      "StatusDate": "2025-05-15",
-      "BenchmarkDate": "2025-07-02"
-    }
-  ],
-  "StigDisplayName": "Container Platform SRG",
-  "ScanType": "Manual",
-  "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
-  "ChangedGroupIds": [],
   "AddedGroups": [
     {
       "GroupId": "V-278968",
@@ -128,6 +129,5 @@
       "Severity": "high"
     }
   ],
-  "StigId": "Container_Platform_SRG",
   "RemovedGroups": []
 }

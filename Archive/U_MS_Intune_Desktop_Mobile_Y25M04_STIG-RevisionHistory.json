@@ -1,4 +1,9 @@
 {
+  "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+  "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
+  "ScanType": "Manual",
+  "CurrentVersion": "Y25M04",
+  "CurrentPackage": "U_MS_Intune_Desktop_Mobile_Y25M04_STIG.zip",
   "CurrentBenchmarks": [
     {
       "BenchmarkTitle": "Microsoft Intune MDM Service Desktop & Mobile Security Technical Implementation Guide",
@@ -8,12 +13,7 @@
       "BenchmarkDate": "2025-04-22"
     }
   ],
-  "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
-  "Status": "No previous benchmark version found in Archive.",
-  "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
-  "CurrentVersion": "Y25M04",
   "PreviousVersion": null,
-  "CurrentPackage": "U_MS_Intune_Desktop_Mobile_Y25M04_STIG.zip",
-  "ScanType": "Manual",
-  "PreviousPackage": null
+  "PreviousPackage": null,
+  "Status": "No previous benchmark version found in Archive."
 }

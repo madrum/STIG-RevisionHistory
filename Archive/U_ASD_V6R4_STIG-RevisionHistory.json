@@ -1,4 +1,32 @@
 {
+  "StigId": "ASD_STIG",
+  "StigDisplayName": "ASD STIG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V6R4",
+  "CurrentPackage": "U_ASD_V6R4_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+      "BenchmarkId": "Application_Security_Development_STIG",
+      "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-09",
+      "BenchmarkDate": "2025-10-01"
+    }
+  ],
+  "PreviousVersion": "V6R3",
+  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+      "BenchmarkId": "Application_Security_Development_STIG",
+      "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
+      "StatusDate": "2025-02-12",
+      "BenchmarkDate": "2025-04-02"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-222393",
@@ -134,34 +162,6 @@
       "RuleTitle": "The application must implement NSA-approved cryptography to protect classified information in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
     }
   ],
-  "PreviousVersion": "V6R3",
-  "CurrentVersion": "V6R4",
-  "PreviousPackage": "U_ASD_V6R3_STIG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
-      "BenchmarkId": "Application_Security_Development_STIG",
-      "FileName": "U_ASD_STIG_V6R4_Manual-xccdf.xml",
-      "StatusDate": "2025-09-09",
-      "BenchmarkDate": "2025-10-01"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
-      "BenchmarkId": "Application_Security_Development_STIG",
-      "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
-      "StatusDate": "2025-02-12",
-      "BenchmarkDate": "2025-04-02"
-    }
-  ],
-  "StigDisplayName": "ASD STIG",
-  "ScanType": "Manual",
-  "CurrentPackage": "U_ASD_V6R4_STIG.zip",
-  "ChangedGroupIds": [],
   "AddedGroups": [],
-  "StigId": "ASD_STIG",
   "RemovedGroups": []
 }

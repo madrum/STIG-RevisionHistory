@@ -1,4 +1,32 @@
 {
+  "StigId": "Microsoft_Windows_11_STIG",
+  "StigDisplayName": "Microsoft Windows 11 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentVersion": "V2R7",
+  "CurrentPackage": "U_MS_Windows_11_V2R7_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+      "BenchmarkId": "Microsoft_Windows_11_STIG",
+      "FileName": "U_MS_Windows_11_STIG_V2R7_Manual-xccdf.xml",
+      "StatusDate": "2026-02-12",
+      "BenchmarkDate": "2026-04-01"
+    }
+  ],
+  "PreviousVersion": "V2R6",
+  "PreviousPackage": "U_MS_Windows_11_V2R6_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+      "BenchmarkId": "Microsoft_Windows_11_STIG",
+      "FileName": "U_MS_Windows_11_STIG_V2R6_Manual-xccdf.xml",
+      "StatusDate": "2025-11-24",
+      "BenchmarkDate": "2026-01-05"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-253260",
@@ -22,35 +50,7 @@
       "RuleTitle": "The security event log size must be configured to a value that holds at least one week's worth of audit records."
     }
   ],
-  "PreviousVersion": "V2R6",
-  "CurrentVersion": "V2R7",
-  "PreviousPackage": "U_MS_Windows_11_V2R6_STIG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
-      "BenchmarkId": "Microsoft_Windows_11_STIG",
-      "FileName": "U_MS_Windows_11_STIG_V2R7_Manual-xccdf.xml",
-      "StatusDate": "2026-02-12",
-      "BenchmarkDate": "2026-04-01"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
-      "BenchmarkId": "Microsoft_Windows_11_STIG",
-      "FileName": "U_MS_Windows_11_STIG_V2R6_Manual-xccdf.xml",
-      "StatusDate": "2025-11-24",
-      "BenchmarkDate": "2026-01-05"
-    }
-  ],
-  "StigDisplayName": "Microsoft Windows 11 STIG",
-  "ScanType": "SemiAutomated",
-  "CurrentPackage": "U_MS_Windows_11_V2R7_STIG.zip",
-  "ChangedGroupIds": [],
   "AddedGroups": [],
-  "StigId": "Microsoft_Windows_11_STIG",
   "RemovedGroups": [
     {
       "GroupId": "V-253258",

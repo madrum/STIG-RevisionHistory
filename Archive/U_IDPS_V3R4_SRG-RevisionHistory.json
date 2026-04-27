@@ -1,4 +1,32 @@
 {
+  "StigId": "IDPS_SRG",
+  "StigDisplayName": "IDPS SRG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V3R4",
+  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+      "BenchmarkId": "IDPS_SRG",
+      "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-22",
+      "BenchmarkDate": "2025-10-28"
+    }
+  ],
+  "PreviousVersion": "V3R3",
+  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
+      "BenchmarkId": "IDPS_SRG",
+      "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
+      "StatusDate": "2025-05-19",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
   "ChangedRuleIds": [
     {
       "GroupId": "V-206864",
@@ -120,33 +148,6 @@
       "RuleTitle": "The IDPS must implement physically or logically separate subnetworks to isolate organization-defined critical system components and functions."
     }
   ],
-  "PreviousVersion": "V3R3",
-  "CurrentVersion": "V3R4",
-  "PreviousPackage": "U_IDPS_V3R3_SRG.zip",
-  "CurrentBenchmarks": [
-    {
-      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
-      "BenchmarkId": "IDPS_SRG",
-      "FileName": "U_IDPS_SRG_V3R4_Manual-xccdf.xml",
-      "StatusDate": "2025-09-22",
-      "BenchmarkDate": "2025-10-28"
-    }
-  ],
-  "ChangedRuleVersions": [],
-  "Status": "Compared successfully.",
-  "PreviousBenchmarks": [
-    {
-      "BenchmarkTitle": "Intrusion Detection and Prevention Systems Security Requirements Guide",
-      "BenchmarkId": "IDPS_SRG",
-      "FileName": "U_IDPS_SRG_V3R3_Manual-xccdf.xml",
-      "StatusDate": "2025-05-19",
-      "BenchmarkDate": "2025-07-02"
-    }
-  ],
-  "StigDisplayName": "IDPS SRG",
-  "ScanType": "Manual",
-  "CurrentPackage": "U_IDPS_V3R4_SRG.zip",
-  "ChangedGroupIds": [],
   "AddedGroups": [
     {
       "GroupId": "V-278978",
@@ -163,6 +164,5 @@
       "Severity": "medium"
     }
   ],
-  "StigId": "IDPS_SRG",
   "RemovedGroups": []
 }
