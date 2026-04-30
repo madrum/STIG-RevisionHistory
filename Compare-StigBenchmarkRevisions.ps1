@@ -226,10 +226,13 @@ begin {
             [string[]]$SelectedStigIds
         )
 
-        function Get-BenchmarkDateValues {
+        function Get-BenchmarkFieldValues {
             param(
                 [Parameter()]
-                [object]$Benchmarks
+                [object]$Benchmarks,
+
+                [Parameter(Mandatory = $true)]
+                [string]$FieldName
             )
 
             if ($null -eq $Benchmarks) {
@@ -240,9 +243,9 @@ begin {
                 @($Benchmarks) |
                 ForEach-Object {
                     if ($_ -is [System.Collections.IDictionary]) {
-                        [string]$_['BenchmarkDate']
+                        [string]$_[$FieldName]
                     } else {
-                        [string]$_.BenchmarkDate
+                        [string]$_.$FieldName
                     }
                 } |
                 Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
@@ -272,8 +275,8 @@ begin {
                 $removedCount = 0
                 $currentVersionDisplay = $_.CurrentVersion
                 $previousVersionDisplay = if ($null -ne $_.PreviousVersion) { [string]$_.PreviousVersion } else { '' }
-                $currentBenchmarkDates = @()
-                $previousBenchmarkDates = @()
+                $currentStatusDates = @()
+                $previousStatusDates = @()
 
                 if ($_ -is [System.Collections.IDictionary]) {
                     if ($_.Contains('ChangedGroupIds') -and $null -ne $_['ChangedGroupIds']) {
@@ -292,10 +295,10 @@ begin {
                         $removedCount = @($_['RemovedGroups']).Count
                     }
                     if ($_.Contains('CurrentBenchmarks') -and $null -ne $_['CurrentBenchmarks']) {
-                        $currentBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_['CurrentBenchmarks'])
+                        $currentStatusDates = @(Get-BenchmarkFieldValues -Benchmarks $_['CurrentBenchmarks'] -FieldName 'StatusDate')
                     }
                     if ($_.Contains('PreviousBenchmarks') -and $null -ne $_['PreviousBenchmarks']) {
-                        $previousBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_['PreviousBenchmarks'])
+                        $previousStatusDates = @(Get-BenchmarkFieldValues -Benchmarks $_['PreviousBenchmarks'] -FieldName 'StatusDate')
                     }
                 } else {
                     if ($_.PSObject.Properties.Name -contains 'ChangedGroupIds' -and $null -ne $_.ChangedGroupIds) {
@@ -314,18 +317,18 @@ begin {
                         $removedCount = @($_.RemovedGroups).Count
                     }
                     if ($_.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $null -ne $_.CurrentBenchmarks) {
-                        $currentBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_.CurrentBenchmarks)
+                        $currentStatusDates = @(Get-BenchmarkFieldValues -Benchmarks $_.CurrentBenchmarks -FieldName 'StatusDate')
                     }
                     if ($_.PSObject.Properties.Name -contains 'PreviousBenchmarks' -and $null -ne $_.PreviousBenchmarks) {
-                        $previousBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_.PreviousBenchmarks)
+                        $previousStatusDates = @(Get-BenchmarkFieldValues -Benchmarks $_.PreviousBenchmarks -FieldName 'StatusDate')
                     }
                 }
 
-                if (-not [string]::IsNullOrWhiteSpace($currentVersionDisplay) -and $currentBenchmarkDates.Count -gt 0) {
-                    $currentVersionDisplay = $currentVersionDisplay + '<br />' + ($currentBenchmarkDates -join ', ')
+                if (-not [string]::IsNullOrWhiteSpace($currentVersionDisplay) -and $currentStatusDates.Count -gt 0) {
+                    $currentVersionDisplay = $currentVersionDisplay + '<br />' + ($currentStatusDates -join ', ')
                 }
-                if (-not [string]::IsNullOrWhiteSpace($previousVersionDisplay) -and $previousBenchmarkDates.Count -gt 0) {
-                    $previousVersionDisplay = $previousVersionDisplay + '<br />' + ($previousBenchmarkDates -join ', ')
+                if (-not [string]::IsNullOrWhiteSpace($previousVersionDisplay) -and $previousStatusDates.Count -gt 0) {
+                    $previousVersionDisplay = $previousVersionDisplay + '<br />' + ($previousStatusDates -join ', ')
                 }
 
                 [ordered]@{
@@ -351,31 +354,49 @@ begin {
             $anchorId = $anchorId.Trim('-')
             $currentVersionDateDisplay = 'None'
             $previousVersionDateDisplay = 'None'
+            $currentVersionPublishedDisplay = 'None'
+            $previousVersionPublishedDisplay = 'None'
 
             if ($result -is [System.Collections.IDictionary]) {
                 if ($result.Contains('CurrentBenchmarks') -and $null -ne $result['CurrentBenchmarks']) {
-                    $currentVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result['CurrentBenchmarks'])
+                    $currentVersionDateValues = @(Get-BenchmarkFieldValues -Benchmarks $result['CurrentBenchmarks'] -FieldName 'StatusDate')
                     if ($currentVersionDateValues.Count -gt 0) {
                         $currentVersionDateDisplay = $currentVersionDateValues -join ', '
                     }
+                    $currentVersionPublishedValues = @(Get-BenchmarkFieldValues -Benchmarks $result['CurrentBenchmarks'] -FieldName 'BenchmarkDate')
+                    if ($currentVersionPublishedValues.Count -gt 0) {
+                        $currentVersionPublishedDisplay = $currentVersionPublishedValues -join ', '
+                    }
                 }
                 if ($result.Contains('PreviousBenchmarks') -and $null -ne $result['PreviousBenchmarks']) {
-                    $previousVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result['PreviousBenchmarks'])
+                    $previousVersionDateValues = @(Get-BenchmarkFieldValues -Benchmarks $result['PreviousBenchmarks'] -FieldName 'StatusDate')
                     if ($previousVersionDateValues.Count -gt 0) {
                         $previousVersionDateDisplay = $previousVersionDateValues -join ', '
+                    }
+                    $previousVersionPublishedValues = @(Get-BenchmarkFieldValues -Benchmarks $result['PreviousBenchmarks'] -FieldName 'BenchmarkDate')
+                    if ($previousVersionPublishedValues.Count -gt 0) {
+                        $previousVersionPublishedDisplay = $previousVersionPublishedValues -join ', '
                     }
                 }
             } else {
                 if ($result.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $null -ne $result.CurrentBenchmarks) {
-                    $currentVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result.CurrentBenchmarks)
+                    $currentVersionDateValues = @(Get-BenchmarkFieldValues -Benchmarks $result.CurrentBenchmarks -FieldName 'StatusDate')
                     if ($currentVersionDateValues.Count -gt 0) {
                         $currentVersionDateDisplay = $currentVersionDateValues -join ', '
                     }
+                    $currentVersionPublishedValues = @(Get-BenchmarkFieldValues -Benchmarks $result.CurrentBenchmarks -FieldName 'BenchmarkDate')
+                    if ($currentVersionPublishedValues.Count -gt 0) {
+                        $currentVersionPublishedDisplay = $currentVersionPublishedValues -join ', '
+                    }
                 }
                 if ($result.PSObject.Properties.Name -contains 'PreviousBenchmarks' -and $null -ne $result.PreviousBenchmarks) {
-                    $previousVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result.PreviousBenchmarks)
+                    $previousVersionDateValues = @(Get-BenchmarkFieldValues -Benchmarks $result.PreviousBenchmarks -FieldName 'StatusDate')
                     if ($previousVersionDateValues.Count -gt 0) {
                         $previousVersionDateDisplay = $previousVersionDateValues -join ', '
+                    }
+                    $previousVersionPublishedValues = @(Get-BenchmarkFieldValues -Benchmarks $result.PreviousBenchmarks -FieldName 'BenchmarkDate')
+                    if ($previousVersionPublishedValues.Count -gt 0) {
+                        $previousVersionPublishedDisplay = $previousVersionPublishedValues -join ', '
                     }
                 }
             }
@@ -391,8 +412,10 @@ begin {
                 [ordered]@{ Field = 'Scan Type'; Value = [string]$result.ScanType }
                 [ordered]@{ Field = 'Current Version'; Value = [string]$result.CurrentVersion }
                 [ordered]@{ Field = 'Current Version Date'; Value = $currentVersionDateDisplay }
+                [ordered]@{ Field = 'Current Version Published'; Value = $currentVersionPublishedDisplay }
                 [ordered]@{ Field = 'Previous Version'; Value = $(if ($null -ne $result.PreviousVersion) { [string]$result.PreviousVersion } else { 'None' }) }
                 [ordered]@{ Field = 'Previous Version Date'; Value = $previousVersionDateDisplay }
+                [ordered]@{ Field = 'Previous Version Published'; Value = $previousVersionPublishedDisplay }
                 [ordered]@{ Field = 'Status'; Value = [string]$result.Status }
             )
             $lines += Convert-ItemsToMarkdownTable -Items $sectionMetadataItems -Properties @('Field', 'Value')

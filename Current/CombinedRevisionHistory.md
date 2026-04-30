@@ -2,26 +2,26 @@
 
 # Combined Revision History
 
-Generated: 2026-04-30 09:09:20-04:00
+Generated: 2026-04-30 09:33:33-04:00
 
 ## Summary
 
 | StigDisplayName | CurrentVersion | PreviousVersion | ChangedCount | AddedCount | RemovedCount | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [ASD STIG](#asd_stig) | V6R4<br />2025-10-01 | V6R3<br />2025-04-02 | 19 | 0 | 0 | Compared successfully. |
-| [Cloud Computing SRG](#cloud_computing_srg) | Y25M12<br />2025-01-30, 2025-08-13 | Y25M09<br />2025-01-30, 2025-08-13 | 0 | 0 | 0 | Compared successfully. |
-| [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-10-28 | V2R3<br />2025-07-02 | 13 | 1 | 0 | Compared successfully. |
-| [IDPS SRG](#idps_srg) | V3R4<br />2025-10-28 | V3R3<br />2025-07-02 | 17 | 2 | 0 | Compared successfully. |
-| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-07-02 | V2R2<br />2024-10-24 | 8 | 0 | 0 | Compared successfully. |
-| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8<br />2026-04-01 | V2R7<br />2026-01-05 | 40 | 0 | 0 | Compared successfully. |
-| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8<br />2026-04-01 | V2R7<br />2025-07-02 | 5 | 0 | 0 | Compared successfully. |
-| [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-04-01 | V2R4<br />2026-01-05 | 0 | 1 | 0 | Compared successfully. |
-| [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-02-28 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-04-01 | V2R6<br />2026-01-05 | 1 | 0 | 0 | Compared successfully. |
-| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04<br />2025-04-22 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7<br />2026-04-01 | V2R6<br />2026-01-05 | 3 | 0 | 1 | Compared successfully. |
-| [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-10-24 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2<br />2023-11-09 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [ASD STIG](#asd_stig) | V6R4<br />2025-09-09 | V6R3<br />2025-02-12 | 19 | 0 | 0 | Compared successfully. |
+| [Cloud Computing SRG](#cloud_computing_srg) | Y25M12<br />2024-12-20, 2025-08-13 | Y25M09<br />2024-12-20, 2025-08-13 | 0 | 0 | 0 | Compared successfully. |
+| [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-09-10 | V2R3<br />2025-05-15 | 13 | 1 | 0 | Compared successfully. |
+| [IDPS SRG](#idps_srg) | V3R4<br />2025-09-22 | V3R3<br />2025-05-19 | 17 | 2 | 0 | Compared successfully. |
+| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-06-11 | V2R2<br />2024-09-04 | 8 | 0 | 0 | Compared successfully. |
+| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8<br />2026-02-17 | V2R7<br />2025-11-25 | 40 | 0 | 0 | Compared successfully. |
+| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8<br />2026-02-12 | V2R7<br />2025-05-16 | 5 | 0 | 0 | Compared successfully. |
+| [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-02-25 | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
+| [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-03-17 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
+| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04<br />2025-05-08 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7<br />2026-02-12 | V2R6<br />2025-11-24 | 3 | 0 | 1 | Compared successfully. |
+| [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-08-02 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2<br />2023-08-23 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 
 ---
 
@@ -33,9 +33,11 @@ Generated: 2026-04-30 09:09:20-04:00
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | V6R4 |
-| Current Version Date | 2025-10-01 |
+| Current Version Date | 2025-09-09 |
+| Current Version Published | 2025-10-01 |
 | Previous Version | V6R3 |
-| Previous Version Date | 2025-04-02 |
+| Previous Version Date | 2025-02-12 |
+| Previous Version Published | 2025-04-02 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -90,9 +92,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | Y25M12 |
-| Current Version Date | 2025-01-30, 2025-08-13 |
+| Current Version Date | 2024-12-20, 2025-08-13 |
+| Current Version Published | 2025-01-30, 2025-08-13 |
 | Previous Version | Y25M09 |
-| Previous Version Date | 2025-01-30, 2025-08-13 |
+| Previous Version Date | 2024-12-20, 2025-08-13 |
+| Previous Version Published | 2025-01-30, 2025-08-13 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -127,9 +131,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | V2R4 |
-| Current Version Date | 2025-10-28 |
+| Current Version Date | 2025-09-10 |
+| Current Version Published | 2025-10-28 |
 | Previous Version | V2R3 |
-| Previous Version Date | 2025-07-02 |
+| Previous Version Date | 2025-05-15 |
+| Previous Version Published | 2025-07-02 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -180,9 +186,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | V3R4 |
-| Current Version Date | 2025-10-28 |
+| Current Version Date | 2025-09-22 |
+| Current Version Published | 2025-10-28 |
 | Previous Version | V3R3 |
-| Previous Version Date | 2025-07-02 |
+| Previous Version Date | 2025-05-19 |
+| Previous Version Published | 2025-07-02 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -238,9 +246,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | V2R3 |
-| Current Version Date | 2025-07-02 |
+| Current Version Date | 2025-06-11 |
+| Current Version Published | 2025-07-02 |
 | Previous Version | V2R2 |
-| Previous Version Date | 2024-10-24 |
+| Previous Version Date | 2024-09-04 |
+| Previous Version Published | 2024-10-24 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -284,9 +294,11 @@ None
 | --- | --- |
 | Scan Type | SemiAutomated |
 | Current Version | V2R8 |
-| Current Version Date | 2026-04-01 |
+| Current Version Date | 2026-02-17 |
+| Current Version Published | 2026-04-01 |
 | Previous Version | V2R7 |
-| Previous Version Date | 2026-01-05 |
+| Previous Version Date | 2025-11-25 |
+| Previous Version Published | 2026-01-05 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -362,9 +374,11 @@ None
 | --- | --- |
 | Scan Type | SemiAutomated |
 | Current Version | V2R8 |
-| Current Version Date | 2026-04-01 |
+| Current Version Date | 2026-02-12 |
+| Current Version Published | 2026-04-01 |
 | Previous Version | V2R7 |
-| Previous Version Date | 2025-07-02 |
+| Previous Version Date | 2025-05-16 |
+| Previous Version Published | 2025-07-02 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -405,9 +419,11 @@ None
 | --- | --- |
 | Scan Type | SemiAutomated |
 | Current Version | V2R5 |
-| Current Version Date | 2026-04-01 |
+| Current Version Date | 2026-02-25 |
+| Current Version Published | 2026-04-01 |
 | Previous Version | V2R4 |
-| Previous Version Date | 2026-01-05 |
+| Previous Version Date | 2025-12-11 |
+| Previous Version Published | 2026-01-05 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -444,9 +460,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | V1R1 |
-| Current Version Date | 2025-02-28 |
+| Current Version Date | 2025-03-17 |
+| Current Version Published | 2025-02-28 |
 | Previous Version | None |
 | Previous Version Date | None |
+| Previous Version Published | None |
 | Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
@@ -481,9 +499,11 @@ None
 | --- | --- |
 | Scan Type | SemiAutomated |
 | Current Version | V2R7 |
-| Current Version Date | 2026-04-01 |
+| Current Version Date | 2026-02-24 |
+| Current Version Published | 2026-04-01 |
 | Previous Version | V2R6 |
-| Previous Version Date | 2026-01-05 |
+| Previous Version Date | 2025-11-25 |
+| Previous Version Published | 2026-01-05 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -520,9 +540,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | Y25M04 |
-| Current Version Date | 2025-04-22 |
+| Current Version Date | 2025-05-08 |
+| Current Version Published | 2025-04-22 |
 | Previous Version | None |
 | Previous Version Date | None |
+| Previous Version Published | None |
 | Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
@@ -557,9 +579,11 @@ None
 | --- | --- |
 | Scan Type | SemiAutomated |
 | Current Version | V2R7 |
-| Current Version Date | 2026-04-01 |
+| Current Version Date | 2026-02-12 |
+| Current Version Published | 2026-04-01 |
 | Previous Version | V2R6 |
-| Previous Version Date | 2026-01-05 |
+| Previous Version Date | 2025-11-24 |
+| Previous Version Published | 2026-01-05 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -600,9 +624,11 @@ None
 | --- | --- |
 | Scan Type | Manual |
 | Current Version | V10R7 |
-| Current Version Date | 2024-10-24 |
+| Current Version Date | 2024-08-02 |
+| Current Version Published | 2024-10-24 |
 | Previous Version | None |
 | Previous Version Date | None |
+| Previous Version Published | None |
 | Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
@@ -637,9 +663,11 @@ None
 | --- | --- |
 | Scan Type | SemiAutomated |
 | Current Version | V2R2 |
-| Current Version Date | 2023-11-09 |
+| Current Version Date | 2023-08-23 |
+| Current Version Published | 2023-11-09 |
 | Previous Version | None |
 | Previous Version Date | None |
+| Previous Version Published | None |
 | Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
