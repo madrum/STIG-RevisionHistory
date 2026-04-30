@@ -226,6 +226,30 @@ begin {
             [string[]]$SelectedStigIds
         )
 
+        function Get-BenchmarkDateValues {
+            param(
+                [Parameter()]
+                [object]$Benchmarks
+            )
+
+            if ($null -eq $Benchmarks) {
+                return @()
+            }
+
+            return @(
+                @($Benchmarks) |
+                ForEach-Object {
+                    if ($_ -is [System.Collections.IDictionary]) {
+                        [string]$_['BenchmarkDate']
+                    } else {
+                        [string]$_.BenchmarkDate
+                    }
+                } |
+                Where-Object { -not [string]::IsNullOrWhiteSpace($_) } |
+                Select-Object -Unique
+            )
+        }
+
         $lines = @()
         $lines += '<a id="top"></a>'
         $lines += ''
@@ -246,6 +270,10 @@ begin {
                 $changedCount = 0
                 $addedCount = 0
                 $removedCount = 0
+                $currentVersionDisplay = $_.CurrentVersion
+                $previousVersionDisplay = if ($null -ne $_.PreviousVersion) { [string]$_.PreviousVersion } else { '' }
+                $currentBenchmarkDates = @()
+                $previousBenchmarkDates = @()
 
                 if ($_ -is [System.Collections.IDictionary]) {
                     if ($_.Contains('ChangedGroupIds') -and $null -ne $_['ChangedGroupIds']) {
@@ -263,6 +291,12 @@ begin {
                     if ($_.Contains('RemovedGroups') -and $null -ne $_['RemovedGroups']) {
                         $removedCount = @($_['RemovedGroups']).Count
                     }
+                    if ($_.Contains('CurrentBenchmarks') -and $null -ne $_['CurrentBenchmarks']) {
+                        $currentBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_['CurrentBenchmarks'])
+                    }
+                    if ($_.Contains('PreviousBenchmarks') -and $null -ne $_['PreviousBenchmarks']) {
+                        $previousBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_['PreviousBenchmarks'])
+                    }
                 } else {
                     if ($_.PSObject.Properties.Name -contains 'ChangedGroupIds' -and $null -ne $_.ChangedGroupIds) {
                         $changedCount += @($_.ChangedGroupIds).Count
@@ -279,12 +313,25 @@ begin {
                     if ($_.PSObject.Properties.Name -contains 'RemovedGroups' -and $null -ne $_.RemovedGroups) {
                         $removedCount = @($_.RemovedGroups).Count
                     }
+                    if ($_.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $null -ne $_.CurrentBenchmarks) {
+                        $currentBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_.CurrentBenchmarks)
+                    }
+                    if ($_.PSObject.Properties.Name -contains 'PreviousBenchmarks' -and $null -ne $_.PreviousBenchmarks) {
+                        $previousBenchmarkDates = @(Get-BenchmarkDateValues -Benchmarks $_.PreviousBenchmarks)
+                    }
+                }
+
+                if (-not [string]::IsNullOrWhiteSpace($currentVersionDisplay) -and $currentBenchmarkDates.Count -gt 0) {
+                    $currentVersionDisplay = $currentVersionDisplay + '<br />' + ($currentBenchmarkDates -join ', ')
+                }
+                if (-not [string]::IsNullOrWhiteSpace($previousVersionDisplay) -and $previousBenchmarkDates.Count -gt 0) {
+                    $previousVersionDisplay = $previousVersionDisplay + '<br />' + ($previousBenchmarkDates -join ', ')
                 }
 
                 [ordered]@{
                     StigDisplayName = "[$($_.StigDisplayName)](#$anchorId)"
-                    CurrentVersion  = $_.CurrentVersion
-                    PreviousVersion = if ($null -ne $_.PreviousVersion) { [string]$_.PreviousVersion } else { '' }
+                    CurrentVersion  = $currentVersionDisplay
+                    PreviousVersion = $previousVersionDisplay
                     ChangedCount    = $changedCount
                     AddedCount      = $addedCount
                     RemovedCount    = $removedCount
@@ -302,19 +349,53 @@ begin {
             $anchorId = $result.StigId.ToLowerInvariant()
             $anchorId = [System.Text.RegularExpressions.Regex]::Replace($anchorId, '[^a-z0-9_-]+', '-')
             $anchorId = $anchorId.Trim('-')
+            $currentVersionDateDisplay = 'None'
+            $previousVersionDateDisplay = 'None'
+
+            if ($result -is [System.Collections.IDictionary]) {
+                if ($result.Contains('CurrentBenchmarks') -and $null -ne $result['CurrentBenchmarks']) {
+                    $currentVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result['CurrentBenchmarks'])
+                    if ($currentVersionDateValues.Count -gt 0) {
+                        $currentVersionDateDisplay = $currentVersionDateValues -join ', '
+                    }
+                }
+                if ($result.Contains('PreviousBenchmarks') -and $null -ne $result['PreviousBenchmarks']) {
+                    $previousVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result['PreviousBenchmarks'])
+                    if ($previousVersionDateValues.Count -gt 0) {
+                        $previousVersionDateDisplay = $previousVersionDateValues -join ', '
+                    }
+                }
+            } else {
+                if ($result.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $null -ne $result.CurrentBenchmarks) {
+                    $currentVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result.CurrentBenchmarks)
+                    if ($currentVersionDateValues.Count -gt 0) {
+                        $currentVersionDateDisplay = $currentVersionDateValues -join ', '
+                    }
+                }
+                if ($result.PSObject.Properties.Name -contains 'PreviousBenchmarks' -and $null -ne $result.PreviousBenchmarks) {
+                    $previousVersionDateValues = @(Get-BenchmarkDateValues -Benchmarks $result.PreviousBenchmarks)
+                    if ($previousVersionDateValues.Count -gt 0) {
+                        $previousVersionDateDisplay = $previousVersionDateValues -join ', '
+                    }
+                }
+            }
+
             $lines += ''
             $lines += '---'
-            $lines += ''
-            $lines += '[Back to top](#top)'
             $lines += ''
             $lines += "<a id=""$anchorId""></a>"
             $lines += ''
             $lines += "## $($result.StigDisplayName)"
             $lines += ''
-            $lines += "- Scan Type: $($result.ScanType)"
-            $lines += "- Current Version: $($result.CurrentVersion)"
-            $lines += "- Previous Version: $(if ($null -ne $result.PreviousVersion) { $result.PreviousVersion } else { 'None' })"
-            $lines += "- Status: $($result.Status)"
+            $sectionMetadataItems = @(
+                [ordered]@{ Field = 'Scan Type'; Value = [string]$result.ScanType }
+                [ordered]@{ Field = 'Current Version'; Value = [string]$result.CurrentVersion }
+                [ordered]@{ Field = 'Current Version Date'; Value = $currentVersionDateDisplay }
+                [ordered]@{ Field = 'Previous Version'; Value = $(if ($null -ne $result.PreviousVersion) { [string]$result.PreviousVersion } else { 'None' }) }
+                [ordered]@{ Field = 'Previous Version Date'; Value = $previousVersionDateDisplay }
+                [ordered]@{ Field = 'Status'; Value = [string]$result.Status }
+            )
+            $lines += Convert-ItemsToMarkdownTable -Items $sectionMetadataItems -Properties @('Field', 'Value')
 
             if ($result.PSObject.Properties.Name -contains 'CurrentBenchmarks' -and $result.CurrentBenchmarks.Count -gt 0) {
                 $lines += ''
@@ -353,6 +434,9 @@ begin {
                 $lines += ''
                 $lines += Convert-ItemsToMarkdownTable -Items $sectionItems -Properties $sectionDefinition.Columns
             }
+
+            $lines += ''
+            $lines += '[Back to top](#top)'
         }
 
         return ($lines -join [Environment]::NewLine)

@@ -2,39 +2,41 @@
 
 # Combined Revision History
 
-Generated: 2026-04-27 11:10:49+00:00
+Generated: 2026-04-30 09:09:20-04:00
 
 ## Summary
 
 | StigDisplayName | CurrentVersion | PreviousVersion | ChangedCount | AddedCount | RemovedCount | Status |
 | --- | --- | --- | --- | --- | --- | --- |
-| [ASD STIG](#asd_stig) | V6R4 | V6R3 | 19 | 0 | 0 | Compared successfully. |
-| [Cloud Computing SRG](#cloud_computing_srg) | Y25M12 | Y25M09 | 0 | 0 | 0 | Compared successfully. |
-| [Container Platform SRG](#container_platform_srg) | V2R4 | V2R3 | 13 | 1 | 0 | Compared successfully. |
-| [IDPS SRG](#idps_srg) | V3R4 | V3R3 | 17 | 2 | 0 | Compared successfully. |
-| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3 | V2R2 | 8 | 0 | 0 | Compared successfully. |
-| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8 | V2R7 | 40 | 0 | 0 | Compared successfully. |
-| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8 | V2R7 | 5 | 0 | 0 | Compared successfully. |
-| [MS Edge STIG](#ms_edge_stig) | V2R5 | V2R4 | 0 | 1 | 0 | Compared successfully. |
-| [MS Entra ID STIG](#ms_entra_id_stig) | V1R1 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [MS IE11 STIG](#ie_11_stig) | V2R7 | V2R6 | 1 | 0 | 0 | Compared successfully. |
-| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7 | V2R6 | 3 | 0 | 1 | Compared successfully. |
-| [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [ASD STIG](#asd_stig) | V6R4<br />2025-10-01 | V6R3<br />2025-04-02 | 19 | 0 | 0 | Compared successfully. |
+| [Cloud Computing SRG](#cloud_computing_srg) | Y25M12<br />2025-01-30, 2025-08-13 | Y25M09<br />2025-01-30, 2025-08-13 | 0 | 0 | 0 | Compared successfully. |
+| [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-10-28 | V2R3<br />2025-07-02 | 13 | 1 | 0 | Compared successfully. |
+| [IDPS SRG](#idps_srg) | V3R4<br />2025-10-28 | V3R3<br />2025-07-02 | 17 | 2 | 0 | Compared successfully. |
+| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-07-02 | V2R2<br />2024-10-24 | 8 | 0 | 0 | Compared successfully. |
+| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8<br />2026-04-01 | V2R7<br />2026-01-05 | 40 | 0 | 0 | Compared successfully. |
+| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8<br />2026-04-01 | V2R7<br />2025-07-02 | 5 | 0 | 0 | Compared successfully. |
+| [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-04-01 | V2R4<br />2026-01-05 | 0 | 1 | 0 | Compared successfully. |
+| [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-02-28 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-04-01 | V2R6<br />2026-01-05 | 1 | 0 | 0 | Compared successfully. |
+| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04<br />2025-04-22 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7<br />2026-04-01 | V2R6<br />2026-01-05 | 3 | 0 | 1 | Compared successfully. |
+| [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-10-24 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2<br />2023-11-09 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 
 ---
-
-[Back to top](#top)
 
 <a id="asd_stig"></a>
 
 ## ASD STIG
 
-- Scan Type: Manual
-- Current Version: V6R4
-- Previous Version: V6R3
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | V6R4 |
+| Current Version Date | 2025-10-01 |
+| Previous Version | V6R3 |
+| Previous Version Date | 2025-04-02 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -76,18 +78,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="cloud_computing_srg"></a>
 
 ## Cloud Computing SRG
 
-- Scan Type: Manual
-- Current Version: Y25M12
-- Previous Version: Y25M09
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | Y25M12 |
+| Current Version Date | 2025-01-30, 2025-08-13 |
+| Previous Version | Y25M09 |
+| Previous Version Date | 2025-01-30, 2025-08-13 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -109,18 +115,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="container_platform_srg"></a>
 
 ## Container Platform SRG
 
-- Scan Type: Manual
-- Current Version: V2R4
-- Previous Version: V2R3
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | V2R4 |
+| Current Version Date | 2025-10-28 |
+| Previous Version | V2R3 |
+| Previous Version Date | 2025-07-02 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -158,18 +168,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="idps_srg"></a>
 
 ## IDPS SRG
 
-- Scan Type: Manual
-- Current Version: V3R4
-- Previous Version: V3R3
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | V3R4 |
+| Current Version Date | 2025-10-28 |
+| Previous Version | V3R3 |
+| Previous Version Date | 2025-07-02 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -212,18 +226,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ms_azure_sql_db_stig"></a>
 
 ## MS Azure SQL DB STIG
 
-- Scan Type: Manual
-- Current Version: V2R3
-- Previous Version: V2R2
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | V2R3 |
+| Current Version Date | 2025-07-02 |
+| Previous Version | V2R2 |
+| Previous Version Date | 2024-10-24 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -254,18 +272,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ms_defender_antivirus"></a>
 
 ## MS Defender Antivirus STIG
 
-- Scan Type: SemiAutomated
-- Current Version: V2R8
-- Previous Version: V2R7
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | SemiAutomated |
+| Current Version | V2R8 |
+| Current Version Date | 2026-04-01 |
+| Previous Version | V2R7 |
+| Previous Version Date | 2026-01-05 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -328,18 +350,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ms_dot_net_framework"></a>
 
 ## MS DotNet Framework 4-0 STIG
 
-- Scan Type: SemiAutomated
-- Current Version: V2R8
-- Previous Version: V2R7
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | SemiAutomated |
+| Current Version | V2R8 |
+| Current Version Date | 2026-04-01 |
+| Previous Version | V2R7 |
+| Previous Version Date | 2025-07-02 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -367,18 +393,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ms_edge_stig"></a>
 
 ## MS Edge STIG
 
-- Scan Type: SemiAutomated
-- Current Version: V2R5
-- Previous Version: V2R4
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | SemiAutomated |
+| Current Version | V2R5 |
+| Current Version Date | 2026-04-01 |
+| Previous Version | V2R4 |
+| Previous Version Date | 2026-01-05 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -402,18 +432,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ms_entra_id_stig"></a>
 
 ## MS Entra ID STIG
 
-- Scan Type: Manual
-- Current Version: V1R1
-- Previous Version: None
-- Status: No previous benchmark version found in Archive.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | V1R1 |
+| Current Version Date | 2025-02-28 |
+| Previous Version | None |
+| Previous Version Date | None |
+| Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
 
@@ -435,18 +469,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ie_11_stig"></a>
 
 ## MS IE11 STIG
 
-- Scan Type: SemiAutomated
-- Current Version: V2R7
-- Previous Version: V2R6
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | SemiAutomated |
+| Current Version | V2R7 |
+| Current Version Date | 2026-04-01 |
+| Previous Version | V2R6 |
+| Previous Version Date | 2026-01-05 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -470,18 +508,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="ms_intune_mdm_service_desktop_mobile_stig"></a>
 
 ## MS Intune MDM Service Desktop Mobile STIG
 
-- Scan Type: Manual
-- Current Version: Y25M04
-- Previous Version: None
-- Status: No previous benchmark version found in Archive.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | Y25M04 |
+| Current Version Date | 2025-04-22 |
+| Previous Version | None |
+| Previous Version Date | None |
+| Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
 
@@ -503,18 +545,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="microsoft_windows_11_stig"></a>
 
 ## Microsoft Windows 11 STIG
 
-- Scan Type: SemiAutomated
-- Current Version: V2R7
-- Previous Version: V2R6
-- Status: Compared successfully.
+| Field | Value |
+| --- | --- |
+| Scan Type | SemiAutomated |
+| Current Version | V2R7 |
+| Current Version Date | 2026-04-01 |
+| Previous Version | V2R6 |
+| Previous Version Date | 2026-01-05 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -542,18 +588,22 @@ None
 | --- | --- |
 | V&#8209;253258 | Windows 11 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: Continuously, where ESS is used; 30 days, for any additional internal network scans not covered by ESS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP). |
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="network_infrastructure_policy_stig"></a>
 
 ## Network Infrastructure Policy STIG
 
-- Scan Type: Manual
-- Current Version: V10R7
-- Previous Version: None
-- Status: No previous benchmark version found in Archive.
+| Field | Value |
+| --- | --- |
+| Scan Type | Manual |
+| Current Version | V10R7 |
+| Current Version Date | 2024-10-24 |
+| Previous Version | None |
+| Previous Version Date | None |
+| Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
 
@@ -575,18 +625,22 @@ None
 
 None
 
----
-
 [Back to top](#top)
+
+---
 
 <a id="windows_firewall_with_advanced_security"></a>
 
 ## Windows Firewall with Advanced Security STIG
 
-- Scan Type: SemiAutomated
-- Current Version: V2R2
-- Previous Version: None
-- Status: No previous benchmark version found in Archive.
+| Field | Value |
+| --- | --- |
+| Scan Type | SemiAutomated |
+| Current Version | V2R2 |
+| Current Version Date | 2023-11-09 |
+| Previous Version | None |
+| Previous Version Date | None |
+| Status | No previous benchmark version found in Archive. |
 
 ### Changed Group IDs
 
@@ -607,3 +661,5 @@ None
 ### Removed Groups
 
 None
+
+[Back to top](#top)
