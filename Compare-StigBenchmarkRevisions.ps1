@@ -253,6 +253,32 @@ begin {
             )
         }
 
+        function Test-HasRecentDate {
+            param(
+                [Parameter()]
+                [string[]]$DateValues,
+
+                [Parameter(Mandatory = $true)]
+                [string]$CutoffDateString
+            )
+
+            foreach ($dateValue in @($DateValues)) {
+                if ([string]::IsNullOrWhiteSpace($dateValue)) {
+                    continue
+                }
+
+                if ($dateValue -match '^\d{4}-\d{2}-\d{2}$' -and $dateValue -ge $CutoffDateString) {
+                    return $true
+                }
+            }
+
+            return $false
+        }
+
+        $generatedAtDate = ([datetimeoffset]::Parse($GeneratedAt, [System.Globalization.CultureInfo]::InvariantCulture)).DateTime
+        $recentDateCutoff = $generatedAtDate.AddMonths(-3)
+        $recentDateCutoffString = $recentDateCutoff.ToString('yyyy-MM-dd', [System.Globalization.CultureInfo]::InvariantCulture)
+
         $lines = @()
         $lines += '<a id="top"></a>'
         $lines += ''
@@ -326,6 +352,9 @@ begin {
 
                 if (-not [string]::IsNullOrWhiteSpace($currentVersionDisplay) -and $currentStatusDates.Count -gt 0) {
                     $currentVersionDisplay = $currentVersionDisplay + '<br />' + ($currentStatusDates -join ', ')
+                }
+                if (-not [string]::IsNullOrWhiteSpace($currentVersionDisplay) -and (Test-HasRecentDate -DateValues $currentStatusDates -CutoffDateString $recentDateCutoffString)) {
+                    $currentVersionDisplay = '**' + $currentVersionDisplay + '**'
                 }
                 if (-not [string]::IsNullOrWhiteSpace($previousVersionDisplay) -and $previousStatusDates.Count -gt 0) {
                     $previousVersionDisplay = $previousVersionDisplay + '<br />' + ($previousStatusDates -join ', ')

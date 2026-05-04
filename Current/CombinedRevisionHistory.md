@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-05-04 11:10:38+00:00
+Generated: 2026-05-04 14:17:12-04:00
 
 ## Summary
 
@@ -13,13 +13,13 @@ Generated: 2026-05-04 11:10:38+00:00
 | [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-09-10 | V2R3<br />2025-05-15 | 13 | 1 | 0 | Compared successfully. |
 | [IDPS SRG](#idps_srg) | V3R4<br />2025-09-22 | V3R3<br />2025-05-19 | 17 | 2 | 0 | Compared successfully. |
 | [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-06-11 | V2R2<br />2024-09-04 | 8 | 0 | 0 | Compared successfully. |
-| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8<br />2026-02-17 | V2R7<br />2025-11-25 | 40 | 0 | 0 | Compared successfully. |
-| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8<br />2026-02-12 | V2R7<br />2025-05-16 | 5 | 0 | 0 | Compared successfully. |
-| [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-02-25 | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
+| [MS Defender Antivirus STIG](#ms_defender_antivirus) | **V2R8<br />2026-02-17** | V2R7<br />2025-11-25 | 40 | 0 | 0 | Compared successfully. |
+| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | **V2R8<br />2026-02-12** | V2R7<br />2025-05-16 | 5 | 0 | 0 | Compared successfully. |
+| [MS Edge STIG](#ms_edge_stig) | **V2R5<br />2026-02-25** | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
 | [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-03-17 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
+| [MS IE11 STIG](#ie_11_stig) | **V2R7<br />2026-02-24** | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
 | [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04<br />2025-05-08 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7<br />2026-02-12 | V2R6<br />2025-11-24 | 3 | 0 | 1 | Compared successfully. |
+| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | **V2R7<br />2026-02-12** | V2R6<br />2025-11-24 | 3 | 0 | 1 | Compared successfully. |
 | [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-08-02 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 | [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2<br />2023-08-23 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 
