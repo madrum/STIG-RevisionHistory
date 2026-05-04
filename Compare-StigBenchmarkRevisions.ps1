@@ -303,6 +303,7 @@ begin {
                 $previousVersionDisplay = if ($null -ne $_.PreviousVersion) { [string]$_.PreviousVersion } else { '' }
                 $currentStatusDates = @()
                 $previousStatusDates = @()
+                $hasRecentCurrentVersion = $false
 
                 if ($_ -is [System.Collections.IDictionary]) {
                     if ($_.Contains('ChangedGroupIds') -and $null -ne $_['ChangedGroupIds']) {
@@ -354,7 +355,8 @@ begin {
                     $currentVersionDisplay = $currentVersionDisplay + '<br />' + ($currentStatusDates -join ', ')
                 }
                 if (-not [string]::IsNullOrWhiteSpace($currentVersionDisplay) -and (Test-HasRecentDate -DateValues $currentStatusDates -CutoffDateString $recentDateCutoffString)) {
-                    $currentVersionDisplay = '**' + $currentVersionDisplay + '**'
+                    $hasRecentCurrentVersion = $true
+                    $currentVersionDisplay = $currentVersionDisplay + ' <sup>✨</sup>'
                 }
                 if (-not [string]::IsNullOrWhiteSpace($previousVersionDisplay) -and $previousStatusDates.Count -gt 0) {
                     $previousVersionDisplay = $previousVersionDisplay + '<br />' + ($previousStatusDates -join ', ')
@@ -368,6 +370,7 @@ begin {
                     AddedCount      = $addedCount
                     RemovedCount    = $removedCount
                     Status          = $_.Status
+                    HasRecentCurrentVersion = $hasRecentCurrentVersion
                 }
             }
         )
@@ -376,6 +379,11 @@ begin {
         $lines += '## Summary'
         $lines += ''
         $lines += Convert-ItemsToMarkdownTable -Items $summaryItems -Properties @('StigDisplayName', 'CurrentVersion', 'PreviousVersion', 'ChangedCount', 'AddedCount', 'RemovedCount', 'Status')
+
+        if (@($summaryItems | Where-Object { $_.HasRecentCurrentVersion }).Count -gt 0) {
+            $lines += ''
+            $lines += 'Legend: ✨ Current version updated within the last 3 months.'
+        }
 
         foreach ($result in $Results) {
             $anchorId = $result.StigId.ToLowerInvariant()
