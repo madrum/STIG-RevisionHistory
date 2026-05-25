@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-05-18 12:40:55+00:00
+Generated: 2026-05-25 12:38:50+00:00
 
 ## Summary
 
@@ -17,7 +17,7 @@ Generated: 2026-05-18 12:40:55+00:00
 | [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8<br />2026-02-12 | V2R7<br />2025-05-16 | 5 | 0 | 0 | Compared successfully. |
 | [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-02-25 <sup>✨</sup> | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
 | [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-03-17 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 <sup>✨</sup> | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
+| [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
 | [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04<br />2025-05-08 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 | [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7<br />2026-02-12 | V2R6<br />2025-11-24 | 3 | 0 | 1 | Compared successfully. |
 | [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-08-02 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
