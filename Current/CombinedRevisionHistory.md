@@ -2,14 +2,14 @@
 
 # Combined Revision History
 
-Generated: 2026-06-22 14:48:10+00:00
+Generated: 2026-06-29 13:12:31+00:00
 
 ## Summary
 
 | StigDisplayName | CurrentVersion | PreviousVersion | ChangedCount | AddedCount | RemovedCount | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | [ASD STIG](#asd_stig) | V6R4<br />2025-09-09 | V6R3<br />2025-02-12 | 19 | 0 | 0 | Compared successfully. |
-| [Cloud Computing SRG](#cloud_computing_srg) | Y25M12<br />2024-12-20, 2025-08-13 | Y25M09<br />2024-12-20, 2025-08-13 | 0 | 0 | 0 | Compared successfully. |
+| [Cloud Computing SRG](#cloud_computing_srg) | Y26M06<br />2024-12-20, 2025-08-13 | Y25M12<br />2024-12-20, 2025-08-13 | 0 | 0 | 0 | Compared successfully. |
 | [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-09-10 | V2R3<br />2025-05-15 | 13 | 1 | 0 | Compared successfully. |
 | [IDPS SRG](#idps_srg) | V3R4<br />2025-09-22 | V3R3<br />2025-05-19 | 17 | 2 | 0 | Compared successfully. |
 | [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-06-11 | V2R2<br />2024-09-04 | 8 | 0 | 0 | Compared successfully. |
@@ -91,10 +91,10 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | Manual |
-| Current Version | Y25M12 |
+| Current Version | Y26M06 |
 | Current Version Date | 2024-12-20, 2025-08-13 |
 | Current Version Published | 2025-01-30, 2025-08-13 |
-| Previous Version | Y25M09 |
+| Previous Version | Y25M12 |
 | Previous Version Date | 2024-12-20, 2025-08-13 |
 | Previous Version Published | 2025-01-30, 2025-08-13 |
 | Status | Compared successfully. |

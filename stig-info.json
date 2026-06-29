@@ -11,7 +11,7 @@
       "StigId": "Cloud_Computing_SRG",
       "StigDisplayName": "Cloud Computing SRG",
       "ScanType": "Manual",
-      "CurrentVersion": "Y25M12",
+      "CurrentVersion": "Y26M06",
       "ZipFile": "U_Cloud_Computing_{version}_SRG.zip"
     },
     {

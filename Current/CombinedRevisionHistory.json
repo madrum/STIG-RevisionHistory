@@ -170,8 +170,8 @@
     "StigId": "Cloud_Computing_SRG",
     "StigDisplayName": "Cloud Computing SRG",
     "ScanType": "Manual",
-    "CurrentVersion": "Y25M12",
-    "CurrentPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
+    "CurrentVersion": "Y26M06",
+    "CurrentPackage": "U_Cloud_Computing_Y26M06_SRG.zip",
     "CurrentBenchmarks": [
       {
         "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
@@ -188,8 +188,8 @@
         "BenchmarkDate": "2025-08-13"
       }
     ],
-    "PreviousVersion": "Y25M09",
-    "PreviousPackage": "U_Cloud_Computing_Y25M09_SRG.zip",
+    "PreviousVersion": "Y25M12",
+    "PreviousPackage": "U_Cloud_Computing_Y25M12_SRG.zip",
     "PreviousBenchmarks": [
       {
         "BenchmarkTitle": "Cloud Computing Mission Owner Network Security Requirements Guide",
