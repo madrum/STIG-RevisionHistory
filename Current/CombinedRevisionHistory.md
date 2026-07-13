@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-07-06 12:55:40+00:00
+Generated: 2026-07-13 12:13:21+00:00
 
 ## Summary
 
@@ -13,15 +13,17 @@ Generated: 2026-07-06 12:55:40+00:00
 | [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-09-10 | V2R3<br />2025-05-15 | 13 | 1 | 0 | Compared successfully. |
 | [IDPS SRG](#idps_srg) | V3R4<br />2025-09-22 | V3R3<br />2025-05-19 | 17 | 2 | 0 | Compared successfully. |
 | [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-06-11 | V2R2<br />2024-09-04 | 8 | 0 | 0 | Compared successfully. |
-| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R8<br />2026-02-17 | V2R7<br />2025-11-25 | 40 | 0 | 0 | Compared successfully. |
-| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R8<br />2026-02-12 | V2R7<br />2025-05-16 | 5 | 0 | 0 | Compared successfully. |
+| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R9<br />2026-05-08 <sup>✨</sup> | V2R8<br />2026-02-17 | 40 | 0 | 0 | Compared successfully. |
+| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R9<br />2026-05-13 <sup>✨</sup> | V2R8<br />2026-02-12 | 0 | 1 | 0 | Compared successfully. |
 | [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-02-25 | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
 | [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-03-17 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 | [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
-| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y25M04<br />2025-05-08 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
-| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R7<br />2026-02-12 | V2R6<br />2025-11-24 | 3 | 0 | 1 | Compared successfully. |
+| [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y26M07<br />2026-05-27 <sup>✨</sup> | Y25M04<br />2025-05-08 | 2 | 1 | 0 | Compared successfully. |
+| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R8<br />2026-05-19 <sup>✨</sup> | V2R7<br />2026-02-12 | 25 | 0 | 6 | Compared successfully. |
 | [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-08-02 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 | [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2<br />2023-08-23 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+
+Legend: ✨ Current version updated within the last 3 months.
 
 ---
 
@@ -293,12 +295,12 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | SemiAutomated |
-| Current Version | V2R8 |
-| Current Version Date | 2026-02-17 |
-| Current Version Published | 2026-04-01 |
-| Previous Version | V2R7 |
-| Previous Version Date | 2025-11-25 |
-| Previous Version Published | 2026-01-05 |
+| Current Version | V2R9 |
+| Current Version Date | 2026-05-08 |
+| Current Version Published | 2026-07-01 |
+| Previous Version | V2R8 |
+| Previous Version Date | 2026-02-17 |
+| Previous Version Published | 2026-04-01 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -307,7 +309,9 @@ None
 
 ### Changed Rule Versions
 
-None
+| GroupId | RuleTitle |
+| --- | --- |
+| V&#8209;278658 | Microsoft Defender AV must control whether exclusions are visible to Local Admins. |
 
 ### Changed Rule IDs
 
@@ -337,7 +341,6 @@ None
 | V&#8209;278654 | Microsoft Defender AV must block Office communication application from creating child processes. |
 | V&#8209;278655 | Microsoft Defender AV must block abuse of exploited vulnerable signed drivers. |
 | V&#8209;278656 | Microsoft Defender AV must configure local administrator merge behavior for lists. |
-| V&#8209;278658 | Microsoft Defender AV must control whether exclusions are visible to Local Admins. |
 | V&#8209;278659 | Microsoft Defender AV must randomize scheduled task times. |
 | V&#8209;278660 | Microsoft Defender AV must hide the Family options area. |
 | V&#8209;278661 | Microsoft Defender AV must enable the file hash computation feature. |
@@ -373,12 +376,12 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | SemiAutomated |
-| Current Version | V2R8 |
-| Current Version Date | 2026-02-12 |
-| Current Version Published | 2026-04-01 |
-| Previous Version | V2R7 |
-| Previous Version Date | 2025-05-16 |
-| Previous Version Published | 2025-07-02 |
+| Current Version | V2R9 |
+| Current Version Date | 2026-05-13 |
+| Current Version Published | 2026-07-01 |
+| Previous Version | V2R8 |
+| Previous Version Date | 2026-02-12 |
+| Previous Version Published | 2026-04-01 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -391,17 +394,13 @@ None
 
 ### Changed Rule IDs
 
-| GroupId | RuleTitle |
-| --- | --- |
-| V&#8209;225229 | .Net Framework versions installed on the system must be supported. |
-| V&#8209;225230 | The .NET CLR must be configured to use FIPS approved encryption modules. |
-| V&#8209;225233 | Trust must be established prior to enabling the loading of remote code in .Net 4. |
-| V&#8209;225234 | .NET default proxy settings must be reviewed and approved. |
-| V&#8209;225236 | Software utilizing .Net 4.0 must be identified and relevant access controls configured. |
+None
 
 ### Added Groups
 
-None
+| GroupId | RuleTitle |
+| --- | --- |
+| V&#8209;284958 | The version of .NET running on the system must be a supported version. |
 
 ### Removed Groups
 
@@ -539,13 +538,13 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | Manual |
-| Current Version | Y25M04 |
-| Current Version Date | 2025-05-08 |
-| Current Version Published | 2025-04-22 |
-| Previous Version | None |
-| Previous Version Date | None |
-| Previous Version Published | None |
-| Status | No previous benchmark version found in Archive. |
+| Current Version | Y26M07 |
+| Current Version Date | 2026-05-27 |
+| Current Version Published | 2026-07-01 |
+| Previous Version | Y25M04 |
+| Previous Version Date | 2025-05-08 |
+| Previous Version Published | 2025-04-22 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -557,11 +556,16 @@ None
 
 ### Changed Rule IDs
 
-None
+| GroupId | RuleTitle |
+| --- | --- |
+| V&#8209;273867 | Microsoft Intune service must initiate a session lock after a 15-minute period of inactivity. |
+| V&#8209;273868 | Microsoft Intune service must be configured to transfer Intune logs to another server for storage, analysis, and reporting at least every seven days. |
 
 ### Added Groups
 
-None
+| GroupId | RuleTitle |
+| --- | --- |
+| V&#8209;285327 | The Intune service must be configured to implement Multi-Admin Approval (MAA) for wiping managed devices. |
 
 ### Removed Groups
 
@@ -578,12 +582,12 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | SemiAutomated |
-| Current Version | V2R7 |
-| Current Version Date | 2026-02-12 |
-| Current Version Published | 2026-04-01 |
-| Previous Version | V2R6 |
-| Previous Version Date | 2025-11-24 |
-| Previous Version Published | 2026-01-05 |
+| Current Version | V2R8 |
+| Current Version Date | 2026-05-19 |
+| Current Version Published | 2026-07-01 |
+| Previous Version | V2R7 |
+| Previous Version Date | 2026-02-12 |
+| Previous Version Published | 2026-04-01 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -598,9 +602,31 @@ None
 
 | GroupId | RuleTitle |
 | --- | --- |
+| V&#8209;253255 | Windows 11 systems must have a Trusted Platform Module (TPM) enabled. |
+| V&#8209;253256 | Windows 11 systems must have Unified Extensible Firmware Interface (UEFI) firmware and be configured to run in UEFI mode, not Legacy BIOS. |
+| V&#8209;253257 | Secure Boot must be enabled on Windows 11 systems. |
+| V&#8209;253259 | Windows 11 information systems must use BitLocker to encrypt all disks to protect the confidentiality and integrity of all information at rest. |
 | V&#8209;253260 | Windows 11 systems must use a BitLocker PIN for pre-boot authentication. |
-| V&#8209;253264 | The Windows 11 system must use an antivirus program. |
-| V&#8209;253338 | The security event log size must be configured to a value that holds at least one week's worth of audit records. |
+| V&#8209;253261 | Windows 11 systems must use a BitLocker PIN with a minimum length of six digits for pre-boot authentication. |
+| V&#8209;253272 | Standard local user accounts must not exist on a system in a domain. |
+| V&#8209;253300 | The password history must be configured to 24 passwords remembered. |
+| V&#8209;253369 | Virtualization-Based Security (VBS) must be enabled on Windows 11 with the platform security level configured to Secure Boot or Secure Boot with DMA Protection. |
+| V&#8209;253370 | Credential Guard must be running on Windows 11 systems. |
+| V&#8209;253371 | Virtualization-based protection of code integrity must be enabled. |
+| V&#8209;253389 | Enhanced anti-spoofing for facial recognition must be enabled on Windows 11. |
+| V&#8209;253393 | Windows Telemetry must not be configured to Full. |
+| V&#8209;253394 | Windows Update must not obtain updates from other PCs on the internet. |
+| V&#8209;253399 | Windows 11 must be configured to disable Windows Game Recording and Broadcasting. |
+| V&#8209;253401 | Windows 11 must be configured to require a minimum PIN length of six characters or greater. |
+| V&#8209;253409 | Indexing of encrypted files must be turned off. |
+| V&#8209;253422 | Windows 11 must be configured to prevent Windows apps from being activated by voice while the system is locked. |
+| V&#8209;253424 | Windows Ink Workspace must be configured to disallow access above the lock. |
+| V&#8209;253427 | The DOD Root CA certificates must be installed in the Trusted Root Store. |
+| V&#8209;253428 | The External Root CA certificates must be installed in the Trusted Root Store on unclassified systems. |
+| V&#8209;253445 | The required legal notice must be configured to display before console logon. |
+| V&#8209;253466 | The system must be configured to use FIPS-compliant algorithms for encryption, hashing, and signing. |
+| V&#8209;253476 | Passwords for enabled local Administrator accounts must be changed at least every 60 days. |
+| V&#8209;268318 | Windows 11 systems must use either Group Policy or an approved Mobile Device Management (MDM) product to enforce STIG compliance. |
 
 ### Added Groups
 
@@ -610,7 +636,12 @@ None
 
 | GroupId | RuleTitle |
 | --- | --- |
-| V&#8209;253258 | Windows 11 must employ automated mechanisms to determine the state of system components with regard to flaw remediation using the following frequency: Continuously, where ESS is used; 30 days, for any additional internal network scans not covered by ESS; and annually, for external scans by Computer Network Defense Service Provider (CNDSP). |
+| V&#8209;253295 | Windows 11 nonpersistent VM sessions must not exceed 24 hours. |
+| V&#8209;253366 | Wi-Fi Sense must be disabled. |
+| V&#8209;253390 | Microsoft consumer experiences must be turned off. |
+| V&#8209;278926 | Windows 11 must be configured to audit file system failures. |
+| V&#8209;278927 | Windows 11 must be configured to audit file system successes. |
+| V&#8209;278929 | Windows 11 must be configured to audit handle manipulation successes. |
 
 [Back to top](#top)
 

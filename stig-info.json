@@ -39,14 +39,14 @@
       "StigId": "MS_Defender_Antivirus",
       "StigDisplayName": "MS Defender Antivirus STIG",
       "ScanType": "SemiAutomated",
-      "CurrentVersion": "V2R8",
+      "CurrentVersion": "V2R9",
       "ZipFile": "U_MS_Defender_Antivirus_{version}_STIG.zip"
     },
     {
       "StigId": "MS_Dot_Net_Framework",
       "StigDisplayName": "MS DotNet Framework 4-0 STIG",
       "ScanType": "SemiAutomated",
-      "CurrentVersion": "V2R8",
+      "CurrentVersion": "V2R9",
       "ZipFile": "U_MS_DotNet_Framework_4-0_{version}_STIG.zip"
     },
     {
@@ -74,14 +74,14 @@
       "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
       "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
       "ScanType": "Manual",
-      "CurrentVersion": "Y25M04",
+      "CurrentVersion": "Y26M07",
       "ZipFile": "U_MS_Intune_Desktop_Mobile_{version}_STIG.zip"
     },
     {
       "StigId": "Microsoft_Windows_11_STIG",
       "StigDisplayName": "Microsoft Windows 11 STIG",
       "ScanType": "SemiAutomated",
-      "CurrentVersion": "V2R7",
+      "CurrentVersion": "V2R8",
       "ZipFile": "U_MS_Windows_11_{version}_STIG.zip"
     },
     {
