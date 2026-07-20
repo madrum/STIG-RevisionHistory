@@ -1,0 +1,56 @@
+{
+  "StigId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+  "StigDisplayName": "MS Intune MDM Service Desktop Mobile STIG",
+  "ScanType": "Manual",
+  "CurrentVersion": "Y26M07",
+  "CurrentPackage": "U_MS_Intune_Desktop_Mobile_Y26M07_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Intune MDM Service Desktop & Mobile Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+      "FileName": "U_MS_Intune_MDM_Service_Desktop_Mobile_V1R2_Manual-xccdf.xml",
+      "StatusDate": "2026-05-27",
+      "BenchmarkDate": "2026-07-01"
+    }
+  ],
+  "PreviousVersion": "Y25M04",
+  "PreviousPackage": "U_MS_Intune_Desktop_Mobile_Y25M04_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Intune MDM Service Desktop & Mobile Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Intune_MDM_Service_Desktop_Mobile_STIG",
+      "FileName": "U_MS_Intune_MDM_Service_Desktop_Mobile_V1R1_Manual-xccdf.xml",
+      "StatusDate": "2025-05-08",
+      "BenchmarkDate": "2025-04-22"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-273867",
+      "RuleVersion": "MSIN-25-000030",
+      "PreviousRuleId": "SV-273867r1101448",
+      "CurrentRuleId": "SV-273867r1207980",
+      "RuleTitle": "Microsoft Intune service must initiate a session lock after a 15-minute period of inactivity."
+    },
+    {
+      "GroupId": "V-273868",
+      "RuleVersion": "MSIN-25-000370",
+      "PreviousRuleId": "SV-273868r1101588",
+      "CurrentRuleId": "SV-273868r1208024",
+      "RuleTitle": "Microsoft Intune service must be configured to transfer Intune logs to another server for storage, analysis, and reporting at least every seven days."
+    }
+  ],
+  "AddedGroups": [
+    {
+      "GroupId": "V-285327",
+      "RuleVersion": "MSIN-25-002000",
+      "RuleId": "SV-285327r1211999",
+      "RuleTitle": "The Intune service must be configured to implement Multi-Admin Approval (MAA) for wiping managed devices.",
+      "Severity": "high"
+    }
+  ],
+  "RemovedGroups": []
+}
