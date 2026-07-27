@@ -103,18 +103,18 @@
     {
       "DownloadId": "STIG-GPO-Package",
       "Name": "STIG GPO Package",
-      "Version": "January_2026",
+      "Version": "July_2026",
       "FileName": "U_STIG_GPO_Package_{version}.zip",
-      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIG_GPO_Package_January_2026.zip",
-      "ZipHash": "A698A0C90B8A9CC10CC0ABA8FEB43D9EF5D2A1C81B9EB33AA73E79D03EE526B7"
+      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_STIG_GPO_Package_July_2026.zip",
+      "ZipHash": "EED9542AAFE07C6B674A3F6F6634C4987DB45A22F2DAA9F2D9C80B6B93072DE6"
     },
     {
       "DownloadId": "Intune-Policy-Package",
       "Name": "Intune Policy Package",
-      "Version": "January_2026",
+      "Version": "July_2026",
       "FileName": "U_Intune_Policy_Package_{version}.zip",
-      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Intune_Policy_Package_January_2026.zip",
-      "ZipHash": "B6E27280A700BACA361D8683D2B07358E0FB5AA9FB2AFA22FDA59FF596BB64F2"
+      "DownloadUrl": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Intune_Policy_Package_July_2026.zip",
+      "ZipHash": "82E8E516101B6A0FDA8388AA30F0DC2ECCF080701603D54BBFCC874079B53EDA"
     }
   ]
 }
