@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-08-10 10:23:24+00:00
+Generated: 2026-08-17 09:50:17+00:00
 
 ## Summary
 
@@ -14,7 +14,7 @@ Generated: 2026-08-10 10:23:24+00:00
 | [IDPS SRG](#idps_srg) | V3R4<br />2025-09-22 | V3R3<br />2025-05-19 | 17 | 2 | 0 | Compared successfully. |
 | [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-06-11 | V2R2<br />2024-09-04 | 8 | 0 | 0 | Compared successfully. |
 | [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R9<br />2026-05-08 | V2R8<br />2026-02-17 | 40 | 0 | 0 | Compared successfully. |
-| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R9<br />2026-05-13 <sup>✨</sup> | V2R8<br />2026-02-12 | 0 | 1 | 0 | Compared successfully. |
+| [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R9<br />2026-05-13 | V2R8<br />2026-02-12 | 0 | 1 | 0 | Compared successfully. |
 | [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-02-25 | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
 | [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-03-17 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 | [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
