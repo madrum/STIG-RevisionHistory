@@ -81,7 +81,7 @@
       "StigId": "Microsoft_Windows_11_STIG",
       "StigDisplayName": "Microsoft Windows 11 STIG",
       "ScanType": "SemiAutomated",
-      "CurrentVersion": "V2R8",
+      "CurrentVersion": "V2R9",
       "ZipFile": "U_MS_Windows_11_{version}_STIG.zip"
     },
     {

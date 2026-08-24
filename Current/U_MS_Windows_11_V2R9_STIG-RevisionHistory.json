@@ -1,0 +1,133 @@
+{
+  "StigId": "Microsoft_Windows_11_STIG",
+  "StigDisplayName": "Microsoft Windows 11 STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentVersion": "V2R9",
+  "CurrentPackage": "U_MS_Windows_11_V2R9_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+      "BenchmarkId": "Microsoft_Windows_11_STIG",
+      "FileName": "U_MS_Windows_11_STIG_V2R9_Manual-xccdf.xml",
+      "StatusDate": "2026-08-06",
+      "BenchmarkDate": "2026-08-10"
+    }
+  ],
+  "PreviousVersion": "V2R8",
+  "PreviousPackage": "U_MS_Windows_11_V2R8_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Windows 11 Security Technical Implementation Guide",
+      "BenchmarkId": "Microsoft_Windows_11_STIG",
+      "FileName": "U_MS_Windows_11_STIG_V2R8_Manual-xccdf.xml",
+      "StatusDate": "2026-05-19",
+      "BenchmarkDate": "2026-07-01"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-253296",
+      "RuleVersion": "WN11-00-000260",
+      "PreviousRuleId": "SV-253296r1051041",
+      "CurrentRuleId": "SV-253296r1256651",
+      "RuleTitle": "The Windows 11 time service must synchronize with an appropriate DoW time source."
+    },
+    {
+      "GroupId": "V-253300",
+      "RuleVersion": "WN11-AC-000020",
+      "PreviousRuleId": "SV-253300r1210287",
+      "CurrentRuleId": "SV-253300r1256653",
+      "RuleTitle": "The password history must be configured to 24 passwords remembered."
+    },
+    {
+      "GroupId": "V-253389",
+      "RuleVersion": "WN11-CC-000195",
+      "PreviousRuleId": "SV-253389r1210292",
+      "CurrentRuleId": "SV-253389r1256673",
+      "RuleTitle": "Enhanced anti-spoofing for facial recognition must be enabled on Windows 11."
+    },
+    {
+      "GroupId": "V-253393",
+      "RuleVersion": "WN11-CC-000205",
+      "PreviousRuleId": "SV-253393r1210293",
+      "CurrentRuleId": "SV-253393r1256676",
+      "RuleTitle": "Windows Telemetry must not be configured to Full."
+    },
+    {
+      "GroupId": "V-253394",
+      "RuleVersion": "WN11-CC-000206",
+      "PreviousRuleId": "SV-253394r1210294",
+      "CurrentRuleId": "SV-253394r1256679",
+      "RuleTitle": "Windows Update must not obtain updates from other PCs on the internet."
+    },
+    {
+      "GroupId": "V-253399",
+      "RuleVersion": "WN11-CC-000252",
+      "PreviousRuleId": "SV-253399r1210295",
+      "CurrentRuleId": "SV-253399r1256682",
+      "RuleTitle": "Windows 11 must be configured to disable Windows Game Recording and Broadcasting."
+    },
+    {
+      "GroupId": "V-253422",
+      "RuleVersion": "WN11-CC-000365",
+      "PreviousRuleId": "SV-253422r1210298",
+      "CurrentRuleId": "SV-253422r1256685",
+      "RuleTitle": "Windows 11 must be configured to prevent Windows apps from being activated by voice while the system is locked."
+    },
+    {
+      "GroupId": "V-253427",
+      "RuleVersion": "WN11-PK-000005",
+      "PreviousRuleId": "SV-253427r1210300",
+      "CurrentRuleId": "SV-253427r1256656",
+      "RuleTitle": "The DoW Root CA certificates must be installed in the Trusted Root Store."
+    },
+    {
+      "GroupId": "V-253428",
+      "RuleVersion": "WN11-PK-000010",
+      "PreviousRuleId": "SV-253428r1210301",
+      "CurrentRuleId": "SV-253428r1256659",
+      "RuleTitle": "The External Root CA certificates must be installed in the Trusted Root Store on unclassified systems."
+    },
+    {
+      "GroupId": "V-253429",
+      "RuleVersion": "WN11-PK-000015",
+      "PreviousRuleId": "SV-253429r958448",
+      "CurrentRuleId": "SV-253429r1256662",
+      "RuleTitle": "The DoW Interoperability Root CA cross-certificates must be installed in the Untrusted Certificates Store on unclassified systems."
+    },
+    {
+      "GroupId": "V-253430",
+      "RuleVersion": "WN11-PK-000020",
+      "PreviousRuleId": "SV-253430r1081058",
+      "CurrentRuleId": "SV-253430r1256665",
+      "RuleTitle": "The US DoW CCEB Interoperability Root CA cross-certificates must be installed in the Untrusted Certificates Store on unclassified systems."
+    },
+    {
+      "GroupId": "V-253470",
+      "RuleVersion": "WN11-SO-000251",
+      "PreviousRuleId": "SV-253470r1106510",
+      "CurrentRuleId": "SV-253470r1256666",
+      "RuleTitle": "Windows 11 must use multifactor authentication for local and network access to privileged and nonprivileged accounts."
+    },
+    {
+      "GroupId": "V-279688",
+      "RuleVersion": "WN11-00-000126",
+      "PreviousRuleId": "SV-279688r1153564",
+      "CurrentRuleId": "SV-279688r1256671",
+      "RuleTitle": "Windows 11 systems must block consumer account user authentication."
+    }
+  ],
+  "AddedGroups": [
+    {
+      "GroupId": "V-288475",
+      "RuleVersion": "WN11-00-000400",
+      "RuleId": "SV-288475r1256669",
+      "RuleTitle": "All Wi-Fi Direct adapters must be disabled on the system.",
+      "Severity": "medium"
+    }
+  ],
+  "RemovedGroups": []
+}
