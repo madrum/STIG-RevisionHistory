@@ -540,9 +540,20 @@
     "StigId": "MS_Azure_SQL_DB_STIG",
     "StigDisplayName": "MS Azure SQL DB STIG",
     "ScanType": "Manual",
-    "CurrentVersion": "V2R3",
-    "CurrentPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+    "CurrentVersion": "V2R4",
+    "CurrentPackage": "U_MS_Azure_SQL_DB_V2R4_STIG.zip",
     "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+        "FileName": "U_MS_Azure_SQL_DB_STIG_V2R4_Manual-xccdf.xml",
+        "StatusDate": "2026-08-25",
+        "BenchmarkDate": "2026-09-30"
+      }
+    ],
+    "PreviousVersion": "V2R3",
+    "PreviousPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+    "PreviousBenchmarks": [
       {
         "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
         "BenchmarkId": "MS_Azure_SQL_DB_STIG",
@@ -551,76 +562,86 @@
         "BenchmarkDate": "2025-07-02"
       }
     ],
-    "PreviousVersion": "V2R2",
-    "PreviousPackage": "U_MS_Azure_SQL_DB_V2R2_STIG.zip",
-    "PreviousBenchmarks": [
-      {
-        "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
-        "BenchmarkId": "MS_Azure_SQL_DB_STIG",
-        "FileName": "U_MS_Azure_SQL_DB_STIG_V2R2_Manual-xccdf.xml",
-        "StatusDate": "2024-09-04",
-        "BenchmarkDate": "2024-10-24"
-      }
-    ],
     "Status": "Compared successfully.",
     "ChangedGroupIds": [],
     "ChangedRuleVersions": [],
     "ChangedRuleIds": [
       {
-        "GroupId": "V-255301",
-        "RuleVersion": "ASQL-00-000100",
-        "PreviousRuleId": "SV-255301r960768",
-        "CurrentRuleId": "SV-255301r1043176",
-        "RuleTitle": "Azure SQL Databases must integrate with Azure Active Directory for providing account management and automation for all users, groups, roles, and any other principals."
-      },
-      {
         "GroupId": "V-255302",
         "RuleVersion": "ASQL-00-000200",
-        "PreviousRuleId": "SV-255302r960792",
-        "CurrentRuleId": "SV-255302r1112451",
+        "PreviousRuleId": "SV-255302r1112451",
+        "CurrentRuleId": "SV-255302r1137654",
         "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to server information and system resources in accordance with applicable access control policies."
       },
       {
         "GroupId": "V-255303",
         "RuleVersion": "ASQL-00-000300",
-        "PreviousRuleId": "SV-255303r960792",
-        "CurrentRuleId": "SV-255303r1112454",
+        "PreviousRuleId": "SV-255303r1112454",
+        "CurrentRuleId": "SV-255303r1263690",
         "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to database information and system resources in accordance with applicable access control policies."
       },
       {
-        "GroupId": "V-255311",
-        "RuleVersion": "ASQL-00-002200",
-        "PreviousRuleId": "SV-255311r961158",
-        "CurrentRuleId": "SV-255311r1112455",
-        "RuleTitle": "The Azure SQL Database and associated applications must reserve the use of dynamic code execution for situations that require it."
+        "GroupId": "V-255309",
+        "RuleVersion": "ASQL-00-002000",
+        "PreviousRuleId": "SV-255309r961149",
+        "CurrentRuleId": "SV-255309r1137656",
+        "RuleTitle": "Azure SQL Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy."
       },
       {
-        "GroupId": "V-255312",
-        "RuleVersion": "ASQL-00-002300",
-        "PreviousRuleId": "SV-255312r961158",
-        "CurrentRuleId": "SV-255312r1112456",
-        "RuleTitle": "The Azure SQL Database and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack."
+        "GroupId": "V-255313",
+        "RuleVersion": "ASQL-00-002500",
+        "PreviousRuleId": "SV-255313r961269",
+        "CurrentRuleId": "SV-255313r1138540",
+        "RuleTitle": "Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in storage."
       },
       {
-        "GroupId": "V-255334",
-        "RuleVersion": "ASQL-00-007700",
-        "PreviousRuleId": "SV-255334r960966",
-        "CurrentRuleId": "SV-255334r1043177",
-        "RuleTitle": "The Azure SQL Database must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments."
+        "GroupId": "V-255314",
+        "RuleVersion": "ASQL-00-002600",
+        "PreviousRuleId": "SV-255314r961272",
+        "CurrentRuleId": "SV-255314r1138541",
+        "RuleTitle": "Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in process."
       },
       {
-        "GroupId": "V-255335",
-        "RuleVersion": "ASQL-00-007800",
-        "PreviousRuleId": "SV-255335r960969",
-        "CurrentRuleId": "SV-255335r1051115",
-        "RuleTitle": "Azure SQL Database must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users)."
+        "GroupId": "V-255315",
+        "RuleVersion": "ASQL-00-002700",
+        "PreviousRuleId": "SV-255315r961275",
+        "CurrentRuleId": "SV-255315r1138542",
+        "RuleTitle": "Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in transmission."
       },
       {
-        "GroupId": "V-255340",
-        "RuleVersion": "ASQL-00-010200",
-        "PreviousRuleId": "SV-255340r961221",
-        "CurrentRuleId": "SV-255340r1043182",
-        "RuleTitle": "Azure SQL Database must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect."
+        "GroupId": "V-255320",
+        "RuleVersion": "ASQL-00-003200",
+        "PreviousRuleId": "SV-255320r962034",
+        "CurrentRuleId": "SV-255320r1117186",
+        "RuleTitle": "Azure SQL Database must use NSA-approved cryptography to protect classified information in accordance with the data owners requirements."
+      },
+      {
+        "GroupId": "V-255324",
+        "RuleVersion": "ASQL-00-004300",
+        "PreviousRuleId": "SV-255324r960879",
+        "CurrentRuleId": "SV-255324r1263692",
+        "RuleTitle": "The Azure SQL Database must be configured to generate audit records for DoW-defined auditable events within all DBMS/database components."
+      },
+      {
+        "GroupId": "V-255336",
+        "RuleVersion": "ASQL-00-008500",
+        "PreviousRuleId": "SV-255336r961044",
+        "CurrentRuleId": "SV-255336r1263695",
+        "RuleTitle": "Azure SQL Database must map the PKI-authenticated identity to an associated user account."
+      },
+      {
+        "GroupId": "V-255338",
+        "RuleVersion": "ASQL-00-008900",
+        "PreviousRuleId": "SV-255338r961095",
+        "CurrentRuleId": "SV-255338r1137655",
+        "RuleTitle": "Azure SQL Database must separate user functionality (including user interface services) from database management functionality."
+      },
+      {
+        "GroupId": "V-255343",
+        "RuleVersion": "ASQL-00-010900",
+        "PreviousRuleId": "SV-255343r961392",
+        "CurrentRuleId": "SV-255343r1263689",
+        "RuleTitle": "Azure SQL Database must be able to allocate audit record storage capacity in accordance with organization-defined audit record storage requirements."
       }
     ],
     "AddedGroups": [],
@@ -630,9 +651,20 @@
     "StigId": "MS_Defender_Antivirus",
     "StigDisplayName": "MS Defender Antivirus STIG",
     "ScanType": "SemiAutomated",
-    "CurrentVersion": "V2R9",
-    "CurrentPackage": "U_MS_Defender_Antivirus_V2R9_STIG.zip",
+    "CurrentVersion": "V2R10",
+    "CurrentPackage": "U_MS_Defender_Antivirus_V2R10_STIG.zip",
     "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Defender_Antivirus",
+        "FileName": "U_MS_Defender_Antivirus_STIG_V2R10_Manual-xccdf.xml",
+        "StatusDate": "2026-09-02",
+        "BenchmarkDate": "2026-09-30"
+      }
+    ],
+    "PreviousVersion": "V2R9",
+    "PreviousPackage": "U_MS_Defender_Antivirus_V2R9_STIG.zip",
+    "PreviousBenchmarks": [
       {
         "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
         "BenchmarkId": "MS_Defender_Antivirus",
@@ -641,302 +673,93 @@
         "BenchmarkDate": "2026-07-01"
       }
     ],
-    "PreviousVersion": "V2R8",
-    "PreviousPackage": "U_MS_Defender_Antivirus_V2R8_STIG.zip",
-    "PreviousBenchmarks": [
-      {
-        "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
-        "BenchmarkId": "MS_Defender_Antivirus",
-        "FileName": "U_MS_Defender_Antivirus_STIG_V2R8_Manual-xccdf.xml",
-        "StatusDate": "2026-02-17",
-        "BenchmarkDate": "2026-04-01"
-      }
-    ],
     "Status": "Compared successfully.",
     "ChangedGroupIds": [],
-    "ChangedRuleVersions": [
-      {
-        "GroupId": "V-278658",
-        "PreviousRuleVersion": "WNDF-AV-000054",
-        "CurrentRuleVersion": "WNDF-AV-000100",
-        "PreviousRuleId": "SV-278658r1190746",
-        "CurrentRuleId": "SV-278658r1207388",
-        "RuleTitle": "Microsoft Defender AV must control whether exclusions are visible to Local Admins."
-      }
-    ],
+    "ChangedRuleVersions": [],
     "ChangedRuleIds": [
       {
-        "GroupId": "V-213428",
-        "RuleVersion": "WNDF-AV-000004",
-        "PreviousRuleId": "SV-213428r1190706",
-        "CurrentRuleId": "SV-213428r1192794",
-        "RuleTitle": "Microsoft Defender AV must be configured to run and scan for malware and other potentially unwanted software."
-      },
-      {
-        "GroupId": "V-213429",
-        "RuleVersion": "WNDF-AV-000005",
-        "PreviousRuleId": "SV-213429r1190707",
-        "CurrentRuleId": "SV-213429r1207390",
-        "RuleTitle": "Microsoft Defender AV must be configured to not exclude files for scanning."
-      },
-      {
-        "GroupId": "V-213430",
-        "RuleVersion": "WNDF-AV-000006",
-        "PreviousRuleId": "SV-213430r1190710",
-        "CurrentRuleId": "SV-213430r1207392",
-        "RuleTitle": "Microsoft Defender AV must be configured to not exclude files opened by specified processes."
-      },
-      {
-        "GroupId": "V-213431",
-        "RuleVersion": "WNDF-AV-000007",
-        "PreviousRuleId": "SV-213431r1190712",
-        "CurrentRuleId": "SV-213431r1207394",
-        "RuleTitle": "Microsoft Defender AV must be configured to enable the Automatic Exclusions feature."
-      },
-      {
-        "GroupId": "V-213433",
-        "RuleVersion": "WNDF-AV-000009",
-        "PreviousRuleId": "SV-213433r1190715",
-        "CurrentRuleId": "SV-213433r1192798",
-        "RuleTitle": "Microsoft Defender AV must be configured to check in real time with MAPS before content is run or accessed."
-      },
-      {
-        "GroupId": "V-213436",
-        "RuleVersion": "WNDF-AV-000012",
-        "PreviousRuleId": "SV-213436r1190716",
-        "CurrentRuleId": "SV-213436r1192799",
-        "RuleTitle": "Microsoft Defender AV must be configured for protocol recognition for network protection."
-      },
-      {
-        "GroupId": "V-213441",
-        "RuleVersion": "WNDF-AV-000017",
-        "PreviousRuleId": "SV-213441r1190717",
-        "CurrentRuleId": "SV-213441r1192800",
-        "RuleTitle": "Microsoft Defender AV Group Policy settings must take priority over the local preference settings."
+        "GroupId": "V-213426",
+        "RuleVersion": "WNDF-AV-000001",
+        "PreviousRuleId": "SV-213426r961197",
+        "CurrentRuleId": "SV-213426r1260200",
+        "RuleTitle": "Microsoft Defender AV must be configured to block the Potentially Unwanted Application (PUA) feature."
       },
       {
         "GroupId": "V-213442",
         "RuleVersion": "WNDF-AV-000018",
-        "PreviousRuleId": "SV-213442r1190718",
-        "CurrentRuleId": "SV-213442r1192801",
+        "PreviousRuleId": "SV-213442r1192801",
+        "CurrentRuleId": "SV-213442r1260202",
         "RuleTitle": "Microsoft Defender AV must monitor for incoming and outgoing files."
       },
       {
         "GroupId": "V-213443",
         "RuleVersion": "WNDF-AV-000019",
-        "PreviousRuleId": "SV-213443r1190719",
-        "CurrentRuleId": "SV-213443r1192802",
+        "PreviousRuleId": "SV-213443r1192802",
+        "CurrentRuleId": "SV-213443r1260204",
         "RuleTitle": "Microsoft Defender AV must be configured to monitor for file and program activity."
+      },
+      {
+        "GroupId": "V-213444",
+        "RuleVersion": "WNDF-AV-000020",
+        "PreviousRuleId": "SV-213444r961089",
+        "CurrentRuleId": "SV-213444r1260206",
+        "RuleTitle": "Microsoft Defender AV must be configured to scan all downloaded files and attachments."
       },
       {
         "GroupId": "V-213445",
         "RuleVersion": "WNDF-AV-000021",
-        "PreviousRuleId": "SV-213445r1190720",
-        "CurrentRuleId": "SV-213445r1192803",
+        "PreviousRuleId": "SV-213445r1192803",
+        "CurrentRuleId": "SV-213445r1260208",
         "RuleTitle": "Microsoft Defender AV must be configured to always enable real-time protection."
       },
       {
-        "GroupId": "V-213447",
-        "RuleVersion": "WNDF-AV-000023",
-        "PreviousRuleId": "SV-213447r1190721",
-        "CurrentRuleId": "SV-213447r1192804",
-        "RuleTitle": "Microsoft Defender AV must be configured to process scanning when real-time protection is enabled."
+        "GroupId": "V-213446",
+        "RuleVersion": "WNDF-AV-000022",
+        "PreviousRuleId": "SV-213446r961092",
+        "CurrentRuleId": "SV-213446r1260210",
+        "RuleTitle": "Microsoft Defender AV must be configured to enable behavior monitoring."
       },
       {
         "GroupId": "V-213448",
         "RuleVersion": "WNDF-AV-000024",
-        "PreviousRuleId": "SV-213448r1190722",
-        "CurrentRuleId": "SV-213448r1192805",
+        "PreviousRuleId": "SV-213448r1192805",
+        "CurrentRuleId": "SV-213448r1271016",
         "RuleTitle": "Microsoft Defender AV must be configured to scan archive files."
       },
       {
-        "GroupId": "V-213452",
-        "RuleVersion": "WNDF-AV-000028",
-        "PreviousRuleId": "SV-213452r1190723",
-        "CurrentRuleId": "SV-213452r1192806",
-        "RuleTitle": "Microsoft Defender AV spyware definition age must not exceed 7 days."
+        "GroupId": "V-213449",
+        "RuleVersion": "WNDF-AV-000025",
+        "PreviousRuleId": "SV-213449r960852",
+        "CurrentRuleId": "SV-213449r1260214",
+        "RuleTitle": "Microsoft Defender AV must be configured to scan removable drives."
       },
       {
-        "GroupId": "V-213453",
-        "RuleVersion": "WNDF-AV-000029",
-        "PreviousRuleId": "SV-213453r1190724",
-        "CurrentRuleId": "SV-213453r1192807",
-        "RuleTitle": "Microsoft Defender AV virus definition age must not exceed 7 days."
+        "GroupId": "V-213450",
+        "RuleVersion": "WNDF-AV-000026",
+        "PreviousRuleId": "SV-213450r961191",
+        "CurrentRuleId": "SV-213450r1260216",
+        "RuleTitle": "Microsoft Defender AV must be configured to perform a weekly scheduled scan."
       },
       {
-        "GroupId": "V-278647",
-        "RuleVersion": "WNDF-AV-000043",
-        "PreviousRuleId": "SV-278647r1190726",
-        "CurrentRuleId": "SV-278647r1192808",
-        "RuleTitle": "Microsoft Defender AV must block Adobe Reader from creating child processes."
+        "GroupId": "V-213451",
+        "RuleVersion": "WNDF-AV-000027",
+        "PreviousRuleId": "SV-213451r961092",
+        "CurrentRuleId": "SV-213451r1260219",
+        "RuleTitle": "Microsoft Defender AV must be configured to turn on email scanning."
       },
       {
-        "GroupId": "V-278648",
-        "RuleVersion": "WNDF-AV-000044",
-        "PreviousRuleId": "SV-278648r1190728",
-        "CurrentRuleId": "SV-278648r1192809",
-        "RuleTitle": "Microsoft Defender AV must block credential stealing from the Windows local security authority subsystem."
+        "GroupId": "V-213455",
+        "RuleVersion": "WNDF-AV-000031",
+        "PreviousRuleId": "SV-213455r961086",
+        "CurrentRuleId": "SV-213455r1271018",
+        "RuleTitle": "Microsoft Defender AV must be configured for automatic remediation action to be taken for threat alert level Severe."
       },
       {
-        "GroupId": "V-278649",
-        "RuleVersion": "WNDF-AV-000045",
-        "PreviousRuleId": "SV-278649r1190730",
-        "CurrentRuleId": "SV-278649r1192810",
-        "RuleTitle": "Microsoft Defender AV must block untrusted and unsigned processes that run from USB."
-      },
-      {
-        "GroupId": "V-278650",
-        "RuleVersion": "WNDF-AV-000046",
-        "PreviousRuleId": "SV-278650r1190732",
-        "CurrentRuleId": "SV-278650r1192811",
-        "RuleTitle": "Microsoft Defender AV must use advanced protection against ransomware."
-      },
-      {
-        "GroupId": "V-278651",
-        "RuleVersion": "WNDF-AV-000047",
-        "PreviousRuleId": "SV-278651r1190734",
-        "CurrentRuleId": "SV-278651r1192812",
-        "RuleTitle": "Microsoft Defender AV must audit process creations originating from PSExec and WMI commands."
-      },
-      {
-        "GroupId": "V-278652",
-        "RuleVersion": "WNDF-AV-000048",
-        "PreviousRuleId": "SV-278652r1190736",
-        "CurrentRuleId": "SV-278652r1192813",
-        "RuleTitle": "Microsoft Defender AV must audit persistence through WMI event subscription."
-      },
-      {
-        "GroupId": "V-278653",
-        "RuleVersion": "WNDF-AV-000049",
-        "PreviousRuleId": "SV-278653r1190738",
-        "CurrentRuleId": "SV-278653r1192814",
-        "RuleTitle": "Microsoft Defender AV must audit executable files from running unless they meet a prevalence, age, or trusted list criterion."
-      },
-      {
-        "GroupId": "V-278654",
-        "RuleVersion": "WNDF-AV-000050",
-        "PreviousRuleId": "SV-278654r1190740",
-        "CurrentRuleId": "SV-278654r1192815",
-        "RuleTitle": "Microsoft Defender AV must block Office communication application from creating child processes."
-      },
-      {
-        "GroupId": "V-278655",
-        "RuleVersion": "WNDF-AV-000051",
-        "PreviousRuleId": "SV-278655r1190742",
-        "CurrentRuleId": "SV-278655r1192816",
-        "RuleTitle": "Microsoft Defender AV must block abuse of exploited vulnerable signed drivers."
-      },
-      {
-        "GroupId": "V-278656",
-        "RuleVersion": "WNDF-AV-000052",
-        "PreviousRuleId": "SV-278656r1190744",
-        "CurrentRuleId": "SV-278656r1192817",
-        "RuleTitle": "Microsoft Defender AV must configure local administrator merge behavior for lists."
-      },
-      {
-        "GroupId": "V-278659",
-        "RuleVersion": "WNDF-AV-000055",
-        "PreviousRuleId": "SV-278659r1190748",
-        "CurrentRuleId": "SV-278659r1192819",
-        "RuleTitle": "Microsoft Defender AV must randomize scheduled task times."
-      },
-      {
-        "GroupId": "V-278660",
-        "RuleVersion": "WNDF-AV-000056",
-        "PreviousRuleId": "SV-278660r1190750",
-        "CurrentRuleId": "SV-278660r1192820",
-        "RuleTitle": "Microsoft Defender AV must hide the Family options area."
-      },
-      {
-        "GroupId": "V-278661",
-        "RuleVersion": "WNDF-AV-000057",
-        "PreviousRuleId": "SV-278661r1190752",
-        "CurrentRuleId": "SV-278661r1192821",
-        "RuleTitle": "Microsoft Defender AV must enable the file hash computation feature."
-      },
-      {
-        "GroupId": "V-278662",
-        "RuleVersion": "WNDF-AV-000058",
-        "PreviousRuleId": "SV-278662r1190754",
-        "CurrentRuleId": "SV-278662r1192822",
-        "RuleTitle": "Microsoft Defender AV must enable extended cloud check."
-      },
-      {
-        "GroupId": "V-278668",
-        "RuleVersion": "WNDF-AV-000064",
-        "PreviousRuleId": "SV-278668r1190756",
-        "CurrentRuleId": "SV-278668r1192823",
-        "RuleTitle": "Microsoft Defender AV must enable script scanning."
-      },
-      {
-        "GroupId": "V-278669",
-        "RuleVersion": "WNDF-AV-000065",
-        "PreviousRuleId": "SV-278669r1190758",
-        "CurrentRuleId": "SV-278669r1192824",
-        "RuleTitle": "Microsoft Defender AV must enable real-time protection and Security Intelligence Updates during OOBE."
-      },
-      {
-        "GroupId": "V-278672",
-        "RuleVersion": "WNDF-AV-000068",
-        "PreviousRuleId": "SV-278672r1190761",
-        "CurrentRuleId": "SV-278672r1192825",
-        "RuleTitle": "Microsoft Defender AV must enable network protection to be configured into block or audit mode on Windows Server."
-      },
-      {
-        "GroupId": "V-278674",
-        "RuleVersion": "WNDF-AV-000070",
-        "PreviousRuleId": "SV-278674r1190763",
-        "CurrentRuleId": "SV-278674r1192826",
-        "RuleTitle": "Microsoft Defender AV must enable EDR in block mode."
-      },
-      {
-        "GroupId": "V-278675",
-        "RuleVersion": "WNDF-AV-000071",
-        "PreviousRuleId": "SV-278675r1190765",
-        "CurrentRuleId": "SV-278675r1192827",
-        "RuleTitle": "Microsoft Defender AV must report Dynamic Signature dropped events."
-      },
-      {
-        "GroupId": "V-278676",
-        "RuleVersion": "WNDF-AV-000072",
-        "PreviousRuleId": "SV-278676r1190767",
-        "CurrentRuleId": "SV-278676r1192828",
-        "RuleTitle": "Microsoft Defender AV must scan excluded files and directories during quick scans."
-      },
-      {
-        "GroupId": "V-278677",
-        "RuleVersion": "WNDF-AV-000074",
-        "PreviousRuleId": "SV-278677r1190769",
-        "CurrentRuleId": "SV-278677r1192829",
-        "RuleTitle": "Microsoft Defender AV must convert warn verdict to block."
-      },
-      {
-        "GroupId": "V-278678",
-        "RuleVersion": "WNDF-AV-000075",
-        "PreviousRuleId": "SV-278678r1190771",
-        "CurrentRuleId": "SV-278678r1192830",
-        "RuleTitle": "Microsoft Defender AV must enable asynchronous inspection."
-      },
-      {
-        "GroupId": "V-278679",
-        "RuleVersion": "WNDF-AV-000076",
-        "PreviousRuleId": "SV-278679r1190773",
-        "CurrentRuleId": "SV-278679r1192831",
-        "RuleTitle": "Microsoft Defender AV must scan packed executables."
-      },
-      {
-        "GroupId": "V-278680",
-        "RuleVersion": "WNDF-AV-000077",
-        "PreviousRuleId": "SV-278680r1190775",
-        "CurrentRuleId": "SV-278680r1192832",
-        "RuleTitle": "Microsoft Defender AV must enable heuristics."
-      },
-      {
-        "GroupId": "V-278863",
-        "RuleVersion": "WNDF-AV-000073",
-        "PreviousRuleId": "SV-278863r1190777",
-        "CurrentRuleId": "SV-278863r1192833",
-        "RuleTitle": "Microsoft Defender AV must set cloud protection level to High."
+        "GroupId": "V-213463",
+        "RuleVersion": "WNDF-AV-000039",
+        "PreviousRuleId": "SV-213463r961092",
+        "CurrentRuleId": "SV-213463r1260221",
+        "RuleTitle": "Microsoft Defender AV must be configured to prevent user and apps from accessing dangerous websites."
       }
     ],
     "AddedGroups": [],
@@ -1028,9 +851,20 @@
     "StigId": "MS_Entra_ID_STIG",
     "StigDisplayName": "MS Entra ID STIG",
     "ScanType": "Manual",
-    "CurrentVersion": "V1R1",
-    "CurrentPackage": "U_MS_Entra_ID_V1R1_STIG.zip",
+    "CurrentVersion": "V1R2",
+    "CurrentPackage": "U_MS_Entra_ID_V1R2_STIG.zip",
     "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
+        "BenchmarkId": "MS_Entra_ID_STIG",
+        "FileName": "U_MS_Entra_ID_STIG_V1R2_Manual-xccdf.xml",
+        "StatusDate": "2026-09-03",
+        "BenchmarkDate": "2026-09-30"
+      }
+    ],
+    "PreviousVersion": "V1R1",
+    "PreviousPackage": "U_MS_Entra_ID_V1R1_STIG.zip",
+    "PreviousBenchmarks": [
       {
         "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
         "BenchmarkId": "MS_Entra_ID_STIG",
@@ -1039,9 +873,34 @@
         "BenchmarkDate": "2025-02-28"
       }
     ],
-    "PreviousVersion": null,
-    "PreviousPackage": null,
-    "Status": "No previous benchmark version found in Archive."
+    "Status": "Compared successfully.",
+    "ChangedGroupIds": [],
+    "ChangedRuleVersions": [],
+    "ChangedRuleIds": [
+      {
+        "GroupId": "V-270204",
+        "RuleVersion": "ENTR-ID-000090",
+        "PreviousRuleId": "SV-270204r1085660",
+        "CurrentRuleId": "SV-270204r1271709",
+        "RuleTitle": "Microsoft Entra ID must automatically disable accounts after a 35-day period of account inactivity."
+      },
+      {
+        "GroupId": "V-270209",
+        "RuleVersion": "ENTR-ID-000150",
+        "PreviousRuleId": "SV-270209r1085618",
+        "CurrentRuleId": "SV-270209r1271710",
+        "RuleTitle": "Microsoft Entra ID must display the Standard Mandatory DoW Notice and Consent Banner before granting access to the application."
+      },
+      {
+        "GroupId": "V-270239",
+        "RuleVersion": "ENTR-ID-000610",
+        "PreviousRuleId": "SV-270239r1085663",
+        "CurrentRuleId": "SV-270239r1271708",
+        "RuleTitle": "Microsoft Entra ID must enforce a 180-day maximum password lifetime restriction."
+      }
+    ],
+    "AddedGroups": [],
+    "RemovedGroups": []
   },
   {
     "StigId": "IE_11_STIG",

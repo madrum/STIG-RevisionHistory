@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-09-28 17:33:00+00:00
+Generated: 2026-10-05 18:15:00+00:00
 
 ## Summary
 
@@ -12,11 +12,11 @@ Generated: 2026-09-28 17:33:00+00:00
 | [Cloud Computing SRG](#cloud_computing_srg) | Y26M06<br />2024-12-20, 2025-08-13 | Y25M12<br />2024-12-20, 2025-08-13 | 0 | 0 | 0 | Compared successfully. |
 | [Container Platform SRG](#container_platform_srg) | V2R4<br />2025-09-10 | V2R3<br />2025-05-15 | 13 | 1 | 0 | Compared successfully. |
 | [IDPS SRG](#idps_srg) | V3R4<br />2025-09-22 | V3R3<br />2025-05-19 | 17 | 2 | 0 | Compared successfully. |
-| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R3<br />2025-06-11 | V2R2<br />2024-09-04 | 8 | 0 | 0 | Compared successfully. |
-| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R9<br />2026-05-08 | V2R8<br />2026-02-17 | 40 | 0 | 0 | Compared successfully. |
+| [MS Azure SQL DB STIG](#ms_azure_sql_db_stig) | V2R4<br />2026-08-25 <sup>✨</sup> | V2R3<br />2025-06-11 | 11 | 0 | 0 | Compared successfully. |
+| [MS Defender Antivirus STIG](#ms_defender_antivirus) | V2R10<br />2026-09-02 <sup>✨</sup> | V2R9<br />2026-05-08 | 12 | 0 | 0 | Compared successfully. |
 | [MS DotNet Framework 4-0 STIG](#ms_dot_net_framework) | V2R9<br />2026-05-13 | V2R8<br />2026-02-12 | 0 | 1 | 0 | Compared successfully. |
 | [MS Edge STIG](#ms_edge_stig) | V2R5<br />2026-02-25 | V2R4<br />2025-12-11 | 0 | 1 | 0 | Compared successfully. |
-| [MS Entra ID STIG](#ms_entra_id_stig) | V1R1<br />2025-03-17 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
+| [MS Entra ID STIG](#ms_entra_id_stig) | V1R2<br />2026-09-03 <sup>✨</sup> | V1R1<br />2025-03-17 | 3 | 0 | 0 | Compared successfully. |
 | [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
 | [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y26M07<br />2026-05-27 | Y25M04<br />2025-05-08 | 2 | 1 | 0 | Compared successfully. |
 | [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R9<br />2026-08-06 <sup>✨</sup> | V2R8<br />2026-05-19 | 13 | 1 | 0 | Compared successfully. |
@@ -247,12 +247,12 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | Manual |
-| Current Version | V2R3 |
-| Current Version Date | 2025-06-11 |
-| Current Version Published | 2025-07-02 |
-| Previous Version | V2R2 |
-| Previous Version Date | 2024-09-04 |
-| Previous Version Published | 2024-10-24 |
+| Current Version | V2R4 |
+| Current Version Date | 2026-08-25 |
+| Current Version Published | 2026-09-30 |
+| Previous Version | V2R3 |
+| Previous Version Date | 2025-06-11 |
+| Previous Version Published | 2025-07-02 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -267,14 +267,17 @@ None
 
 | GroupId | RuleTitle |
 | --- | --- |
-| V&#8209;255301 | Azure SQL Databases must integrate with Azure Active Directory for providing account management and automation for all users, groups, roles, and any other principals. |
 | V&#8209;255302 | Azure SQL Database must enforce approved authorizations for logical access to server information and system resources in accordance with applicable access control policies. |
 | V&#8209;255303 | Azure SQL Database must enforce approved authorizations for logical access to database information and system resources in accordance with applicable access control policies. |
-| V&#8209;255311 | The Azure SQL Database and associated applications must reserve the use of dynamic code execution for situations that require it. |
-| V&#8209;255312 | The Azure SQL Database and associated applications, when making use of dynamic code execution, must scan input data for invalid values that may indicate a code injection attack. |
-| V&#8209;255334 | The Azure SQL Database must be configured to prohibit or restrict the use of organization-defined functions, ports, protocols, and/or services, as defined in the PPSM CAL and vulnerability assessments. |
-| V&#8209;255335 | Azure SQL Database must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users). |
-| V&#8209;255340 | Azure SQL Database must automatically terminate a user session after organization-defined conditions or trigger events requiring session disconnect. |
+| V&#8209;255309 | Azure SQL Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy. |
+| V&#8209;255313 | Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in storage. |
+| V&#8209;255314 | Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in process. |
+| V&#8209;255315 | Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in transmission. |
+| V&#8209;255320 | Azure SQL Database must use NSA-approved cryptography to protect classified information in accordance with the data owners requirements. |
+| V&#8209;255324 | The Azure SQL Database must be configured to generate audit records for DoW-defined auditable events within all DBMS/database components. |
+| V&#8209;255336 | Azure SQL Database must map the PKI-authenticated identity to an associated user account. |
+| V&#8209;255338 | Azure SQL Database must separate user functionality (including user interface services) from database management functionality. |
+| V&#8209;255343 | Azure SQL Database must be able to allocate audit record storage capacity in accordance with organization-defined audit record storage requirements. |
 
 ### Added Groups
 
@@ -295,12 +298,12 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | SemiAutomated |
-| Current Version | V2R9 |
-| Current Version Date | 2026-05-08 |
-| Current Version Published | 2026-07-01 |
-| Previous Version | V2R8 |
-| Previous Version Date | 2026-02-17 |
-| Previous Version Published | 2026-04-01 |
+| Current Version | V2R10 |
+| Current Version Date | 2026-09-02 |
+| Current Version Published | 2026-09-30 |
+| Previous Version | V2R9 |
+| Previous Version Date | 2026-05-08 |
+| Previous Version Published | 2026-07-01 |
 | Status | Compared successfully. |
 
 ### Changed Group IDs
@@ -309,53 +312,24 @@ None
 
 ### Changed Rule Versions
 
-| GroupId | RuleTitle |
-| --- | --- |
-| V&#8209;278658 | Microsoft Defender AV must control whether exclusions are visible to Local Admins. |
+None
 
 ### Changed Rule IDs
 
 | GroupId | RuleTitle |
 | --- | --- |
-| V&#8209;213428 | Microsoft Defender AV must be configured to run and scan for malware and other potentially unwanted software. |
-| V&#8209;213429 | Microsoft Defender AV must be configured to not exclude files for scanning. |
-| V&#8209;213430 | Microsoft Defender AV must be configured to not exclude files opened by specified processes. |
-| V&#8209;213431 | Microsoft Defender AV must be configured to enable the Automatic Exclusions feature. |
-| V&#8209;213433 | Microsoft Defender AV must be configured to check in real time with MAPS before content is run or accessed. |
-| V&#8209;213436 | Microsoft Defender AV must be configured for protocol recognition for network protection. |
-| V&#8209;213441 | Microsoft Defender AV Group Policy settings must take priority over the local preference settings. |
+| V&#8209;213426 | Microsoft Defender AV must be configured to block the Potentially Unwanted Application (PUA) feature. |
 | V&#8209;213442 | Microsoft Defender AV must monitor for incoming and outgoing files. |
 | V&#8209;213443 | Microsoft Defender AV must be configured to monitor for file and program activity. |
+| V&#8209;213444 | Microsoft Defender AV must be configured to scan all downloaded files and attachments. |
 | V&#8209;213445 | Microsoft Defender AV must be configured to always enable real-time protection. |
-| V&#8209;213447 | Microsoft Defender AV must be configured to process scanning when real-time protection is enabled. |
+| V&#8209;213446 | Microsoft Defender AV must be configured to enable behavior monitoring. |
 | V&#8209;213448 | Microsoft Defender AV must be configured to scan archive files. |
-| V&#8209;213452 | Microsoft Defender AV spyware definition age must not exceed 7 days. |
-| V&#8209;213453 | Microsoft Defender AV virus definition age must not exceed 7 days. |
-| V&#8209;278647 | Microsoft Defender AV must block Adobe Reader from creating child processes. |
-| V&#8209;278648 | Microsoft Defender AV must block credential stealing from the Windows local security authority subsystem. |
-| V&#8209;278649 | Microsoft Defender AV must block untrusted and unsigned processes that run from USB. |
-| V&#8209;278650 | Microsoft Defender AV must use advanced protection against ransomware. |
-| V&#8209;278651 | Microsoft Defender AV must audit process creations originating from PSExec and WMI commands. |
-| V&#8209;278652 | Microsoft Defender AV must audit persistence through WMI event subscription. |
-| V&#8209;278653 | Microsoft Defender AV must audit executable files from running unless they meet a prevalence, age, or trusted list criterion. |
-| V&#8209;278654 | Microsoft Defender AV must block Office communication application from creating child processes. |
-| V&#8209;278655 | Microsoft Defender AV must block abuse of exploited vulnerable signed drivers. |
-| V&#8209;278656 | Microsoft Defender AV must configure local administrator merge behavior for lists. |
-| V&#8209;278659 | Microsoft Defender AV must randomize scheduled task times. |
-| V&#8209;278660 | Microsoft Defender AV must hide the Family options area. |
-| V&#8209;278661 | Microsoft Defender AV must enable the file hash computation feature. |
-| V&#8209;278662 | Microsoft Defender AV must enable extended cloud check. |
-| V&#8209;278668 | Microsoft Defender AV must enable script scanning. |
-| V&#8209;278669 | Microsoft Defender AV must enable real-time protection and Security Intelligence Updates during OOBE. |
-| V&#8209;278672 | Microsoft Defender AV must enable network protection to be configured into block or audit mode on Windows Server. |
-| V&#8209;278674 | Microsoft Defender AV must enable EDR in block mode. |
-| V&#8209;278675 | Microsoft Defender AV must report Dynamic Signature dropped events. |
-| V&#8209;278676 | Microsoft Defender AV must scan excluded files and directories during quick scans. |
-| V&#8209;278677 | Microsoft Defender AV must convert warn verdict to block. |
-| V&#8209;278678 | Microsoft Defender AV must enable asynchronous inspection. |
-| V&#8209;278679 | Microsoft Defender AV must scan packed executables. |
-| V&#8209;278680 | Microsoft Defender AV must enable heuristics. |
-| V&#8209;278863 | Microsoft Defender AV must set cloud protection level to High. |
+| V&#8209;213449 | Microsoft Defender AV must be configured to scan removable drives. |
+| V&#8209;213450 | Microsoft Defender AV must be configured to perform a weekly scheduled scan. |
+| V&#8209;213451 | Microsoft Defender AV must be configured to turn on email scanning. |
+| V&#8209;213455 | Microsoft Defender AV must be configured for automatic remediation action to be taken for threat alert level Severe. |
+| V&#8209;213463 | Microsoft Defender AV must be configured to prevent user and apps from accessing dangerous websites. |
 
 ### Added Groups
 
@@ -458,13 +432,13 @@ None
 | Field | Value |
 | --- | --- |
 | Scan Type | Manual |
-| Current Version | V1R1 |
-| Current Version Date | 2025-03-17 |
-| Current Version Published | 2025-02-28 |
-| Previous Version | None |
-| Previous Version Date | None |
-| Previous Version Published | None |
-| Status | No previous benchmark version found in Archive. |
+| Current Version | V1R2 |
+| Current Version Date | 2026-09-03 |
+| Current Version Published | 2026-09-30 |
+| Previous Version | V1R1 |
+| Previous Version Date | 2025-03-17 |
+| Previous Version Published | 2025-02-28 |
+| Status | Compared successfully. |
 
 ### Changed Group IDs
 
@@ -476,7 +450,11 @@ None
 
 ### Changed Rule IDs
 
-None
+| GroupId | RuleTitle |
+| --- | --- |
+| V&#8209;270204 | Microsoft Entra ID must automatically disable accounts after a 35-day period of account inactivity. |
+| V&#8209;270209 | Microsoft Entra ID must display the Standard Mandatory DoW Notice and Consent Banner before granting access to the application. |
+| V&#8209;270239 | Microsoft Entra ID must enforce a 180-day maximum password lifetime restriction. |
 
 ### Added Groups
 

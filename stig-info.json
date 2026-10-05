@@ -32,14 +32,14 @@
       "StigId": "MS_Azure_SQL_DB_STIG",
       "StigDisplayName": "MS Azure SQL DB STIG",
       "ScanType": "Manual",
-      "CurrentVersion": "V2R3",
+      "CurrentVersion": "V2R4",
       "ZipFile": "U_MS_Azure_SQL_DB_{version}_STIG.zip"
     },
     {
       "StigId": "MS_Defender_Antivirus",
       "StigDisplayName": "MS Defender Antivirus STIG",
       "ScanType": "SemiAutomated",
-      "CurrentVersion": "V2R9",
+      "CurrentVersion": "V2R10",
       "ZipFile": "U_MS_Defender_Antivirus_{version}_STIG.zip"
     },
     {
@@ -60,7 +60,7 @@
       "StigId": "MS_Entra_ID_STIG",
       "StigDisplayName": "MS Entra ID STIG",
       "ScanType": "Manual",
-      "CurrentVersion": "V1R1",
+      "CurrentVersion": "V1R2",
       "ZipFile": "U_MS_Entra_ID_{version}_STIG.zip"
     },
     {

@@ -1,0 +1,111 @@
+{
+  "StigId": "MS_Azure_SQL_DB_STIG",
+  "StigDisplayName": "MS Azure SQL DB STIG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V2R4",
+  "CurrentPackage": "U_MS_Azure_SQL_DB_V2R4_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R4_Manual-xccdf.xml",
+      "StatusDate": "2026-08-25",
+      "BenchmarkDate": "2026-09-30"
+    }
+  ],
+  "PreviousVersion": "V2R3",
+  "PreviousPackage": "U_MS_Azure_SQL_DB_V2R3_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Azure SQL Database Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Azure_SQL_DB_STIG",
+      "FileName": "U_MS_Azure_SQL_DB_STIG_V2R3_Manual-xccdf.xml",
+      "StatusDate": "2025-06-11",
+      "BenchmarkDate": "2025-07-02"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-255302",
+      "RuleVersion": "ASQL-00-000200",
+      "PreviousRuleId": "SV-255302r1112451",
+      "CurrentRuleId": "SV-255302r1137654",
+      "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to server information and system resources in accordance with applicable access control policies."
+    },
+    {
+      "GroupId": "V-255303",
+      "RuleVersion": "ASQL-00-000300",
+      "PreviousRuleId": "SV-255303r1112454",
+      "CurrentRuleId": "SV-255303r1263690",
+      "RuleTitle": "Azure SQL Database must enforce approved authorizations for logical access to database information and system resources in accordance with applicable access control policies."
+    },
+    {
+      "GroupId": "V-255309",
+      "RuleVersion": "ASQL-00-002000",
+      "PreviousRuleId": "SV-255309r961149",
+      "CurrentRuleId": "SV-255309r1137656",
+      "RuleTitle": "Azure SQL Database contents must be protected from unauthorized and unintended information transfer by enforcement of a data-transfer policy."
+    },
+    {
+      "GroupId": "V-255313",
+      "RuleVersion": "ASQL-00-002500",
+      "PreviousRuleId": "SV-255313r961269",
+      "CurrentRuleId": "SV-255313r1138540",
+      "RuleTitle": "Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in storage."
+    },
+    {
+      "GroupId": "V-255314",
+      "RuleVersion": "ASQL-00-002600",
+      "PreviousRuleId": "SV-255314r961272",
+      "CurrentRuleId": "SV-255314r1138541",
+      "RuleTitle": "Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in process."
+    },
+    {
+      "GroupId": "V-255315",
+      "RuleVersion": "ASQL-00-002700",
+      "PreviousRuleId": "SV-255315r961275",
+      "CurrentRuleId": "SV-255315r1138542",
+      "RuleTitle": "Azure SQL Database must associate organization-defined types of security labels having organization-defined security label values with information in transmission."
+    },
+    {
+      "GroupId": "V-255320",
+      "RuleVersion": "ASQL-00-003200",
+      "PreviousRuleId": "SV-255320r962034",
+      "CurrentRuleId": "SV-255320r1117186",
+      "RuleTitle": "Azure SQL Database must use NSA-approved cryptography to protect classified information in accordance with the data owners requirements."
+    },
+    {
+      "GroupId": "V-255324",
+      "RuleVersion": "ASQL-00-004300",
+      "PreviousRuleId": "SV-255324r960879",
+      "CurrentRuleId": "SV-255324r1263692",
+      "RuleTitle": "The Azure SQL Database must be configured to generate audit records for DoW-defined auditable events within all DBMS/database components."
+    },
+    {
+      "GroupId": "V-255336",
+      "RuleVersion": "ASQL-00-008500",
+      "PreviousRuleId": "SV-255336r961044",
+      "CurrentRuleId": "SV-255336r1263695",
+      "RuleTitle": "Azure SQL Database must map the PKI-authenticated identity to an associated user account."
+    },
+    {
+      "GroupId": "V-255338",
+      "RuleVersion": "ASQL-00-008900",
+      "PreviousRuleId": "SV-255338r961095",
+      "CurrentRuleId": "SV-255338r1137655",
+      "RuleTitle": "Azure SQL Database must separate user functionality (including user interface services) from database management functionality."
+    },
+    {
+      "GroupId": "V-255343",
+      "RuleVersion": "ASQL-00-010900",
+      "PreviousRuleId": "SV-255343r961392",
+      "CurrentRuleId": "SV-255343r1263689",
+      "RuleTitle": "Azure SQL Database must be able to allocate audit record storage capacity in accordance with organization-defined audit record storage requirements."
+    }
+  ],
+  "AddedGroups": [],
+  "RemovedGroups": []
+}

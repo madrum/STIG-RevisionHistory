@@ -1,0 +1,118 @@
+{
+  "StigId": "MS_Defender_Antivirus",
+  "StigDisplayName": "MS Defender Antivirus STIG",
+  "ScanType": "SemiAutomated",
+  "CurrentVersion": "V2R10",
+  "CurrentPackage": "U_MS_Defender_Antivirus_V2R10_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R10_Manual-xccdf.xml",
+      "StatusDate": "2026-09-02",
+      "BenchmarkDate": "2026-09-30"
+    }
+  ],
+  "PreviousVersion": "V2R9",
+  "PreviousPackage": "U_MS_Defender_Antivirus_V2R9_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Defender Antivirus Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Defender_Antivirus",
+      "FileName": "U_MS_Defender_Antivirus_STIG_V2R9_Manual-xccdf.xml",
+      "StatusDate": "2026-05-08",
+      "BenchmarkDate": "2026-07-01"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-213426",
+      "RuleVersion": "WNDF-AV-000001",
+      "PreviousRuleId": "SV-213426r961197",
+      "CurrentRuleId": "SV-213426r1260200",
+      "RuleTitle": "Microsoft Defender AV must be configured to block the Potentially Unwanted Application (PUA) feature."
+    },
+    {
+      "GroupId": "V-213442",
+      "RuleVersion": "WNDF-AV-000018",
+      "PreviousRuleId": "SV-213442r1192801",
+      "CurrentRuleId": "SV-213442r1260202",
+      "RuleTitle": "Microsoft Defender AV must monitor for incoming and outgoing files."
+    },
+    {
+      "GroupId": "V-213443",
+      "RuleVersion": "WNDF-AV-000019",
+      "PreviousRuleId": "SV-213443r1192802",
+      "CurrentRuleId": "SV-213443r1260204",
+      "RuleTitle": "Microsoft Defender AV must be configured to monitor for file and program activity."
+    },
+    {
+      "GroupId": "V-213444",
+      "RuleVersion": "WNDF-AV-000020",
+      "PreviousRuleId": "SV-213444r961089",
+      "CurrentRuleId": "SV-213444r1260206",
+      "RuleTitle": "Microsoft Defender AV must be configured to scan all downloaded files and attachments."
+    },
+    {
+      "GroupId": "V-213445",
+      "RuleVersion": "WNDF-AV-000021",
+      "PreviousRuleId": "SV-213445r1192803",
+      "CurrentRuleId": "SV-213445r1260208",
+      "RuleTitle": "Microsoft Defender AV must be configured to always enable real-time protection."
+    },
+    {
+      "GroupId": "V-213446",
+      "RuleVersion": "WNDF-AV-000022",
+      "PreviousRuleId": "SV-213446r961092",
+      "CurrentRuleId": "SV-213446r1260210",
+      "RuleTitle": "Microsoft Defender AV must be configured to enable behavior monitoring."
+    },
+    {
+      "GroupId": "V-213448",
+      "RuleVersion": "WNDF-AV-000024",
+      "PreviousRuleId": "SV-213448r1192805",
+      "CurrentRuleId": "SV-213448r1271016",
+      "RuleTitle": "Microsoft Defender AV must be configured to scan archive files."
+    },
+    {
+      "GroupId": "V-213449",
+      "RuleVersion": "WNDF-AV-000025",
+      "PreviousRuleId": "SV-213449r960852",
+      "CurrentRuleId": "SV-213449r1260214",
+      "RuleTitle": "Microsoft Defender AV must be configured to scan removable drives."
+    },
+    {
+      "GroupId": "V-213450",
+      "RuleVersion": "WNDF-AV-000026",
+      "PreviousRuleId": "SV-213450r961191",
+      "CurrentRuleId": "SV-213450r1260216",
+      "RuleTitle": "Microsoft Defender AV must be configured to perform a weekly scheduled scan."
+    },
+    {
+      "GroupId": "V-213451",
+      "RuleVersion": "WNDF-AV-000027",
+      "PreviousRuleId": "SV-213451r961092",
+      "CurrentRuleId": "SV-213451r1260219",
+      "RuleTitle": "Microsoft Defender AV must be configured to turn on email scanning."
+    },
+    {
+      "GroupId": "V-213455",
+      "RuleVersion": "WNDF-AV-000031",
+      "PreviousRuleId": "SV-213455r961086",
+      "CurrentRuleId": "SV-213455r1271018",
+      "RuleTitle": "Microsoft Defender AV must be configured for automatic remediation action to be taken for threat alert level Severe."
+    },
+    {
+      "GroupId": "V-213463",
+      "RuleVersion": "WNDF-AV-000039",
+      "PreviousRuleId": "SV-213463r961092",
+      "CurrentRuleId": "SV-213463r1260221",
+      "RuleTitle": "Microsoft Defender AV must be configured to prevent user and apps from accessing dangerous websites."
+    }
+  ],
+  "AddedGroups": [],
+  "RemovedGroups": []
+}
