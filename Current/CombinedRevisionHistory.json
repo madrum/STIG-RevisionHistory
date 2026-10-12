@@ -3,9 +3,20 @@
     "StigId": "ASD_STIG",
     "StigDisplayName": "ASD STIG",
     "ScanType": "Manual",
-    "CurrentVersion": "V6R4",
-    "CurrentPackage": "U_ASD_V6R4_STIG.zip",
+    "CurrentVersion": "V6R5",
+    "CurrentPackage": "U_ASD_V6R5_STIG.zip",
     "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
+        "BenchmarkId": "Application_Security_Development_STIG",
+        "FileName": "U_ASD_STIG_V6R5_Manual-xccdf.xml",
+        "StatusDate": "2026-08-25",
+        "BenchmarkDate": "2026-09-30"
+      }
+    ],
+    "PreviousVersion": "V6R4",
+    "PreviousPackage": "U_ASD_V6R4_STIG.zip",
+    "PreviousBenchmarks": [
       {
         "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
         "BenchmarkId": "Application_Security_Development_STIG",
@@ -14,153 +25,450 @@
         "BenchmarkDate": "2025-10-01"
       }
     ],
-    "PreviousVersion": "V6R3",
-    "PreviousPackage": "U_ASD_V6R3_STIG.zip",
-    "PreviousBenchmarks": [
-      {
-        "BenchmarkTitle": "Application Security and Development Security Technical Implementation Guide",
-        "BenchmarkId": "Application_Security_Development_STIG",
-        "FileName": "U_ASD_STIG_V6R3_Manual-xccdf.xml",
-        "StatusDate": "2025-02-12",
-        "BenchmarkDate": "2025-04-02"
-      }
-    ],
     "Status": "Compared successfully.",
     "ChangedGroupIds": [],
     "ChangedRuleVersions": [],
     "ChangedRuleIds": [
       {
-        "GroupId": "V-222393",
-        "RuleVersion": "APSC-DV-000110",
-        "PreviousRuleId": "SV-222393r961269",
-        "CurrentRuleId": "SV-222393r1136904",
-        "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in storage."
+        "GroupId": "V-222396",
+        "RuleVersion": "APSC-DV-000160",
+        "PreviousRuleId": "SV-222396r960759",
+        "CurrentRuleId": "SV-222396r1263527",
+        "RuleTitle": "The application must implement DoW-approved encryption to protect the confidentiality of remote access sessions."
       },
       {
-        "GroupId": "V-222394",
-        "RuleVersion": "APSC-DV-000120",
-        "PreviousRuleId": "SV-222394r961272",
-        "CurrentRuleId": "SV-222394r1136906",
-        "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in process."
+        "GroupId": "V-222397",
+        "RuleVersion": "APSC-DV-000170",
+        "PreviousRuleId": "SV-222397r960762",
+        "CurrentRuleId": "SV-222397r1263528",
+        "RuleTitle": "The application must implement cryptographic mechanisms to protect the integrity of remote access sessions."
       },
       {
-        "GroupId": "V-222395",
-        "RuleVersion": "APSC-DV-000130",
-        "PreviousRuleId": "SV-222395r961275",
-        "CurrentRuleId": "SV-222395r1136908",
-        "RuleTitle": "The application must associate organization-defined types of security attributes having organization-defined security attribute values with information in transmission."
+        "GroupId": "V-222409",
+        "RuleVersion": "APSC-DV-000300",
+        "PreviousRuleId": "SV-222409r960771",
+        "CurrentRuleId": "SV-222409r1263529",
+        "RuleTitle": "The application must automatically remove or disable temporary user accounts 72 hours after account creation."
       },
       {
         "GroupId": "V-222425",
         "RuleVersion": "APSC-DV-000460",
-        "PreviousRuleId": "SV-222425r960792",
-        "CurrentRuleId": "SV-222425r1117167",
+        "PreviousRuleId": "SV-222425r1117167",
+        "CurrentRuleId": "SV-222425r1263530",
         "RuleTitle": "The application must enforce approved authorizations for logical access to information and system resources in accordance with applicable access control policies."
       },
       {
-        "GroupId": "V-222427",
-        "RuleVersion": "APSC-DV-000480",
-        "PreviousRuleId": "SV-222427r960801",
-        "CurrentRuleId": "SV-222427r1117168",
-        "RuleTitle": "The application must enforce approved authorizations for controlling the flow of information within the system based on organization-defined information flow control policies."
+        "GroupId": "V-222426",
+        "RuleVersion": "APSC-DV-000470",
+        "PreviousRuleId": "SV-222426r961317",
+        "CurrentRuleId": "SV-222426r1263531",
+        "RuleTitle": "The application must enforce organization-defined discretionary access control policies over defined subjects and objects."
       },
       {
-        "GroupId": "V-222428",
-        "RuleVersion": "APSC-DV-000490",
-        "PreviousRuleId": "SV-222428r960804",
-        "CurrentRuleId": "SV-222428r1117169",
-        "RuleTitle": "The application must enforce approved authorizations for controlling the flow of information between interconnected systems based on organization-defined information flow control policies."
+        "GroupId": "V-222434",
+        "RuleVersion": "APSC-DV-000550",
+        "PreviousRuleId": "SV-222434r960843",
+        "CurrentRuleId": "SV-222434r1263534",
+        "RuleTitle": "The application must display the Standard Mandatory DoW Notice and Consent Banner before granting access to the application."
+      },
+      {
+        "GroupId": "V-222435",
+        "RuleVersion": "APSC-DV-000560",
+        "PreviousRuleId": "SV-222435r960846",
+        "CurrentRuleId": "SV-222435r1263537",
+        "RuleTitle": "The application must retain the Standard Mandatory DoW Notice and Consent Banner on the screen until users acknowledge the usage conditions and take explicit actions to log on for further access."
+      },
+      {
+        "GroupId": "V-222436",
+        "RuleVersion": "APSC-DV-000570",
+        "PreviousRuleId": "SV-222436r960849",
+        "CurrentRuleId": "SV-222436r1263540",
+        "RuleTitle": "The publicly accessible application must display the Standard Mandatory DoW Notice and Consent Banner before granting access to the application."
+      },
+      {
+        "GroupId": "V-222438",
+        "RuleVersion": "APSC-DV-000590",
+        "PreviousRuleId": "SV-222438r960864",
+        "CurrentRuleId": "SV-222438r1263542",
+        "RuleTitle": "The application must protect against an individual (or process acting on behalf of an individual) falsely denying having performed organization-defined actions to be covered by non-repudiation."
+      },
+      {
+        "GroupId": "V-222445",
+        "RuleVersion": "APSC-DV-000660",
+        "PreviousRuleId": "SV-222445r960879",
+        "CurrentRuleId": "SV-222445r1263543",
+        "RuleTitle": "The application must provide audit record generation capability for session timeouts."
+      },
+      {
+        "GroupId": "V-222447",
+        "RuleVersion": "APSC-DV-000680",
+        "PreviousRuleId": "SV-222447r960879",
+        "CurrentRuleId": "SV-222447r1263544",
+        "RuleTitle": "The application must provide audit record generation capability for HTTP headers including User-Agent, Referer, GET, and POST."
+      },
+      {
+        "GroupId": "V-222491",
+        "RuleVersion": "APSC-DV-001170",
+        "PreviousRuleId": "SV-222491r961416",
+        "CurrentRuleId": "SV-222491r1263545",
+        "RuleTitle": "The application must provide an audit reduction capability that supports after-the-fact investigations of security incidents."
+      },
+      {
+        "GroupId": "V-222494",
+        "RuleVersion": "APSC-DV-001200",
+        "PreviousRuleId": "SV-222494r961425",
+        "CurrentRuleId": "SV-222494r1263546",
+        "RuleTitle": "The application must provide a report generation capability that supports after-the-fact investigations of security incidents."
+      },
+      {
+        "GroupId": "V-222513",
+        "RuleVersion": "APSC-DV-001430",
+        "PreviousRuleId": "SV-222513r1015691",
+        "CurrentRuleId": "SV-222513r1263547",
+        "RuleTitle": "The application must have the capability to prevent the installation of patches, service packs, or application components without verification the software component has been digitally signed using a certificate that is recognized and approved by the organization."
+      },
+      {
+        "GroupId": "V-222520",
+        "RuleVersion": "APSC-DV-001520",
+        "PreviousRuleId": "SV-222520r1050664",
+        "CurrentRuleId": "SV-222520r1263548",
+        "RuleTitle": "The application must require users to reauthenticate when organization-defined circumstances or situations require reauthentication."
+      },
+      {
+        "GroupId": "V-222522",
+        "RuleVersion": "APSC-DV-001540",
+        "PreviousRuleId": "SV-222522r1051115",
+        "CurrentRuleId": "SV-222522r1263550",
+        "RuleTitle": "The application must uniquely identify and authenticate organizational users (or processes acting on behalf of organizational users)."
+      },
+      {
+        "GroupId": "V-222524",
+        "RuleVersion": "APSC-DV-001560",
+        "PreviousRuleId": "SV-222524r961494",
+        "CurrentRuleId": "SV-222524r1263551",
+        "RuleTitle": "The application must accept Personal Identity Verification (PIV) credentials."
+      },
+      {
+        "GroupId": "V-222525",
+        "RuleVersion": "APSC-DV-001570",
+        "PreviousRuleId": "SV-222525r961497",
+        "CurrentRuleId": "SV-222525r1263552",
+        "RuleTitle": "The application must electronically verify Personal Identity Verification (PIV) credentials."
+      },
+      {
+        "GroupId": "V-222526",
+        "RuleVersion": "APSC-DV-001580",
+        "PreviousRuleId": "SV-222526r960975",
+        "CurrentRuleId": "SV-222526r1263553",
+        "RuleTitle": "The application must use multifactor (e.g., CAC, Alt. Token) authentication for network access to non-privileged accounts."
+      },
+      {
+        "GroupId": "V-222528",
+        "RuleVersion": "APSC-DV-001600",
+        "PreviousRuleId": "SV-222528r1015694",
+        "CurrentRuleId": "SV-222528r1263554",
+        "RuleTitle": "The application must use multifactor (e.g., CAC, Alt. Token) authentication for local access to nonprivileged accounts."
+      },
+      {
+        "GroupId": "V-222530",
+        "RuleVersion": "APSC-DV-001620",
+        "PreviousRuleId": "SV-222530r960993",
+        "CurrentRuleId": "SV-222530r1263556",
+        "RuleTitle": "The application must implement replay-resistant authentication mechanisms for network access to privileged accounts."
+      },
+      {
+        "GroupId": "V-222531",
+        "RuleVersion": "APSC-DV-001630",
+        "PreviousRuleId": "SV-222531r1015696",
+        "CurrentRuleId": "SV-222531r1263558",
+        "RuleTitle": "The application must implement replay-resistant authentication mechanisms for network access to nonprivileged accounts."
+      },
+      {
+        "GroupId": "V-222532",
+        "RuleVersion": "APSC-DV-001640",
+        "PreviousRuleId": "SV-222532r960999",
+        "CurrentRuleId": "SV-222532r1263559",
+        "RuleTitle": "The application must utilize mutual authentication when endpoint device non-repudiation protections are required by DoW policy or by the data owner."
+      },
+      {
+        "GroupId": "V-222535",
+        "RuleVersion": "APSC-DV-001670",
+        "PreviousRuleId": "SV-222535r1015697",
+        "CurrentRuleId": "SV-222535r1263562",
+        "RuleTitle": "The application must disable device identifiers after 35 days of inactivity unless a cryptographic certificate is used for authentication."
+      },
+      {
+        "GroupId": "V-222536",
+        "RuleVersion": "APSC-DV-001680",
+        "PreviousRuleId": "SV-222536r1015698",
+        "CurrentRuleId": "SV-222536r1263563",
+        "RuleTitle": "The application must enforce a minimum 15-character password length."
+      },
+      {
+        "GroupId": "V-222537",
+        "RuleVersion": "APSC-DV-001690",
+        "PreviousRuleId": "SV-222537r1015699",
+        "CurrentRuleId": "SV-222537r1263564",
+        "RuleTitle": "The application must enforce password complexity by requiring that at least one uppercase character be used."
+      },
+      {
+        "GroupId": "V-222538",
+        "RuleVersion": "APSC-DV-001700",
+        "PreviousRuleId": "SV-222538r1015700",
+        "CurrentRuleId": "SV-222538r1263565",
+        "RuleTitle": "The application must enforce password complexity by requiring that at least one lowercase character be used."
+      },
+      {
+        "GroupId": "V-222539",
+        "RuleVersion": "APSC-DV-001710",
+        "PreviousRuleId": "SV-222539r1015701",
+        "CurrentRuleId": "SV-222539r1263566",
+        "RuleTitle": "The application must enforce password complexity by requiring that at least one numeric character be used."
+      },
+      {
+        "GroupId": "V-222540",
+        "RuleVersion": "APSC-DV-001720",
+        "PreviousRuleId": "SV-222540r1015702",
+        "CurrentRuleId": "SV-222540r1263567",
+        "RuleTitle": "The application must enforce password complexity by requiring that at least one special character be used."
+      },
+      {
+        "GroupId": "V-222541",
+        "RuleVersion": "APSC-DV-001730",
+        "PreviousRuleId": "SV-222541r1043189",
+        "CurrentRuleId": "SV-222541r1263568",
+        "RuleTitle": "The application must require the change of at least eight of the total number of characters when passwords are changed."
+      },
+      {
+        "GroupId": "V-222542",
+        "RuleVersion": "APSC-DV-001740",
+        "PreviousRuleId": "SV-222542r1015704",
+        "CurrentRuleId": "SV-222542r1263569",
+        "RuleTitle": "The application must only store cryptographic representations of passwords."
+      },
+      {
+        "GroupId": "V-222543",
+        "RuleVersion": "APSC-DV-001750",
+        "PreviousRuleId": "SV-222543r961029",
+        "CurrentRuleId": "SV-222543r1263570",
+        "RuleTitle": "The application must transmit only cryptographically-protected passwords."
+      },
+      {
+        "GroupId": "V-222544",
+        "RuleVersion": "APSC-DV-001760",
+        "PreviousRuleId": "SV-222544r1015705",
+        "CurrentRuleId": "SV-222544r1263571",
+        "RuleTitle": "The application must enforce 24 hours/1 day as the minimum password lifetime."
+      },
+      {
+        "GroupId": "V-222545",
+        "RuleVersion": "APSC-DV-001770",
+        "PreviousRuleId": "SV-222545r1043190",
+        "CurrentRuleId": "SV-222545r1263524",
+        "RuleTitle": "The application must enforce a 180-day maximum password lifetime restriction."
+      },
+      {
+        "GroupId": "V-222546",
+        "RuleVersion": "APSC-DV-001780",
+        "PreviousRuleId": "SV-222546r1015267",
+        "CurrentRuleId": "SV-222546r1263572",
+        "RuleTitle": "The application must prohibit password reuse for a minimum of five generations."
+      },
+      {
+        "GroupId": "V-222547",
+        "RuleVersion": "APSC-DV-001790",
+        "PreviousRuleId": "SV-222547r985976",
+        "CurrentRuleId": "SV-222547r1263573",
+        "RuleTitle": "The application must allow the use of a temporary password for system logons with an immediate change to a permanent password."
+      },
+      {
+        "GroupId": "V-222548",
+        "RuleVersion": "APSC-DV-001795",
+        "PreviousRuleId": "SV-222548r961863",
+        "CurrentRuleId": "SV-222548r1263575",
+        "RuleTitle": "The application password must not be changeable by users other than the administrator or the user with which the password is associated."
+      },
+      {
+        "GroupId": "V-222557",
+        "RuleVersion": "APSC-DV-001880",
+        "PreviousRuleId": "SV-222557r961527",
+        "CurrentRuleId": "SV-222557r1263578",
+        "RuleTitle": "The application must accept Personal Identity Verification (PIV) credentials from other federal agencies."
+      },
+      {
+        "GroupId": "V-222558",
+        "RuleVersion": "APSC-DV-001890",
+        "PreviousRuleId": "SV-222558r961530",
+        "CurrentRuleId": "SV-222558r1263581",
+        "RuleTitle": "The application must electronically verify Personal Identity Verification (PIV) credentials from other federal agencies."
+      },
+      {
+        "GroupId": "V-222560",
+        "RuleVersion": "APSC-DV-001910",
+        "PreviousRuleId": "SV-222560r1067800",
+        "CurrentRuleId": "SV-222560r1263583",
+        "RuleTitle": "The application must conform to Federal Identity, Credential, and Access Management (FICAM)-issued profiles."
       },
       {
         "GroupId": "V-222570",
         "RuleVersion": "APSC-DV-002020",
-        "PreviousRuleId": "SV-222570r961857",
-        "CurrentRuleId": "SV-222570r1117181",
+        "PreviousRuleId": "SV-222570r1117181",
+        "CurrentRuleId": "SV-222570r1263585",
         "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when signing application components."
       },
       {
         "GroupId": "V-222571",
         "RuleVersion": "APSC-DV-002030",
-        "PreviousRuleId": "SV-222571r961857",
-        "CurrentRuleId": "SV-222571r1117181",
+        "PreviousRuleId": "SV-222571r1117181",
+        "CurrentRuleId": "SV-222571r1263587",
         "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when generating cryptographic hashes."
       },
       {
-        "GroupId": "V-222572",
-        "RuleVersion": "APSC-DV-002040",
-        "PreviousRuleId": "SV-222572r961857",
-        "CurrentRuleId": "SV-222572r1117181",
-        "RuleTitle": "The application must utilize FIPS-validated cryptographic modules when protecting unclassified information that requires cryptographic protection."
-      },
-      {
-        "GroupId": "V-222573",
-        "RuleVersion": "APSC-DV-002050",
-        "PreviousRuleId": "SV-222573r961857",
-        "CurrentRuleId": "SV-222573r1117181",
-        "RuleTitle": "Applications making SAML assertions must use FIPS-approved random numbers in the generation of SessionIndex in the SAML element AuthnStatement."
-      },
-      {
-        "GroupId": "V-222574",
-        "RuleVersion": "APSC-DV-002150",
-        "PreviousRuleId": "SV-222574r961095",
-        "CurrentRuleId": "SV-222574r1117171",
-        "RuleTitle": "The application user interface must be either physically or logically separated from data storage and management interfaces."
+        "GroupId": "V-222584",
+        "RuleVersion": "APSC-DV-002300",
+        "PreviousRuleId": "SV-222584r961596",
+        "CurrentRuleId": "SV-222584r1263590",
+        "RuleTitle": "The application must only allow the use of DoW-approved certificate authorities for verification of the establishment of protected sessions."
       },
       {
         "GroupId": "V-222587",
         "RuleVersion": "APSC-DV-002330",
-        "PreviousRuleId": "SV-222587r961128",
-        "CurrentRuleId": "SV-222587r1136910",
-        "RuleTitle": "The application must protect the confidentiality and integrity of stored information when required by DOD policy or the information owner."
+        "PreviousRuleId": "SV-222587r1136910",
+        "CurrentRuleId": "SV-222587r1263591",
+        "RuleTitle": "The application must protect the confidentiality and integrity of stored information when required by DoW policy or the information owner."
       },
       {
-        "GroupId": "V-222591",
-        "RuleVersion": "APSC-DV-002370",
-        "PreviousRuleId": "SV-222591r961608",
-        "CurrentRuleId": "SV-222591r1117179",
-        "RuleTitle": "The application must maintain a separate execution domain for each executing process."
+        "GroupId": "V-222588",
+        "RuleVersion": "APSC-DV-002340",
+        "PreviousRuleId": "SV-222588r1067803",
+        "CurrentRuleId": "SV-222588r1263593",
+        "RuleTitle": "The application must implement approved cryptographic mechanisms to prevent unauthorized modification of organization-defined information at rest on organization-defined information system components."
+      },
+      {
+        "GroupId": "V-222589",
+        "RuleVersion": "APSC-DV-002350",
+        "PreviousRuleId": "SV-222589r1067813",
+        "CurrentRuleId": "SV-222589r1263595",
+        "RuleTitle": "The application must use appropriate cryptography in order to protect stored DoW information when required by the information owner or DoW policy."
       },
       {
         "GroupId": "V-222592",
         "RuleVersion": "APSC-DV-002380",
-        "PreviousRuleId": "SV-222592r961149",
-        "CurrentRuleId": "SV-222592r1117173",
+        "PreviousRuleId": "SV-222592r1117173",
+        "CurrentRuleId": "SV-222592r1263596",
         "RuleTitle": "Applications must prevent unauthorized and unintended information transfer via shared system resources."
       },
       {
-        "GroupId": "V-222597",
-        "RuleVersion": "APSC-DV-002450",
-        "PreviousRuleId": "SV-222597r961635",
-        "CurrentRuleId": "SV-222597r1117180",
-        "RuleTitle": "The application must implement cryptographic mechanisms to prevent unauthorized disclosure of information and/or detect changes to information during transmission unless otherwise protected by alternative physical safeguards, such as, at a minimum, a Protected Distribution System (PDS)."
+        "GroupId": "V-222601",
+        "RuleVersion": "APSC-DV-002485",
+        "PreviousRuleId": "SV-222601r961638",
+        "CurrentRuleId": "SV-222601r1263598",
+        "RuleTitle": "The application must not store sensitive information in hidden fields."
       },
       {
-        "GroupId": "V-222614",
-        "RuleVersion": "APSC-DV-002630",
-        "PreviousRuleId": "SV-222614r961683",
-        "CurrentRuleId": "SV-222614r1117151",
-        "RuleTitle": "Security-relevant software updates and patches must be kept up to date."
+        "GroupId": "V-222618",
+        "RuleVersion": "APSC-DV-002870",
+        "PreviousRuleId": "SV-222618r961083",
+        "CurrentRuleId": "SV-222618r1263599",
+        "RuleTitle": "Unsigned Category 1A mobile code must not be used in the application in accordance with DoW policy."
       },
       {
-        "GroupId": "V-222621",
-        "RuleVersion": "APSC-DV-002900",
-        "PreviousRuleId": "SV-222621r961863",
-        "CurrentRuleId": "SV-222621r1136913",
-        "RuleTitle": "The ISSO must ensure application audit trails are retained for at least 30 months (12 months active + 18 months cold storage) for applications without SAMI data and five years for applications including SAMI data."
+        "GroupId": "V-222620",
+        "RuleVersion": "APSC-DV-002890",
+        "PreviousRuleId": "SV-222620r961863",
+        "CurrentRuleId": "SV-222620r1263602",
+        "RuleTitle": "Application web servers must be on a separate network segment from the application and database servers if it is a tiered application operating in the DoW DMZ."
+      },
+      {
+        "GroupId": "V-222623",
+        "RuleVersion": "APSC-DV-002920",
+        "PreviousRuleId": "SV-222623r961863",
+        "CurrentRuleId": "SV-222623r1263603",
+        "RuleTitle": "The ISSO must report all suspected violations of IA policies in accordance with DoW information system IA procedures."
+      },
+      {
+        "GroupId": "V-222627",
+        "RuleVersion": "APSC-DV-002970",
+        "PreviousRuleId": "SV-222627r961863",
+        "CurrentRuleId": "SV-222627r1263605",
+        "RuleTitle": "The ISSO must ensure if a DoW STIG or NSA guide is not available, a third-party product will be configured by following available guidance."
+      },
+      {
+        "GroupId": "V-222628",
+        "RuleVersion": "APSC-DV-002980",
+        "PreviousRuleId": "SV-222628r961863",
+        "CurrentRuleId": "SV-222628r1263608",
+        "RuleTitle": "New IP addresses, data services, and associated ports used by the application must be submitted to the appropriate approving authority for the organization, which in turn will be submitted through the DoW Ports, Protocols, and Services Management (DoW PPSM)"
+      },
+      {
+        "GroupId": "V-222629",
+        "RuleVersion": "APSC-DV-002990",
+        "PreviousRuleId": "SV-222629r961863",
+        "CurrentRuleId": "SV-222629r1263609",
+        "RuleTitle": "The application must be registered with the DoW Ports and Protocols Database."
+      },
+      {
+        "GroupId": "V-222634",
+        "RuleVersion": "APSC-DV-003030",
+        "PreviousRuleId": "SV-222634r987685",
+        "CurrentRuleId": "SV-222634r1263611",
+        "RuleTitle": "The application services and interfaces must be compatible with and ready for IPv6 networks."
+      },
+      {
+        "GroupId": "V-222636",
+        "RuleVersion": "APSC-DV-003050",
+        "PreviousRuleId": "SV-222636r1051323",
+        "CurrentRuleId": "SV-222636r1263613",
+        "RuleTitle": "A contingency plan must exist in accordance with DoW policy based on the application's availability requirements."
+      },
+      {
+        "GroupId": "V-222638",
+        "RuleVersion": "APSC-DV-003070",
+        "PreviousRuleId": "SV-222638r961863",
+        "CurrentRuleId": "SV-222638r1263615",
+        "RuleTitle": "Data backup must be performed at required intervals in accordance with DoW policy."
+      },
+      {
+        "GroupId": "V-222641",
+        "RuleVersion": "APSC-DV-003100",
+        "PreviousRuleId": "SV-222641r961863",
+        "CurrentRuleId": "SV-222641r1263616",
+        "RuleTitle": "The application must use encryption to implement key exchange and authenticate endpoints prior to establishing a communication channel for key exchange."
       },
       {
         "GroupId": "V-222643",
         "RuleVersion": "APSC-DV-003120",
-        "PreviousRuleId": "SV-222643r961863",
-        "CurrentRuleId": "SV-222643r1136915",
+        "PreviousRuleId": "SV-222643r1136915",
+        "CurrentRuleId": "SV-222643r1263526",
         "RuleTitle": "The application must have the capability to mark sensitive/classified output when required."
       },
       {
-        "GroupId": "V-265634",
-        "RuleVersion": "APSC-DV-002010",
-        "PreviousRuleId": "SV-265634r997307",
-        "CurrentRuleId": "SV-265634r1117183",
-        "RuleTitle": "The application must implement NSA-approved cryptography to protect classified information in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards."
+        "GroupId": "V-222645",
+        "RuleVersion": "APSC-DV-003140",
+        "PreviousRuleId": "SV-222645r961863",
+        "CurrentRuleId": "SV-222645r1263618",
+        "RuleTitle": "Application files must be cryptographically hashed prior to deploying to DoW operational networks."
+      },
+      {
+        "GroupId": "V-222661",
+        "RuleVersion": "APSC-DV-003270",
+        "PreviousRuleId": "SV-222661r961863",
+        "CurrentRuleId": "SV-222661r1263620",
+        "RuleTitle": "Unnecessary built-in application accounts must be disabled."
+      },
+      {
+        "GroupId": "V-222662",
+        "RuleVersion": "APSC-DV-003280",
+        "PreviousRuleId": "SV-222662r961863",
+        "CurrentRuleId": "SV-222662r1263622",
+        "RuleTitle": "Default passwords must be changed."
+      },
+      {
+        "GroupId": "V-222671",
+        "RuleVersion": "APSC-DV-003350",
+        "PreviousRuleId": "SV-222671r961863",
+        "CurrentRuleId": "SV-222671r1263624",
+        "RuleTitle": "Connections between the DoW enclave and the Internet or other public or commercial wide area networks must require a DMZ."
       }
     ],
     "AddedGroups": [],
@@ -239,9 +547,20 @@
     "StigId": "Container_Platform_SRG",
     "StigDisplayName": "Container Platform SRG",
     "ScanType": "Manual",
-    "CurrentVersion": "V2R4",
-    "CurrentPackage": "U_Container_Platform_V2R4_SRG.zip",
+    "CurrentVersion": "V2R5",
+    "CurrentPackage": "U_Container_Platform_V2R5_SRG.zip",
     "CurrentBenchmarks": [
+      {
+        "BenchmarkTitle": "Container Platform Security Requirements Guide",
+        "BenchmarkId": "Container_Platform_SRG",
+        "FileName": "U_Container_Platform_SRG_V2R5_Manual-xccdf.xml",
+        "StatusDate": "2026-09-01",
+        "BenchmarkDate": "2026-09-30"
+      }
+    ],
+    "PreviousVersion": "V2R4",
+    "PreviousPackage": "U_Container_Platform_V2R4_SRG.zip",
+    "PreviousBenchmarks": [
       {
         "BenchmarkTitle": "Container Platform Security Requirements Guide",
         "BenchmarkId": "Container_Platform_SRG",
@@ -250,122 +569,124 @@
         "BenchmarkDate": "2025-10-28"
       }
     ],
-    "PreviousVersion": "V2R3",
-    "PreviousPackage": "U_Container_Platform_V2R3_SRG.zip",
-    "PreviousBenchmarks": [
-      {
-        "BenchmarkTitle": "Container Platform Security Requirements Guide",
-        "BenchmarkId": "Container_Platform_SRG",
-        "FileName": "U_Container_Platform_SRG_V2R3_Manual-xccdf.xml",
-        "StatusDate": "2025-05-15",
-        "BenchmarkDate": "2025-07-02"
-      }
-    ],
     "Status": "Compared successfully.",
     "ChangedGroupIds": [],
     "ChangedRuleVersions": [],
     "ChangedRuleIds": [
       {
-        "GroupId": "V-233026",
-        "RuleVersion": "SRG-APP-000033-CTR-000090",
-        "PreviousRuleId": "SV-233026r960792",
-        "CurrentRuleId": "SV-233026r1137638",
-        "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform registry."
+        "GroupId": "V-233020",
+        "RuleVersion": "SRG-APP-000024-CTR-000060",
+        "PreviousRuleId": "SV-233020r960771",
+        "CurrentRuleId": "SV-233020r1268078",
+        "RuleTitle": "The container platform must automatically remove or disable temporary user accounts after 72 hours."
       },
       {
-        "GroupId": "V-233027",
-        "RuleVersion": "SRG-APP-000033-CTR-000095",
-        "PreviousRuleId": "SV-233027r960792",
-        "CurrentRuleId": "SV-233027r1137639",
-        "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform runtime."
+        "GroupId": "V-233032",
+        "RuleVersion": "SRG-APP-000068-CTR-000120",
+        "PreviousRuleId": "SV-233032r960843",
+        "CurrentRuleId": "SV-233032r1268081",
+        "RuleTitle": "The container platform must display the Standard Mandatory DoW Notice and Consent Banner before granting access to platform components."
       },
       {
-        "GroupId": "V-233028",
-        "RuleVersion": "SRG-APP-000033-CTR-000100",
-        "PreviousRuleId": "SV-233028r960792",
-        "CurrentRuleId": "SV-233028r1137640",
-        "RuleTitle": "Least privilege access and need-to-know must be required to access the container platform keystore."
+        "GroupId": "V-233033",
+        "RuleVersion": "SRG-APP-000069-CTR-000125",
+        "PreviousRuleId": "SV-233033r960846",
+        "CurrentRuleId": "SV-233033r1268084",
+        "RuleTitle": "The container platform must retain the Standard Mandatory DoW Notice and Consent Banner on the screen until users acknowledge the usage and conditions and take explicit actions to log on for further access."
       },
       {
-        "GroupId": "V-233029",
-        "RuleVersion": "SRG-APP-000038-CTR-000105",
-        "PreviousRuleId": "SV-233029r960801",
-        "CurrentRuleId": "SV-233029r1137641",
-        "RuleTitle": "The container platform must enforce approved authorizations for controlling the flow of information within the container platform based on organization-defined information flow control policies."
+        "GroupId": "V-233038",
+        "RuleVersion": "SRG-APP-000089-CTR-000150",
+        "PreviousRuleId": "SV-233038r960879",
+        "CurrentRuleId": "SV-233038r1268087",
+        "RuleTitle": "The container platform must generate audit records for all DoW-defined auditable events within all components in the platform."
       },
       {
-        "GroupId": "V-233030",
-        "RuleVersion": "SRG-APP-000039-CTR-000110",
-        "PreviousRuleId": "SV-233030r960804",
-        "CurrentRuleId": "SV-233030r1137642",
-        "RuleTitle": "The container platform must enforce approved authorizations for controlling the flow of information between interconnected systems and services based on organization-defined information flow control policies."
+        "GroupId": "V-233080",
+        "RuleVersion": "SRG-APP-000150-CTR-000360",
+        "PreviousRuleId": "SV-233080r960975",
+        "CurrentRuleId": "SV-233080r1268088",
+        "RuleTitle": "The container platform must use multifactor authentication for network access to nonprivileged accounts."
       },
       {
-        "GroupId": "V-233114",
-        "RuleVersion": "SRG-APP-000211-CTR-000530",
-        "PreviousRuleId": "SV-233114r961095",
-        "CurrentRuleId": "SV-233114r1137643",
-        "RuleTitle": "The container platform must separate user functionality (including user interface services) from information system management functionality."
+        "GroupId": "V-233084",
+        "RuleVersion": "SRG-APP-000156-CTR-000380",
+        "PreviousRuleId": "SV-233084r960993",
+        "CurrentRuleId": "SV-233084r1268089",
+        "RuleTitle": "The container platform must use FIPS-validated SHA-1 or higher hash function to provide replay-resistant authentication mechanisms for network access to privileged accounts."
       },
       {
-        "GroupId": "V-233127",
-        "RuleVersion": "SRG-APP-000243-CTR-000595",
-        "PreviousRuleId": "SV-233127r961149",
-        "CurrentRuleId": "SV-233127r1137644",
-        "RuleTitle": "The container platform must prohibit containers from accessing privileged resources."
+        "GroupId": "V-233095",
+        "RuleVersion": "SRG-APP-000171-CTR-000435",
+        "PreviousRuleId": "SV-233095r981861",
+        "CurrentRuleId": "SV-233095r1268090",
+        "RuleTitle": "For container platform using password authentication, the application must store only cryptographic representations of passwords."
       },
       {
-        "GroupId": "V-233128",
-        "RuleVersion": "SRG-APP-000243-CTR-000600",
-        "PreviousRuleId": "SV-233128r961149",
-        "CurrentRuleId": "SV-233128r1137645",
-        "RuleTitle": "The container platform must prevent unauthorized and unintended information transfer via shared system resources."
+        "GroupId": "V-233098",
+        "RuleVersion": "SRG-APP-000174-CTR-000450",
+        "PreviousRuleId": "SV-233098r1043190",
+        "CurrentRuleId": "SV-233098r1268077",
+        "RuleTitle": "The container platform must enforce a 180-day maximum password lifetime restriction."
       },
       {
-        "GroupId": "V-233221",
-        "RuleVersion": "SRG-APP-000431-CTR-001065",
-        "PreviousRuleId": "SV-233221r961608",
-        "CurrentRuleId": "SV-233221r1137646",
-        "RuleTitle": "The container platform runtime must maintain separate execution domains for each container by assigning each container a separate address space."
+        "GroupId": "V-233101",
+        "RuleVersion": "SRG-APP-000177-CTR-000465",
+        "PreviousRuleId": "SV-233101r961044",
+        "CurrentRuleId": "SV-233101r1268093",
+        "RuleTitle": "The container platform must map the authenticated identity to the individual user or group account for PKI-based authentication."
       },
       {
-        "GroupId": "V-233233",
-        "RuleVersion": "SRG-APP-000456-CTR-001125",
-        "PreviousRuleId": "SV-233233r961683",
-        "CurrentRuleId": "SV-233233r1137649",
-        "RuleTitle": "The container platform registry must contain the latest images with most recent security-relevant software updates within 30 days unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, STIGs)."
+        "GroupId": "V-233190",
+        "RuleVersion": "SRG-APP-000383-CTR-000910",
+        "PreviousRuleId": "SV-233190r961470",
+        "CurrentRuleId": "SV-233190r1268094",
+        "RuleTitle": "All nonessential, unnecessary, and unsecure DoW ports, protocols, and services must be disabled in the container platform."
       },
       {
-        "GroupId": "V-233234",
-        "RuleVersion": "SRG-APP-000456-CTR-001130",
-        "PreviousRuleId": "SV-233234r961683",
-        "CurrentRuleId": "SV-233234r1137650",
-        "RuleTitle": "The container platform runtime must have security-relevant software updates installed within 30 days unless the time period is directed by an authoritative source (e.g., IAVM, CTOs, DTMs, and STIGs)."
+        "GroupId": "V-233193",
+        "RuleVersion": "SRG-APP-000389-CTR-000925",
+        "PreviousRuleId": "SV-233193r1050787",
+        "CurrentRuleId": "SV-233193r1268095",
+        "RuleTitle": "The container platform must require users to reauthenticate when organization-defined circumstances or situations require reauthentication."
       },
       {
-        "GroupId": "V-233271",
-        "RuleVersion": "SRG-APP-000514-CTR-001315",
-        "PreviousRuleId": "SV-233271r961857",
-        "CurrentRuleId": "SV-233271r1137647",
-        "RuleTitle": "The container platform must use a valid FIPS 140-2 or FIPS 140-3 approved cryptographic module to generate hashes."
+        "GroupId": "V-233195",
+        "RuleVersion": "SRG-APP-000391-CTR-000935",
+        "PreviousRuleId": "SV-233195r961494",
+        "CurrentRuleId": "SV-233195r1268098",
+        "RuleTitle": "The container platform must be configured to use multifactor authentication for user authentication."
       },
       {
-        "GroupId": "V-233289",
-        "RuleVersion": "SRG-APP-000635-CTR-001405",
-        "PreviousRuleId": "SV-233289r961908",
-        "CurrentRuleId": "SV-233289r1137648",
-        "RuleTitle": "The container platform must use a FIPS-validated cryptographic module to implement encryption services for unclassified information requiring confidentiality."
+        "GroupId": "V-233207",
+        "RuleVersion": "SRG-APP-000411-CTR-000995",
+        "PreviousRuleId": "SV-233207r961554",
+        "CurrentRuleId": "SV-233207r1270941",
+        "RuleTitle": "Container platform applications and Application Program Interfaces (API) used for nonlocal maintenance sessions must use FIPS-validated keyed-hash message authentication code (HMAC) to protect the integrity of nonlocal maintenance and diagnostic communications."
+      },
+      {
+        "GroupId": "V-233273",
+        "RuleVersion": "SRG-APP-000516-CTR-001325",
+        "PreviousRuleId": "SV-233273r961863",
+        "CurrentRuleId": "SV-233273r1268102",
+        "RuleTitle": "Container platform components must be configured in accordance with the security configuration settings based on DoW security configuration or implementation guidance, including SRGs, STIGs, NSA configuration guides, CTOs, and DTMs."
+      },
+      {
+        "GroupId": "V-233276",
+        "RuleVersion": "SRG-APP-000560-CTR-001340",
+        "PreviousRuleId": "SV-233276r961869",
+        "CurrentRuleId": "SV-233276r1201983",
+        "RuleTitle": "The container platform must prohibit communication using TLS versions 1.0 and 1.1, and SSL 2.0 and 3.0."
+      },
+      {
+        "GroupId": "V-233290",
+        "RuleVersion": "SRG-APP-000645-CTR-001410",
+        "PreviousRuleId": "SV-233290r961911",
+        "CurrentRuleId": "SV-233290r1250356",
+        "RuleTitle": "The container platform must prohibit or restrict the use of protocols that transmit unencrypted authentication information or use flawed cryptographic algorithms for transmission."
       }
     ],
-    "AddedGroups": [
-      {
-        "GroupId": "V-278968",
-        "RuleVersion": "SRG-APP-001035-CTR-000323",
-        "RuleId": "SV-278968r1137653",
-        "RuleTitle": "The container platform must be a version supported by the vendor.",
-        "Severity": "high"
-      }
-    ],
+    "AddedGroups": [],
     "RemovedGroups": []
   },
   {

@@ -1,0 +1,55 @@
+{
+  "StigId": "MS_Entra_ID_STIG",
+  "StigDisplayName": "MS Entra ID STIG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V1R2",
+  "CurrentPackage": "U_MS_Entra_ID_V1R2_STIG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Entra_ID_STIG",
+      "FileName": "U_MS_Entra_ID_STIG_V1R2_Manual-xccdf.xml",
+      "StatusDate": "2026-09-03",
+      "BenchmarkDate": "2026-09-30"
+    }
+  ],
+  "PreviousVersion": "V1R1",
+  "PreviousPackage": "U_MS_Entra_ID_V1R1_STIG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Microsoft Entra ID Security Technical Implementation Guide",
+      "BenchmarkId": "MS_Entra_ID_STIG",
+      "FileName": "U_MS_Entra_ID_STIG_V1R1_Manual-xccdf.xml",
+      "StatusDate": "2025-03-17",
+      "BenchmarkDate": "2025-02-28"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-270204",
+      "RuleVersion": "ENTR-ID-000090",
+      "PreviousRuleId": "SV-270204r1085660",
+      "CurrentRuleId": "SV-270204r1271709",
+      "RuleTitle": "Microsoft Entra ID must automatically disable accounts after a 35-day period of account inactivity."
+    },
+    {
+      "GroupId": "V-270209",
+      "RuleVersion": "ENTR-ID-000150",
+      "PreviousRuleId": "SV-270209r1085618",
+      "CurrentRuleId": "SV-270209r1271710",
+      "RuleTitle": "Microsoft Entra ID must display the Standard Mandatory DoW Notice and Consent Banner before granting access to the application."
+    },
+    {
+      "GroupId": "V-270239",
+      "RuleVersion": "ENTR-ID-000610",
+      "PreviousRuleId": "SV-270239r1085663",
+      "CurrentRuleId": "SV-270239r1271708",
+      "RuleTitle": "Microsoft Entra ID must enforce a 180-day maximum password lifetime restriction."
+    }
+  ],
+  "AddedGroups": [],
+  "RemovedGroups": []
+}

@@ -1,0 +1,146 @@
+{
+  "StigId": "Container_Platform_SRG",
+  "StigDisplayName": "Container Platform SRG",
+  "ScanType": "Manual",
+  "CurrentVersion": "V2R5",
+  "CurrentPackage": "U_Container_Platform_V2R5_SRG.zip",
+  "CurrentBenchmarks": [
+    {
+      "BenchmarkTitle": "Container Platform Security Requirements Guide",
+      "BenchmarkId": "Container_Platform_SRG",
+      "FileName": "U_Container_Platform_SRG_V2R5_Manual-xccdf.xml",
+      "StatusDate": "2026-09-01",
+      "BenchmarkDate": "2026-09-30"
+    }
+  ],
+  "PreviousVersion": "V2R4",
+  "PreviousPackage": "U_Container_Platform_V2R4_SRG.zip",
+  "PreviousBenchmarks": [
+    {
+      "BenchmarkTitle": "Container Platform Security Requirements Guide",
+      "BenchmarkId": "Container_Platform_SRG",
+      "FileName": "U_Container_Platform_SRG_V2R4_Manual-xccdf.xml",
+      "StatusDate": "2025-09-10",
+      "BenchmarkDate": "2025-10-28"
+    }
+  ],
+  "Status": "Compared successfully.",
+  "ChangedGroupIds": [],
+  "ChangedRuleVersions": [],
+  "ChangedRuleIds": [
+    {
+      "GroupId": "V-233020",
+      "RuleVersion": "SRG-APP-000024-CTR-000060",
+      "PreviousRuleId": "SV-233020r960771",
+      "CurrentRuleId": "SV-233020r1268078",
+      "RuleTitle": "The container platform must automatically remove or disable temporary user accounts after 72 hours."
+    },
+    {
+      "GroupId": "V-233032",
+      "RuleVersion": "SRG-APP-000068-CTR-000120",
+      "PreviousRuleId": "SV-233032r960843",
+      "CurrentRuleId": "SV-233032r1268081",
+      "RuleTitle": "The container platform must display the Standard Mandatory DoW Notice and Consent Banner before granting access to platform components."
+    },
+    {
+      "GroupId": "V-233033",
+      "RuleVersion": "SRG-APP-000069-CTR-000125",
+      "PreviousRuleId": "SV-233033r960846",
+      "CurrentRuleId": "SV-233033r1268084",
+      "RuleTitle": "The container platform must retain the Standard Mandatory DoW Notice and Consent Banner on the screen until users acknowledge the usage and conditions and take explicit actions to log on for further access."
+    },
+    {
+      "GroupId": "V-233038",
+      "RuleVersion": "SRG-APP-000089-CTR-000150",
+      "PreviousRuleId": "SV-233038r960879",
+      "CurrentRuleId": "SV-233038r1268087",
+      "RuleTitle": "The container platform must generate audit records for all DoW-defined auditable events within all components in the platform."
+    },
+    {
+      "GroupId": "V-233080",
+      "RuleVersion": "SRG-APP-000150-CTR-000360",
+      "PreviousRuleId": "SV-233080r960975",
+      "CurrentRuleId": "SV-233080r1268088",
+      "RuleTitle": "The container platform must use multifactor authentication for network access to nonprivileged accounts."
+    },
+    {
+      "GroupId": "V-233084",
+      "RuleVersion": "SRG-APP-000156-CTR-000380",
+      "PreviousRuleId": "SV-233084r960993",
+      "CurrentRuleId": "SV-233084r1268089",
+      "RuleTitle": "The container platform must use FIPS-validated SHA-1 or higher hash function to provide replay-resistant authentication mechanisms for network access to privileged accounts."
+    },
+    {
+      "GroupId": "V-233095",
+      "RuleVersion": "SRG-APP-000171-CTR-000435",
+      "PreviousRuleId": "SV-233095r981861",
+      "CurrentRuleId": "SV-233095r1268090",
+      "RuleTitle": "For container platform using password authentication, the application must store only cryptographic representations of passwords."
+    },
+    {
+      "GroupId": "V-233098",
+      "RuleVersion": "SRG-APP-000174-CTR-000450",
+      "PreviousRuleId": "SV-233098r1043190",
+      "CurrentRuleId": "SV-233098r1268077",
+      "RuleTitle": "The container platform must enforce a 180-day maximum password lifetime restriction."
+    },
+    {
+      "GroupId": "V-233101",
+      "RuleVersion": "SRG-APP-000177-CTR-000465",
+      "PreviousRuleId": "SV-233101r961044",
+      "CurrentRuleId": "SV-233101r1268093",
+      "RuleTitle": "The container platform must map the authenticated identity to the individual user or group account for PKI-based authentication."
+    },
+    {
+      "GroupId": "V-233190",
+      "RuleVersion": "SRG-APP-000383-CTR-000910",
+      "PreviousRuleId": "SV-233190r961470",
+      "CurrentRuleId": "SV-233190r1268094",
+      "RuleTitle": "All nonessential, unnecessary, and unsecure DoW ports, protocols, and services must be disabled in the container platform."
+    },
+    {
+      "GroupId": "V-233193",
+      "RuleVersion": "SRG-APP-000389-CTR-000925",
+      "PreviousRuleId": "SV-233193r1050787",
+      "CurrentRuleId": "SV-233193r1268095",
+      "RuleTitle": "The container platform must require users to reauthenticate when organization-defined circumstances or situations require reauthentication."
+    },
+    {
+      "GroupId": "V-233195",
+      "RuleVersion": "SRG-APP-000391-CTR-000935",
+      "PreviousRuleId": "SV-233195r961494",
+      "CurrentRuleId": "SV-233195r1268098",
+      "RuleTitle": "The container platform must be configured to use multifactor authentication for user authentication."
+    },
+    {
+      "GroupId": "V-233207",
+      "RuleVersion": "SRG-APP-000411-CTR-000995",
+      "PreviousRuleId": "SV-233207r961554",
+      "CurrentRuleId": "SV-233207r1270941",
+      "RuleTitle": "Container platform applications and Application Program Interfaces (API) used for nonlocal maintenance sessions must use FIPS-validated keyed-hash message authentication code (HMAC) to protect the integrity of nonlocal maintenance and diagnostic communications."
+    },
+    {
+      "GroupId": "V-233273",
+      "RuleVersion": "SRG-APP-000516-CTR-001325",
+      "PreviousRuleId": "SV-233273r961863",
+      "CurrentRuleId": "SV-233273r1268102",
+      "RuleTitle": "Container platform components must be configured in accordance with the security configuration settings based on DoW security configuration or implementation guidance, including SRGs, STIGs, NSA configuration guides, CTOs, and DTMs."
+    },
+    {
+      "GroupId": "V-233276",
+      "RuleVersion": "SRG-APP-000560-CTR-001340",
+      "PreviousRuleId": "SV-233276r961869",
+      "CurrentRuleId": "SV-233276r1201983",
+      "RuleTitle": "The container platform must prohibit communication using TLS versions 1.0 and 1.1, and SSL 2.0 and 3.0."
+    },
+    {
+      "GroupId": "V-233290",
+      "RuleVersion": "SRG-APP-000645-CTR-001410",
+      "PreviousRuleId": "SV-233290r961911",
+      "CurrentRuleId": "SV-233290r1250356",
+      "RuleTitle": "The container platform must prohibit or restrict the use of protocols that transmit unencrypted authentication information or use flawed cryptographic algorithms for transmission."
+    }
+  ],
+  "AddedGroups": [],
+  "RemovedGroups": []
+}

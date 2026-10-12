@@ -4,7 +4,7 @@
       "StigId": "ASD_STIG",
       "StigDisplayName": "ASD STIG",
       "ScanType": "Manual",
-      "CurrentVersion": "V6R4",
+      "CurrentVersion": "V6R5",
       "ZipFile": "U_ASD_{version}_STIG.zip"
     },
     {
@@ -18,7 +18,7 @@
       "StigId": "Container_Platform_SRG",
       "StigDisplayName": "Container Platform SRG",
       "ScanType": "Manual",
-      "CurrentVersion": "V2R4",
+      "CurrentVersion": "V2R5",
       "ZipFile": "U_Container_Platform_{version}_SRG.zip"
     },
     {
