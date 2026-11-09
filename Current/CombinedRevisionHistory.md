@@ -2,7 +2,7 @@
 
 # Combined Revision History
 
-Generated: 2026-11-02 19:22:58+00:00
+Generated: 2026-11-09 19:41:52+00:00
 
 ## Summary
 
@@ -19,7 +19,7 @@ Generated: 2026-11-02 19:22:58+00:00
 | [MS Entra ID STIG](#ms_entra_id_stig) | V1R2<br />2026-09-03 <sup>✨</sup> | V1R1<br />2025-03-17 | 3 | 0 | 0 | Compared successfully. |
 | [MS IE11 STIG](#ie_11_stig) | V2R7<br />2026-02-24 | V2R6<br />2025-11-25 | 1 | 0 | 0 | Compared successfully. |
 | [MS Intune MDM Service Desktop Mobile STIG](#ms_intune_mdm_service_desktop_mobile_stig) | Y26M07<br />2026-05-27 | Y25M04<br />2025-05-08 | 2 | 1 | 0 | Compared successfully. |
-| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R9<br />2026-08-06 <sup>✨</sup> | V2R8<br />2026-05-19 | 13 | 1 | 0 | Compared successfully. |
+| [Microsoft Windows 11 STIG](#microsoft_windows_11_stig) | V2R9<br />2026-08-06 | V2R8<br />2026-05-19 | 13 | 1 | 0 | Compared successfully. |
 | [Network Infrastructure Policy STIG](#network_infrastructure_policy_stig) | V10R7<br />2024-08-02 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 | [Windows Firewall with Advanced Security STIG](#windows_firewall_with_advanced_security) | V2R2<br />2023-08-23 |  | 0 | 0 | 0 | No previous benchmark version found in Archive. |
 
